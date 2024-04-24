@@ -1,12 +1,14 @@
 import { frames } from "../frames"
-import { NextResponse } from "next/server"
+import { TransactionTargetResponse } from "frames.js";
+import { getFrameMessage } from "frames.js/next/server";
+import { NextResponse, NextRequest } from "next/server"
 import { MerkleTree } from "merkletreejs"
 import { ethers } from "ethers"
-import { encodeFunctionData } from "viem"
+import { encodeFunctionData, Abi } from "viem"
 import { baseSepolia } from "viem/chains"
 import abi from '../../data/abi.json'
 
-const getMerkleProof = (allowlistedAddresses:string[], addressToProve:string, limitPerWallet:string, price:string) => {
+const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, limitPerWallet: string, price: string) => {
     const leaves = allowlistedAddresses.map(x => ethers.keccak256(x))
     const merkle = new MerkleTree(leaves, ethers.keccak256, { hashLeaves: true, sortPairs: true })
     const proof = merkle.getHexProof(ethers.keccak256(addressToProve.toString()))
@@ -19,9 +21,16 @@ const getMerkleProof = (allowlistedAddresses:string[], addressToProve:string, li
     }
 }
 
-export const POST = frames(async (ctx) => {
-    if (!ctx.message) {
-        throw new Error("No message");
+export async function POST(
+    req: NextRequest
+): Promise<NextResponse<TransactionTargetResponse>> {
+
+    const json = await req.json();
+
+    const frameMessage = await getFrameMessage(json);
+
+    if (!frameMessage) {
+        throw new Error("No frame message");
     }
 
     /*
@@ -34,9 +43,9 @@ export const POST = frames(async (ctx) => {
         bytes memory _data
     */
     // prepare our claim bundle function call
-    const proof = getMerkleProof([], ctx.message.connectedAddress || "", "50", '0')
+    const proof = getMerkleProof([], frameMessage.connectedAddress || "", "50", '0')
     const params = [
-        ctx.message.connectedAddress,
+        frameMessage.connectedAddress,
         [10n, 20n, 30n, 40n, 50n],
         [1n, 1n, 1n, 1n, 1n],
         ethers.ZeroAddress,
@@ -46,7 +55,6 @@ export const POST = frames(async (ctx) => {
     ]
     //const claimBatchABI = abi.filter(x => x.name === "claimBatch")[0];
 
-    // prepare the transaction params for claimBatch function
     // prepare the transaction params for claimBatch function
     const calldata = encodeFunctionData({
         abi: abi,
@@ -61,13 +69,14 @@ export const POST = frames(async (ctx) => {
         args: [BigInt(99)],
     }); */
 
-    return NextResponse.json({
+    return NextResponse.json<TransactionTargetResponse>({
         chainId: `eip155:${baseSepolia.id}`,
         method: "eth_sendTransaction",
         params: {
-            abi: abi,
+            abi: abi as Abi,
             to: `0x${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as string}`,
-            data: calldata
+            data: calldata,
+            value: "0"
         }
     })
-})
+}

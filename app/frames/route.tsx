@@ -26,7 +26,7 @@ const handleRequest = frames(async (ctx) => {
         return json.image.replace("ipfs://", "https://ipfs.io/ipfs/")
     }
 
-    //console.log(ctx)
+    console.log('message ?', ctx.message)
 
     let txId = ctx.message?.transactionId
         ? ctx.message.transactionId 
@@ -105,7 +105,7 @@ const handleRequest = frames(async (ctx) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="tx" target="/txdata" post_url="/">
+            <Button action="tx" target="/txdata" post_url="/sdg">
                 mint 5 buildings
             </Button>,
             <Button action="link" target="https://opensea.io/collection/366names">
