@@ -4,9 +4,12 @@ import { getFrameMessage } from "frames.js/next/server";
 import { NextResponse, NextRequest } from "next/server"
 import { MerkleTree } from "merkletreejs"
 import { ethers } from "ethers"
-import { encodeFunctionData, Abi } from "viem"
+import { encodeFunctionData, Abi, Hex } from "viem"
 import { baseSepolia } from "viem/chains"
 import abi from '../../data/abi.json'
+
+const ZERO_BYTES = ethers.zeroPadValue(ethers.toUtf8Bytes(''), 32)
+const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 
 const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, limitPerWallet: string, price: string) => {
     const leaves = allowlistedAddresses.map(x => ethers.keccak256(x))
@@ -17,7 +20,7 @@ const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, 
         proof: proof,
         quantityLimitPerWallet: limitPerWallet,
         pricePerToken: price,
-        currency: ethers.ZeroAddress
+        currency: NATIVE_TOKEN
     }
 }
 
@@ -46,12 +49,12 @@ export async function POST(
     const proof = getMerkleProof([], frameMessage.connectedAddress || "", "50", '0')
     const params = [
         frameMessage.connectedAddress,
-        [10n, 20n, 30n, 40n, 50n],
-        [1n, 1n, 1n, 1n, 1n],
-        ethers.ZeroAddress,
+        [2n, 3n, 4n, 5n],
+        [1n, 1n, 1n, 1n],
+        NATIVE_TOKEN,
         0n,
         proof,
-        ''
+        ZERO_BYTES
     ]
     //const claimBatchABI = abi.filter(x => x.name === "claimBatch")[0];
 
@@ -61,13 +64,6 @@ export async function POST(
         functionName: "claimBatch",
         args: params,
     })
-
-    // Do something with the user's connected address that will be executing the tx
-    /* const calldata_test = encodeFunctionData({
-        abi: abi,
-        functionName: "mintSingleNFT",
-        args: [BigInt(99)],
-    }); */
 
     return NextResponse.json<TransactionTargetResponse>({
         chainId: `eip155:${baseSepolia.id}`,

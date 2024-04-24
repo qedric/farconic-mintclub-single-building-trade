@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
-import { createPublicClient, http } from 'viem'
+import { createPublicClient, http, parseEventLogs, ParseEventLogsReturnType, Log } from 'viem'
 import { baseSepolia } from 'viem/chains'
 import abi from '../data/abi.json'
 
@@ -16,7 +16,7 @@ const handleRequest = frames(async (ctx) => {
         const ipfs_link: string = await client.readContract({
             address: `0x${process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as string}`,
             abi: abi,
-            functionName: 'tokenURI',
+            functionName: 'uri',
             args: [id]
         }) as string
         // get the image value from the metadata resolved by the ipfs link
@@ -26,42 +26,43 @@ const handleRequest = frames(async (ctx) => {
         return json.image.replace("ipfs://", "https://ipfs.io/ipfs/")
     }
 
-    console.log('message ?', ctx.message)
-
     let txId = ctx.message?.transactionId
         ? ctx.message.transactionId 
         : ctx.searchParams.tx
             ? ctx.searchParams.tx
             : '' // assign a valid tx here for testing, or empty string for prod
 
-
     console.log(txId)
 
     if (txId) {
         let receipt = null
-        let decimalValue = 0
+        let decimalValues:number[] = []
         try {
             // frames have 5 second timeout, so set a race to skip the wait before the timeout
             receipt = await Promise.race([
                 client.waitForTransactionReceipt({ hash: txId as `0x${string}`}),
-                //client.waitForTransactionReceipt({ hash: ctx.message?.transactionId }),
                 new Promise((resolve) => setTimeout(resolve, 3200))
             ])
 
-            // if we have a receipt, get the NFT token id from the logs
-            if (receipt){
-                const topicValue = (receipt as { logs: any[] }).logs[0].topics[3].toString() || ''
-                decimalValue = parseInt(topicValue, 16)
-            }
-            
+            const logs = parseEventLogs({ 
+                abi: abi, 
+                logs: (receipt as { logs: ParseEventLogsReturnType }).logs
+            })
+
+            // for each log with the event name 'TokensClaimed', get the value of the 'tokenId' arg
+            logs.forEach((log:any) => {
+                if (log.eventName === 'TokensClaimed') {
+                    decimalValues.push(log.args.tokenId)
+                }
+            })
         } catch (error) {
             console.log(error)
             // do nothing if an error occurs, user can click refresh to try again
         }
         
         return {
-            image: receipt ? (
-                await fetchImageUrl(decimalValue)
+            image: decimalValues.length > 0 ? (
+                await fetchImageUrl(decimalValues[1])
             ) : (
                 <div tw="p-5 bg-purple-800 text-white w-full h-full justify-center items-center flex">
                     transaction submitted, click refresh to check the status
@@ -73,7 +74,7 @@ const handleRequest = frames(async (ctx) => {
             buttons: receipt ? [
                 <Button
                     action="link"
-                    target={`https://etherscan.io/tx/${ctx.message?.transactionId}`}
+                    target={`https://basescan.org/tx/${ctx.message?.transactionId}`}
                 >
                     view on block explorer
                 </Button>
@@ -105,10 +106,10 @@ const handleRequest = frames(async (ctx) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="tx" target="/txdata" post_url="/sdg">
+            <Button action="tx" target="/txdata" post_url="/">
                 mint 5 buildings
             </Button>,
-            <Button action="link" target="https://opensea.io/collection/366names">
+            <Button action="link" target="https://testnets.opensea.io/collection/farconic-cities-v0-1">
                 view on opensea
             </Button>
         ]
