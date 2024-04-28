@@ -6,7 +6,11 @@ import { claimCity } from "@/app/frames/claim"
 
 const handleRequest = frames(async (ctx: any) => {
 
-    const txId = '016e1209-cf41-469b-a519-2e66b2df4381'
+    const txId = ctx.txId
+    ? ctx.txId
+    : ctx.searchParams?.txId || ''
+
+    console.log('txId:', txId)
 
     const options = {method: 'GET', headers: {Authorization: `Bearer ${process.env.SYNDICATE_API_KEY}`}};
     let txStatus:any
@@ -21,7 +25,7 @@ const handleRequest = frames(async (ctx: any) => {
     const confirmed = txStatus?.transactionAttempts?.some((attempt:any) => attempt.status == 'CONFIRMED')
 
     return confirmed ? { 
-        image: await fetchImageUrlFromTokenId(10),
+        image: await fetchImageUrlFromTokenId(txStatus.decodedData._req.outTokenId),
         imageOptions: {
             aspectRatio: "1:1",
         },
@@ -51,6 +55,7 @@ const handleRequest = frames(async (ctx: any) => {
     }
 },
 {
+    // this uses the syndicate api to handle the transactions
     middleware: [ claimCity ]
 })
 

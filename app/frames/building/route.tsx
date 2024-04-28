@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
-import { frames } from "../../frames"
+import { frames } from "../frames"
 import { fetchImageUrlFromTokenId } from '@/app/utils'
+import { claimBuilding } from "@/app/frames/claim"
 
 const handleRequest = frames(async (ctx: any) => {
 
@@ -11,27 +12,9 @@ const handleRequest = frames(async (ctx: any) => {
 
     console.log('txId:', txId)
 
-    if(!txId) {
-        return { 
-            image: (
-                <div tw="flex">
-                    <h1>Can't find a transaction</h1>
-                </div>
-            ),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target="/">
-                    reset
-                </Button>
-            ]
-        }
-    }
-
-    // if we have a txId, get the tx status
     const options = {method: 'GET', headers: {Authorization: `Bearer ${process.env.SYNDICATE_API_KEY}`}};
     let txStatus:any
+
     await fetch(`https://api.syndicate.io/wallet/project/${process.env.SYNDICATE_PROJECT_ID}/request/${txId}`, options)
     .then(response => response.json())
     .then(response => txStatus = response)
@@ -41,7 +24,7 @@ const handleRequest = frames(async (ctx: any) => {
 
     const confirmed = txStatus?.transactionAttempts?.some((attempt:any) => attempt.status == 'CONFIRMED')
 
-    return confirmed ? {
+    return confirmed ? { 
         image: await fetchImageUrlFromTokenId(txStatus.decodedData._req.outTokenId),
         imageOptions: {
             aspectRatio: "1:1",
@@ -62,7 +45,7 @@ const handleRequest = frames(async (ctx: any) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="post" target={{ query: { txId: txId }, pathname: "/city/claimed" }}>
+            <Button action="post" target={{ query: { txId: txId }, pathname: "/building/claimed" }}>
                 refresh
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
@@ -70,6 +53,10 @@ const handleRequest = frames(async (ctx: any) => {
             </Button>
         ]
     }
+},
+{
+    // this uses the syndicate api to handle the transactions
+    middleware: [ claimBuilding ]
 })
 
 export const GET = handleRequest

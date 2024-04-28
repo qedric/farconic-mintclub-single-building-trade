@@ -62,7 +62,7 @@ const handleRequest = frames(async (ctx: any) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="post" target={{ query: { txId: txId }, pathname: "/city/claimed" }}>
+            <Button action="post" target={{ query: { txId: txId }, pathname: "/building/claimed" }}>
                 refresh
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>

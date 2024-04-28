@@ -10,7 +10,7 @@ const handleRequest = frames(async (ctx) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="tx" target="/tx/building" post_url="/">
+            <Button action="post" target="/building">
                 mint 5 buildings
             </Button>,
             <Button action="post" target="/city/check">

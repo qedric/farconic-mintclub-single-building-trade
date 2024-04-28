@@ -1,17 +1,33 @@
 import { http, createPublicClient, Abi } from "viem"
 import { baseSepolia } from "viem/chains"
+import { MerkleTree } from "merkletreejs"
+import { ethers } from "ethers"
 import abi from './data/abi.json'
+
+const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 
 const publicClient = createPublicClient({
     chain: baseSepolia,
     transport: http()
 })
 
+export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, limitPerWallet: string, price: string) => {
+    const leaves = allowlistedAddresses.map(x => ethers.keccak256(x))
+    const merkle = new MerkleTree(leaves, ethers.keccak256, { hashLeaves: true, sortPairs: true })
+    const proof = merkle.getHexProof(ethers.keccak256(addressToProve.toString()))
+
+    return {
+        proof: proof,
+        quantityLimitPerWallet: limitPerWallet,
+        pricePerToken: price,
+        currency: NATIVE_TOKEN
+    }
+}
+
 export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
     // get the image value from the metadata resolved by the ipfs link
     console.log(ipfs_link)
     const metadata = await fetch(ipfs_link.replace("ipfs://", "https://ipfs.io/ipfs/") as string)
-    console.log('sdfgsd', metadata)
     const json = await metadata.json()
     console.log(json)
     return json.image.replace("ipfs://", "https://ipfs.io/ipfs/")
