@@ -1,12 +1,11 @@
-import { frames } from "../frames"
+import { frames } from "../../frames"
 import { TransactionTargetResponse } from "frames.js";
-import { getFrameMessage } from "frames.js/next/server";
-import { NextResponse, NextRequest } from "next/server"
+import { NextResponse } from "next/server"
 import { MerkleTree } from "merkletreejs"
 import { ethers } from "ethers"
-import { encodeFunctionData, Abi, Hex } from "viem"
+import { encodeFunctionData, Abi } from "viem"
 import { baseSepolia } from "viem/chains"
-import abi from '../../data/abi.json'
+import abi from '../../../data/abi.json'
 
 const ZERO_BYTES = ethers.zeroPadValue(ethers.toUtf8Bytes(''), 32)
 const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
@@ -24,17 +23,12 @@ const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, 
     }
 }
 
-export async function POST(
-    req: NextRequest
-): Promise<NextResponse<TransactionTargetResponse>> {
-
-    const json = await req.json();
-
-    const frameMessage = await getFrameMessage(json);
-
-    if (!frameMessage) {
-        throw new Error("No frame message");
+export const POST = frames(async (ctx) => {
+    if (!ctx.message) {
+      throw new Error("No message");
     }
+   
+    const userAddress = ctx.message.connectedAddress;
 
     /*
         address _receiver,
@@ -46,9 +40,9 @@ export async function POST(
         bytes memory _data
     */
     // prepare our claim bundle function call
-    const proof = getMerkleProof([], frameMessage.connectedAddress || "", "50", '0')
+    const proof = getMerkleProof([], userAddress || "", "50", '0')
     const params = [
-        frameMessage.connectedAddress,
+        userAddress,
         [2n, 3n, 4n, 5n],
         [1n, 1n, 1n, 1n],
         NATIVE_TOKEN,
@@ -75,4 +69,4 @@ export async function POST(
             value: "0"
         }
     })
-}
+})
