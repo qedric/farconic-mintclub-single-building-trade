@@ -9,7 +9,7 @@ import {
     Abi
 } from "viem"
 import abi from '@/app/data/abi.json'
-import registry from '@/app/data/registry.json'
+import nfts from '@/app/data/nfts.json'
 
 const LAST_BUILDING_ID = 9
 
@@ -62,21 +62,24 @@ const handleRequest = frames(async (ctx: any) => {
 
     console.log('buildingCount:', buildingCount)
 
-    // loop through buildingCount to match each building token with its city
+    // loop through all building tokens to match each building token with its city
     for (let buildingId = 0; buildingId < buildingCount.length; buildingId++) {
         const building = buildingCount[buildingId]
         if (building > 0) { // at least one of this building is owned
 
-            // query our registry to get the city tokenId for this building
-            const cityId: number = (registry.buildings.find((building) => (building.buildingId as number) === buildingId)?.cityId as number)
-            const city = registry.cities.find((city) => city.cityId === cityId)
+            // query our nfts to get the city tokenId for this building
+            const buildingNFT = nfts.find((nft) => parseInt(nft.id) == buildingId)
+            const cityName = buildingNFT?.metadata.attributes.find((attr) => attr.trait_type == 'City')?.value
+            const city = nfts.find((nft) => nft.metadata.name == cityName)
+            const cityId = parseInt(city?.id || '-1')
+            const cityBuildingCount = city?.metadata.attributes.find((attr) => attr.trait_type == 'Number of Buildings')?.value
 
             // add the building tokenId to the city mapping's buildings array
             const buildingsForThisCity: number[] = cityBuildings.get(cityId) || []
             buildingsForThisCity.push(buildingId)
 
             // if we have all the buildings, we break to burn buildings and claim our city
-            if (city?.buildingCount == buildingsForThisCity.length) {
+            if (cityBuildingCount == buildingsForThisCity.length) {
                 console.log('can claim city!', cityId)
                 cityClaimArgs = {city, buildingsForThisCity}
                 break; // This will exit the entire loop
