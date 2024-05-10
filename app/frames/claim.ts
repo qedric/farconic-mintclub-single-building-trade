@@ -56,7 +56,7 @@ export const claimCity: types.FramesMiddleware<any, { txId: string }> = async (
     return next({ txId: txId || '' })
 }
 
-export const claimBuilding: types.FramesMiddleware<any, { txId: string }> = async (
+export const claimBuildings: types.FramesMiddleware<any, { txId: string }> = async (
     ctx,
     next
 ) => {
@@ -64,7 +64,7 @@ export const claimBuilding: types.FramesMiddleware<any, { txId: string }> = asyn
         throw new Error("No message")
     }
 
-    const LAST_BUILDING_ID = 9
+    const LAST_BUILDING_ID:number = parseInt(process.env.LAST_BUILDING_ID as string) || 0
     const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
     const ZERO_BYTES = ethers.zeroPadValue(ethers.toUtf8Bytes(''), 32)
 
@@ -73,29 +73,10 @@ export const claimBuilding: types.FramesMiddleware<any, { txId: string }> = asyn
 
     console.log('user address:', userAddress)
 
-    // pick a random integer between zero and LAST_BUILDING_ID
-    const randomBuildingId = () => Math.floor(Math.random() * (LAST_BUILDING_ID + 1));
-
-    // test that the random works suitably
-    for(let i=0; i< 99; i++) {
-        console.log(randomBuildingId())
-    }
-
-    // get 5 tokens
-    const tokensToMint:number[] = []
-    const quantities:number[] = []
-    for(let i=0; i< 5; i++) {
-        tokensToMint.push(randomBuildingId())
-        quantities.push(1)
-    }
-
-    console.log('tokens to mint:',tokensToMint)
-
     try {
-
-        const fSig = "claimBatch(address _receiver, uint256[] _tokenIds, uint256[] _quantities, address _currency, uint256 _pricePerToken, (bytes32[] proof, uint256 quantityLimitPerWallet, uint256 pricePerToken, address currency) _allowlistProof, bytes _data)"
-        const proof = JSON.stringify(getMerkleProof([], userAddress || "", "50", '0'))
-        const args = `{"_receiver": "${userAddress}", "_tokenIds": [${tokensToMint}], "_quantities":[${quantities}], "_currency": "${NATIVE_TOKEN}", "_pricePerToken": "0", "_allowlistProof": ${proof}, "_data": "${ZERO_BYTES}"}`
+        const fSig = "claimRandomBatch(uint8 _batchSize, uint256 _min, uint256 _max, address _receiver, address _currency, uint256 _pricePerToken, (bytes32[] proof, uint256 quantityLimitPerWallet, uint256 pricePerToken, address currency) _allowlistProof, bytes _data)"
+        const proof = JSON.stringify(getMerkleProof([], userAddress || "", "10", '0'))
+        const args = `{"_batchSize": "10", "_min": "0", "_max": "${LAST_BUILDING_ID}", "_receiver": "${userAddress}", "_currency": "${NATIVE_TOKEN}", "_pricePerToken": "0", "_allowlistProof": ${proof}, "_data": "${ZERO_BYTES}"}`
         console.log(args)
         // prep the transaction
         let options = {
@@ -115,8 +96,6 @@ export const claimBuilding: types.FramesMiddleware<any, { txId: string }> = asyn
     } catch (err) {
         console.error(err)
     }
-
-    console.log('tx id:', txId)
 
     return next({ txId: txId || '' })
 }

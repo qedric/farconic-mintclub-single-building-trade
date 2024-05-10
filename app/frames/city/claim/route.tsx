@@ -36,7 +36,7 @@ const handleRequest = frames(async (ctx: any) => {
         ]
     } : {
         image: (
-            <div tw="flex">
+            <div tw="flex flex-col">
                 <h1>Transaction pending.</h1>
                 <p>Wait a moment then hit refresh</p>
             </div>

@@ -11,6 +11,8 @@ const publicClient = createPublicClient({
     transport: http()
 })
 
+export const getTransactionReceipt = async (txId: `0x${string}`) => await publicClient.getTransactionReceipt({ hash: txId })
+
 export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, limitPerWallet: string, price: string) => {
     const leaves = allowlistedAddresses.map(x => ethers.keccak256(x))
     const merkle = new MerkleTree(leaves, ethers.keccak256, { hashLeaves: true, sortPairs: true })
@@ -26,11 +28,11 @@ export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: s
 
 export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
     // get the image value from the metadata resolved by the ipfs link
-    console.log(ipfs_link)
-    const metadata = await fetch(ipfs_link.replace("ipfs://", "https://ipfs.io/ipfs/") as string)
+    //console.log(ipfs_link)
+    const metadata = await fetch(ipfs_link.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string)
     const json = await metadata.json()
-    console.log(json)
-    return json.image.replace("ipfs://", "https://ipfs.io/ipfs/")
+    //console.log(json)
+    return json.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`)
 }
 
 export const fetchImageUrlFromTokenId = async (id: number) => {

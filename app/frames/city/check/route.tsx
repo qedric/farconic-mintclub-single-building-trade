@@ -11,7 +11,7 @@ import {
 import abi from '@/app/data/abi.json'
 import nfts from '@/app/data/nfts.json'
 
-const LAST_BUILDING_ID = 9
+const LAST_BUILDING_ID:number = parseInt(process.env.LAST_BUILDING_ID as string) || 0
 
 const publicClient = createPublicClient({
     chain: baseSepolia,
@@ -66,7 +66,6 @@ const handleRequest = frames(async (ctx: any) => {
     for (let buildingId = 0; buildingId < buildingCount.length; buildingId++) {
         const building = buildingCount[buildingId]
         if (building > 0) { // at least one of this building is owned
-
             // query our nfts to get the city tokenId for this building
             const buildingNFT = nfts.find((nft) => parseInt(nft.id) == buildingId)
             const cityName = buildingNFT?.metadata.attributes.find((attr) => attr.trait_type == 'City')?.value
@@ -92,11 +91,13 @@ const handleRequest = frames(async (ctx: any) => {
 
     console.log('buildingsOfCity:', cityBuildings)
 
+    console.log('cityClaimArgs:', cityClaimArgs)
+
     return cityClaimArgs ? { 
         image: (
-            <div tw="flex">
-                <p>You can claim</p>
-                <h1>{cityClaimArgs?.city.cityName}</h1>
+            <div tw="flex flex-col items-center justify-center">
+                <h3>You can claim</h3>
+                <h1>{cityClaimArgs?.city.metadata.name}</h1>
             </div>
         ),
         imageOptions: {
@@ -104,7 +105,7 @@ const handleRequest = frames(async (ctx: any) => {
         },
         buttons: [
             <Button action="post" target="/city/claim">
-                {`claim ${cityClaimArgs?.city.cityName}`}
+                {`claim ${cityClaimArgs?.city.metadata.name}`}
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
                 view on opensea
