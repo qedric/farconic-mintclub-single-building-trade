@@ -1,27 +1,7 @@
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { levenshteinDistance } from '@/app/utils'
+import { levenshteinDistance, Metadata, Attribute, Element } from '@/app/utils'
 import buildings from '@/app/data/buildings.json'
-
-interface Metadata {
-    name: string;
-    description: string;
-    image: string;
-    external_url: string;
-    background_color: string;
-    attributes: Attribute[];
-}
-
-interface Attribute {
-    trait_type?: string;
-    value: string;
-}
-
-interface Element {
-    metadata: Metadata;
-    id: string;
-    tokenURI: string;
-}
 
 function searchJsonArray(query: string): Element[] {
     const lowerCaseQuery = query.toLowerCase();
@@ -61,7 +41,7 @@ function searchJsonArray(query: string): Element[] {
 
 const handleRequest = frames(async (ctx: any) => {
 
-    console.log('search term from query param: ', ctx.searchParams?.searchTerm)
+    //console.log('search term from query param: ', ctx.searchParams?.searchTerm)
 
     let searchTerm = ctx.searchParams?.searchTerm
         ? ctx.searchParams.searchTerm : ctx.message.inputText
@@ -81,12 +61,18 @@ const handleRequest = frames(async (ctx: any) => {
                 textInput: "search",
                 buttons: searchResults.length == 1 // just one result
                 ?   [
+                        <Button action="post" target="/building/trade">
+                            Buy / Sell / Trade
+                        </Button>,
                         <Button action="post" target="/building/search">
                             Search
                         </Button>
                     ]
                 :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                     ?   [
+                            <Button action="post" target="/building/trade">
+                                Buy / Sell / Trade
+                            </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                 Prev
                             </Button>,
@@ -99,6 +85,9 @@ const handleRequest = frames(async (ctx: any) => {
                         ]
                     :   page > 1 && searchResults.length == page // multiple results and we are at the end
                         ?   [
+                                <Button action="post" target="/building/trade">
+                                    Buy / Sell / Trade
+                                </Button>,
                                 <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                     Prev
                                 </Button>,
@@ -106,7 +95,10 @@ const handleRequest = frames(async (ctx: any) => {
                                     Search
                                 </Button>
                             ]
-                        :   [
+                        :   [ // multiple results and we are at the start
+                                <Button action="post" target="/building/trade">
+                                    Buy / Sell / Trade
+                                </Button>,
                                 <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                     Next
                                 </Button>,

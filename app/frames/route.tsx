@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
+import buildings from '@/app/data/buildings.json'
 
 const handleRequest = frames(async (ctx) => {
 
@@ -17,8 +18,8 @@ const handleRequest = frames(async (ctx) => {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="post" target="/main">
-                mint or claim
+            <Button action="post" target={{ query: { building: JSON.stringify(buildings[11]) }, pathname: "/building/trade" }}>
+                Buy / Sell / Trade
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
                 view on opensea

@@ -11,6 +11,26 @@ const publicClient = createPublicClient({
     transport: http()
 })
 
+export interface Metadata {
+    name: string;
+    description: string;
+    image: string;
+    external_url: string;
+    background_color: string;
+    attributes: Attribute[];
+}
+
+export interface Attribute {
+    trait_type?: string;
+    value: string;
+}
+
+export interface Element {
+    metadata: Metadata;
+    id: string;
+    tokenURI: string;
+}
+
 export const getTransactionReceipt = async (txId: `0x${string}`) => await publicClient.getTransactionReceipt({ hash: txId })
 
 export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: string, limitPerWallet: string, price: string) => {
@@ -33,6 +53,9 @@ export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
     const json = await metadata.json()
     //console.log(json)
     return json.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`)
+}
+
+export const getImageFromJSON = (json: any) => {
 }
 
 export const fetchImageUrlFromTokenId = async (id: number) => {
