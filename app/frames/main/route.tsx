@@ -14,6 +14,9 @@ const handleRequest = frames(async (ctx) => {
             <Button action="post" target="/building">
                 mint 5 buildings
             </Button>,
+            <Button action="post" target="/building/search">
+                mint building
+            </Button>,
             <Button action="post" target="/city/check">
                 mint city
             </Button>,

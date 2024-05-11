@@ -1,0 +1,3386 @@
+[
+    {
+        "metadata": {
+            "name": "Amsterdam",
+            "description": "Amsterdam is a charming city with a population of over 880,000, known for its picturesque canals, vibrant arts and cultural scene, and historical heritage.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Amsterdam.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Netherlands"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Royal Palace Amsterdam",
+                    "value": "52m"
+                },
+                {
+                    "trait_type": "Eye Film Museum",
+                    "value": "23m"
+                },
+                {
+                    "trait_type": "Beurs van Berlage",
+                    "value": "39m"
+                },
+                {
+                    "trait_type": "Rembrandt Tower",
+                    "value": "150m"
+                },
+                {
+                    "trait_type": "Stedelijk Museum",
+                    "value": "20m"
+                },
+                {
+                    "trait_type": "A'DAM Tower",
+                    "value": "100m"
+                },
+                {
+                    "trait_type": "Rijksmuseum",
+                    "value": "36m"
+                },
+                {
+                    "trait_type": "De Gooyer Windmill",
+                    "value": "27m"
+                }
+            ]
+        },
+        "id": "453",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/453"
+    },
+    {
+        "metadata": {
+            "name": "Atlanta",
+            "description": "Atlanta is the capital city of Georgia and a major hub of commerce and culture with a population of just over 4.9 million.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Atlanta.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Georgia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "1180 Peachtree",
+                    "value": "200m"
+                },
+                {
+                    "trait_type": "One Atlantic Center",
+                    "value": "250m"
+                },
+                {
+                    "trait_type": "Promenade II",
+                    "value": "215m"
+                },
+                {
+                    "trait_type": "Georgia-Pacific Tower",
+                    "value": "212m"
+                },
+                {
+                    "trait_type": "Georgia State Capitol",
+                    "value": "72m"
+                },
+                {
+                    "trait_type": "Bank of America Plaza",
+                    "value": "317m"
+                },
+                {
+                    "trait_type": "SunTrust Plaza",
+                    "value": "275m"
+                }
+            ]
+        },
+        "id": "454",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/454"
+    },
+    {
+        "metadata": {
+            "name": "Calgary",
+            "description": "Calgary is a bustling city in Alberta, Canada known for its stunning mountain views, diverse culture, and thriving energy industry.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Calgary.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Canada"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Eighth Avenue Place",
+                    "value": "210m"
+                },
+                {
+                    "trait_type": "Wonderland Sculpture",
+                    "value": "12m"
+                },
+                {
+                    "trait_type": "Suncor Energy Centre",
+                    "value": "216m"
+                },
+                {
+                    "trait_type": "First Canadian Centre",
+                    "value": "167m"
+                },
+                {
+                    "trait_type": "Baitun Nur",
+                    "value": "30m"
+                },
+                {
+                    "trait_type": "Calgary Tower",
+                    "value": "191m"
+                },
+                {
+                    "trait_type": "The Bow",
+                    "value": "237m"
+                },
+                {
+                    "trait_type": "Scotiabank Saddledome",
+                    "value": "27m"
+                }
+            ]
+        },
+        "id": "455",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/455"
+    },
+    {
+        "metadata": {
+            "name": "Charlotte",
+            "description": "Charlotte is a rapidly growing city in North Carolina, known for its banking and finance industry, historical landmarks, and southern charm.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Charlotte.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "North Carolina"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "525 North Tryon",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "One Wells Fargo Center",
+                    "value": "179m"
+                },
+                {
+                    "trait_type": "Hearst Tower",
+                    "value": "201m"
+                },
+                {
+                    "trait_type": "Duke Energy Center",
+                    "value": "240m"
+                },
+                {
+                    "trait_type": "Omni Charlotte Hotel",
+                    "value": "68m"
+                },
+                {
+                    "trait_type": "Bank of America Corporate Center",
+                    "value": "265m"
+                }
+            ]
+        },
+        "id": "456",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/456"
+    },
+    {
+        "metadata": {
+            "name": "Chicago",
+            "description": "Chicago is a dynamic city in Illinois, USA, renowned for its rich history, iconic architecture, vibrant arts and culture scene, diverse food options, and lakefront location.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Chicago.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Illinois"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Crain Communications Building",
+                    "value": "177m"
+                },
+                {
+                    "trait_type": "Cloud Gate",
+                    "value": "10m"
+                },
+                {
+                    "trait_type": "Buckingham Fountain",
+                    "value": "46m"
+                },
+                {
+                    "trait_type": "Park Tower",
+                    "value": "251m"
+                },
+                {
+                    "trait_type": "Trump Tower",
+                    "value": "364m"
+                },
+                {
+                    "trait_type": "Hyatt Center",
+                    "value": "207m"
+                },
+                {
+                    "trait_type": "Ferris Wheel",
+                    "value": "50m"
+                },
+                {
+                    "trait_type": "Harbor Light House",
+                    "value": "25m"
+                },
+                {
+                    "trait_type": "John Hancock Center",
+                    "value": "344m"
+                },
+                {
+                    "trait_type": "Water Tower",
+                    "value": "47m"
+                }
+            ]
+        },
+        "id": "457",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/457"
+    },
+    {
+        "metadata": {
+            "name": "Cincinnati",
+            "description": "Cincinnati is a historic city in Ohio, USA, known for its scenic riverfront, thriving cultural institutions, and diverse food scene, as well as its contributions to American history, including the Underground Railroad and baseball's first professional team.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Cincinnati.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Ohio"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Cincinnati Museum Center at Union Terminal",
+                    "value": "48m"
+                },
+                {
+                    "trait_type": "Cincinnati Music Hall",
+                    "value": "24m"
+                },
+                {
+                    "trait_type": "Daniel Carter Beard Bridge",
+                    "value": "70m"
+                },
+                {
+                    "trait_type": "John A. Roebling Suspension Bridge",
+                    "value": "70m"
+                },
+                {
+                    "trait_type": "Scripps Center",
+                    "value": "143m"
+                },
+                {
+                    "trait_type": "Great American Tower at Queen City Square",
+                    "value": "203m"
+                },
+                {
+                    "trait_type": "Carew Tower",
+                    "value": "175m"
+                },
+                {
+                    "trait_type": "PNC Tower",
+                    "value": "151m"
+                }
+            ]
+        },
+        "id": "458",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/458"
+    },
+    {
+        "metadata": {
+            "name": "Cleveland",
+            "description": "Cleveland is a city in Ohio, USA, renowned for its rich cultural heritage, including its museums, performing arts institutions, and Rock and Roll Hall of Fame, as well as its location on the shores of Lake Erie and its thriving industrial history.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Cleveland.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Ohio"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Rock and Roll Hall of Fame",
+                    "value": "49m"
+                },
+                {
+                    "trait_type": "200 Public Square",
+                    "value": "201m"
+                },
+                {
+                    "trait_type": "Terminal Tower",
+                    "value": "216m"
+                },
+                {
+                    "trait_type": "Key Tower",
+                    "value": "289m"
+                },
+                {
+                    "trait_type": "One Cleveland Center",
+                    "value": "137m"
+                },
+                {
+                    "trait_type": "Carl B. Stokes Federal Court House Building",
+                    "value": "131m"
+                },
+                {
+                    "trait_type": "Museum of Contemporary Art",
+                    "value": "18m"
+                }
+            ]
+        },
+        "id": "459",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/459"
+    },
+    {
+        "metadata": {
+            "name": "Dallas",
+            "description": "Dallas is a cosmopolitan city in Texas, USA, known for its towering skyscrapers, rich history, diverse culture, and being a major center for commerce, technology, and entertainment.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Dallas.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Texas"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 5
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Hyatt Regency",
+                    "value": "105m"
+                },
+                {
+                    "trait_type": "Reunion Tower",
+                    "value": "171m"
+                },
+                {
+                    "trait_type": "Chase Tower",
+                    "value": "225m"
+                },
+                {
+                    "trait_type": "Margaret Hunt Hill Bridge",
+                    "value": "121m"
+                },
+                {
+                    "trait_type": "Fountain Place",
+                    "value": "220m"
+                }
+            ]
+        },
+        "id": "460",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/460"
+    },
+    {
+        "metadata": {
+            "name": "Denver",
+            "description": "Denver is a scenic city in Colorado, USA, known for its majestic mountain views, thriving outdoor recreation scene, rich cultural institutions, and being a hub for the arts, science, and technology industries.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Denver.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Colorado"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Colorado State Capitol",
+                    "value": "55m"
+                },
+                {
+                    "trait_type": "Wells Fargo Center",
+                    "value": "213m"
+                },
+                {
+                    "trait_type": "1801 California Street (CenturyLink Tower)",
+                    "value": "216m"
+                },
+                {
+                    "trait_type": "Republic Plaza",
+                    "value": "218m"
+                },
+                {
+                    "trait_type": "Denver Art Museum",
+                    "value": "30m"
+                },
+                {
+                    "trait_type": "Articulated Wall Sculpture",
+                    "value": "26m"
+                },
+                {
+                    "trait_type": "The Daniels and Fisher Tower",
+                    "value": "99m"
+                }
+            ]
+        },
+        "id": "461",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/461"
+    },
+    {
+        "metadata": {
+            "name": "Detroit",
+            "description": "Detroit is a city in Michigan, USA, with a rich industrial history, including being the birthplace of the American automobile industry, and a thriving arts and culture scene, including renowned museums and music venues, as well as a resilient spirit embodied in its comeback from economic challenges.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Detroit.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Michigan"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Horace E. Dodge and Son Memorial Fountain",
+                    "value": "9m"
+                },
+                {
+                    "trait_type": "Transcending",
+                    "value": "19m"
+                },
+                {
+                    "trait_type": "Penobscot Building",
+                    "value": "159m"
+                },
+                {
+                    "trait_type": "One Detroit Center",
+                    "value": "176m"
+                },
+                {
+                    "trait_type": "One Woodward Avenue",
+                    "value": "131m"
+                },
+                {
+                    "trait_type": "Michigan Central Station",
+                    "value": "70m"
+                },
+                {
+                    "trait_type": "Detroit Marriott at the Renaissance Center",
+                    "value": "222m"
+                },
+                {
+                    "trait_type": "David Stott Building",
+                    "value": "133m"
+                },
+                {
+                    "trait_type": "Fisher Building",
+                    "value": "148m"
+                }
+            ]
+        },
+        "id": "462",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/462"
+    },
+    {
+        "metadata": {
+            "name": "Dubai",
+            "description": "Dubai is a modern and fast-growing city in the United Arab Emirates, renowned for its towering skyscrapers, luxurious shopping, and vibrant cultural scene, as well as its innovative spirit embodied in iconic landmarks such as the Burj Khalifa and the Palm Jumeirah.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Dubai.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "UAE"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 12
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Jumeirah Beach Hotel",
+                    "value": "104m"
+                },
+                {
+                    "trait_type": "DCCI Tower",
+                    "value": "133m"
+                },
+                {
+                    "trait_type": "Burj Al Arab",
+                    "value": "321m"
+                },
+                {
+                    "trait_type": "Almas Tower",
+                    "value": "360m"
+                },
+                {
+                    "trait_type": "Dubai Creek Golf and Yacht Club",
+                    "value": "31m"
+                },
+                {
+                    "trait_type": "Burj Khalifa",
+                    "value": "830m"
+                },
+                {
+                    "trait_type": "Cayan Tower",
+                    "value": "306m"
+                },
+                {
+                    "trait_type": "National Bank of Dubai",
+                    "value": "124m"
+                },
+                {
+                    "trait_type": "The Emirates Towers",
+                    "value": "355m"
+                },
+                {
+                    "trait_type": "The Bay Gate",
+                    "value": "240m"
+                },
+                {
+                    "trait_type": "Ocean Heights",
+                    "value": "310m"
+                },
+                {
+                    "trait_type": "Etisalat Tower 2",
+                    "value": "185m"
+                }
+            ]
+        },
+        "id": "463",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/463"
+    },
+    {
+        "metadata": {
+            "name": "Edmonton",
+            "description": "Edmonton is the capital city of Alberta, Canada, known for its stunning natural beauty, including the North Saskatchewan River Valley and Elk Island National Park, as well as its rich cultural scene and thriving energy industry.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Edmonton.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Canada"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Enbridge Tower",
+                    "value": "99m"
+                },
+                {
+                    "trait_type": "Telus World of Science",
+                    "value": "36m"
+                },
+                {
+                    "trait_type": "Art Gallery of Alberta",
+                    "value": "31m"
+                },
+                {
+                    "trait_type": "Canada Place",
+                    "value": "74m"
+                },
+                {
+                    "trait_type": "Edmonton City Hall",
+                    "value": "43"
+                },
+                {
+                    "trait_type": "Manulife Place",
+                    "value": "146m"
+                },
+                {
+                    "trait_type": "Alberta Legislature Building",
+                    "value": "57m"
+                }
+            ]
+        },
+        "id": "464",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/464"
+    },
+    {
+        "metadata": {
+            "name": "Auckland",
+            "description": "Auckland is a large metropolitan city in the North Island of New Zealand with a population of over 1.6 million.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Auckland.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "New Zealand"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Auckland Ferry Terminal",
+                    "value": "46m"
+                },
+                {
+                    "trait_type": "One Tree Hill Obelisk",
+                    "value": "30m"
+                },
+                {
+                    "trait_type": "Auckland Harbour Bridge",
+                    "value": "74m"
+                },
+                {
+                    "trait_type": "Lumley Centre",
+                    "value": "125m"
+                },
+                {
+                    "trait_type": "Sky Tower",
+                    "value": "328m"
+                },
+                {
+                    "trait_type": "Vero Centre",
+                    "value": "170m"
+                },
+                {
+                    "trait_type": "Auckland Civic Theatre",
+                    "value": "71m"
+                },
+                {
+                    "trait_type": "Metropolis",
+                    "value": "155m"
+                },
+                {
+                    "trait_type": "University of Auckland Clocktower",
+                    "value": "53m"
+                }
+            ]
+        },
+        "id": "465",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/465"
+    },
+    {
+        "metadata": {
+            "name": "Frankfurt",
+            "description": "Frankfurt is a major financial and cultural center in Germany, known for its towering skyscrapers, rich history, thriving arts scene, and being a hub for commerce, with a bustling airport and the European Central Bank headquartered in the city.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Frankfurt.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Germany"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Commerzbank Tower",
+                    "value": "300m"
+                },
+                {
+                    "trait_type": "Trianon",
+                    "value": "186m"
+                },
+                {
+                    "trait_type": "Westendstrasse 1",
+                    "value": "208m"
+                },
+                {
+                    "trait_type": "Hammering Man Sculpture",
+                    "value": "21m"
+                },
+                {
+                    "trait_type": "MesseTurm",
+                    "value": "256m"
+                },
+                {
+                    "trait_type": "Messe Torhaus",
+                    "value": "117m"
+                },
+                {
+                    "trait_type": "Main Tower",
+                    "value": "240m"
+                },
+                {
+                    "trait_type": "Alte Oper",
+                    "value": "34m"
+                },
+                {
+                    "trait_type": "Westhafen Tower",
+                    "value": "110m"
+                }
+            ]
+        },
+        "id": "466",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/466"
+    },
+    {
+        "metadata": {
+            "name": "Hong Kong",
+            "description": "Hong Kong is a vibrant global financial center known for its unique blend of Western and Chinese cultures, towering skyscrapers, and bustling shopping scene.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Hong%20Kong.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "China"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Peak Tower",
+                    "value": "396m"
+                },
+                {
+                    "trait_type": "Standard Chartered Bank Building",
+                    "value": "185m"
+                },
+                {
+                    "trait_type": "International Finance Centre",
+                    "value": "417m"
+                },
+                {
+                    "trait_type": "Tian Tan Buddha",
+                    "value": "34m"
+                },
+                {
+                    "trait_type": "Bank of China Tower",
+                    "value": "330m"
+                },
+                {
+                    "trait_type": "Clock Tower",
+                    "value": "44m"
+                },
+                {
+                    "trait_type": "Convention and Exhibition Centre",
+                    "value": "55m"
+                },
+                {
+                    "trait_type": "Junk Boat",
+                    "value": "14m"
+                },
+                {
+                    "trait_type": "Tsing Ma Bridge",
+                    "value": "206m"
+                },
+                {
+                    "trait_type": "Hopewell Centre",
+                    "value": "216m"
+                }
+            ]
+        },
+        "id": "467",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/467"
+    },
+    {
+        "metadata": {
+            "name": "Houston",
+            "description": "Houston is a diverse and dynamic city in Texas, USA, known for its thriving energy industry, international cuisine, and numerous cultural attractions, including the Space Center Houston and the Museum District.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Houston.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Texas"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Heritage Plaza",
+                    "value": "230m"
+                },
+                {
+                    "trait_type": "Williams Tower",
+                    "value": "274m"
+                },
+                {
+                    "trait_type": "Houston City Hall",
+                    "value": "48m"
+                },
+                {
+                    "trait_type": "Bank of America Center",
+                    "value": "237m"
+                },
+                {
+                    "trait_type": "1600 Smith Street",
+                    "value": "223m"
+                },
+                {
+                    "trait_type": "CenterPoint Energy Plaza",
+                    "value": "226m"
+                }
+            ]
+        },
+        "id": "468",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/468"
+    },
+    {
+        "metadata": {
+            "name": "Istanbul",
+            "description": "Istanbul is a historic and culturally rich city, straddling Europe and Asia, known for its stunning architecture, including the Hagia Sophia and the Blue Mosque, vibrant food scene, and rich history, dating back to the Roman Empire.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Istanbul.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Turkey"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Istanbul Sapphire",
+                    "value": "261m"
+                },
+                {
+                    "trait_type": "Hagia Sophia",
+                    "value": "55m"
+                },
+                {
+                    "trait_type": "Isbank Tower",
+                    "value": "181m"
+                },
+                {
+                    "trait_type": "Sultan Ahmed Mosque",
+                    "value": "64m"
+                },
+                {
+                    "trait_type": "Sisli Plaza",
+                    "value": "170m"
+                },
+                {
+                    "trait_type": "Maiden's Tower",
+                    "value": "23m"
+                },
+                {
+                    "trait_type": "Galata Tower",
+                    "value": "63m"
+                }
+            ]
+        },
+        "id": "469",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/469"
+    },
+    {
+        "metadata": {
+            "name": "Jakarta",
+            "description": "Jakarta is the capital and largest city of Indonesia, known for its rich history, bustling street life, and unique blend of traditional and modern cultures, as well as its growing economic significance in Southeast Asia.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Jakarta.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Indonesia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Istiqlal Mosque",
+                    "value": "97m"
+                },
+                {
+                    "trait_type": "Bakrie Tower",
+                    "value": "214m"
+                },
+                {
+                    "trait_type": "Cemindo Tower",
+                    "value": "289m"
+                },
+                {
+                    "trait_type": "National Monument",
+                    "value": "132m"
+                },
+                {
+                    "trait_type": "Sinarmas MSIG Tower",
+                    "value": "245m"
+                },
+                {
+                    "trait_type": "Jakarta Cathedral",
+                    "value": "60m"
+                },
+                {
+                    "trait_type": "Wisma 46",
+                    "value": "262m"
+                }
+            ]
+        },
+        "id": "470",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/470"
+    },
+    {
+        "metadata": {
+            "name": "Kuala Lumpur",
+            "description": "Kuala Lumpur is the capital city of Malaysia, known for its iconic skyscrapers, vibrant street life, rich cultural heritage, and unique blend of traditional and modern architecture, including the famous Petronas Towers.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/KualaLumpur.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Malaysia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Petronas Twin Towers",
+                    "value": "452m"
+                },
+                {
+                    "trait_type": "Menara Maxis",
+                    "value": "212m"
+                },
+                {
+                    "trait_type": "Menara Telekom",
+                    "value": "310m"
+                },
+                {
+                    "trait_type": "Tabung Haji",
+                    "value": "152m"
+                },
+                {
+                    "trait_type": "Maybank Tower",
+                    "value": "244m"
+                },
+                {
+                    "trait_type": "Kuala Lumpur Tower",
+                    "value": "412m"
+                }
+            ]
+        },
+        "id": "471",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/471"
+    },
+    {
+        "metadata": {
+            "name": "Liverpool",
+            "description": "Liverpool is a city in England, known for its rich cultural heritage, including being the birthplace of The Beatles and a hub of the maritime trade, as well as its contributions to the arts, including the renowned Liverpool Philharmonic Orchestra and numerous museums and galleries.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Liverpool.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "England"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Royal Liver Building",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "Metropolitan Cathedral of Liverpool",
+                    "value": "85m"
+                },
+                {
+                    "trait_type": "Liverpool Cathedral",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "St. John's Beacon",
+                    "value": "138m"
+                },
+                {
+                    "trait_type": "Port of Liverpool Building",
+                    "value": "67m"
+                },
+                {
+                    "trait_type": "West Tower",
+                    "value": "140m"
+                }
+            ]
+        },
+        "id": "472",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/472"
+    },
+    {
+        "metadata": {
+            "name": "London",
+            "description": "London is a cosmopolitan city in England, known for its rich history, iconic landmarks, diverse cultural scene, and being a global hub for finance, arts, and commerce.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/London.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "England"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Routemaster",
+                    "value": "4m"
+                },
+                {
+                    "trait_type": "Nelson's Column",
+                    "value": "52m"
+                },
+                {
+                    "trait_type": "Tower Bridge",
+                    "value": "63m"
+                },
+                {
+                    "trait_type": "The Gherkin",
+                    "value": "180m"
+                },
+                {
+                    "trait_type": "Big Ben",
+                    "value": "96m"
+                },
+                {
+                    "trait_type": "London Eye",
+                    "value": "135m"
+                },
+                {
+                    "trait_type": "BT Tower",
+                    "value": "190m"
+                },
+                {
+                    "trait_type": "Battersea Power Station",
+                    "value": "113m"
+                },
+                {
+                    "trait_type": "The Shard",
+                    "value": "310m"
+                }
+            ]
+        },
+        "id": "473",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/473"
+    },
+    {
+        "metadata": {
+            "name": "Los Angeles",
+            "description": " Los Angeles is a city in California, USA, known for its entertainment industry, including Hollywood and its film studios, diverse cultures, stunning beaches, and iconic landmarks such as the Sunset Strip and the Hollywood Sign.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/LosAngeles.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "California"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Walt Disney Concert Hall",
+                    "value": "18m"
+                },
+                {
+                    "trait_type": "Gas Company Tower",
+                    "value": "228m"
+                },
+                {
+                    "trait_type": "City Hall",
+                    "value": "138m"
+                },
+                {
+                    "trait_type": "US Bank Tower",
+                    "value": "310m"
+                },
+                {
+                    "trait_type": "Capitol Records Building",
+                    "value": "56m"
+                },
+                {
+                    "trait_type": "Theme Building (LAX)",
+                    "value": "41m"
+                }
+            ]
+        },
+        "id": "474",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/474"
+    },
+    {
+        "metadata": {
+            "name": "Madrid",
+            "description": "Madrid is the capital and largest city of Spain, known for its rich history, stunning architecture, vibrant cultural scene, and being a hub of politics, art, and commerce, with famous landmarks such as the Royal Palace of Madrid and the Prado Museum.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Madrid.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Spain"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 5
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Torres Kio (Gate of Europe)",
+                    "value": "115m"
+                },
+                {
+                    "trait_type": "Torre Espacio",
+                    "value": "230m"
+                },
+                {
+                    "trait_type": "Torrespaña",
+                    "value": "231m"
+                },
+                {
+                    "trait_type": "Edificio España",
+                    "value": "117m"
+                },
+                {
+                    "trait_type": "Torre Caja",
+                    "value": "250m"
+                }
+            ]
+        },
+        "id": "475",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/475"
+    },
+    {
+        "metadata": {
+            "name": "Austin",
+            "description": "Located in Central Texas on the eastern edge of the American Southwest, Austin is the capital of the state of Texas, the Lone Star State. Its population is slightly less than 1 million.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Austin.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Texas"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Texas State Capitol",
+                    "value": "94m"
+                },
+                {
+                    "trait_type": "Pennybacker Bridge",
+                    "value": "59m"
+                },
+                {
+                    "trait_type": "One Congress Plaza",
+                    "value": "119m"
+                },
+                {
+                    "trait_type": "Frost Bank Tower",
+                    "value": "157m"
+                },
+                {
+                    "trait_type": "University of Texas Tower",
+                    "value": "94m"
+                },
+                {
+                    "trait_type": "Bronze Star at Bullock Museum",
+                    "value": "11m"
+                }
+            ]
+        },
+        "id": "476",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/476"
+    },
+    {
+        "metadata": {
+            "name": "Melbourne",
+            "description": "Melbourne is a vibrant and culturally rich city in Australia, known for its diverse arts scene, beautiful gardens, and sporting culture, including the famous Melbourne Cricket Ground, as well as its reputation as a foodie destination.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Melbourne.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Australia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "GPO Building",
+                    "value": "85m"
+                },
+                {
+                    "trait_type": "120 Collins Street",
+                    "value": "265m"
+                },
+                {
+                    "trait_type": "Eureka Tower",
+                    "value": "297m"
+                },
+                {
+                    "trait_type": "St Paul's Cathedral",
+                    "value": "96m"
+                },
+                {
+                    "trait_type": "Shrine of Remembrance",
+                    "value": "32m"
+                },
+                {
+                    "trait_type": "Flinders St Railway Station",
+                    "value": "48m"
+                },
+                {
+                    "trait_type": "Bourke Place",
+                    "value": "255m"
+                },
+                {
+                    "trait_type": "M-Tram",
+                    "value": "3m"
+                },
+                {
+                    "trait_type": "The Arts Centre",
+                    "value": "192m"
+                },
+                {
+                    "trait_type": "101 Collins Street",
+                    "value": "260m"
+                }
+            ]
+        },
+        "id": "477",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/477"
+    },
+    {
+        "metadata": {
+            "name": "Memphis",
+            "description": "Memphis is a city in Tennessee, USA, known for its rich musical heritage, including being the birthplace of blues, rock 'n' roll, and soul music, as well as its significant role in the Civil Rights Movement and its numerous cultural attractions, such as Graceland and the National Civil Rights Museum.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Memphis.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Tennessee"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Sterick Building",
+                    "value": "111m"
+                },
+                {
+                    "trait_type": "Hernando de Soto Bridge",
+                    "value": "92m"
+                },
+                {
+                    "trait_type": "100 North Main",
+                    "value": "131m"
+                },
+                {
+                    "trait_type": "Raymond James Tower",
+                    "value": "123m"
+                },
+                {
+                    "trait_type": "Memphis Pyramid",
+                    "value": "98m"
+                },
+                {
+                    "trait_type": "Lincoln American Tower",
+                    "value": "99m"
+                }
+            ]
+        },
+        "id": "478",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/478"
+    },
+    {
+        "metadata": {
+            "name": "Mexico City",
+            "description": "Mexico City is the capital and largest city of Mexico, known for its rich history, including Aztec and colonial influences, vibrant cultural scene, and numerous museums, including the National Museum of Anthropology, as well as its bustling street life and growing international significance.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/MexicoCity.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Mexico"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 12
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Torre Mayor",
+                    "value": "234m"
+                },
+                {
+                    "trait_type": "Torre Insignia",
+                    "value": "127m"
+                },
+                {
+                    "trait_type": "Centro Bursátil",
+                    "value": "112m"
+                },
+                {
+                    "trait_type": "El Ángel de la Independencia",
+                    "value": "45m"
+                },
+                {
+                    "trait_type": "Arcos Bosques Torre II",
+                    "value": "161m"
+                },
+                {
+                    "trait_type": "Museo Soumaya",
+                    "value": "46m"
+                },
+                {
+                    "trait_type": "Torre Latinoamericana",
+                    "value": "262m"
+                },
+                {
+                    "trait_type": "Basílica de Nuestra Señora de Guadalupe",
+                    "value": "42m"
+                },
+                {
+                    "trait_type": "Arcos Bosques Torre I",
+                    "value": "161m"
+                },
+                {
+                    "trait_type": "Torre AXA México",
+                    "value": "130m"
+                },
+                {
+                    "trait_type": "Palacio de Bellas Artes",
+                    "value": "44m"
+                },
+                {
+                    "trait_type": "Cabeza de Caballo",
+                    "value": "28m"
+                }
+            ]
+        },
+        "id": "479",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/479"
+    },
+    {
+        "metadata": {
+            "name": "Miami",
+            "description": "Miami is a coastal city in Florida, USA, known for its diverse cultures, beautiful beaches, and vibrant nightlife, as well as its thriving arts and entertainment scene, including the famous Art Deco Historic District and the Perez Art Museum Miami.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Miami.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Florida"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Miami Tower",
+                    "value": "190m"
+                },
+                {
+                    "trait_type": "American Airlines Arena",
+                    "value": "46m"
+                },
+                {
+                    "trait_type": "Southeast Financial Center",
+                    "value": "223m"
+                },
+                {
+                    "trait_type": "Planetarium at Miami Science Museum",
+                    "value": "7m"
+                },
+                {
+                    "trait_type": "50 Biscayne",
+                    "value": "169m"
+                },
+                {
+                    "trait_type": "Marinablue",
+                    "value": "187m"
+                },
+                {
+                    "trait_type": "Freedom Tower",
+                    "value": "78m"
+                }
+            ]
+        },
+        "id": "480",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/480"
+    },
+    {
+        "metadata": {
+            "name": "Milan",
+            "description": "Milan is a city in Italy, known for its rich cultural heritage, fashion industry, stunning architecture, and being a hub for finance, commerce, and design, with famous landmarks such as the Gothic Cathedral and the Galleria Vittorio Emanuele II shopping center.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Milan.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Italy"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Torre del Filarete",
+                    "value": "70m"
+                },
+                {
+                    "trait_type": "Milan Cathedral",
+                    "value": "107m"
+                },
+                {
+                    "trait_type": "Pirelli Tower",
+                    "value": "127m"
+                },
+                {
+                    "trait_type": "Teatro alla Scala",
+                    "value": "38m"
+                },
+                {
+                    "trait_type": "Unicredit Tower",
+                    "value": "216m"
+                },
+                {
+                    "trait_type": "Torre Velasca",
+                    "value": "106m"
+                },
+                {
+                    "trait_type": "Porta Sempione",
+                    "value": "25m"
+                }
+            ]
+        },
+        "id": "481",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/481"
+    },
+    {
+        "metadata": {
+            "name": "Milwaukee",
+            "description": "Milwaukee is a city in Wisconsin, USA, known for its rich history, including being a hub of the brewing industry and being a major port on Lake Michigan, as well as its diverse arts scene, stunning architecture, and numerous cultural attractions, such as the Milwaukee Art Museum and the Harley-Davidson Museum.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Milwaukee.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Wisconsin"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Mitchell Park Horticultural Conservatory",
+                    "value": "26m"
+                },
+                {
+                    "trait_type": "Milwaukee Center",
+                    "value": "130m"
+                },
+                {
+                    "trait_type": "U.S. Bank Center",
+                    "value": "186m"
+                },
+                {
+                    "trait_type": "Milwaukee Art Museum",
+                    "value": "44m"
+                },
+                {
+                    "trait_type": "100 East Wisconsin",
+                    "value": "167m"
+                },
+                {
+                    "trait_type": "Milwaukee City Hall",
+                    "value": "108m"
+                }
+            ]
+        },
+        "id": "482",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/482"
+    },
+    {
+        "metadata": {
+            "name": "Minneapolis",
+            "description": "Minneapolis is a city in Minnesota, USA, known for its natural beauty, including the chain of lakes and parks, thriving arts and music scenes, as well as its contributions to industry, including being a major hub of the milling industry, and its numerous cultural attractions, such as the Walker Art Center and the Mill City Museum.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Minneapolis.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Minnesota"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Wells Fargo Center",
+                    "value": "236m"
+                },
+                {
+                    "trait_type": "Rand Tower",
+                    "value": "95m"
+                },
+                {
+                    "trait_type": "Capella Tower",
+                    "value": "237m"
+                },
+                {
+                    "trait_type": "Campbell Mithun Tower",
+                    "value": "177m"
+                },
+                {
+                    "trait_type": "Hennepin Avenue Bridge",
+                    "value": "43m"
+                },
+                {
+                    "trait_type": "Foshay Tower",
+                    "value": "136m"
+                }
+            ]
+        },
+        "id": "483",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/483"
+    },
+    {
+        "metadata": {
+            "name": "Montreal",
+            "description": "Montreal is a culturally rich city in Quebec, Canada, known for its diverse history, including French colonial influences, thriving arts scene, and stunning architecture, such as the Notre-Dame Basilica and the Old Port, as well as its reputation as a hub of commerce and culture in Canada.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Montreal.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Canada"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Le 1501 McGill College",
+                    "value": "158m"
+                },
+                {
+                    "trait_type": "1000 de La Gauchetière",
+                    "value": "205m"
+                },
+                {
+                    "trait_type": "Tour de la Banque Royale",
+                    "value": "121m"
+                },
+                {
+                    "trait_type": "Sun Life Building",
+                    "value": "122m"
+                },
+                {
+                    "trait_type": "KPMG",
+                    "value": "146m"
+                },
+                {
+                    "trait_type": "Biosphère",
+                    "value": "62m"
+                }
+            ]
+        },
+        "id": "484",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/484"
+    },
+    {
+        "metadata": {
+            "name": "Moscow",
+            "description": "Moscow is the capital and largest city of Russia, known for its rich history, stunning architecture, including the iconic Red Square and St. Basil's Cathedral, and being a hub of politics and culture, with numerous museums, galleries, and theaters, as well as its unique blend of Soviet-era and modern structures.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Moscow.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Russia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Evolution Tower",
+                    "value": "246m"
+                },
+                {
+                    "trait_type": "Cathedral of Christ the Saviour",
+                    "value": "105m"
+                },
+                {
+                    "trait_type": "Troitskaya Tower",
+                    "value": "71m"
+                },
+                {
+                    "trait_type": "Bolshoi Theatre",
+                    "value": "21m"
+                },
+                {
+                    "trait_type": "Mercury City Tower",
+                    "value": "339m"
+                },
+                {
+                    "trait_type": "Monument to the Conquerors of Space",
+                    "value": "110m"
+                },
+                {
+                    "trait_type": "Triumph Palace",
+                    "value": "264m"
+                },
+                {
+                    "trait_type": "Saint Basil's Cathedral",
+                    "value": "81m"
+                }
+            ]
+        },
+        "id": "485",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/485"
+    },
+    {
+        "metadata": {
+            "name": "Munich",
+            "description": "Munich is a city in Germany, known for its rich cultural heritage, including being a hub of the arts and sciences, stunning architecture, such as the Nymphenburg Palace and the Marienplatz, and being a center of innovation and commerce, as well as its thriving food and beer scenes, particularly during its famous Oktoberfest celebration.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Munich.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Germany"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Frauenkirche",
+                    "value": "99m"
+                },
+                {
+                    "trait_type": "New Town Hall",
+                    "value": "80m"
+                },
+                {
+                    "trait_type": "Highlight Towers",
+                    "value": "126m"
+                },
+                {
+                    "trait_type": "BMW-Vierzylinder",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "Siegestor",
+                    "value": "21m"
+                },
+                {
+                    "trait_type": "Chinese Tower",
+                    "value": "25m"
+                },
+                {
+                    "trait_type": "Hochhaus Uptown",
+                    "value": "146m"
+                }
+            ]
+        },
+        "id": "486",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/486"
+    },
+    {
+        "metadata": {
+            "name": "Bangkok",
+            "description": "Bangkok is a bustling city of contrasts, with a population of over 8 million and a rich mix of historic temples, modern skyscrapers, and vibrant street life.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Bangkok.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Thailand"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Baiyoke Tower II",
+                    "value": "328m"
+                },
+                {
+                    "trait_type": "The River South Tower",
+                    "value": "258m"
+                },
+                {
+                    "trait_type": "Elephant Building",
+                    "value": "102m"
+                },
+                {
+                    "trait_type": "Wat Arun",
+                    "value": "76m"
+                },
+                {
+                    "trait_type": "MahaNakhon",
+                    "value": "314m"
+                },
+                {
+                    "trait_type": "The Met",
+                    "value": "230m"
+                },
+                {
+                    "trait_type": "Robot Building",
+                    "value": "83m"
+                }
+            ]
+        },
+        "id": "487",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/487"
+    },
+    {
+        "metadata": {
+            "name": "Nashville",
+            "description": "Nashville is a city in Tennessee, USA, known for its rich musical heritage, including being a hub of country music and a birthplace of numerous other genres, stunning architecture, such as the Ryman Auditorium, and being a center of commerce, tourism, and culture, with numerous museums, galleries, and theaters.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Nashville.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Tennessee"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "William R. Snodgrass Tennessee Tower",
+                    "value": "137m"
+                },
+                {
+                    "trait_type": "The Pinnacle at Symphony Place",
+                    "value": "127m"
+                },
+                {
+                    "trait_type": "AT&T Buildinge",
+                    "value": "188m"
+                },
+                {
+                    "trait_type": "Fifth Third Center",
+                    "value": "150m"
+                },
+                {
+                    "trait_type": "Tennessee State Capitol",
+                    "value": "60m"
+                },
+                {
+                    "trait_type": "One Nashville Place",
+                    "value": "109m"
+                }
+            ]
+        },
+        "id": "488",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/488"
+    },
+    {
+        "metadata": {
+            "name": "New York",
+            "description": "New York City, also known as 'The City That Never Sleeps,' is a bustling metropolis and the largest city in the United States, known for its iconic skyline, diverse cultures, vibrant arts scene, world-renowned cuisine, and being a hub of finance, media, and commerce, with numerous iconic landmarks such as the Statue of Liberty and the Empire State Building.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/NYC.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "New York"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Chrysler Building",
+                    "value": "319m"
+                },
+                {
+                    "trait_type": "NY Life Building",
+                    "value": "188m"
+                },
+                {
+                    "trait_type": "Condé Nast Building",
+                    "value": "341m"
+                },
+                {
+                    "trait_type": "Empire State Building",
+                    "value": "443m"
+                },
+                {
+                    "trait_type": "Statue of Liberty",
+                    "value": "92m"
+                },
+                {
+                    "trait_type": "Washington Square Arch",
+                    "value": "23m"
+                },
+                {
+                    "trait_type": "Guggenheim Museum",
+                    "value": "34m"
+                },
+                {
+                    "trait_type": "Bank of America Tower",
+                    "value": "366m"
+                },
+                {
+                    "trait_type": "One WTC",
+                    "value": "541m"
+                },
+                {
+                    "trait_type": "Three WTC",
+                    "value": "329m"
+                }
+            ]
+        },
+        "id": "489",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/489"
+    },
+    {
+        "metadata": {
+            "name": "Paris",
+            "description": "Paris is the capital of France, known as the 'City of Light,' and a hub of culture, art, fashion, and history, with numerous iconic landmarks, such as the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral, as well as its stunning architecture, rich history, and reputation as one of the most romantic cities in the world.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Paris.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "France"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Louvre Pyramid",
+                    "value": "21m"
+                },
+                {
+                    "trait_type": "Tour Montparnasse",
+                    "value": "209m"
+                },
+                {
+                    "trait_type": "Arc de Triomphe",
+                    "value": "50m"
+                },
+                {
+                    "trait_type": "Grande Arche",
+                    "value": "110m"
+                },
+                {
+                    "trait_type": "Eiffel Tower",
+                    "value": "300"
+                },
+                {
+                    "trait_type": "July Column",
+                    "value": "47m"
+                },
+                {
+                    "trait_type": "Notre Dame de Paris",
+                    "value": "96m"
+                },
+                {
+                    "trait_type": "Basilica of the Sacré Cœur",
+                    "value": "83m"
+                }
+            ]
+        },
+        "id": "490",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/490"
+    },
+    {
+        "metadata": {
+            "name": "Philadelphia",
+            "description": "Philadelphia is a city in Pennsylvania, USA, known as the 'City of Brotherly Love' and the birthplace of American democracy, with numerous historic landmarks, such as Independence Hall and the Liberty Bell, vibrant arts scene, thriving food culture, and being a hub of commerce and industry, with numerous universities and hospitals.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Philadelphia.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Pennsylvania"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Clothespin",
+                    "value": "14m"
+                },
+                {
+                    "trait_type": "Blue Cross Tower",
+                    "value": "190m"
+                },
+                {
+                    "trait_type": "Commerce Square",
+                    "value": "172m"
+                },
+                {
+                    "trait_type": "Circa Center",
+                    "value": "133m"
+                },
+                {
+                    "trait_type": "Philadelphia City Hall",
+                    "value": "167m"
+                },
+                {
+                    "trait_type": "One Liberty Place",
+                    "value": "288m"
+                },
+                {
+                    "trait_type": "Mellon Bank Center",
+                    "value": "241m"
+                },
+                {
+                    "trait_type": "Kimmel Center",
+                    "value": "18m"
+                },
+                {
+                    "trait_type": "Bell Atlantic",
+                    "value": "225m"
+                }
+            ]
+        },
+        "id": "491",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/491"
+    },
+    {
+        "metadata": {
+            "name": "Pittsburgh",
+            "description": "Pittsburgh is a city in Pennsylvania, USA, known for its rich industrial history, including being a hub of steel production and innovation, stunning natural beauty, such as the confluence of the Allegheny and Monongahela rivers to form the Ohio River, and vibrant arts scene, with numerous museums, galleries, and theaters, as well as its thriving food and sports culture.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Pittsburgh.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Pennsylvania"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Fort Pitt Bridge",
+                    "value": "68m"
+                },
+                {
+                    "trait_type": "Tenth St Bridge",
+                    "value": "43m"
+                },
+                {
+                    "trait_type": "PPG Place",
+                    "value": "194m"
+                },
+                {
+                    "trait_type": "Highmark Place",
+                    "value": "225m"
+                },
+                {
+                    "trait_type": "Gulf Tower",
+                    "value": "177m"
+                },
+                {
+                    "trait_type": "Cathedral of Learning",
+                    "value": "163m"
+                },
+                {
+                    "trait_type": "Allegheny County Courthouse",
+                    "value": "76m"
+                },
+                {
+                    "trait_type": "Point State Park Fountain",
+                    "value": "46m"
+                }
+            ]
+        },
+        "id": "492",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/492"
+    },
+    {
+        "metadata": {
+            "name": "Portland",
+            "description": "Portland is a city in Oregon, USA, known for its progressive culture, vibrant arts scene, thriving food culture, including being a hub of farm-to-table cuisine, and stunning natural beauty, including numerous parks and forests, as well as its reputation for being a hub of sustainability and innovation, with numerous tech companies and alternative transportation options.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Portland.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Oregon"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Union Station",
+                    "value": "46m"
+                },
+                {
+                    "trait_type": "1000 Broadway",
+                    "value": "88m"
+                },
+                {
+                    "trait_type": "Portland Building",
+                    "value": "70m"
+                },
+                {
+                    "trait_type": "St. Johns Bridge",
+                    "value": "122m"
+                },
+                {
+                    "trait_type": "Fremont Bridge",
+                    "value": "116m"
+                },
+                {
+                    "trait_type": "Portland Observatory",
+                    "value": "26m"
+                },
+                {
+                    "trait_type": "U.S. Bancorp Tower",
+                    "value": "163m"
+                },
+                {
+                    "trait_type": "KOIN Center",
+                    "value": "159m"
+                }
+            ]
+        },
+        "id": "493",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/493"
+    },
+    {
+        "metadata": {
+            "name": "Rio de Janeiro",
+            "description": "Rio de Janeiro is a city in Brazil, known for its stunning natural beauty, including the iconic Christ the Redeemer statue and Guanabara Bay, vibrant culture, rich history, and reputation as a hub of music, dance, and Carnival celebrations, as well as its stunning beaches, such as Copacabana and Ipanema, and bustling nightlife.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Rio.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Brazil"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 5
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Santa Teresa Tram on the Carioca Aqueduct",
+                    "value": "18m"
+                },
+                {
+                    "trait_type": "Museum of Contemporary Art Rio",
+                    "value": "16m"
+                },
+                {
+                    "trait_type": "The Metropolitan Cathedral of Saint Sebastian",
+                    "value": "75m"
+                },
+                {
+                    "trait_type": "Headquarters of Petrobras",
+                    "value": "108m"
+                },
+                {
+                    "trait_type": "Christ the Redeemer",
+                    "value": "40m"
+                }
+            ]
+        },
+        "id": "494",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/494"
+    },
+    {
+        "metadata": {
+            "name": "Rome",
+            "description": "Rome is the capital of Italy, known as the 'Eternal City' and a hub of history, art, and culture, with numerous iconic landmarks, such as the Colosseum, the Vatican, and the Trevi Fountain, rich history dating back to the Roman Empire, as well as its reputation as a culinary destination, with its delicious cuisine and numerous restaurants and cafes.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Rome.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Italy"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Colosseum",
+                    "value": "48m"
+                },
+                {
+                    "trait_type": "St. Peter's Basilica",
+                    "value": "135m"
+                },
+                {
+                    "trait_type": "Trevi Fountain",
+                    "value": "30m"
+                },
+                {
+                    "trait_type": "Arch of Constantine",
+                    "value": "21m"
+                },
+                {
+                    "trait_type": "Temple of Castor and Pollux",
+                    "value": "19m"
+                },
+                {
+                    "trait_type": "Pantheon",
+                    "value": "46m"
+                }
+            ]
+        },
+        "id": "495",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/495"
+    },
+    {
+        "metadata": {
+            "name": "San Diego",
+            "description": "San Diego is a city in California, USA, known for its stunning natural beauty, including its beaches and harbor, thriving tourism industry, rich cultural heritage, and vibrant arts scene, as well as its reputation as a hub of innovation, with numerous tech companies and research institutions, and its thriving food culture, with numerous farm-to-table restaurants and craft breweries.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/SanDiego.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "California"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Geisel Library",
+                    "value": "34m"
+                },
+                {
+                    "trait_type": "El Cortez Apartment Hotel",
+                    "value": "94m"
+                },
+                {
+                    "trait_type": "One America Plaza",
+                    "value": "152m"
+                },
+                {
+                    "trait_type": "Unconditional Surrender (Sculpture)",
+                    "value": "8m"
+                },
+                {
+                    "trait_type": "Emerald Plaza",
+                    "value": "137m"
+                },
+                {
+                    "trait_type": "Manchester Grand Hyatt Hotel",
+                    "value": "150m"
+                }
+            ]
+        },
+        "id": "496",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/496"
+    },
+    {
+        "metadata": {
+            "name": "San Francisco",
+            "description": "San Francisco is a city in California, USA, known for its iconic landmarks, such as the Golden Gate Bridge and Alcatraz Island, thriving tech industry, diverse and inclusive culture, rich history, and reputation as a hub of innovation, with numerous tech companies and startups, as well as its reputation for being a leader in sustainability and environmentalism, with numerous green initiatives and alternative transportation options.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/SanFrancisco.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "California"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Cable Car",
+                    "value": "3m"
+                },
+                {
+                    "trait_type": "City Hall",
+                    "value": "94m"
+                },
+                {
+                    "trait_type": "Russ Building",
+                    "value": "132m"
+                },
+                {
+                    "trait_type": "Ferry Building",
+                    "value": "75m"
+                },
+                {
+                    "trait_type": "Golden Gate Bridge",
+                    "value": "227m"
+                },
+                {
+                    "trait_type": "Coit Tower",
+                    "value": "64m"
+                },
+                {
+                    "trait_type": "Palace of Fine Arts",
+                    "value": "49m"
+                },
+                {
+                    "trait_type": "Transamerica Pyramid",
+                    "value": "325m"
+                }
+            ]
+        },
+        "id": "497",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/497"
+    },
+    {
+        "metadata": {
+            "name": "Barcelona",
+            "description": "Barcelona is a Mediterranean city rich in history and cultural heritage, with a population of over 1.6 million.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Barcelona.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Spain"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Magic Fountain of Montjuïc",
+                    "value": "54m"
+                },
+                {
+                    "trait_type": "W Barcelona (Hotel Vela)",
+                    "value": "99m"
+                },
+                {
+                    "trait_type": "Torre de Telecomunicaciones de Montjuïc",
+                    "value": "136m"
+                },
+                {
+                    "trait_type": "Columbus Monument",
+                    "value": "60m"
+                },
+                {
+                    "trait_type": "Torre Agbar",
+                    "value": "144m"
+                },
+                {
+                    "trait_type": "Arc de Triomf",
+                    "value": "37m"
+                }
+            ]
+        },
+        "id": "498",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/498"
+    },
+    {
+        "metadata": {
+            "name": "Seattle",
+            "description": "Seattle is a bustling Pacific Northwest city known for its thriving tech industry, cultural attractions, and natural beauty, including the iconic Space Needle and nearby mountains.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Seattle.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Washington"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Seattle Central Library",
+                    "value": "60m"
+                },
+                {
+                    "trait_type": "Seattle Municipal Tower",
+                    "value": "220m"
+                },
+                {
+                    "trait_type": "Two Union Square",
+                    "value": "243m"
+                },
+                {
+                    "trait_type": "Space Needle",
+                    "value": "184m"
+                },
+                {
+                    "trait_type": "Columbia Center",
+                    "value": "295m"
+                },
+                {
+                    "trait_type": "Smith Tower",
+                    "value": "148m"
+                },
+                {
+                    "trait_type": "Rainier Tower",
+                    "value": "157m"
+                },
+                {
+                    "trait_type": "Fourth and Blanchard Building",
+                    "value": "105m"
+                }
+            ]
+        },
+        "id": "499",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/499"
+    },
+    {
+        "metadata": {
+            "name": "Seoul",
+            "description": " Seoul is a dynamic, high-tech city that combines traditional Korean culture with cutting-edge innovation, attracting tourists with its rich history, modern architecture, and vibrant food and entertainment scenes.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Seoul.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "South Korea"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "63 Building",
+                    "value": "274m"
+                },
+                {
+                    "trait_type": "Boutique Monaco",
+                    "value": "100m"
+                },
+                {
+                    "trait_type": "N Seoul Tower",
+                    "value": "237m"
+                },
+                {
+                    "trait_type": "GT Tower",
+                    "value": "130m"
+                },
+                {
+                    "trait_type": "World Trade Center Seoul",
+                    "value": "228m"
+                },
+                {
+                    "trait_type": "Seoul Central Post Office Building",
+                    "value": "79m"
+                }
+            ]
+        },
+        "id": "500",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/500"
+    },
+    {
+        "metadata": {
+            "name": "Shanghai",
+            "description": "Shanghai is a global financial center and lively metropolis renowned for its historic architecture, modern skyscrapers, vibrant cultural scene, and delicious street food.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Shanghai.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "China"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Longhua Pagoda",
+                    "value": "40m"
+                },
+                {
+                    "trait_type": "Bank of China Tower",
+                    "value": "258m"
+                },
+                {
+                    "trait_type": "China Merchants Bank Mansion",
+                    "value": "208m"
+                },
+                {
+                    "trait_type": "Tomorrow Square",
+                    "value": "285m"
+                },
+                {
+                    "trait_type": "Oriental Pearl Tower",
+                    "value": "468m"
+                },
+                {
+                    "trait_type": "Shimao Int'l Plaza",
+                    "value": "333m"
+                },
+                {
+                    "trait_type": "Shanghai Int'l Convention Center",
+                    "value": "66m"
+                },
+                {
+                    "trait_type": "Shanghai World Financial Center",
+                    "value": "492m"
+                },
+                {
+                    "trait_type": "Citic Pacific Group HQ (Tower 1 & 2)",
+                    "value": "218m"
+                },
+                {
+                    "trait_type": "Jin Mao Tower",
+                    "value": "421m"
+                }
+            ]
+        },
+        "id": "501",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/501"
+    },
+    {
+        "metadata": {
+            "name": "Singapore",
+            "description": "Singapore is a small island city-state known for its cleanliness, efficiency, and multiculturalism.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Singapore.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Singapore"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 10
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Esplanade",
+                    "value": "12m"
+                },
+                {
+                    "trait_type": "Sentosa Merlion",
+                    "value": "37m"
+                },
+                {
+                    "trait_type": "The Sail @ Marina Bay",
+                    "value": "245m"
+                },
+                {
+                    "trait_type": "Reflections at Keppel Bay",
+                    "value": "160m"
+                },
+                {
+                    "trait_type": "Marina Bay Sands",
+                    "value": "200m"
+                },
+                {
+                    "trait_type": "Singapore Flyer",
+                    "value": "165m"
+                },
+                {
+                    "trait_type": "Capital Tower",
+                    "value": "254m"
+                },
+                {
+                    "trait_type": "ArtScience Museum",
+                    "value": "62m"
+                },
+                {
+                    "trait_type": "Republic Plaza",
+                    "value": "280m"
+                },
+                {
+                    "trait_type": "One Raffles Place",
+                    "value": "281m"
+                }
+            ]
+        },
+        "id": "502",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/502"
+    },
+    {
+        "metadata": {
+            "name": "St. Louis",
+            "description": "St. Louis is a city in the Midwestern United States known for its iconic Gateway Arch and its historic role in American expansion.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/StLouis.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Missouri"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Continental Life Building",
+                    "value": "109m"
+                },
+                {
+                    "trait_type": "Old Courthouse",
+                    "value": "59m"
+                },
+                {
+                    "trait_type": "Gateway Arch",
+                    "value": "192m"
+                },
+                {
+                    "trait_type": "Thomas Eagleton Courthouse",
+                    "value": "170m"
+                },
+                {
+                    "trait_type": "Planetarium",
+                    "value": "23m"
+                },
+                {
+                    "trait_type": "One Metropolitan Square",
+                    "value": "180m"
+                },
+                {
+                    "trait_type": "Civil Courts Building",
+                    "value": "118m"
+                }
+            ]
+        },
+        "id": "503",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/503"
+    },
+    {
+        "metadata": {
+            "name": "Sydney",
+            "description": "Sydney is the largest city in Australia known for its iconic Opera House, beautiful harbor, and stunning beaches.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Sydney.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Australia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Opera House",
+                    "value": "65m"
+                },
+                {
+                    "trait_type": "Sydney Harbour Bridge Pylon",
+                    "value": "89m"
+                },
+                {
+                    "trait_type": "Aurora Place",
+                    "value": "219m"
+                },
+                {
+                    "trait_type": "Sydney Tower",
+                    "value": "309m"
+                },
+                {
+                    "trait_type": "Deutsche Bank Place",
+                    "value": "240m"
+                },
+                {
+                    "trait_type": "Grosvenor Place",
+                    "value": "180m"
+                },
+                {
+                    "trait_type": "Anzac Memorial",
+                    "value": "30m"
+                }
+            ]
+        },
+        "id": "504",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/504"
+    },
+    {
+        "metadata": {
+            "name": "Tel Aviv",
+            "description": "Tel Aviv is a vibrant coastal city in Israel known for its beaches, nightlife, and Bauhaus architecture.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/TelAviv.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Israel"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Jaffa Clock Tower",
+                    "value": "28m"
+                },
+                {
+                    "trait_type": "Reading Power Station",
+                    "value": "150m"
+                },
+                {
+                    "trait_type": "The Herta and Paul Amir Building Tel Aviv Museum of Art",
+                    "value": "27m"
+                },
+                {
+                    "trait_type": "Tzameret Towers",
+                    "value": "122m"
+                },
+                {
+                    "trait_type": "Azrieli Center",
+                    "value": "195m"
+                },
+                {
+                    "trait_type": "Matcal Tower",
+                    "value": "107m"
+                },
+                {
+                    "trait_type": "Asia House",
+                    "value": "26m"
+                },
+                {
+                    "trait_type": "Kadishman's “Hitromemut” Sculpture",
+                    "value": "15m"
+                },
+                {
+                    "trait_type": "The Opera Tower",
+                    "value": "82m"
+                }
+            ]
+        },
+        "id": "505",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/505"
+    },
+    {
+        "metadata": {
+            "name": "Tokyo",
+            "description": "Tokyo is a futuristic metropolis in Japan, known for its cutting-edge technology, vibrant street fashion, and rich cultural heritage.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Tokyo.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Japan"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 8
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "NTT DoCoMo Yoyogi",
+                    "value": "272m"
+                },
+                {
+                    "trait_type": "Tokyo Metropolitan Government",
+                    "value": "243m"
+                },
+                {
+                    "trait_type": "Sompo Japan",
+                    "value": "193m"
+                },
+                {
+                    "trait_type": "Tokyo Tower",
+                    "value": "333m"
+                },
+                {
+                    "trait_type": "Senso-ji Hozomon (Gate)",
+                    "value": "12m"
+                },
+                {
+                    "trait_type": "Dentsu",
+                    "value": "210m"
+                },
+                {
+                    "trait_type": "Mode Gakuen Cocoon Tower",
+                    "value": "204m"
+                },
+                {
+                    "trait_type": "Meiji Jingu (Meiji Shrine) Torii (Gate)",
+                    "value": "12m"
+                }
+            ]
+        },
+        "id": "506",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/506"
+    },
+    {
+        "metadata": {
+            "name": "Toronto",
+            "description": " Toronto is a diverse and dynamic city in Canada, known for its thriving arts and culture scene, iconic landmarks like the CN Tower, and numerous green spaces.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Toronto.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Canada"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Canada Life Building",
+                    "value": "87m"
+                },
+                {
+                    "trait_type": "Fairmont Royal York",
+                    "value": "124m"
+                },
+                {
+                    "trait_type": "Rogers Center",
+                    "value": "86m"
+                },
+                {
+                    "trait_type": "Roy Thomson Hall",
+                    "value": "28m"
+                },
+                {
+                    "trait_type": "Old City Hall",
+                    "value": "104m"
+                },
+                {
+                    "trait_type": "CN Tower",
+                    "value": "553m"
+                },
+                {
+                    "trait_type": "City Hall",
+                    "value": "98m"
+                }
+            ]
+        },
+        "id": "507",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/507"
+    },
+    {
+        "metadata": {
+            "name": "Vancouver",
+            "description": "Vancouver is a beautiful coastal city in Canada, known for its stunning natural scenery, cultural diversity, and thriving arts and culinary scenes.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Vancouver.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Canada"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 5
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "The Sails of Canada Place",
+                    "value": "27m"
+                },
+                {
+                    "trait_type": "Fairmont Hotel",
+                    "value": "112m"
+                },
+                {
+                    "trait_type": "Science World",
+                    "value": "28m"
+                },
+                {
+                    "trait_type": "Empire Landmark Hotel",
+                    "value": "121m"
+                },
+                {
+                    "trait_type": "Harbour Centre",
+                    "value": "171m"
+                }
+            ]
+        },
+        "id": "508",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/508"
+    },
+    {
+        "metadata": {
+            "name": "Berlin",
+            "description": "Berlin is a vibrant and eclectic city with a rich history and a population of over 3.7 million.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Berlin.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Germany"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Berlin Cathedral",
+                    "value": "115m"
+                },
+                {
+                    "trait_type": "Reichstag Building",
+                    "value": "75m"
+                },
+                {
+                    "trait_type": "Rotes Rathaus",
+                    "value": "100m"
+                },
+                {
+                    "trait_type": "Fernsehturm Berlin",
+                    "value": "368m"
+                },
+                {
+                    "trait_type": "Funkturm Berlin",
+                    "value": "150m"
+                },
+                {
+                    "trait_type": "Kollhoff Tower",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "BahnTower",
+                    "value": "94m"
+                }
+            ]
+        },
+        "id": "509",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/509"
+    },
+    {
+        "metadata": {
+            "name": "Washington D.C.",
+            "description": " Washington D.C. is the capital city of the United States, known for its iconic landmarks, historic monuments, and world-class museums.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/WashingtonDC.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "District of Columbia"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 5
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Supreme Court Building",
+                    "value": "33m"
+                },
+                {
+                    "trait_type": "US Capitol Building",
+                    "value": "88m"
+                },
+                {
+                    "trait_type": "Washington Monument",
+                    "value": "169m"
+                },
+                {
+                    "trait_type": "White House",
+                    "value": "27m"
+                },
+                {
+                    "trait_type": "Jefferson Memorial",
+                    "value": "39m"
+                }
+            ]
+        },
+        "id": "510",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/510"
+    },
+    {
+        "metadata": {
+            "name": "Boston",
+            "description": "Boston is a historic city with a population of over 0.7m, known for its rich American colonial history and prestigious universities.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Boston.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "Massachusetts"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 9
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "John Hancock Tower",
+                    "value": "250m"
+                },
+                {
+                    "trait_type": "111 Huntington Avenue",
+                    "value": "169m"
+                },
+                {
+                    "trait_type": "100 Federal Street (First National Bank Building)",
+                    "value": "180m"
+                },
+                {
+                    "trait_type": "Massachusetts State House",
+                    "value": "15m"
+                },
+                {
+                    "trait_type": "Zakim Bridge",
+                    "value": "81m"
+                },
+                {
+                    "trait_type": "Federal Reserve Bank of Boston",
+                    "value": "187m"
+                },
+                {
+                    "trait_type": "Berkeley Building",
+                    "value": "198m"
+                },
+                {
+                    "trait_type": "Hood Milk Bottle",
+                    "value": "12m"
+                },
+                {
+                    "trait_type": "Hatch Memorial Shell",
+                    "value": "12m"
+                }
+            ]
+        },
+        "id": "511",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/511"
+    },
+    {
+        "metadata": {
+            "name": "Brooklyn",
+            "description": "Brooklyn is a culturally diverse borough in New York City with a population of over 2.5 million, renowned for its artistic communities and vibrant food scene.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/Brooklyn.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "USA"
+                },
+                {
+                    "trait_type": "State",
+                    "value": "New York"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 6
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "Grand Army Plaza",
+                    "value": "24m"
+                },
+                {
+                    "trait_type": "Domino Sugar Factory",
+                    "value": "56m"
+                },
+                {
+                    "trait_type": "Wonder Wheel",
+                    "value": "45m"
+                },
+                {
+                    "trait_type": "Brooklyn Bridge",
+                    "value": "95m"
+                },
+                {
+                    "trait_type": "Williamsburgh Savings Bank Tower",
+                    "value": "156m"
+                },
+                {
+                    "trait_type": "Brooklyner",
+                    "value": "157m"
+                }
+            ]
+        },
+        "id": "512",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/512"
+    },
+    {
+        "metadata": {
+            "name": "Buenos Aires",
+            "description": "Buenos Aires is a bustling and vibrant city with a population of over 2.9 million, renowned for its rich cultural heritage, passionate tango scene, and delicious cuisine.",
+            "image": "ipfs://QmbjXPiMdTLVfk2xVPgwaFyULu1KDJnffAekeN7ro5nT6w/BuenosAires.jpg",
+            "external_url": "https://farconic.xyz",
+            "attributes": [
+                {
+                    "trait_type": "Country",
+                    "value": "Argentina"
+                },
+                {
+                    "display_type": "number",
+                    "trait_type": "Number of Buildings",
+                    "value": 7
+                },
+                {
+                    "value": "City"
+                },
+                {
+                    "trait_type": "El Faro Towers",
+                    "value": "170m"
+                },
+                {
+                    "trait_type": "Kavanagh Building",
+                    "value": "120m"
+                },
+                {
+                    "trait_type": "YPF Tower",
+                    "value": "160m"
+                },
+                {
+                    "trait_type": "Floralis Generica",
+                    "value": "23m"
+                },
+                {
+                    "trait_type": "Cabildo building",
+                    "value": "33m"
+                },
+                {
+                    "trait_type": "Palacio Barolo",
+                    "value": "101m"
+                },
+                {
+                    "trait_type": "Obelisco de Buenos Aires",
+                    "value": "68m"
+                }
+            ]
+        },
+        "id": "513",
+        "tokenURI": "ipfs://QmTa6PpvMcw9PGaXMH5esekrhzYjCRwuG73fmFCtkRB77Y/513"
+    }
+]
