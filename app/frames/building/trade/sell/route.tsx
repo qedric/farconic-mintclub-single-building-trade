@@ -11,8 +11,8 @@ const handleRequest = frames(async (ctx) => {
         const [estimation, royalty] = await mintclub
           .network('basesepolia')
           .token(tokenAddress)
-          .getBuyEstimation(amount)
-        console.log(`Estimated cost for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
+          .getSellEstimation(amount)
+        console.log(`Estimated gains for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
         console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
         return estimation
     }
@@ -33,15 +33,13 @@ const handleRequest = frames(async (ctx) => {
     
     if (ctx.searchParams?.building) {
 
-        if (!ctx.message?.inputText) {
-            throw new Error("No quantity")
-        }
-
         const building:NFT = JSON.parse(ctx.searchParams.building)
-        const qty:bigint = BigInt(ctx.message?.inputText)
+        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : BigInt(1)
 
         console.log('building', building)
         console.log(`Buying ${qty} of ${building.metadata.name}`)
+
+        const estimation = await estimate(building.address, qty)
 
         return {
             image: (
@@ -50,7 +48,7 @@ const handleRequest = frames(async (ctx) => {
                         <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
                     <div tw="flex flex-col items-center">
-                        <h1 tw="text-center">{`Price: ${ethers.formatUnits(await estimate(building.address, qty), 18)} ETH`}</h1>
+                        <h1 tw="text-center">{`Price: ${ethers.formatUnits(estimation, 18)} ETH`}</h1>
                         <p tw="text-center">slippage will be applied when you approve the transaction</p>
                     </div>
                 </div>
@@ -62,10 +60,10 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade" }}>
                     Back
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade/buy" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade/sell" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString() }, pathname: "/building/trade/txdata" }} post_url="/building/trade/buy">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:true }, pathname: "/building/trade/txdata" }} post_url="/building/trade/sell">
                     Confirm
                 </Button>
             ]

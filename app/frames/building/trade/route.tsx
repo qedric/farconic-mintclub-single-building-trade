@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { Element } from '@/app/utils'
+import { NFT } from '@/app/utils'
 
 const handleRequest = frames(async (ctx) => {
     
-    if (ctx.searchParams?.building) {
+    if (ctx.searchParams?.buildingData) {
 
-        const building:Element = JSON.parse(ctx.searchParams.building)
+        const building:NFT = JSON.parse(ctx.searchParams.buildingData)
 
         return {
             image: building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string,

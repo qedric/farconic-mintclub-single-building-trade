@@ -1,13 +1,13 @@
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { levenshteinDistance, Metadata, Attribute, Element } from '@/app/utils'
+import { levenshteinDistance, Metadata, Attribute, NFT } from '@/app/utils'
 import buildings from '@/app/data/buildings.json'
 
-function searchJsonArray(query: string): Element[] {
+function searchJsonArray(query: string): NFT[] {
     const lowerCaseQuery = query.toLowerCase();
-    const matchingElements: Element[] = [];
+    const matchingElements: NFT[] = [];
 
-    for (const element of buildings as Element[]) {
+    for (const element of buildings as NFT[]) {
         const metadataValues = Object.values(element.metadata)
             .filter(value => typeof value === 'string')
             .map(value => (value as string).toLowerCase());
@@ -41,15 +41,19 @@ function searchJsonArray(query: string): Element[] {
 
 const handleRequest = frames(async (ctx: any) => {
 
-    //console.log('search term from query param: ', ctx.searchParams?.searchTerm)
+    console.log('search term from query param: ', ctx.searchParams?.searchTerm)
 
     let searchTerm = ctx.searchParams?.searchTerm
         ? ctx.searchParams.searchTerm : ctx.message.inputText
 
     // search for the building or city
     if (searchTerm) {
-        const searchResults = searchJsonArray(searchTerm)
+        const searchResults = searchTerm == 'random'
+        ? new Array(buildings[Math.floor(Math.random() * buildings.length)])
+        : searchJsonArray(searchTerm)
         let page: number = ctx.searchParams?.page ? parseInt(ctx.searchParams.page) : 1
+        const currentBuilding = searchResults[page-1]
+        //console.log('currentBuilding:', currentBuilding)
         //console.log('searchTerm:', searchTerm)
         //console.log('page:', page)
         if (searchResults.length > 0) {
@@ -61,32 +65,41 @@ const handleRequest = frames(async (ctx: any) => {
                 textInput: "search",
                 buttons: searchResults.length == 1 // just one result
                 ?   [
-                        <Button action="post" target="/building/trade">
-                            Buy / Sell / Trade
+                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/buy" }}>
+                            Buy
+                        </Button>,
+                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/sell" }}>
+                            Sell
                         </Button>,
                         <Button action="post" target="/building/search">
                             Search
+                        </Button>,
+                        <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
+                            Random
                         </Button>
                     ]
                 :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                     ?   [
-                            <Button action="post" target="/building/trade">
-                                Buy / Sell / Trade
+                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/buy" }}>
+                                Buy
+                            </Button>,
+                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/sell" }}>
+                                Sell
                             </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                 Prev
                             </Button>,
                             <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                 Next
-                            </Button>,
-                            <Button action="post" target="/building/search">
-                                Search
                             </Button>
                         ]
                     :   page > 1 && searchResults.length == page // multiple results and we are at the end
                         ?   [
-                                <Button action="post" target="/building/trade">
-                                    Buy / Sell / Trade
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/buy" }}>
+                                    Buy
+                                </Button>,
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/sell" }}>
+                                    Sell
                                 </Button>,
                                 <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                     Prev
@@ -96,8 +109,11 @@ const handleRequest = frames(async (ctx: any) => {
                                 </Button>
                             ]
                         :   [ // multiple results and we are at the start
-                                <Button action="post" target="/building/trade">
-                                    Buy / Sell / Trade
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/buy" }}>
+                                    Buy
+                                </Button>,
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade/sell" }}>
+                                    Sell
                                 </Button>,
                                 <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/building/search" }}>
                                     Next
@@ -124,7 +140,7 @@ const handleRequest = frames(async (ctx: any) => {
                     <Button action="post" target="/building/search">
                         Search
                     </Button>,
-                    <Button action="post" target="/building">
+                    <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
                         Random
                     </Button>,
                     <Button action="post" target="/">
@@ -137,9 +153,9 @@ const handleRequest = frames(async (ctx: any) => {
 
     return { 
         image: (
-            <div tw="flex flex-col items-center justify-center">
-                <h3>Search for a building or city</h3>
-                <h4>or enter a keyword like 'bridge' or 'magnificent'</h4>
+            <div tw="px-5 mx-auto flex flex-col items-center justify-center">
+                <h3>Search for a building</h3>
+                <h4 tw="text-center">or enter a keyword like 'bridge', 'Shanghai', or perhaps 'magnificent Flemish Renaissance style building'</h4>
             </div>
         ),
         imageOptions: {
@@ -150,7 +166,7 @@ const handleRequest = frames(async (ctx: any) => {
             <Button action="post" target="/building/search">
                 Search
             </Button>,
-            <Button action="post" target="/building">
+            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
                 Random
             </Button>,
             <Button action="post" target="/">

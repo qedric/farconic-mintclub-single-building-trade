@@ -25,10 +25,11 @@ export interface Attribute {
     value: string;
 }
 
-export interface Element {
+export interface NFT {
     metadata: Metadata;
     id: string;
     tokenURI: string;
+    address: string;
 }
 
 export const getTransactionReceipt = async (txId: `0x${string}`) => await publicClient.getTransactionReceipt({ hash: txId })
@@ -44,6 +45,7 @@ export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: s
         pricePerToken: price,
         currency: NATIVE_TOKEN
     }
+    
 }
 
 export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {

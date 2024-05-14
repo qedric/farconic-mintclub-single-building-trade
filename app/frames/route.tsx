@@ -1,28 +1,32 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
-import buildings from '@/app/data/buildings.json'
 
 const handleRequest = frames(async (ctx) => {
 
+    /* 
+        <Button action="post" target={{ query: { building: JSON.stringify(buildings[11]) }, pathname: "/building/trade" }}>
+            Get Building
+        </Button>, 
+    */
+
     return {
-        image: (
-            <div tw="m-24 flex flex-col justify-center items-center w-full h-full">
-                <div tw="flex bg-black text-white">
-                    <h1>F A R C O N I C S</h1>
-                    <p>Shapes of Cities</p>
-                </div>
-            </div>
-        ),
+        image: `${process.env.NEXT_PUBLIC_GATEWAY_URL}QmdG2bYfgavL1qcc2qduvD62DjaFpaMZqkX8TfXYoCCEiC/2.jpeg`,
         imageOptions: {
             aspectRatio: "1:1",
         },
         buttons: [
-            <Button action="post" target={{ query: { building: JSON.stringify(buildings[11]) }, pathname: "/building/trade" }}>
-                Buy / Sell / Trade
+            <Button action="post" target="/building/search">
+                Get Building
             </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                view on opensea
+            <Button action="post" target="/city/check">
+                Claim City
+            </Button>,
+            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
+                Learn More
+            </Button>,
+            <Button action="post" target="/">
+                My Buidings & Cities
             </Button>
         ]
     }
