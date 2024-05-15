@@ -1,8 +1,10 @@
-import { http, createPublicClient, Abi } from "viem"
+import { http, createPublicClient, Abi, GetContractEventsReturnType } from "viem"
 import { baseSepolia } from "viem/chains"
 import { MerkleTree } from "merkletreejs"
 import { ethers } from "ethers"
+import { mintclub } from 'mint.club-v2-sdk'
 import abi from './data/abi.json'
+import mc_building_abi from './data/mc_building_abi.json'
 
 const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 
@@ -45,7 +47,7 @@ export const getMerkleProof = (allowlistedAddresses: string[], addressToProve: s
         pricePerToken: price,
         currency: NATIVE_TOKEN
     }
-    
+
 }
 
 export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
@@ -55,9 +57,6 @@ export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
     const json = await metadata.json()
     //console.log(json)
     return json.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`)
-}
-
-export const getImageFromJSON = (json: any) => {
 }
 
 export const fetchImageUrlFromTokenId = async (id: number) => {
@@ -149,3 +148,41 @@ export const levenshteinDistance = (a: string, b: string): number => {
     }
     return dp[a.length][b.length];
 }
+
+export const getContractEvents = async (contractAddress: `0x${string}`): Promise<GetContractEventsReturnType> => {
+    console.log('contract address:', contractAddress)
+    const logs = await publicClient.getContractEvents({ 
+        address: (contractAddress as `0x${string}`),
+        abi: mc_building_abi,
+        fromBlock: 9975081n,
+        toBlock: 9975181n
+      })
+      console.log('logs', logs)
+      return logs
+}
+
+export const getOpenseaData = async (address: string) => {
+
+    const url = `https://testnets-api.opensea.io/api/v2/chain/base_sepolia/contract/${address}/nfts/${0}`
+
+    try {
+        const options = {
+            method: 'GET',
+            headers: { 'accept': 'application/json', 'x-api-key': process.env.OPENSEA_API_KEY }
+        }
+
+        let response: any
+        await fetch(url, (options as any))
+            .then(r => r.json())
+            .then(json => response = json)
+            .catch(err => console.error(err))
+
+        return response.nft
+
+    } catch (error) {
+        console.error('Error fetching token supply:', error)
+        return 'Error'
+    }
+}
+
+export const getDetail = async (address: string) => await mintclub.network(baseSepolia.id).token(address).getDetail()

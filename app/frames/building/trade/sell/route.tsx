@@ -37,7 +37,7 @@ const handleRequest = frames(async (ctx) => {
         const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : BigInt(1)
 
         console.log('building', building)
-        console.log(`Buying ${qty} of ${building.metadata.name}`)
+        console.log(`Selling ${qty} of ${building.metadata.name}`)
 
         const estimation = await estimate(building.address, qty)
 
@@ -48,7 +48,7 @@ const handleRequest = frames(async (ctx) => {
                         <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
                     <div tw="flex flex-col items-center">
-                        <h1 tw="text-center">{`Price: ${ethers.formatUnits(estimation, 18)} ETH`}</h1>
+                        <h1 tw="text-center">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
                         <p tw="text-center">slippage will be applied when you approve the transaction</p>
                     </div>
                 </div>

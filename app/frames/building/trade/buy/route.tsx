@@ -26,6 +26,9 @@ const handleRequest = frames(async (ctx) => {
             buttons: [
                 <Button action="link" target={url}>
                     view tx
+                </Button>,
+                <Button action="post" target="/">
+                    Reset
                 </Button>
             ]
         }
@@ -33,15 +36,13 @@ const handleRequest = frames(async (ctx) => {
     
     if (ctx.searchParams?.building) {
 
-        if (!ctx.message?.inputText) {
-            throw new Error("No quantity")
-        }
-
         const building:NFT = JSON.parse(ctx.searchParams.building)
-        const qty:bigint = BigInt(ctx.message?.inputText)
+        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : BigInt(6)
 
         console.log('building', building)
         console.log(`Buying ${qty} of ${building.metadata.name}`)
+
+        const estimation = await estimate(building.address, qty)
 
         return {
             image: (
@@ -50,7 +51,7 @@ const handleRequest = frames(async (ctx) => {
                         <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
                     <div tw="flex flex-col items-center">
-                        <h1 tw="text-center">{`Price: ${ethers.formatUnits(await estimate(building.address, qty), 18)} ETH`}</h1>
+                        <h1 tw="text-center">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
                         <p tw="text-center">slippage will be applied when you approve the transaction</p>
                     </div>
                 </div>
@@ -65,7 +66,7 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade/buy" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString() }, pathname: "/building/trade/txdata" }} post_url="/building/trade/buy">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString() }, pathname: "/building/trade/txdata" }} post_url="/building/trade/buy">
                     Confirm
                 </Button>
             ]
