@@ -5,6 +5,7 @@ import { ethers } from "ethers"
 import { mintclub } from 'mint.club-v2-sdk'
 import abi from './data/abi.json'
 import mc_building_abi from './data/mc_building_abi.json'
+import buildings from '@/app/data/buildings.json'
 
 const NATIVE_TOKEN = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 
@@ -186,3 +187,51 @@ export const getOpenseaData = async (address: string) => {
 }
 
 export const getDetail = async (address: string) => await mintclub.network(baseSepolia.id).token(address).getDetail()
+
+export const searchJsonArray = (query: string): NFT[] => {
+    const lowerCaseQuery = query.toLowerCase()
+    const matchingElements: NFT[] = []
+
+    // skip search & return a random element from the buildings array
+    if (query == 'random') {
+        return (new Array(buildings[Math.floor(Math.random() * buildings.length)]) as NFT[])
+    }
+
+    for (const element of buildings as NFT[]) {
+        const metadataValues = Object.values(element.metadata)
+            .filter(value => typeof value === 'string')
+            .map(value => (value as string).toLowerCase())
+        
+        let found = false // Flag to indicate if the element has been found
+        for (const value of metadataValues) {
+            if (value.includes(lowerCaseQuery) || levenshteinDistance(value, lowerCaseQuery) <= 2) {
+                if (!found) {
+                    matchingElements.push(element)
+                    found = true // Set found flag to true
+                }
+                break // Stop checking metadata values for this element once a match is found
+            }
+        }
+
+        for (const attribute of element.metadata.attributes) {
+            if (typeof attribute.value === 'string' &&
+                (attribute.value.toLowerCase().includes(lowerCaseQuery) ||
+                levenshteinDistance(attribute.value.toLowerCase(), lowerCaseQuery) <= 2)) {
+                if (!found) {
+                    matchingElements.push(element)
+                    found = true // Set found flag to true
+                }
+                break // Stop checking attributes for this element once a match is found
+            }
+        }
+    }
+
+    return matchingElements
+}
+
+export const getNFTBalance = async (tokenAddress: `0x${string}`, userAddress: `0x${string}`) => await publicClient.readContract({
+    address: tokenAddress,
+    abi: mc_building_abi,
+    functionName: 'balanceOf',
+    args: [userAddress, 0]
+})

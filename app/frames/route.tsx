@@ -1,14 +1,9 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
+import buildings from "@/app/data/buildings.json"
 
 const handleRequest = frames(async (ctx) => {
-
-    /* 
-        <Button action="post" target={{ query: { building: JSON.stringify(buildings[11]) }, pathname: "/building/trade" }}>
-            Get Building
-        </Button>, 
-    */
 
     return {
         image: (
@@ -32,7 +27,7 @@ const handleRequest = frames(async (ctx) => {
         imageOptions: {
             aspectRatio: "1:1",
         },
-        textInput: "search e.g. \"bridge\" or \"Peru\"",
+        textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
             <Button action="post" target="/building/search">
                 Search
@@ -40,7 +35,7 @@ const handleRequest = frames(async (ctx) => {
             <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
                 Farconic
             </Button>,
-            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
+            <Button action="post" target={{ query: { buildingNFT: JSON.stringify(buildings[Math.floor(Math.random() * buildings.length)]) }, pathname: "/building/card" }}>
                 Random
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>

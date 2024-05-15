@@ -1,34 +1,91 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { NFT } from '@/app/utils'
+import { NFT, getNFTBalance } from '@/app/utils'
+import { mintclub } from 'mint.club-v2-sdk'
+import { ethers } from 'ethers'
 
 const handleRequest = frames(async (ctx) => {
+
+    const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
+        const [estimation, royalty] = isSell
+        ? await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getSellEstimation(amount)
+        : await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getBuyEstimation(amount)
+        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
+        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+        return estimation
+    }
+
+    if (ctx.message?.transactionId) {
+        const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
+        return {
+            image: (
+                <div tw="flex">Transaction Submitted</div>
+            ),
+            buttons: [
+                <Button action="link" target={url}>
+                    view tx
+                </Button>,
+                <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
+                    My Cards / Learn more
+                </Button>
+            ]
+        }
+    }
     
-    if (ctx.searchParams?.buildingData) {
+    if (ctx.searchParams?.building) {
 
-        const building:NFT = JSON.parse(ctx.searchParams.buildingData)
+        const building:NFT = JSON.parse(ctx.searchParams.building)
+        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : BigInt(1)
+        const isSell:boolean = ctx.searchParams.isSell == 'true'
 
-        // image: building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string,
+        console.log('building', building)
+        console.log(`Trading ${qty} of ${building.metadata.name}`)
+
+        // check that the connected address has balance to sell
+        if (isSell) {
+            const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), (ctx as any).message.requesterVerifiedAddresses[0]) as bigint)
+            if (balance < qty) {
+                return {
+                    image: (
+                        <div tw="flex flex-col w-3/4 mx-auto text-center">
+                            <p>You don't have enough { building.metadata.name } cards!</p>
+                            <p>Your balance: { balance }</p>
+                        </div>
+                    ),
+                    imageOptions: {
+                        aspectRatio: "1:1",
+                    },
+                    buttons: [
+                        <Button action="post" target={{ query: { buildingNFT: JSON.stringify(building) }, pathname: "/building/card" }}>
+                            Back
+                        </Button>,
+                        <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
+                            view on opensea
+                        </Button>
+                    ]
+                }
+            }
+        }
+
+        const estimation = await estimate(building.address, qty, isSell)
 
         return {
             image: (
-                <div tw="flex w-full h-full bg-gray-200 items-center justify-center shadow-2xl">
-                    <div tw="flex flex-wrap mx-auto w-3/5 p-8 h-5/6 shadow-2xl bg-pink-700 text-white rounded-lg">
-                        <div tw="p-4 flex flex-col items-center justify-center w-full h-4/5 bg-fuchsia-800 border border-yellow-400 rounded-lg">
-                            <img tw="w-full object-contain" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
-                            <h3 tw="my-2">{building.metadata.name}</h3>
-                        </div>
-                        <div tw="my-5 w-full flex justify-between items-center">
-                            <div tw="text-sm w-1/3 mr-2 p-2 bg-fuchsia-800 border border-yellow-400 rounded-lg">Liquidity</div>
-                            <div tw="text-sm w-1/3 mx-2 p-2 bg-fuchsia-800 border border-yellow-400 rounded-lg">Holders</div>
-                            <div tw="text-sm w-1/3 ml-2 p-2 bg-fuchsia-800 border border-yellow-400 rounded-lg">Traders</div>
-                        </div>
-                        <div tw="w-full flex justify-between items-center">
-                            <div tw="text-base w-2/5 mr-4 p-5 bg-fuchsia-800 border border-yellow-400 rounded-lg">IDs</div>
-                            <div tw="text-base w-3/5 ml-4 p-5 bg-fuchsia-800 border border-yellow-400 rounded-lg">City:</div>
-                        </div>
-                        
+                <div tw="flex flex-col justify-center items-center w-full h-full">
+                    <h1>{ isSell ? 'Sell' : 'Buy'}</h1>
+                    <div tw="flex shadow-xl">
+                        <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
+                    </div>
+                    <div tw="flex flex-col items-center">
+                        <h1 tw="text-center">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
+                        <p tw="text-center">slippage will be applied when you approve the transaction</p>
                     </div>
                 </div>
             ),
@@ -36,17 +93,16 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade/buy" }}>
-                    Buy
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
+                    Back
                 </Button>,
-                <Button action="post" target="/">
-                    Sell
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card/sell" }}>
+                    Refresh Price
                 </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                    view on opensea
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:true }, pathname: "/building/trade/txdata" }} post_url="/building/card/trade">
+                    Confirm
                 </Button>
-            ],
-            textInput: 'Quantity - TO DO: show buy price'
+            ]
         }
     } else {
         return {

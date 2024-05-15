@@ -4,7 +4,7 @@ import { frames } from "../frames"
 import { decodeEventLog, Abi } from 'viem'
 import { fetchImageUrlFromIPFS, getTransactionReceipt } from '@/app/utils'
 import abi from '@/app/data/abi.json'
-import { claimBuildings } from '@/app/frames/claim'
+import { claimBuildings } from '@/app/middleware/claim'
 
 const handleRequest = frames(async (ctx: any) => {
 

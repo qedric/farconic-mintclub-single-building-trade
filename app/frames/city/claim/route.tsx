@@ -2,7 +2,7 @@
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
 import { fetchImageUrlFromTokenId } from '@/app/utils'
-import { claimCity } from "@/app/frames/claim"
+import { claimCity } from "@/app/middleware/claim"
 
 const handleRequest = frames(async (ctx: any) => {
 
