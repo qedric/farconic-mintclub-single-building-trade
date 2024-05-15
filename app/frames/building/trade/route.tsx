@@ -42,7 +42,11 @@ const handleRequest = frames(async (ctx) => {
     if (ctx.searchParams?.building) {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
-        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : ctx.searchParams.qty ? ctx.searchParams.qty : BigInt(1)
+        const qty: bigint = ctx.message?.inputText 
+        ? BigInt(ctx.message.inputText) 
+        : ctx.searchParams.qty 
+        ? BigInt(ctx.searchParams.qty) 
+        : BigInt(1)
         const isSell:boolean = ctx.searchParams.isSell == 'true'
 
         console.log('building', building)
