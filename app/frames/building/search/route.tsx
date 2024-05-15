@@ -101,13 +101,13 @@ const handleRequest = frames(async (ctx: any) => {
                 },
                 textInput: "search",
                 buttons: [
-                    <Button action="post" target="/building/search">
+                    <Button key="1" action="post" target="/building/search">
                         Search
                     </Button>,
-                    <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
+                    <Button key="2" action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
                         Random
                     </Button>,
-                    <Button action="post" target="/">
+                    <Button key="3" action="post" target="/">
                         Reset
                     </Button>
                 ]
@@ -127,13 +127,13 @@ const handleRequest = frames(async (ctx: any) => {
         },
         textInput: "search",
         buttons: [
-            <Button action="post" target="/building/search">
+            <Button action="post" key="1" target="/building/search">
                 Search
             </Button>,
-            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
+            <Button action="post" key="2" target={{ query: { searchTerm: 'random' }, pathname: "/building/search" }}>
                 Random
             </Button>,
-            <Button action="post" target="/">
+            <Button action="post" key="3" target="/">
                 Reset
             </Button>
         ]
