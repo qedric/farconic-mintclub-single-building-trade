@@ -1,8 +1,7 @@
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { searchJsonArray, getOpenseaData, getDetail, NFT } from '@/app/utils'
+import { searchJsonArray } from '@/app/utils'
 import { CardImage } from '@/app/components/Card'
-import { ethers } from "ethers"
 
 const handleRequest = frames(async (ctx: any) => {
 
@@ -30,10 +29,10 @@ const handleRequest = frames(async (ctx: any) => {
                 textInput: "search",
                 buttons: searchResults.length == 1 // just one result
                 ?   [
-                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/buy" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade" }}>
                             Buy
                         </Button>,
-                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/sell" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/building/trade" }}>
                             Sell
                         </Button>,
                         <Button action="post" target="/building/search">
@@ -45,10 +44,10 @@ const handleRequest = frames(async (ctx: any) => {
                     ]
                 :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                     ?   [
-                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/buy" }}>
+                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade" }}>
                                 Buy
                             </Button>,
-                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/sell" }}>
+                            <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/building/trade" }}>
                                 Sell
                             </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
@@ -60,10 +59,10 @@ const handleRequest = frames(async (ctx: any) => {
                         ]
                     :   page > 1 && searchResults.length == page // multiple results and we are at the end
                         ?   [
-                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/buy" }}>
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade" }}>
                                     Buy
                                 </Button>,
-                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/sell" }}>
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/building/trade" }}>
                                     Sell
                                 </Button>,
                                 <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/building/search" }}>
@@ -74,10 +73,10 @@ const handleRequest = frames(async (ctx: any) => {
                                 </Button>
                             ]
                         :   [ // multiple results and we are at the start
-                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/buy" }}>
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/trade" }}>
                                     Buy
                                 </Button>,
-                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/building/card/sell" }}>
+                                <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/building/trade" }}>
                                     Sell
                                 </Button>,
                                 <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/building/search" }}>

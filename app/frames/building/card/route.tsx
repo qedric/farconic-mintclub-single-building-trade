@@ -6,9 +6,9 @@ import { CardImage } from '@/app/components/Card'
 
 const handleRequest = frames(async (ctx) => {
     
-    if (ctx.searchParams?.buildingNFT) {
+    if (ctx.searchParams?.building) {
 
-        const building:NFT = JSON.parse(ctx.searchParams.buildingNFT)
+        const building:NFT = JSON.parse(ctx.searchParams.building)
 
         const [openseaData, detail] = await Promise.all([
             getOpenseaData((building as NFT).address),
@@ -21,10 +21,10 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade" }}>
                     Buy
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), isSell:true }, pathname: "/building/card/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), isSell:true }, pathname: "/building/trade" }}>
                     Sell
                 </Button>,
                 <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>

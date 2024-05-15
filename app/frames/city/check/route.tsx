@@ -67,8 +67,8 @@ const handleRequest = frames(async (ctx: any) => {
         const building = buildingCount[buildingId]
         if (building > 0) { // at least one of this building is owned
             // query our nfts to get the city tokenId for this building
-            const buildingNFT = nfts.find((nft) => parseInt(nft.id) == buildingId)
-            const cityName = buildingNFT?.metadata.attributes.find((attr) => attr.trait_type == 'City')?.value
+            const building = nfts.find((nft) => parseInt(nft.id) == buildingId)
+            const cityName = building?.metadata.attributes.find((attr) => attr.trait_type == 'City')?.value
             const city = nfts.find((nft) => nft.metadata.name == cityName)
             const cityId = parseInt(city?.id || '-1')
             const cityBuildingCount = city?.metadata.attributes.find((attr) => attr.trait_type == 'Number of Buildings')?.value

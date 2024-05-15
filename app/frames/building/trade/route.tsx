@@ -5,22 +5,22 @@ import { NFT, getNFTBalance } from '@/app/utils'
 import { mintclub } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 
-const handleRequest = frames(async (ctx) => {
+const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
+    const [estimation, royalty] = isSell
+    ? await mintclub
+        .network('basesepolia')
+        .token(tokenAddress)
+        .getSellEstimation(amount)
+    : await mintclub
+        .network('basesepolia')
+        .token(tokenAddress)
+        .getBuyEstimation(amount)
+    console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
+    console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+    return estimation
+}
 
-    const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
-        const [estimation, royalty] = isSell
-        ? await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getSellEstimation(amount)
-        : await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getBuyEstimation(amount)
-        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
-        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
-        return estimation
-    }
+const handleRequest = frames(async (ctx) => {
 
     if (ctx.message?.transactionId) {
         const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
@@ -42,7 +42,7 @@ const handleRequest = frames(async (ctx) => {
     if (ctx.searchParams?.building) {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
-        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : BigInt(1)
+        const qty:bigint = ctx.message?.inputText ? BigInt(ctx.message?.inputText) : ctx.searchParams.qty ? ctx.searchParams.qty : BigInt(1)
         const isSell:boolean = ctx.searchParams.isSell == 'true'
 
         console.log('building', building)
@@ -63,7 +63,7 @@ const handleRequest = frames(async (ctx) => {
                         aspectRatio: "1:1",
                     },
                     buttons: [
-                        <Button action="post" target={{ query: { buildingNFT: JSON.stringify(building) }, pathname: "/building/card" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
                             Back
                         </Button>,
                         <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
@@ -96,10 +96,10 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
                     Back
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card/sell" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/building/trade" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:true }, pathname: "/building/trade/txdata" }} post_url="/building/card/trade">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell }, pathname: "/building/trade/txdata" }} post_url="/building/trade">
                     Confirm
                 </Button>
             ]
