@@ -55,7 +55,7 @@ const handleRequest = frames(async (ctx) => {
                 return {
                     image: (
                         <div tw="flex flex-col w-3/4 mx-auto text-center">
-                            <p>You don't have enough { building.metadata.name } cards!</p>
+                            <p>You don&apos;t have enough { building.metadata.name } cards!</p>
                             <p>Your balance: { balance }</p>
                         </div>
                     ),
@@ -107,7 +107,7 @@ const handleRequest = frames(async (ctx) => {
     } else {
         return {
             image: (
-                <div>error can't find building</div>
+                <div>error can&apos;t find building</div>
             ),
             imageOptions: {
                 aspectRatio: "1:1",

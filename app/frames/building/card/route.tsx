@@ -39,7 +39,7 @@ const handleRequest = frames(async (ctx) => {
     } else {
         return {
             image: (
-                <div>error can't find building</div>
+                <div>error can&apos;t find building</div>
             ),
             imageOptions: {
                 aspectRatio: "1:1",

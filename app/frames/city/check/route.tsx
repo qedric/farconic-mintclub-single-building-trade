@@ -9,7 +9,7 @@ import {
     Abi
 } from "viem"
 import abi from '@/app/data/abi.json'
-import nfts from '@/app/data/nfts.json'
+import nfts from '@/app/data/cities.json'
 
 const LAST_BUILDING_ID:number = parseInt(process.env.LAST_BUILDING_ID as string) || 0
 
@@ -24,7 +24,7 @@ const handleRequest = frames(async (ctx: any) => {
         return {
             image: (
                 <div tw="flex">
-                    <h1>Sorry! We couldn't find a verified address</h1>
+                    <h1>Sorry! We couldn&apos;t find a verified address</h1>
                 </div>
             ),
             imageOptions: {
@@ -115,7 +115,7 @@ const handleRequest = frames(async (ctx: any) => {
     } : {
         image: (
             <div tw="flex">
-                <h1>Sorry! You don't have a full set</h1>
+                <h1>Sorry! You don&apos;t have a full set</h1>
             </div>
         ),
         imageOptions: {

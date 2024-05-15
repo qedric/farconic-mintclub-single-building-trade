@@ -15,7 +15,7 @@ const handleRequest = frames(async (ctx: any) => {
         return { 
             image: (
                 <div tw="flex">
-                    <h1>Can't find a transaction</h1>
+                    <h1>Can&apos;t find a transaction</h1>
                 </div>
             ),
             imageOptions: {
