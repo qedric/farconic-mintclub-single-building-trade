@@ -56,9 +56,6 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
-                    Back
-                </Button>,
                 <Button action="post" target="/">
                     Reset
                 </Button>,

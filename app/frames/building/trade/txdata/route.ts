@@ -39,7 +39,7 @@ export const POST = frames(async (ctx) => {
 
     if (isSell) {
         // insert slippageOutcome at index 2 of args:
-        args.splice(2, 0, 0)
+        args.splice(2, 0, '0')
     }
 
     const zap_contract_address = getMintClubContractAddress('ZAP', baseSepolia.id)
