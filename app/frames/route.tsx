@@ -2,6 +2,10 @@
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
 
+export const config = {
+    maxDuration: 60,
+}
+
 const handleRequest = frames(async (ctx) => {
 
     return {
