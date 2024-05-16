@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
-import buildings from "@/app/data/buildings.json"
 
 const handleRequest = frames(async (ctx) => {
 
@@ -41,9 +40,6 @@ const handleRequest = frames(async (ctx) => {
         buttons: [
             <Button action="post" target="/building/search">
                 Search
-            </Button>,
-            <Button action="post" target={{ query: { building: JSON.stringify(buildings[Math.floor(Math.random() * buildings.length)]) }, pathname: "/building/card" }}>
-                Random
             </Button>
         ]
     }
