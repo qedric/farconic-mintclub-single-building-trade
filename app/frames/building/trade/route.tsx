@@ -4,6 +4,8 @@ import { frames } from "../../frames"
 import { NFT, getNFTBalance } from '@/app/utils'
 import { mintclub } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
+import { getAddressesForFid } from "frames.js"
+import { ErrorFrame } from "@/app/components/Error"
 
 const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
     const [estimation, royalty] = isSell
@@ -21,6 +23,51 @@ const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
 }
 
 const handleRequest = frames(async (ctx) => {
+
+    const fid = ctx.message?.requesterFid
+    if (!fid) {
+        return {
+            image: ErrorFrame("error: can't find requesterFid"),
+            imageOptions: {
+                aspectRatio: "1:1",
+            },
+            buttons: [
+                <Button action="post" target={{ query: { building: ctx.searchParams.building }, pathname: "/building/card" }}>
+                    Back
+                </Button>,
+                <Button action="post" target="/">
+                    Reset
+                </Button>,
+                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
+                    view on opensea
+                </Button>
+            ]
+        }
+    }
+
+    const addresses = await getAddressesForFid({
+        fid: fid,
+    })
+
+    if (addresses.length == 0) {
+        return {
+            image: ErrorFrame("error: can't find connected address"),
+            imageOptions: {
+                aspectRatio: "1:1",
+            },
+            buttons: [
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
+                    Back
+                </Button>,
+                <Button action="post" target="/">
+                    Reset
+                </Button>,
+                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
+                    view on opensea
+                </Button>
+            ]
+        }
+    }
 
     if (ctx.message?.transactionId) {
         const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
@@ -43,24 +90,26 @@ const handleRequest = frames(async (ctx) => {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
         const qty: bigint = ctx.message?.inputText 
-        ? BigInt(ctx.message.inputText) 
-        : ctx.searchParams.qty 
-        ? BigInt(ctx.searchParams.qty) 
-        : BigInt(1)
+            ? BigInt(ctx.message.inputText) 
+            : ctx.searchParams.qty 
+                ? BigInt(ctx.searchParams.qty) 
+                : BigInt(1)
         const isSell:boolean = ctx.searchParams.isSell == 'true'
 
         console.log('building', building)
         console.log(`Trading ${qty} of ${building.metadata.name}`)
-
-        // check that the connected address has balance to sell
+       
         if (isSell) {
-            const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), (ctx as any).message.requesterVerifiedAddresses[0]) as bigint)
+
+            // check that the connected address has balance to sell
+            const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), addresses[0].address) as bigint)
+            console.log(`Balance: ${balance}`)
             if (balance < qty) {
                 return {
                     image: (
                         <div tw="flex flex-col w-3/4 mx-auto text-center">
-                            <p>You don&apos;t have enough { building.metadata.name } cards!</p>
-                            <p>Your balance: { balance }</p>
+                            <p>You don&apos;t have enough<span tw="mx-2">{ building.metadata.name }</span>cards!</p>
+                            <p>Your balance:<span tw="ml-5">{ balance }</span></p>
                         </div>
                     ),
                     imageOptions: {
@@ -103,7 +152,7 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/building/trade" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell }, pathname: "/building/trade/txdata" }} post_url="/building/trade">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell, userAddress:addresses[0].address }, pathname: "/building/trade/txdata" }} post_url="/building/trade">
                     Confirm
                 </Button>
             ]
