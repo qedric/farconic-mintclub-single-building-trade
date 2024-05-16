@@ -42,14 +42,8 @@ const handleRequest = frames(async (ctx) => {
             <Button action="post" target="/building/search">
                 Search
             </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
-                Farconic
-            </Button>,
             <Button action="post" target={{ query: { building: JSON.stringify(buildings[Math.floor(Math.random() * buildings.length)]) }, pathname: "/building/card" }}>
                 Random
-            </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
-                My Cards / Learn more
             </Button>
         ]
     }
