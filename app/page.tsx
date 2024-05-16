@@ -16,5 +16,5 @@ export async function generateMetadata() {
 }
  
 export default function Page() {
-  return <span>My existing page</span>;
+  return <span>A Farconic Frame</span>;
 }

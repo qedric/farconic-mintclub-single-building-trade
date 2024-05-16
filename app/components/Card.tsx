@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text */
 import { NFT, getOpenseaData, getDetail } from '@/app/utils'
 import { ethers } from 'ethers'
+
 export const CardImage = async ( building:NFT ) => {
 
     const [openseaData, detail] = await Promise.all([
