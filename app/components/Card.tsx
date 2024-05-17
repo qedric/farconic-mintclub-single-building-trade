@@ -15,8 +15,8 @@ export const CardImage = async ( building:NFT ) => {
         <div tw="flex w-full h-full bg-gray-200 items-center justify-center">
             <div tw="flex flex-wrap p-8 w-3/5 h-7/8 bg-pink-700 text-white rounded-lg">
                 <div tw={ `p-4 flex flex-col items-center justify-center w-full h-4/5 ${ style }` }>
-                    <img tw="w-full object-contain" src={ building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string } />
-                    <h3 tw="my-2 overflow-hidden break-word">{ building.metadata.name }</h3>
+                    <img tw="w-full" src={ building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string } />
+                    <h3 tw="my-2 overflow-hidden">{ building.metadata.name }</h3>
                 </div>
                 <div tw="my-5 w-full flex justify-between items-center">
                     <div tw={ `flex text-sm w-1/3 mr-2 p-2 ${ style }` }>

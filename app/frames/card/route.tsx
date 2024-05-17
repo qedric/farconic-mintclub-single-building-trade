@@ -1,7 +1,7 @@
-/* eslint-disable react/jsx-key */
+/* eslint-disable react/jsx-key, @next/next/no-img-element, jsx-a11y/alt-text */
 import { Button } from "frames.js/next"
-import { frames } from "../../frames"
-import { NFT, getOpenseaData, getDetail } from '@/app/utils'
+import { frames } from "../frames"
+import { NFT } from '@/app/utils'
 import { CardImage } from '@/app/components/Card'
 
 const handleRequest = frames(async (ctx) => {
@@ -10,28 +10,20 @@ const handleRequest = frames(async (ctx) => {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
-        const [openseaData, detail] = await Promise.all([
-            getOpenseaData((building as NFT).address),
-            getDetail((building as NFT).address)
-        ])
-
         return {
             image: await CardImage( building ),
             imageOptions: {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/confirm" }}>
                     Buy
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), isSell:true }, pathname: "/building/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true }, pathname: "/trade" }}>
                     Sell
                 </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
-                    Farconic App
-                </Button>,
-                <Button action="post" target='/'>
-                    Home
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/card" }}>
+                    Back
                 </Button>
             ],
             textInput: 'Quantity'

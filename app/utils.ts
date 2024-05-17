@@ -2,6 +2,22 @@ import { mintclub } from 'mint.club-v2-sdk'
 import mc_building_abi from './data/mc_building_abi.json'
 import buildings from '@/app/data/buildings.json'
 
+const favBuildingNames: string[] = [
+    "Eiffel Tower",
+    "Burj Khalifa",
+    "Statue of Liberty",
+    "Big Ben",
+    "Arc de Triomphe",
+    "Chrysler Building",
+    "Hagia Sophia",
+    "Opera House",
+    "Empire State Building",
+    "Christ the Redeemer",
+    "Tower Bridge",
+    "Golden Gate Bridge",
+    "Funkturm Berlin"
+]
+
 const publicClient = mintclub.network('basesepolia').getPublicClient()
 
 export interface Metadata {
@@ -143,16 +159,12 @@ export const getNFTBalance = async (tokenAddress: `0x${string}`, userAddress: `0
 })
 
 export const getRandomBuildingAmongFavourites = (excludeName?: string): NFT => {
-    const favBuildingNames: string[] = [
-        "eiffel tower", "statue of liberty", "big ben", "Arc de Triomphe", "Chrysler Building", "Empire State Building", "Christ the Redeemer", "Golden Gate Bridge", "Funkturm Berlin"]
-    
     // Remove the excluded name from the favorite building names array
-    const filteredBuildingNames = excludeName ? favBuildingNames.filter(name => name.toLowerCase() !== excludeName.toLowerCase()) : favBuildingNames;
+    const filteredBuildingNames = excludeName ? favBuildingNames.filter(name => name !== excludeName) : favBuildingNames;
 
-    // get a random number between 0 and last index of filteredBuildingNames
-    const randomIndex = Math.floor(Math.random() * filteredBuildingNames.length)
-
-    // get the building that has the matching name from the filteredBuildingNames array
-    const buildingName = filteredBuildingNames[randomIndex];
-    return buildings.find((b) => b.metadata.name.toLowerCase() === buildingName.toLowerCase()) as NFT
+    // get a random name from the filteredBuildingNames array and find the matching building
+    const buildingName = filteredBuildingNames[Math.floor(Math.random() * filteredBuildingNames.length)];
+    return buildings.find((b) => b.metadata.name === buildingName) as NFT
 }
+
+export const getFavouriteBuildings = () => buildings.filter((b) => favBuildingNames.includes(b.metadata.name)) as NFT[]

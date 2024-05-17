@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
-import buildings from "@/app/data/buildings.json"
 import { CardImage } from '@/app/components/Card'
 import { getRandomBuildingAmongFavourites } from '@/app/utils'
 
@@ -9,7 +8,7 @@ export const maxDuration = 20
 
 const handleRequest = frames(async (ctx) => {
 
-    const building = getRandomBuildingAmongFavourites()
+    const building = ctx.searchParams?.building ? JSON.parse(ctx.searchParams?.building) : getRandomBuildingAmongFavourites()
 
     return {
         image: await CardImage( building ),
@@ -18,13 +17,13 @@ const handleRequest = frames(async (ctx) => {
         },
         textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
-            <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/trade" }}>
-                Buy
+            <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
+                Trade
             </Button>,
-            <Button action="post" target="/building/search">
+            <Button action="post" target="/search">
                 Search
             </Button>,
-            <Button action="post" target={{ query: { building: JSON.stringify(getRandomBuildingAmongFavourites(building.metadata.name)) }, pathname: "/building/card" }}>
+            <Button action="post" target={{ query: { building: JSON.stringify(getRandomBuildingAmongFavourites(building.metadata.name)) }, pathname: "/" }}>
                 Random
             </Button>,
             <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>

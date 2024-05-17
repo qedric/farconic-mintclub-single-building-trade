@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-key, @next/next/no-img-element, jsx-a11y/alt-text */
 import { Button } from "frames.js/next"
-import { frames } from "../../frames"
-import { NFT, getNFTBalance } from '@/app/utils'
-import { mintclub } from 'mint.club-v2-sdk'
+import { frames } from "../frames"
+import { NFT, getNFTBalance, getTransactionReceipt } from '@/app/utils'
+import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 import { getAddressesForFid } from "frames.js"
 import { ErrorFrame } from "@/app/components/Error"
+import { baseSepolia } from "viem/chains"
 
 const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
     const [estimation, royalty] = isSell
@@ -32,7 +33,7 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: ctx.searchParams.building }, pathname: "/building/card" }}>
+                <Button action="post" target={{ query: { building: ctx.searchParams.building }, pathname: "/card" }}>
                     Back
                 </Button>,
                 <Button action="post" target="/">
@@ -68,6 +69,10 @@ const handleRequest = frames(async (ctx) => {
 
     if (ctx.message?.transactionId) {
         const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
+
+        const receipt = await getTransactionReceipt(ctx.message.transactionId)
+        console.log('receipt', receipt.logs[0])
+        console.log(ctx)
         return {
             image: (
                 <div tw="flex">Transaction Submitted</div>
@@ -113,11 +118,38 @@ const handleRequest = frames(async (ctx) => {
                         aspectRatio: "1:1",
                     },
                     buttons: [
-                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/card" }}>
                             Back
                         </Button>,
                         <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
                             view on opensea
+                        </Button>
+                    ]
+                }
+            }
+
+            // check that the seller has approved the contract to spend the NFT
+            const isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
+                owner: (addresses[0].address as `0x${string}`),
+                spender: getMintClubContractAddress('ZAP', baseSepolia.id)
+            })
+
+            if (!isApproved) {
+                return {
+                    image: (
+                        <div tw="flex flex-col w-3/4 mx-auto text-center">
+                            <p>{`You need to approve the contract to sell ${building.metadata.name} cards!`}</p>
+                        </div>
+                    ),
+                    imageOptions: {
+                        aspectRatio: "1:1",
+                    },
+                    buttons: [
+                        <Button action="tx" target={{ query: { contractAddress: building.address, approve:true, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusApprove">
+                            Approve Contract
+                        </Button>,
+                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
+                            Back
                         </Button>
                     ]
                 }
@@ -129,7 +161,7 @@ const handleRequest = frames(async (ctx) => {
         return {
             image: (
                 <div tw="flex flex-col justify-center items-center w-full h-full">
-                    <h1>{ isSell ? 'Sell' : 'Buy'}</h1>
+                    <h1>{ (isSell ? 'Sell' : 'Buy')}{` ${qty}`}</h1>
                     <div tw="flex shadow-xl">
                         <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
@@ -143,16 +175,17 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/building/card" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/card" }}>
                     Back
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/building/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/trade" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell, userAddress:addresses[0].address }, pathname: "/building/trade/txdata" }} post_url="/building/trade">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
                     Confirm
                 </Button>
-            ]
+            ],
+            textInput: 'Quantity'
         }
     } else {
         return {
