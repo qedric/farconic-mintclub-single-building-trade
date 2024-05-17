@@ -104,8 +104,8 @@ const handleRequest = frames(async (ctx) => {
             if (balance < qty) {
                 return {
                     image: (
-                        <div tw="flex flex-col w-3/4 mx-auto text-center">
-                            <p>You don&apos;t have enough<span tw="mx-2">{ building.metadata.name }</span>cards!</p>
+                        <div tw="flex flex-col w-3/4 mx-auto text-left">
+                            <p>{`You don't have enough ${building.metadata.name} cards!`}</p>
                             <p>Your balance:<span tw="ml-5">{ balance }</span></p>
                         </div>
                     ),

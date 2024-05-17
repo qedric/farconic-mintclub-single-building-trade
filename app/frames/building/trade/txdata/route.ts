@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import { encodeFunctionData } from "viem";
 import { baseSepolia } from "viem/chains"
 import abi from '@/app/data/zap_abi.json'
-import { getMintClubContractAddress } from 'mint.club-v2-sdk'
+import { getMintClubContractAddress, mintclub } from 'mint.club-v2-sdk'
 
 const SLIPPAGE_PERCENT = 10
 
@@ -26,6 +26,7 @@ export const POST = frames(async (ctx) => {
     const qty = BigInt(ctx.searchParams.qty)
     const estimation:bigint = BigInt(ctx.searchParams.estimation)
     const isSell:boolean = ctx.searchParams.isSell == 'true'
+    const zap_contract_address = getMintClubContractAddress('ZAP', baseSepolia.id)
 
     console.log('building_address', building_address)
 
@@ -38,11 +39,23 @@ export const POST = frames(async (ctx) => {
     console.log('isSell:', isSell ? 'true' : 'false')
 
     if (isSell) {
+
+        // approve the zap contract to spend the NFT
+        const isApproved = await mintclub.network(baseSepolia.id).nft(building_address).getIsApprovedForAll({
+            owner: (userAddress as `0x${string}`),
+            spender: zap_contract_address
+        })
+        //console.log('isApproved:', isApproved)
+        if (!isApproved) {
+            await mintclub.network(baseSepolia.id).nft(building_address).approve({
+                approved: true,
+                spender: zap_contract_address
+            })
+        }
+
         // insert slippageOutcome at index 2 of args:
         args.splice(2, 0, '0')
     }
-
-    const zap_contract_address = getMintClubContractAddress('ZAP', baseSepolia.id)
 
     const calldata = encodeFunctionData({
         abi: abi,

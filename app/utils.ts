@@ -141,3 +141,18 @@ export const getNFTBalance = async (tokenAddress: `0x${string}`, userAddress: `0
     functionName: 'balanceOf',
     args: [userAddress, 0]
 })
+
+export const getRandomBuildingAmongFavourites = (excludeName?: string): NFT => {
+    const favBuildingNames: string[] = [
+        "eiffel tower", "statue of liberty", "big ben", "Arc de Triomphe", "Chrysler Building", "Empire State Building", "Christ the Redeemer", "Golden Gate Bridge", "Funkturm Berlin"]
+    
+    // Remove the excluded name from the favorite building names array
+    const filteredBuildingNames = excludeName ? favBuildingNames.filter(name => name.toLowerCase() !== excludeName.toLowerCase()) : favBuildingNames;
+
+    // get a random number between 0 and last index of filteredBuildingNames
+    const randomIndex = Math.floor(Math.random() * filteredBuildingNames.length)
+
+    // get the building that has the matching name from the filteredBuildingNames array
+    const buildingName = filteredBuildingNames[randomIndex];
+    return buildings.find((b) => b.metadata.name.toLowerCase() === buildingName.toLowerCase()) as NFT
+}
