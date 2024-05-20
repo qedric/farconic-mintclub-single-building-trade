@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+/* eslint-disable react/jsx-key, @next/next/no-img-element, jsx-a11y/alt-text */
 import { Button } from "frames.js/next"
 import { frames } from "../frames"
 import { searchJsonArray, getFavouriteBuildings } from '@/app/utils'
@@ -33,10 +33,10 @@ const handleRequest = frames(async (ctx: any) => {
             textInput: "search",
             buttons: searchResults.length == 1 // just one result
             ?   [
-                    <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/trade/confirm" }}>
+                    <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/trade" }}>
                         Buy
                     </Button>,
-                    <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/trade/confirm" }}>
+                    <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding), isSell: true }, pathname: "/trade" }}>
                         Sell
                     </Button>,
                     <Button action="post" target="/search">
@@ -48,7 +48,7 @@ const handleRequest = frames(async (ctx: any) => {
                 ]
             :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                 ?   [
-                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/trade" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(currentBuilding) }, pathname: "/card" }}>
                             Trade
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
@@ -90,9 +90,7 @@ const handleRequest = frames(async (ctx: any) => {
                                 Search
                             </Button>
                         ]
-
         }
-
     }
 
     return { 
@@ -107,13 +105,13 @@ const handleRequest = frames(async (ctx: any) => {
         },
         textInput: "search",
         buttons: [
-            <Button action="post" key="1" target="/search">
+            <Button action="post" target="/search">
                 Search
             </Button>,
-            <Button action="post" key="2" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
+            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
                 Random
             </Button>,
-            <Button action="post" key="3" target="/">
+            <Button action="post" target="/">
                 Reset
             </Button>
         ]

@@ -25,25 +25,11 @@ const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
 
 const handleRequest = frames(async (ctx) => {
 
+    console.log('handleRequest called')
+
     const fid = ctx.message?.requesterFid
     if (!fid) {
-        return {
-            image: ErrorFrame("error: can't find requesterFid"),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target={{ query: { building: ctx.searchParams.building }, pathname: "/card" }}>
-                    Back
-                </Button>,
-                <Button action="post" target="/">
-                    Reset
-                </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                    view on opensea
-                </Button>
-            ]
-        }
+        return ErrorFrame("Error: can't find requester fid")
     }
 
     const addresses = await getAddressesForFid({
@@ -51,41 +37,7 @@ const handleRequest = frames(async (ctx) => {
     })
 
     if (addresses.length == 0) {
-        return {
-            image: ErrorFrame("error: can't find connected address"),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target="/">
-                    Reset
-                </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                    view on opensea
-                </Button>
-            ]
-        }
-    }
-
-    if (ctx.message?.transactionId) {
-        const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
-
-        const receipt = await getTransactionReceipt(ctx.message.transactionId)
-        console.log('receipt', receipt.logs[0])
-        console.log(ctx)
-        return {
-            image: (
-                <div tw="flex">Transaction Submitted</div>
-            ),
-            buttons: [
-                <Button action="link" target={url}>
-                    view tx
-                </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
-                    My Cards / Learn more
-                </Button>
-            ]
-        }
+        ErrorFrame("Error: can't find connected address")
     }
     
     if (ctx.searchParams?.building) {
@@ -134,6 +86,8 @@ const handleRequest = frames(async (ctx) => {
                 spender: getMintClubContractAddress('ZAP', baseSepolia.id)
             })
 
+            console.log(`Is Approved for ${addresses[0].address}:`, isApproved)
+
             if (!isApproved) {
                 return {
                     image: (
@@ -163,7 +117,7 @@ const handleRequest = frames(async (ctx) => {
                 <div tw="flex flex-col justify-center items-center w-full h-full">
                     <h1>{ (isSell ? 'Sell' : 'Buy')}{` ${qty}`}</h1>
                     <div tw="flex shadow-xl">
-                        <img tw="rotate-45" width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
+                        <img width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
                     <div tw="flex flex-col items-center">
                         <h1 tw="text-center">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
@@ -178,7 +132,7 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/card" }}>
                     Back
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: isSell }, pathname: "/trade" }}>
                     Refresh Price
                 </Button>,
                 <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
@@ -188,22 +142,7 @@ const handleRequest = frames(async (ctx) => {
             textInput: 'Quantity'
         }
     } else {
-        return {
-            image: (
-                <div>error can&apos;t find building</div>
-            ),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target="/">
-                    Reset
-                </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                    view on opensea
-                </Button>
-            ]
-        }
+        return ErrorFrame("Error: can't find building")
     }
 })
 

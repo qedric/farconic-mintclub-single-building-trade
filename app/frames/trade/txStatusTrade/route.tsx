@@ -7,80 +7,73 @@ import { decodeEventLog } from 'viem'
 import { baseSepolia } from "viem/chains"
 import abi from '@/app/data/mcv2bond_abi.json'
 import { getMintClubContractAddress } from 'mint.club-v2-sdk'
+import { ErrorFrame } from "@/app/components/Error"
 
 const handleRequest = frames(async (ctx) => {
 
     if (ctx.message?.transactionId) {
-        
-        const url = `https://base-sepolia.blockscout.com/tx/${ctx.message.transactionId}`
-        const receipt = await getTransactionReceipt(ctx.message.transactionId)
-        const bond_contract_address = getMintClubContractAddress('BOND', baseSepolia.id)
 
-        // Find the 'Mint' event log with the bond contract address
-        const mintEvent = receipt.logs
+        console.log('transactionId', ctx.message.transactionId)
+       
+        const url = `${process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL}/${ctx.message.transactionId}`
+        const bond_contract_address = getMintClubContractAddress('BOND', baseSepolia.id)
+        let receipt
+        try {
+            receipt = await getTransactionReceipt(ctx.message.transactionId)
+        } catch (e) {
+            console.log(e)
+            return ErrorFrame(
+                "Error getting transaction receipt",
+                'Refresh',
+                JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusTrade" })
+            )
+        }
+        
+        // Find the 'Mint' or 'Burn' event log with the bond contract address
+        const mintOrBurnEvent = receipt.logs
         .filter(log => log.address.toLowerCase() === bond_contract_address.toLowerCase())
         .map(log => decodeEventLog({
             abi: abi,
             data: log.data,
             topics: log.topics
         }))
-        .find(decodedLog => decodedLog.eventName === 'Mint')
+        .find(decodedLog => decodedLog.eventName === 'Mint' || decodedLog.eventName === 'Burn')
 
-        //console.log('mintEvent', mintEvent)
+        const isSell = mintOrBurnEvent?.eventName === 'Burn'
 
-        if (!mintEvent) {
-            return {
-                image: (
-                    <div>error can&apos;t find mint event</div>
-                ),
-                imageOptions: {
-                    aspectRatio: "1:1",
-                },
-                buttons: [
-                    <Button action="post" target="/">
-                        Reset
-                    </Button>,
-                    <Button action="link" target={url}>
-                        View tx
-                    </Button>,
-                    <Button action="post" target={{ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/sellApproved/txStatus" }}>
-                        Refresh
-                    </Button>
-                ]
-            }
+        if (!mintOrBurnEvent) {
+            return ErrorFrame(
+                "Error: can't find the transaction details",
+                'Refresh',
+                JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusTrade" })
+            )
         }
 
         if (receipt.status == 'success') {
 
             // get the building object from the buildings json based on the address
-            const building_address = (mintEvent as any).args.token
-            const building = buildings.find((building) => building.address === building_address)
+            const building_address = (mintOrBurnEvent as any).args.token
+            const building = buildings.find((building) => building.address?.toLowerCase() === building_address.toLowerCase())
 
             if (!building) {
-                return {
-                    image: (
-                        <div>error can&apos;t find building</div>
-                    ),
-                    imageOptions: {
-                        aspectRatio: "1:1",
-                    },
-                    buttons: [
-                        <Button action="post" target="/">
-                            Reset
-                        </Button>,
-                        <Button action="link" target={url}>
-                            View tx
-                        </Button>,
-                        <Button action="post" target={{ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/sellApproved/txStatus" }}>
-                            Refresh
-                        </Button>
-                    ]
-                }
+                return ErrorFrame(
+                    "Error: can't find building",
+                    'Refresh',
+                    JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusTrade" })
+                )
             }
 
             return {
                 image: (
-                    <div tw="flex">{`You bought ${building?.metadata.name}!`}</div>
+                    <div tw="flex flex-col justify-center items-center w-full h-full">
+                        <div tw="flex shadow-xl">
+                            <img width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
+                        </div>
+                        <div tw="flex flex-col items-center">
+                            <div tw="flex">{ isSell ? `You sold` : `You bought` }{ ` ${building?.metadata.name}!` }</div>
+                        </div>
+                    </div>
+                    
                 ),
                 buttons: [
                     <Button action="post" target="/">
@@ -106,26 +99,14 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="link" target={url}>
                         View tx
                     </Button>,
-                    <Button action="post" target={{ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/sellApproved/txStatus" }}>
+                    <Button action="post" target={{ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusTrade" }}>
                         Refresh
                     </Button>
                 ]
             }
         }
     } else {
-        return {
-            image: (
-                <div>error can&apos;t find transaction</div>
-            ),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target="/">
-                    Reset
-                </Button>
-            ]
-        }
+        return ErrorFrame("Error: can't find transaction")
     }
 })
 

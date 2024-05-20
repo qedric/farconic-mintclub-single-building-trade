@@ -10,6 +10,9 @@ const SLIPPAGE_PERCENT = 10
 
 export const POST = frames(async (ctx) => {
 
+    console.log('txdata POST handler called')
+
+
     if (!ctx.searchParams?.contractAddress) {
         throw new Error("No Token Address")
     }

@@ -3,6 +3,7 @@ import { Button } from "frames.js/next"
 import { frames } from "../frames"
 import { NFT } from '@/app/utils'
 import { CardImage } from '@/app/components/Card'
+import { ErrorFrame } from '@/app/components/Error'
 
 const handleRequest = frames(async (ctx) => {
     
@@ -16,7 +17,7 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
-                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/confirm" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
                     Buy
                 </Button>,
                 <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true }, pathname: "/trade" }}>
@@ -29,22 +30,7 @@ const handleRequest = frames(async (ctx) => {
             textInput: 'Quantity'
         }
     } else {
-        return {
-            image: (
-                <div>error can&apos;t find building</div>
-            ),
-            imageOptions: {
-                aspectRatio: "1:1",
-            },
-            buttons: [
-                <Button action="post" target="/">
-                    Reset
-                </Button>,
-                <Button action="link" target={process.env.NEXT_PUBLIC_OPENSEA_LINK as string}>
-                    view on opensea
-                </Button>
-            ]
-        }
+        return ErrorFrame("Error: can't find building")
     }
 })
 

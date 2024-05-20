@@ -10,7 +10,6 @@ const favBuildingNames: string[] = [
     "Arc de Triomphe",
     "Chrysler Building",
     "Hagia Sophia",
-    "Opera House",
     "Empire State Building",
     "Christ the Redeemer",
     "Tower Bridge",
