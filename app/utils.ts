@@ -40,7 +40,7 @@ export interface NFT {
     address: string;
 }
 
-export const getTransactionReceipt = async (txId: `0x${string}`) => await publicClient.getTransactionReceipt({ hash: txId })
+export const getTransactionReceipt = async (txId: `0x${string}`) => await publicClient.waitForTransactionReceipt({ hash: txId,  pollingInterval: 500, retryCount: 8})
 
 export const fetchImageUrlFromIPFS = async (ipfs_link: string) => {
     // get the image value from the metadata resolved by the ipfs link
