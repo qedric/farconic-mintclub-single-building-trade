@@ -18,7 +18,7 @@ const handleRequest = frames(async (ctx) => {
         textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
             <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
-                Trade
+                Buy
             </Button>,
             <Button action="post" target="/search">
                 Search

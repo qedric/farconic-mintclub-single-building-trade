@@ -9,20 +9,22 @@ import abi from '@/app/data/mc_building_abi.json'
 
 const handleRequest = frames(async (ctx) => {
 
-    if (ctx.message?.transactionId) {
+    const txId = ctx.message?.transactionId || ctx.searchParams.transactionId
 
-        console.log('transactionId', ctx.message.transactionId)
+    if (txId) {
+
+        console.log('transactionId', txId)
        
-        const url = `${process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL}/${ctx.message.transactionId}`
+        const url = `${process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL}/${txId}`
         let receipt
         try {
-            receipt = await getTransactionReceipt(ctx.message.transactionId)
+            receipt = await getTransactionReceipt(txId as `0x${string}`)
         } catch (e) {
             console.log('error getting receipt:', e)
             return ErrorFrame(
                 "Error getting transaction receipt",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusApprove" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
             )
         }
 
@@ -47,7 +49,7 @@ const handleRequest = frames(async (ctx) => {
             return ErrorFrame(
                 "Error: can't find approve event",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusApprove" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
             )
         }
 
@@ -61,7 +63,7 @@ const handleRequest = frames(async (ctx) => {
                 return ErrorFrame(
                     "Error: can't find building",
                     'Refresh',
-                    JSON.stringify({ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusApprove" })
+                    JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
                 )
             }
 
@@ -93,7 +95,7 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="link" target={url}>
                         View tx
                     </Button>,
-                    <Button action="post" target={{ query: { transactionId: ctx.message.transactionId }, pathname: "/trade/txStatusApprove" }}>
+                    <Button action="post" target={{ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" }}>
                         Refresh
                     </Button>
                 ]

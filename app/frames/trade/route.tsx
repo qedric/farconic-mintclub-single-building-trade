@@ -43,15 +43,41 @@ const handleRequest = frames(async (ctx) => {
     if (ctx.searchParams?.building) {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
-        const qty: bigint = ctx.message?.inputText 
-            ? BigInt(ctx.message.inputText) 
-            : ctx.searchParams.qty 
-                ? BigInt(ctx.searchParams.qty) 
-                : BigInt(1)
+
+        const details = await mintclub.network('basesepolia').token(building.address).getDetail()
+
+        console.log('details', details)
+
+        // If ctx.message?.inputText cannot be converted to a bigint, or if it is greater than details.currentSupply, then check ctx.searchParams.qty. 
+        // If that is also not a valid bigint or is larget than details.currentSupply, then default to 1
+        let qty: bigint = BigInt(1)
+        if (ctx.message?.inputText) {
+            try {
+                const inputQty = BigInt(ctx.message.inputText)
+                if (inputQty <= details.info.currentSupply) {
+                    qty = inputQty
+                } else {
+                    qty = details.info.currentSupply
+                }
+            } catch (error) {
+                // qty stays as 1, carry on
+            }
+        } else if (ctx.searchParams.qty) {
+            try {
+                const inputQty = BigInt(ctx.searchParams.qty)
+                if (inputQty <= details.info.currentSupply) {
+                    qty = inputQty
+                } else {
+                    qty = details.info.currentSupply
+                }
+            } catch (error) {
+                // qty stays as 1, carry on
+            }
+        }
         const isSell:boolean = ctx.searchParams.isSell == 'true'
 
         console.log('building', building)
-        console.log(`Trading ${qty} of ${building.metadata.name}`)
+        console.log(`${isSell ? 'Selling' : 'Buying'} ${qty} of ${building.metadata.name}`)
        
         if (isSell) {
 
