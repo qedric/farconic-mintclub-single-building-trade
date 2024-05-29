@@ -48,16 +48,16 @@ const handleRequest = frames(async (ctx) => {
 
         console.log('details', details)
 
-        // If ctx.message?.inputText cannot be converted to a bigint, or if it is greater than details.currentSupply, then check ctx.searchParams.qty. 
+        // If ctx.message?.inputText cannot be converted to a bigint, or if it is greater than max supply minus current supply, then check ctx.searchParams.qty. 
         // If that is also not a valid bigint or is larget than details.currentSupply, then default to 1
         let qty: bigint = BigInt(1)
         if (ctx.message?.inputText) {
             try {
                 const inputQty = BigInt(ctx.message.inputText)
-                if (inputQty <= details.info.currentSupply) {
+                if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
                     qty = inputQty
                 } else {
-                    qty = details.info.currentSupply
+                    qty = details.info.maxSupply - details.info.currentSupply
                 }
             } catch (error) {
                 // qty stays as 1, carry on
@@ -65,10 +65,10 @@ const handleRequest = frames(async (ctx) => {
         } else if (ctx.searchParams.qty) {
             try {
                 const inputQty = BigInt(ctx.searchParams.qty)
-                if (inputQty <= details.info.currentSupply) {
+                if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
                     qty = inputQty
                 } else {
-                    qty = details.info.currentSupply
+                    qty = details.info.maxSupply - details.info.currentSupply
                 }
             } catch (error) {
                 // qty stays as 1, carry on
@@ -117,8 +117,8 @@ const handleRequest = frames(async (ctx) => {
             if (!isApproved) {
                 return {
                     image: (
-                        <div tw="flex flex-col w-3/4 mx-auto text-center">
-                            <p>{`You need to approve the contract to sell ${building.metadata.name} cards!`}</p>
+                        <div tw="flex items-center justify-center w-3/4 mx-auto text-center">
+                            <h1>{`You need to approve the contract to sell ${building.metadata.name} cards!`}</h1>
                         </div>
                     ),
                     imageOptions: {
@@ -141,13 +141,13 @@ const handleRequest = frames(async (ctx) => {
         return {
             image: (
                 <div tw="flex flex-col justify-center items-center w-full h-full">
-                    <h1>{ (isSell ? 'Sell' : 'Buy')}{` ${qty}`}</h1>
+                    <h1 tw="text-5xl">{ (isSell ? 'Sell' : 'Buy')}{` ${qty}`}</h1>
                     <div tw="flex shadow-xl">
-                        <img width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
+                        <img width="900" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
-                    <div tw="flex flex-col items-center">
-                        <h1 tw="text-center">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
-                        <p tw="text-center">slippage will be applied when you approve the transaction</p>
+                    <div tw="flex flex-col py-2 items-center">
+                        <h1 tw="text-center text-4xl mb-2">{`Price: ${(parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4))} ETH`}</h1>
+                        <p tw="text-center text-3xl">slippage will be applied when you approve the transaction</p>
                     </div>
                 </div>
             ),

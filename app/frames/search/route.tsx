@@ -26,7 +26,7 @@ const handleRequest = frames(async (ctx: any) => {
         }
 
         return {
-            image: await CardImage( searchResults[page-1] ),
+            image: await CardImage( searchResults[page-1], undefined, undefined),
             imageOptions: {
                 aspectRatio: "1:1",
             },
@@ -95,9 +95,9 @@ const handleRequest = frames(async (ctx: any) => {
 
     return { 
         image: (
-            <div tw="px-5 mx-auto flex flex-col items-center justify-center">
-                <h3>Search for a building</h3>
-                <h4 tw="text-center">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</h4>
+            <div tw="px-8 mx-auto flex flex-col items-center justify-center">
+                <h1>Search for a building</h1>
+                <h2 tw="text-center">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</h2>
             </div>
         ),
         imageOptions: {

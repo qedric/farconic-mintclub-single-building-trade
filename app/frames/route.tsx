@@ -1,34 +1,21 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next"
 import { frames } from "./frames"
+import { getUserDataForFid } from 'frames.js'
 import { CardImage } from '@/app/components/Card'
 import { getRandomBuildingAmongFavourites } from '@/app/utils'
-import * as fs from "node:fs/promises"
-import * as path from "node:path"
-
-const quicksandBoldFont = fs.readFile(
-    path.join(path.resolve(process.cwd(), "public"), "Quicksand-Bold.ttf")
-) 
 
 export const maxDuration = 20
 
 const handleRequest = frames(async (ctx) => {
 
-    const quicksandBoldData = await quicksandBoldFont
-
     const building = ctx.searchParams?.building ? JSON.parse(ctx.searchParams?.building) : getRandomBuildingAmongFavourites()
+    const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
     return {
-        image: await CardImage( building ),
+        image: await CardImage( building, userData?.profileImage, userData?.username ),
         imageOptions: {
-            aspectRatio: "1:1",
-            fonts: [
-                {
-                  name: "QuicksandBold",
-                  data: quicksandBoldData,
-                  weight: 700,
-                }
-            ]
+            aspectRatio: "1:1"
         },
         textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
@@ -41,7 +28,7 @@ const handleRequest = frames(async (ctx) => {
             <Button action="post" target={{ query: { building: JSON.stringify(getRandomBuildingAmongFavourites(building.metadata.name)) }, pathname: "/" }}>
                 Random
             </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
+            <Button action="link" target="https://farconic.xyz">
                 Farconic App
             </Button>
         ]

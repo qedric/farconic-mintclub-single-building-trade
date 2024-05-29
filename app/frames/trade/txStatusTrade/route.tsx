@@ -69,14 +69,16 @@ const handleRequest = frames(async (ctx) => {
                 image: (
                     <div tw="flex flex-col justify-center items-center w-full h-full">
                         <div tw="flex shadow-xl">
-                            <img width="500" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
+                            <img width="900" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                         </div>
                         <div tw="flex flex-col items-center">
-                            <div tw="flex">{ isSell ? `You sold` : `You bought` }{ ` ${building?.metadata.name}!` }</div>
+                            <h1 tw="flex text-4xl">{ isSell ? `You sold` : `You bought` }{ ` ${building?.metadata.name}!` }</h1>
                         </div>
-                    </div>
-                    
+                    </div> 
                 ),
+                imageOptions: {
+                    aspectRatio: "1:1",
+                },
                 buttons: [
                     <Button action="post" target="/">
                         Reset

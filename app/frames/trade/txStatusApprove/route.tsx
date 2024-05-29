@@ -69,8 +69,13 @@ const handleRequest = frames(async (ctx) => {
 
             return {
                 image: (
-                    <div tw="flex">Transaction Submitted</div>
+                    <div tw="flex items-center justify-center mx-auto">
+                        <h1>Transaction Submitted</h1>
+                    </div>
                 ),
+                imageOptions: {
+                    aspectRatio: "1:1"
+                },
                 buttons: [
                     <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true }, pathname: "/trade" }}>
                         {`Sell ${building?.metadata.name}`}
