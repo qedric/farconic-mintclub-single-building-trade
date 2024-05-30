@@ -196,7 +196,7 @@ export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigi
 
         let tokenAddress:`0x${string}`
 
-        if (buildingParam && qtyParam && isSellParam) {
+        if (buildingParam && !qtyParam && isSellParam) {
             try {
                 const buildingObj = JSON.parse(buildingParam)
                 tokenAddress = buildingObj.address
