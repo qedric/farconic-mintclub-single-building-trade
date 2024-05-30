@@ -196,7 +196,7 @@ export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigi
 
         let tokenAddress:`0x${string}`
 
-        if (buildingParam && !qtyParam && isSellParam) {
+        if (buildingParam) {
             try {
                 const buildingObj = JSON.parse(buildingParam)
                 tokenAddress = buildingObj.address
@@ -204,10 +204,10 @@ export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigi
                 throw e
             }
         } else {
-            throw new Error('missing parameters in URL searchParams')
+            throw new Error('missing building in URL searchParams')
         }
 
-        const amount = BigInt(qtyParam) || 1n
+        const amount = qtyParam ? BigInt(qtyParam) : 1n
         const isSell = isSellParam === 'true'
 
         const [estimation, royalty] = isSell
