@@ -30,7 +30,8 @@
     },
     "id": "0",
     "tokenURI": "ipfs://QmaFsSwPyH6pXCECXB7rUUo4QLraVdao5ZH1xFRtjtvhLW",
-    "address": "0x858004dF6B17411Bc929d04166c4eCe59d2f3eB1"
+    "address": "0x858004dF6B17411Bc929d04166c4eCe59d2f3eB1",
+    "building_color": "#EABB43"
   },
   {
     "metadata": {
@@ -63,7 +64,8 @@
     },
     "id": "1",
     "tokenURI": "ipfs://Qmd2qbxym6WQTo2gkTLAj9X8rGgsmDeNFS6u3borXzzYht",
-    "address": "0x2a354D498ABFABE4C9Cb1a5D5d925ab86cc70EFC"
+    "address": "0x2a354D498ABFABE4C9Cb1a5D5d925ab86cc70EFC",
+    "building_color": "#59A3B9"
   },
   {
     "metadata": {
@@ -96,7 +98,8 @@
     },
     "id": "2",
     "tokenURI": "ipfs://QmPQvoarZdPRsCrz6qEf9H4ru2dvhse9MtmLgd5dF97Shf",
-    "address": "0x271eD0076657841E7b41D02e228ffa1771bb648B"
+    "address": "0x271eD0076657841E7b41D02e228ffa1771bb648B",
+    "building_color": "#806CA8"
   },
   {
     "metadata": {
@@ -129,7 +132,8 @@
     },
     "id": "3",
     "tokenURI": "ipfs://QmVWteHH9aTMzNhNb4peET3TfAkLQ5ppWCiDfPvAVweiWF",
-    "address": "0x9e14bb6a79711CFC867ef233773B3E124427b6e9"
+    "address": "0x9e14bb6a79711CFC867ef233773B3E124427b6e9",
+    "building_color": "#459B91"
   },
   {
     "metadata": {
@@ -162,7 +166,8 @@
     },
     "id": "4",
     "tokenURI": "ipfs://QmVNtvCzCEsbDsfgtfFqXbE8R16M62jFskqNKXpXkMXnHe",
-    "address": "0x3290fAf01810E746f74248A13FD1f8CB37b741a4"
+    "address": "0x3290fAf01810E746f74248A13FD1f8CB37b741a4",
+    "building_color": "#D54B48"
   },
   {
     "metadata": {
@@ -195,7 +200,8 @@
     },
     "id": "5",
     "tokenURI": "ipfs://QmYDwYbXVFg5uEQLjgqxFVfj3cV7uvzYMfQzAvK5fUC5rf",
-    "address": "0x1EAF79856Ca5ccD0A4B3EFA6E921EB4A0DF8a39a"
+    "address": "0x1EAF79856Ca5ccD0A4B3EFA6E921EB4A0DF8a39a",
+    "building_color": "#D55683"
   },
   {
     "metadata": {
@@ -228,7 +234,8 @@
     },
     "id": "6",
     "tokenURI": "ipfs://QmRhiUSy4pTves8TsoineXaRhPsNmmBtV7BBqszhYUdU7n",
-    "address": "0xCA439aa84eB4A91DAFFfFbc75a3a5E362c59801c"
+    "address": "0xCA439aa84eB4A91DAFFfFbc75a3a5E362c59801c",
+    "building_color": "#A1CA7C"
   },
   {
     "metadata": {
@@ -261,7 +268,8 @@
     },
     "id": "7",
     "tokenURI": "ipfs://QmS4Co8TZnv2jXraRwmJQFpdrHKWTsh6C3sKXPrgRy2REh",
-    "address": "0xb8198AA921Acb227b65B2F703f4690a7D8369b6c"
+    "address": "0xb8198AA921Acb227b65B2F703f4690a7D8369b6c",
+    "building_color": "#EAA661"
   },
   {
     "metadata": {
@@ -298,7 +306,8 @@
     },
     "id": "8",
     "tokenURI": "ipfs://QmeVQXL3tFAE6dpVA8eezx9HxndAxuyhsDd7idJhqXekFQ",
-    "address": "0x1A041B057c27924Ff0e582341ac41dA0DeAe2180"
+    "address": "0x1A041B057c27924Ff0e582341ac41dA0DeAe2180",
+    "building_color": "#dd639c"
   },
   {
     "metadata": {
@@ -335,7 +344,8 @@
     },
     "id": "9",
     "tokenURI": "ipfs://QmWS7dy5H85wmb2Esvd1Afp1wkevrZqiA9WhAHEH9ohCva",
-    "address": "0xe99d5c084b417e699d984Cd7c18f729C2923d78e"
+    "address": "0xe99d5c084b417e699d984Cd7c18f729C2923d78e",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -372,7 +382,8 @@
     },
     "id": "10",
     "tokenURI": "ipfs://QmSaesi1C8giuySgEPsx7akzaXWzaSxkJ2itJdozJYhV2D",
-    "address": "0x14F3CdB98473d738497C21fee38618D643C13D81"
+    "address": "0x14F3CdB98473d738497C21fee38618D643C13D81",
+    "building_color": "#ea098b"
   },
   {
     "metadata": {
@@ -409,7 +420,8 @@
     },
     "id": "11",
     "tokenURI": "ipfs://QmeZfiFU9C9TCKULhVLUdx5sQHFpWWHMiSobDxBxH1hF44",
-    "address": "0xf7e281891420698c9e3584C38D3CcAF0F498f894"
+    "address": "0xf7e281891420698c9e3584C38D3CcAF0F498f894",
+    "building_color": "#01a3b0"
   },
   {
     "metadata": {
@@ -446,7 +458,8 @@
     },
     "id": "12",
     "tokenURI": "ipfs://QmcqAcA6HXxf1DnfFzXnmNf1adwG8qnqxT663dUaaUYBSK",
-    "address": "0x64c0AD095C6893C7BE6Fd01E788C3a3e3f174072"
+    "address": "0x64c0AD095C6893C7BE6Fd01E788C3a3e3f174072",
+    "building_color": "#f89f1d"
   },
   {
     "metadata": {
@@ -483,7 +496,8 @@
     },
     "id": "13",
     "tokenURI": "ipfs://QmdLoF3NMb59JhUw9WxQsCPaWqg4QHpTSmePMEgJQaw7cM",
-    "address": "0xF347D65B0aBF75543E0f4dF81Ba41546657b1218"
+    "address": "0xF347D65B0aBF75543E0f4dF81Ba41546657b1218",
+    "building_color": "#f6e31d"
   },
   {
     "metadata": {
@@ -520,7 +534,8 @@
     },
     "id": "14",
     "tokenURI": "ipfs://QmYtdiF5Frcm74JC3Us6xvtmU5449bxrnErMQR5e2cDTWV",
-    "address": "0xc21acC010698fe4c6F2d56C487FBf1A194EC4DB5"
+    "address": "0xc21acC010698fe4c6F2d56C487FBf1A194EC4DB5",
+    "building_color": "#ee484c"
   },
   {
     "metadata": {
@@ -555,7 +570,8 @@
     "tokenURI": "ipfs://QmU8cjTFyrXscDHTa29FnwdNZYnkdNwSpNSxwM3fHiNjEz",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xa23ceab864F58F31bA2Ce64537fD9D3cf54dA429"
+    "address": "0xa23ceab864F58F31bA2Ce64537fD9D3cf54dA429",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -588,7 +604,8 @@
     },
     "id": "16",
     "tokenURI": "ipfs://QmfCLFYc81XroZ9o5TFg4mbYCtdEW9F45SRvauCtRch5p2",
-    "address": "0x7827936D3d6F36357E0631510f49e2FF80EFeBca"
+    "address": "0x7827936D3d6F36357E0631510f49e2FF80EFeBca",
+    "building_color": "#f0474e"
   },
   {
     "metadata": {
@@ -621,7 +638,8 @@
     },
     "id": "17",
     "tokenURI": "ipfs://QmNnjzzAprhWyTrMiWgWFvv6WjhPzsecP4wqJVV2XPRxnV",
-    "address": "0xe58Cba48cEA19097B51A778e6f83A9c5EB8d28eA"
+    "address": "0xe58Cba48cEA19097B51A778e6f83A9c5EB8d28eA",
+    "building_color": "#e9276d"
   },
   {
     "metadata": {
@@ -654,7 +672,8 @@
     },
     "id": "18",
     "tokenURI": "ipfs://QmcszTRVyzjsvnp5NmkTwYUqkrK6Axh6Nwb2HhwE2c7LKu",
-    "address": "0xaf1759C9dD6201D6005f4548Cff734C1094b9dA2"
+    "address": "0xaf1759C9dD6201D6005f4548Cff734C1094b9dA2",
+    "building_color": "#8a63a4"
   },
   {
     "metadata": {
@@ -687,7 +706,8 @@
     },
     "id": "19",
     "tokenURI": "ipfs://QmZJeftYMamcT9NwKgUN5CdhDmuXVWpg7zRyowdeRZvzmn",
-    "address": "0x7b12cC67b2aC361DC8fA813C251418ccc6e3dCc9"
+    "address": "0x7b12cC67b2aC361DC8fA813C251418ccc6e3dCc9",
+    "building_color": "#00aba2"
   },
   {
     "metadata": {
@@ -720,7 +740,8 @@
     },
     "id": "20",
     "tokenURI": "ipfs://QmYhb1caqokU8vnRcBSYZR3AufYV9fEviW2Hb3ne5Dn7Pp",
-    "address": "0xdC1C4156E5544676FA4bA1bFC255BAD56676a1aA"
+    "address": "0xdC1C4156E5544676FA4bA1bFC255BAD56676a1aA",
+    "building_color": "#00bae3"
   },
   {
     "metadata": {
@@ -753,7 +774,8 @@
     },
     "id": "21",
     "tokenURI": "ipfs://QmYpfMn8DDTmZn9mRJNoDgr9rE8b2DDCfkggQhzhYaJfYA",
-    "address": "0x009F48Da99D699e12C89cCe761AC43695Ab4903b"
+    "address": "0x009F48Da99D699e12C89cCe761AC43695Ab4903b",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -786,7 +808,8 @@
     },
     "id": "22",
     "tokenURI": "ipfs://QmdATE8kdzJDWwzMzs5gW8wY6wUoioW1tQbd84qUodJj6g",
-    "address": "0xCad05089D18DC215577F319A6AEcF2b64039cC8D"
+    "address": "0xCad05089D18DC215577F319A6AEcF2b64039cC8D",
+    "building_color": "#fdce38"
   },
   {
     "metadata": {
@@ -819,7 +842,8 @@
     },
     "id": "23",
     "tokenURI": "ipfs://QmbR3exCoiQNgQHvfJzNjN95p15THDRmFQBr1hPd87Q5FM",
-    "address": "0x3495fB2cf651C17aE3dBe5d5A201B89369020adD"
+    "address": "0x3495fB2cf651C17aE3dBe5d5A201B89369020adD",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -856,7 +880,8 @@
     },
     "id": "24",
     "tokenURI": "ipfs://QmagTwRRc8PqCxKtu5XHCqRUPAgtPkBffecEN61DK7LMEn",
-    "address": "0x4d13A385C848E312d3B4Afd3042880b8F4C8Bf86"
+    "address": "0x4d13A385C848E312d3B4Afd3042880b8F4C8Bf86",
+    "building_color": "#f2794c"
   },
   {
     "metadata": {
@@ -893,7 +918,8 @@
     },
     "id": "25",
     "tokenURI": "ipfs://QmcEnDWYRbQRiGMmELmJ6XUqRFArA89GyTBfWV9sdAkwRQ",
-    "address": "0x0bE240fB368A95cF1B804c2830c58460Bd3549d6"
+    "address": "0x0bE240fB368A95cF1B804c2830c58460Bd3549d6",
+    "building_color": "#f5e31f"
   },
   {
     "metadata": {
@@ -930,7 +956,8 @@
     },
     "id": "26",
     "tokenURI": "ipfs://QmSyyVBXM9iPYfQrZ5YLKhKNTBtixbyFajFe6t5HQUEU9x",
-    "address": "0x46B375a5B65BE61aCfC53A734439Bf5a0341a9D6"
+    "address": "0x46B375a5B65BE61aCfC53A734439Bf5a0341a9D6",
+    "building_color": "#00a3a0"
   },
   {
     "metadata": {
@@ -967,7 +994,8 @@
     },
     "id": "27",
     "tokenURI": "ipfs://QmbafBuSi9KMuLAjnWv8RtTbF56pN34824ZG339sRhcxBc",
-    "address": "0xB10931bc6c69Bb10B005dC3C7174Becf36A84589"
+    "address": "0xB10931bc6c69Bb10B005dC3C7174Becf36A84589",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -1004,7 +1032,8 @@
     },
     "id": "28",
     "tokenURI": "ipfs://QmUvQ5fDLyqzu9y5qEozM1jpdiWY1traZjcnKyh6KfdtUF",
-    "address": "0xEeB6488E9B2B69921d52EaBDbC5e7f477Df59235"
+    "address": "0xEeB6488E9B2B69921d52EaBDbC5e7f477Df59235",
+    "building_color": "#54c9f4"
   },
   {
     "metadata": {
@@ -1041,7 +1070,8 @@
     },
     "id": "29",
     "tokenURI": "ipfs://QmXfDs25Pq8gjLVcJnjA88crJghNxu4GXzmq78jt1tc6cz",
-    "address": "0xc9166519321D60Ee907a563bE014a5C989662318"
+    "address": "0xc9166519321D60Ee907a563bE014a5C989662318",
+    "building_color": "#a54791"
   },
   {
     "metadata": {
@@ -1074,7 +1104,8 @@
     },
     "id": "30",
     "tokenURI": "ipfs://QmcE4y4y6NXtcDbx5XGYHJBJsrJnEfUqPzSvatYfCr1dUn",
-    "address": "0xb4E90A7Ac86F14801Aec48aC84Ee24721B215015"
+    "address": "0xb4E90A7Ac86F14801Aec48aC84Ee24721B215015",
+    "building_color": "#00b7e3"
   },
   {
     "metadata": {
@@ -1107,7 +1138,8 @@
     },
     "id": "31",
     "tokenURI": "ipfs://QmbGZz4GrY35jCyPuZpv7ZA9PcbyYfka1j2PyYifcEGGBV",
-    "address": "0x5B94132E58780269621f92137CEDec0B7e0988EC"
+    "address": "0x5B94132E58780269621f92137CEDec0B7e0988EC",
+    "building_color": "#ef5e97"
   },
   {
     "metadata": {
@@ -1140,7 +1172,8 @@
     },
     "id": "32",
     "tokenURI": "ipfs://QmX95sQKGaThPQXSbCnH6Vkq77KPo6m9NKoYccDZNqshWW",
-    "address": "0x98580547Da895fD301D960FdC58F00DaA24810FA"
+    "address": "0x98580547Da895fD301D960FdC58F00DaA24810FA",
+    "building_color": "#e95620"
   },
   {
     "metadata": {
@@ -1173,7 +1206,8 @@
     },
     "id": "33",
     "tokenURI": "ipfs://Qmby2f4t2iXDAu5c1azSjvDu4c3D3YsnzyLA6oKu2CY5xQ",
-    "address": "0x63b78439Dde595Fe6fc3f9ceaf556964FA5833D3"
+    "address": "0x63b78439Dde595Fe6fc3f9ceaf556964FA5833D3",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -1208,7 +1242,8 @@
     "tokenURI": "ipfs://QmZh3yNt2SxUvaHFs4fKHshRCe4SxttLeJnawrt131uUTo",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xa3c7c6aC5D85a703deFdD65E0C1730C24Cc6D668"
+    "address": "0xa3c7c6aC5D85a703deFdD65E0C1730C24Cc6D668",
+    "building_color": "#facf06"
   },
   {
     "metadata": {
@@ -1243,7 +1278,8 @@
     "tokenURI": "ipfs://QmduJu6da3GeYGmWzVQYY3We6LLAubM29sQe72pRVvyqwv",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0x234aB0c5643c23c6749eFe60B15698D9141566b2"
+    "address": "0x234aB0c5643c23c6749eFe60B15698D9141566b2",
+    "building_color": "#ee3b41 & 2492cf"
   },
   {
     "metadata": {
@@ -1276,7 +1312,8 @@
     },
     "id": "36",
     "tokenURI": "ipfs://QmSKAQkZAjs3bxnPJxBdsCyYdvKDzHth3jRDzZ5KhW7Uiw",
-    "address": "0xceFF400721759c3F34C43EF07d3D0fC03Cd00297"
+    "address": "0xceFF400721759c3F34C43EF07d3D0fC03Cd00297",
+    "building_color": "#e62774 & f29919"
   },
   {
     "metadata": {
@@ -1309,7 +1346,8 @@
     },
     "id": "37",
     "tokenURI": "ipfs://QmbeVJMcb8SqoZRqGnaotEmXsAGPRCQqTvZdkHboHt4Yf5",
-    "address": "0x406F89759813e1A482321B5358A5f07d0a0d6b6B"
+    "address": "0x406F89759813e1A482321B5358A5f07d0a0d6b6B",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -1342,7 +1380,8 @@
     },
     "id": "38",
     "tokenURI": "ipfs://QmT3ADo6r8dKQGErvxC8AVNquXfBo5KJCVTn2s1TEsZ1vV",
-    "address": "0x4A0aF73C00F6936E053F6b116D52367feee59bC1"
+    "address": "0x4A0aF73C00F6936E053F6b116D52367feee59bC1",
+    "building_color": "#5bbf69"
   },
   {
     "metadata": {
@@ -1375,7 +1414,8 @@
     },
     "id": "39",
     "tokenURI": "ipfs://QmYn35qrcmGFSroagLDcmcTMJuyfHqoX2GLxkTqwh7spLS",
-    "address": "0xF89897D4d6D14F80594Dfd3d2049801D41bD2B5B"
+    "address": "0xF89897D4d6D14F80594Dfd3d2049801D41bD2B5B",
+    "building_color": "#e8198d"
   },
   {
     "metadata": {
@@ -1408,7 +1448,8 @@
     },
     "id": "40",
     "tokenURI": "ipfs://QmcU7QX9iEVa5sdPvG4sQzUWP8o2VSkxQjZuwf5vaPNUAh",
-    "address": "0xDb4A2E5Cc7ae4561E7532E14e234Df59d79CAdF7"
+    "address": "0xDb4A2E5Cc7ae4561E7532E14e234Df59d79CAdF7",
+    "building_color": "#f16f71"
   },
   {
     "metadata": {
@@ -1441,7 +1482,8 @@
     },
     "id": "41",
     "tokenURI": "ipfs://QmVS4xaYVkDvy5b3oHSFNz64AxodrFqZHiXcZpCkzqxX7V",
-    "address": "0xD40F23E5A397d804cc3767a81B1409D48462B72d"
+    "address": "0xD40F23E5A397d804cc3767a81B1409D48462B72d",
+    "building_color": "#dc9498"
   },
   {
     "metadata": {
@@ -1474,7 +1516,8 @@
     },
     "id": "42",
     "tokenURI": "ipfs://QmPVd3sEEsvx43vxdEr3NMoHFgZPdNWEnd5TkKavZZic6o",
-    "address": "0x0556F385335432C5452695856e2f7DD91b68678b"
+    "address": "0x0556F385335432C5452695856e2f7DD91b68678b",
+    "building_color": "#2ba1d3"
   },
   {
     "metadata": {
@@ -1507,7 +1550,8 @@
     },
     "id": "43",
     "tokenURI": "ipfs://QmP1BuePVDVvXJb3Z5ymPdDY9PYQPcMfVFSyATiiNu2FCS",
-    "address": "0x7350Eb81A457B0Fc005EA1DD4b566a4e49f6b787"
+    "address": "0x7350Eb81A457B0Fc005EA1DD4b566a4e49f6b787",
+    "building_color": "#ca4096"
   },
   {
     "metadata": {
@@ -1540,7 +1584,8 @@
     },
     "id": "44",
     "tokenURI": "ipfs://QmeCeixRWA5yS37A3tQkHwmKPFtQe9zinvA6ub8TT9emXN",
-    "address": "0x12F9930432FDFe34D51C41Fe06bA8593258A8026"
+    "address": "0x12F9930432FDFe34D51C41Fe06bA8593258A8026",
+    "building_color": "#1aaaaa"
   },
   {
     "metadata": {
@@ -1573,7 +1618,8 @@
     },
     "id": "45",
     "tokenURI": "ipfs://QmQgXdMLyS4ZwdC4vEddfdthm4P12UcXwmTmTUFKmLTcx8",
-    "address": "0x8a4955d416Efb917F5cF276fDBEf13A496827d12"
+    "address": "0x8a4955d416Efb917F5cF276fDBEf13A496827d12",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -1608,7 +1654,8 @@
     "tokenURI": "ipfs://QmPoQnkoMhUYnrzjFaGLg5R8HUQp4WdckqXyL8JiKwdMvq",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0x98C20cc36F331ae0E8C3D0D9F579c76861b7F36B"
+    "address": "0x98C20cc36F331ae0E8C3D0D9F579c76861b7F36B",
+    "building_color": "#f5881f"
   },
   {
     "metadata": {
@@ -1641,7 +1688,8 @@
     },
     "id": "47",
     "tokenURI": "ipfs://QmSdmtTgfLuWQBvTS1a1JR7NowRZT43j7ATBXhrLuATp4m",
-    "address": "0x062F246Dc5e11eF28642ceE4A4866c1c08Af58C2"
+    "address": "0x062F246Dc5e11eF28642ceE4A4866c1c08Af58C2",
+    "building_color": "#e62e6e"
   },
   {
     "metadata": {
@@ -1674,7 +1722,8 @@
     },
     "id": "48",
     "tokenURI": "ipfs://QmadgzhiYVXj64K9JkXRrAM7zkHbsskUcYKDuvamMf8z3r",
-    "address": "0x09Fa8fd13FeA2611F7DdC02A9779eE444942C69e"
+    "address": "0x09Fa8fd13FeA2611F7DdC02A9779eE444942C69e",
+    "building_color": "#f9ed35"
   },
   {
     "metadata": {
@@ -1707,7 +1756,8 @@
     },
     "id": "49",
     "tokenURI": "ipfs://Qme9mDLbEFZKGpe5YWRaQiZvZqPh5x2YkgXH8TqN4sygNZ",
-    "address": "0x3Dfa16415376c7B0C8e65d4Bb3c0Fe23e8c0Fd39"
+    "address": "0x3Dfa16415376c7B0C8e65d4Bb3c0Fe23e8c0Fd39",
+    "building_color": "#0497cd"
   },
   {
     "metadata": {
@@ -1746,7 +1796,8 @@
     "tokenURI": "ipfs://QmV9YFyoqZ6JYjBA3FVwYKxKgsuutq4P39UpNu5qRC1NDQ",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0x3D9fEc7A481B2C9b6C867Fe2c96620E9CF959b8A"
+    "address": "0x3D9fEc7A481B2C9b6C867Fe2c96620E9CF959b8A",
+    "building_color": "#aac834"
   },
   {
     "metadata": {
@@ -1783,7 +1834,8 @@
     },
     "id": "51",
     "tokenURI": "ipfs://QmNRyBi42gRTYWKkJhgggdynfr4oyBJy498f5oHhBo8f5t",
-    "address": "0x093c2aa915203638848c86f7f483Ab88AE0e9002"
+    "address": "0x093c2aa915203638848c86f7f483Ab88AE0e9002",
+    "building_color": "#1aaaaa"
   },
   {
     "metadata": {
@@ -1820,7 +1872,8 @@
     },
     "id": "52",
     "tokenURI": "ipfs://QmWJGLwT3335PknzFWKpBPKBZ3vPk8bR2q2RuZk92r5NkE",
-    "address": "0x0c938cB4E41e2e2e636549Bc4FAa2b074e150236"
+    "address": "0x0c938cB4E41e2e2e636549Bc4FAa2b074e150236",
+    "building_color": "#01b4dc"
   },
   {
     "metadata": {
@@ -1857,7 +1910,8 @@
     },
     "id": "53",
     "tokenURI": "ipfs://QmNVFPaho3AtAefb3nFzgyXo2K5JFEKzPkT6km5Pzs53GL",
-    "address": "0x44C2C10eC9dAC76eBE43F8E74EEe754544dE2473"
+    "address": "0x44C2C10eC9dAC76eBE43F8E74EEe754544dE2473",
+    "building_color": "#e72854"
   },
   {
     "metadata": {
@@ -1894,7 +1948,8 @@
     },
     "id": "54",
     "tokenURI": "ipfs://QmeDzjn299ZqX9afzjttKaRAaAZVLTyuBmg7J2MYRRENhK",
-    "address": "0xbeebdED058345A2d6cF28e78b9189E9b9FD6De6F"
+    "address": "0xbeebdED058345A2d6cF28e78b9189E9b9FD6De6F",
+    "building_color": "#6963ab"
   },
   {
     "metadata": {
@@ -1931,7 +1986,8 @@
     },
     "id": "55",
     "tokenURI": "ipfs://QmZj2izbxfwbM3xyiiV4Zsv9KzzMmxqeLXf7eaw2nEwJUw",
-    "address": "0x2DF7400e6E0a585568dBDA6b6dE637d8bcED2987"
+    "address": "0x2DF7400e6E0a585568dBDA6b6dE637d8bcED2987",
+    "building_color": "#e1d430"
   },
   {
     "metadata": {
@@ -1968,7 +2024,8 @@
     },
     "id": "56",
     "tokenURI": "ipfs://QmQYqhdochNF7PZCUdEaE3ETu4WnM4AvhVxW22F2LrH1Ky",
-    "address": "0x2b8B106903307F658Dd0e9D34A2582f2d79e735C"
+    "address": "0x2b8B106903307F658Dd0e9D34A2582f2d79e735C",
+    "building_color": "#f39a1c"
   },
   {
     "metadata": {
@@ -2005,7 +2062,8 @@
     },
     "id": "57",
     "tokenURI": "ipfs://Qmd9RjVCvS2PSBZbZqnRpy8XbgUZRKqHQLzy8U3ZkzFYmU",
-    "address": "0x692553bAf5836B4a10efD80D7e94A9841d6F27BC"
+    "address": "0x692553bAf5836B4a10efD80D7e94A9841d6F27BC",
+    "building_color": "#ee3138"
   },
   {
     "metadata": {
@@ -2042,7 +2100,8 @@
     },
     "id": "58",
     "tokenURI": "ipfs://QmUvc1V2moBKxnA5nydZvNDJci3Gf1r5awQ32UHJ6WCy7q",
-    "address": "0x69c7c2FD70975aA607A84Bc1971070E04C64CD98"
+    "address": "0x69c7c2FD70975aA607A84Bc1971070E04C64CD98",
+    "building_color": "#e53389"
   },
   {
     "metadata": {
@@ -2079,7 +2138,8 @@
     },
     "id": "59",
     "tokenURI": "ipfs://QmUbLS4wNjzmgdnEKWHZ1SLrW8AcvCXfmCuW6JV4JubuWv",
-    "address": "0xC1a723586F87b2469a5aD5a5C776ee03B2960cd7"
+    "address": "0xC1a723586F87b2469a5aD5a5C776ee03B2960cd7",
+    "building_color": "#7ac7d1"
   },
   {
     "metadata": {
@@ -2116,7 +2176,8 @@
     },
     "id": "60",
     "tokenURI": "ipfs://QmcmEDkpfTja4n2e2iCxzekzRUNuaQvTyrEXv7vdTizLEb",
-    "address": "0xc5b4b640205AE05A590918082519B57674315A85"
+    "address": "0xc5b4b640205AE05A590918082519B57674315A85",
+    "building_color": "#00b1bb"
   },
   {
     "metadata": {
@@ -2153,7 +2214,8 @@
     },
     "id": "61",
     "tokenURI": "ipfs://QmX8ebEWj19GwMFDkmR1GBt53EkdVJS7vQzmuKMs5hc3pD",
-    "address": "0x060782E0f3aCe2f7ab1082cD1E473C40B0F0C41c"
+    "address": "0x060782E0f3aCe2f7ab1082cD1E473C40B0F0C41c",
+    "building_color": "#ec87af"
   },
   {
     "metadata": {
@@ -2190,7 +2252,8 @@
     },
     "id": "62",
     "tokenURI": "ipfs://QmRANKc1wKicWB6QpfNvFvsga2jJqRdGQyUuqJjxe91ih3",
-    "address": "0x98Cc997e92B00E8DD9Efd13133C604769cd12C97"
+    "address": "0x98Cc997e92B00E8DD9Efd13133C604769cd12C97",
+    "building_color": "#ed2a6e"
   },
   {
     "metadata": {
@@ -2227,7 +2290,8 @@
     },
     "id": "63",
     "tokenURI": "ipfs://QmR9oo6R93NxbmNQ9QLm5eDggsDkmvLGTkZTG2JoFyNBWC",
-    "address": "0xd6eFDf554Bf1AEd880501150257dbA5c0edf0A83"
+    "address": "0xd6eFDf554Bf1AEd880501150257dbA5c0edf0A83",
+    "building_color": "#ffc22b"
   },
   {
     "metadata": {
@@ -2264,7 +2328,8 @@
     },
     "id": "64",
     "tokenURI": "ipfs://QmTayNbCQE6XYu7yHzrDhvozyrYqCn2X1ghsZ7VdNd3SDb",
-    "address": "0xb6D8D96d3b0B8df9F4686adB107C7E749f32B4bC"
+    "address": "0xb6D8D96d3b0B8df9F4686adB107C7E749f32B4bC",
+    "building_color": "#276bb4"
   },
   {
     "metadata": {
@@ -2297,7 +2362,8 @@
     },
     "id": "65",
     "tokenURI": "ipfs://QmZ3FPggVtFDWZmat2EbajoZHAnjbfADDC2h4yhZLX4oC8",
-    "address": "0x8B8141B333B294ed74C80530722C9d4d53216B14"
+    "address": "0x8B8141B333B294ed74C80530722C9d4d53216B14",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -2330,7 +2396,8 @@
     },
     "id": "66",
     "tokenURI": "ipfs://QmWBENwjXjfa1USt336M9k9wDLxv6v7YKdNGEG4Ywmu8m7",
-    "address": "0xfe32325eD141fBE9d25f67574a986cfB0699592c"
+    "address": "0xfe32325eD141fBE9d25f67574a986cfB0699592c",
+    "building_color": "#32b8b9"
   },
   {
     "metadata": {
@@ -2363,7 +2430,8 @@
     },
     "id": "67",
     "tokenURI": "ipfs://Qma6usn2AbKa6EPbocQbBFY2DYuLzGeUvLG5f3NxLMX4wU",
-    "address": "0x6f7574c4Da36e64fCFDbBC84E982d61cFEA89609"
+    "address": "0x6f7574c4Da36e64fCFDbBC84E982d61cFEA89609",
+    "building_color": "#5696c6 & 4baed8"
   },
   {
     "metadata": {
@@ -2396,7 +2464,8 @@
     },
     "id": "68",
     "tokenURI": "ipfs://QmfHhBLPwj7KfFUHq7pyFyaQuqNGMnEpAwEFdvmfurRiAk",
-    "address": "0xCda9d7aBfddd2D6427713939D092775B0859ea36"
+    "address": "0xCda9d7aBfddd2D6427713939D092775B0859ea36",
+    "building_color": "#ab5f9d"
   },
   {
     "metadata": {
@@ -2429,7 +2498,8 @@
     },
     "id": "69",
     "tokenURI": "ipfs://Qmf1PZcgeGc3fDvdQMpdiqMmNRTZxJurtn1Ax8FAytoJYH",
-    "address": "0x2f14e0a17b5E5849e254e5B5b4C142227E07d7EF"
+    "address": "0x2f14e0a17b5E5849e254e5B5b4C142227E07d7EF",
+    "building_color": "#ee3e7f"
   },
   {
     "metadata": {
@@ -2462,7 +2532,8 @@
     },
     "id": "70",
     "tokenURI": "ipfs://QmSjXWeWTXkjNsxAhg5wiCpgK8ALiyzrH8Atgko172mHnW",
-    "address": "0x61D93A36cb8523CFa66D5a52C12668aE4382b1cA"
+    "address": "0x61D93A36cb8523CFa66D5a52C12668aE4382b1cA",
+    "building_color": "#f9b047"
   },
   {
     "metadata": {
@@ -2495,7 +2566,8 @@
     },
     "id": "71",
     "tokenURI": "ipfs://QmXMQfwnQ6JYbr3qPgn5WGSsMr7tjEaUNgv3QzBZ4kWv9i",
-    "address": "0x357a8e306a42CBDF977B50e1c8285baF6bf80C33"
+    "address": "0x357a8e306a42CBDF977B50e1c8285baF6bf80C33",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -2528,7 +2600,8 @@
     },
     "id": "72",
     "tokenURI": "ipfs://QmRFdNnmLt4v2khNZUCB2EMxxHxezcAYBrpQYX8XphM3Gj",
-    "address": "0x2BC752Aa9f7cF4b535E34Ca4505f77909a23e639"
+    "address": "0x2BC752Aa9f7cF4b535E34Ca4505f77909a23e639",
+    "building_color": "#4bc1c5"
   },
   {
     "metadata": {
@@ -2561,7 +2634,8 @@
     },
     "id": "73",
     "tokenURI": "ipfs://QmNgYgkZp1c4fiNCxt5dbkaF7CVF1yB7sKjQY7CETnxtHZ",
-    "address": "0x2Ed17524E81bEBCb8503Fac775e27E731c4BcA25"
+    "address": "0x2Ed17524E81bEBCb8503Fac775e27E731c4BcA25",
+    "building_color": "#ef5d60"
   },
   {
     "metadata": {
@@ -2594,7 +2668,8 @@
     },
     "id": "74",
     "tokenURI": "ipfs://QmPSZZPghTahFwELBUzDW6RLC8LmUUp7WKzZ56L4xK7vtk",
-    "address": "0x6af4a4d18dD63346c3dBCB2a2Cc177AC2180401a"
+    "address": "0x6af4a4d18dD63346c3dBCB2a2Cc177AC2180401a",
+    "building_color": "#f29923"
   },
   {
     "metadata": {
@@ -2629,7 +2704,8 @@
     "tokenURI": "ipfs://QmZto6eFSc8A4aTF3P21w7AQe9fEt99BhqSZHSFV2rwnCo",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xEA9c1631dab810D117996018741492B19BaB6ccb"
+    "address": "0xEA9c1631dab810D117996018741492B19BaB6ccb",
+    "building_color": "#fad701"
   },
   {
     "metadata": {
@@ -2662,7 +2738,8 @@
     },
     "id": "76",
     "tokenURI": "ipfs://QmbCP7z9jZHuMeNr7H1Kv6eAMiZccynLt1op8Yrfv7mheZ",
-    "address": "0x57C36D431A33efd649277e89dD1a51EC124cBb5c"
+    "address": "0x57C36D431A33efd649277e89dD1a51EC124cBb5c",
+    "building_color": "#f99f25"
   },
   {
     "metadata": {
@@ -2695,7 +2772,8 @@
     },
     "id": "77",
     "tokenURI": "ipfs://QmNuLdEedeaxNk36JTNMd9j1mnZv7eRTz2RLRpXfDmSDM6",
-    "address": "0xb933cEf58bA39FB3e10c212a94fd69bc41d865F9"
+    "address": "0xb933cEf58bA39FB3e10c212a94fd69bc41d865F9",
+    "building_color": "#e94c81"
   },
   {
     "metadata": {
@@ -2728,7 +2806,8 @@
     },
     "id": "78",
     "tokenURI": "ipfs://QmcaVyt7trZDUvuUxHqmy23pEAHGrKENjpx11rXUGwemRD",
-    "address": "0x0D361293a8A010666e75Ef742d0839D521c1e8C3"
+    "address": "0x0D361293a8A010666e75Ef742d0839D521c1e8C3",
+    "building_color": "#63c3c1"
   },
   {
     "metadata": {
@@ -2761,7 +2840,8 @@
     },
     "id": "79",
     "tokenURI": "ipfs://QmZ7uVYJeKaEUPUQ3iGGzhsQ45HqqX27G4A2Xxkb7tJ6Bi",
-    "address": "0x7Cc3F46dE397fC06eDd545F5C767f249A909E059"
+    "address": "0x7Cc3F46dE397fC06eDd545F5C767f249A909E059",
+    "building_color": "#7394c9"
   },
   {
     "metadata": {
@@ -2798,7 +2878,8 @@
     },
     "id": "80",
     "tokenURI": "ipfs://QmY33XqX9wmUZRr8rkMCMSkYAWvqEh5Sr8xqDZqx6o5x8x",
-    "address": "0x6c7Bb5574469c9BF4dcf8D41688C2a462eb32E9E"
+    "address": "0x6c7Bb5574469c9BF4dcf8D41688C2a462eb32E9E",
+    "building_color": "#e8198d"
   },
   {
     "metadata": {
@@ -2835,7 +2916,8 @@
     },
     "id": "81",
     "tokenURI": "ipfs://QmV36GaWF5qFXifFH8aq5iM2yjXPy1rbVpMpJLcM18Gisr",
-    "address": "0x8963719C0f72f1e287075663FC7CE3cD40e164Dd"
+    "address": "0x8963719C0f72f1e287075663FC7CE3cD40e164Dd",
+    "building_color": "#f0466b"
   },
   {
     "metadata": {
@@ -2872,7 +2954,8 @@
     },
     "id": "82",
     "tokenURI": "ipfs://QmWAYnUNKmD6RQdn9HDdAgY16bCzZhcsgaiFdTyHsQPLcv",
-    "address": "0x8B851449684588440D0AA085C74934bA087db112"
+    "address": "0x8B851449684588440D0AA085C74934bA087db112",
+    "building_color": "#afc934"
   },
   {
     "metadata": {
@@ -2909,7 +2992,8 @@
     },
     "id": "83",
     "tokenURI": "ipfs://QmU9oCDNvB73pgJxCVvREdKx87nXac4y9XCqm6hA6WsdXb",
-    "address": "0x4A7AE47A316B6920b8A50d24dF69247E9598dA2c"
+    "address": "0x4A7AE47A316B6920b8A50d24dF69247E9598dA2c",
+    "building_color": "#f9bc25"
   },
   {
     "metadata": {
@@ -2946,7 +3030,8 @@
     },
     "id": "84",
     "tokenURI": "ipfs://QmeD7hR3Tc5MMMzm8i1783xK3wj397epfPxNAz3HFBTkc2",
-    "address": "0xF1229277B8503F520A5400FbF15F3c899eB9BC61"
+    "address": "0xF1229277B8503F520A5400FbF15F3c899eB9BC61",
+    "building_color": "#0e989a & 56b4b4"
   },
   {
     "metadata": {
@@ -2983,7 +3068,8 @@
     },
     "id": "85",
     "tokenURI": "ipfs://QmWBRsxWue2yxVLuSz2hfdJg2YBxkRZombVbSX7fVJkaPh",
-    "address": "0xCa4FdEEaD494abEF27a2FC1240672b503dcD0B04"
+    "address": "0xCa4FdEEaD494abEF27a2FC1240672b503dcD0B04",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -3020,7 +3106,8 @@
     },
     "id": "86",
     "tokenURI": "ipfs://Qmf17LZjFPbatKpZUG55HV76GP9xRfkR1PjAqUvYgqNKbW",
-    "address": "0xD5C72F8df009B87F3f23A5aE4F14a6ff942207f4"
+    "address": "0xD5C72F8df009B87F3f23A5aE4F14a6ff942207f4",
+    "building_color": "#f27849"
   },
   {
     "metadata": {
@@ -3057,7 +3144,8 @@
     },
     "id": "87",
     "tokenURI": "ipfs://QmZQS7YMdfsvVoov6c7975fnoRajzU6f9F9eRtB5FNPGYb",
-    "address": "0xcd49696D0379Af89A49Da81Ab72fd075ef214CbC"
+    "address": "0xcd49696D0379Af89A49Da81Ab72fd075ef214CbC",
+    "building_color": "#c0d85c"
   },
   {
     "metadata": {
@@ -3094,7 +3182,8 @@
     },
     "id": "88",
     "tokenURI": "ipfs://QmNcv5GA8dVK3rLePWnGgX8SV8AGEPqAA7HeWRfzmnzcBA",
-    "address": "0x0c9B8Db1888f3aEc7e409BBa198BbbBBbd89a310"
+    "address": "0x0c9B8Db1888f3aEc7e409BBa198BbbBBbd89a310",
+    "building_color": "#019f91"
   },
   {
     "metadata": {
@@ -3131,7 +3220,8 @@
     },
     "id": "89",
     "tokenURI": "ipfs://QmeJrBr3Sev6Z9qqg4xgJKK4Gyx953NcHA3tBRgLvrXG2i",
-    "address": "0xD1b37155d8348AE209B2CCE8355d493276F19ba7"
+    "address": "0xD1b37155d8348AE209B2CCE8355d493276F19ba7",
+    "building_color": "#e83d33"
   },
   {
     "metadata": {
@@ -3168,7 +3258,8 @@
     },
     "id": "90",
     "tokenURI": "ipfs://QmXkH7XhJMiKLQdatbCCA9hv5jmY2Ao6L33wwoVQEqX77G",
-    "address": "0xb04eDEFBe57e18cc85A1e76868AF1B57f86CB149"
+    "address": "0xb04eDEFBe57e18cc85A1e76868AF1B57f86CB149",
+    "building_color": "#e31a80"
   },
   {
     "metadata": {
@@ -3205,7 +3296,8 @@
     },
     "id": "91",
     "tokenURI": "ipfs://QmTrm3Sde4N7JUyYvij5UiEs4v3KXQVNzXLceJNh34oBmM",
-    "address": "0xBe85e3A4B5692261b1C995991eE9B09e54f5D003"
+    "address": "0xBe85e3A4B5692261b1C995991eE9B09e54f5D003",
+    "building_color": "#f8ef6c"
   },
   {
     "metadata": {
@@ -3242,7 +3334,8 @@
     },
     "id": "92",
     "tokenURI": "ipfs://QmUjQMgQsMtmwb2kAj3mvJ6e6D1cCAMfiYnoRXqs7Pcnky",
-    "address": "0xc732c4bb8df51c2fecD214e522Ad08d3336983A5"
+    "address": "0xc732c4bb8df51c2fecD214e522Ad08d3336983A5",
+    "building_color": "#b159a3"
   },
   {
     "metadata": {
@@ -3279,7 +3372,8 @@
     },
     "id": "93",
     "tokenURI": "ipfs://QmZQjmP9vMKor82HLrfG8Vn4s5Hg96dApEUjA2TpEdUjFD",
-    "address": "0x2a814ea16E1e6dCC74a9B80C817317A8D0d95410"
+    "address": "0x2a814ea16E1e6dCC74a9B80C817317A8D0d95410",
+    "building_color": "#2ba1d3"
   },
   {
     "metadata": {
@@ -3316,7 +3410,8 @@
     },
     "id": "94",
     "tokenURI": "ipfs://Qmcsqqu2KGp7dqdVjdRJQ39kni4wGroyjFSw6MSsTcTNAZ",
-    "address": "0xa42A95c77720627426A273caE954c3753b6016DD"
+    "address": "0xa42A95c77720627426A273caE954c3753b6016DD",
+    "building_color": "#3d89c3"
   },
   {
     "metadata": {
@@ -3353,7 +3448,8 @@
     },
     "id": "95",
     "tokenURI": "ipfs://QmbxHD17qtdSYRxcGVqtzhHuV2uEJVj3YQDfMfnNB9fbr3",
-    "address": "0xaCB36E224E92d2c754793e53431E186a9fdCF17a"
+    "address": "0xaCB36E224E92d2c754793e53431E186a9fdCF17a",
+    "building_color": "#f2e235"
   },
   {
     "metadata": {
@@ -3390,7 +3486,8 @@
     },
     "id": "96",
     "tokenURI": "ipfs://Qmay4s1TzpS1MH2GVJoYLoJRurKQ6V3kZC8tZKGe6Acg2J",
-    "address": "0xD56b349286D3A40b0acE098FB8ccE2E73e5C66F1"
+    "address": "0xD56b349286D3A40b0acE098FB8ccE2E73e5C66F1",
+    "building_color": "#f04383"
   },
   {
     "metadata": {
@@ -3427,7 +3524,8 @@
     },
     "id": "97",
     "tokenURI": "ipfs://QmYKUU8eU3KH3rgWSP61aLwWjVHBi4kGkCGAS23eHJ6V1Z",
-    "address": "0xb3c33a9180fD4A9Cf92b926A16c8823BE9387d15"
+    "address": "0xb3c33a9180fD4A9Cf92b926A16c8823BE9387d15",
+    "building_color": "#f37e52"
   },
   {
     "metadata": {
@@ -3464,7 +3562,8 @@
     },
     "id": "98",
     "tokenURI": "ipfs://QmWfBvSYd8Ra6tZaufBSr9dhKESMCxP8hUxCv6ZMpD7vc6",
-    "address": "0xeFd5a07f438A862770461084c6A689a6A9D8Ad48"
+    "address": "0xeFd5a07f438A862770461084c6A689a6A9D8Ad48",
+    "building_color": "#a05da2"
   },
   {
     "metadata": {
@@ -3501,7 +3600,8 @@
     },
     "id": "99",
     "tokenURI": "ipfs://QmWdN8GYG1XUZbumviebtBMbcNondmsQ3FYkt998XfQRCD",
-    "address": "0xcEE9f246496e143817264Ed7212c7C0c4De61024"
+    "address": "0xcEE9f246496e143817264Ed7212c7C0c4De61024",
+    "building_color": "#1383c5 & 29aae1"
   },
   {
     "metadata": {
@@ -3538,7 +3638,8 @@
     },
     "id": "100",
     "tokenURI": "ipfs://QmY9FpMXW7cVrdGbLyKHi6XywgacbkeXRL6fioWvJ8nBxz",
-    "address": "0x09051cfddCa0EB250e1d597990814830dA74F9cC"
+    "address": "0x09051cfddCa0EB250e1d597990814830dA74F9cC",
+    "building_color": "#faef62"
   },
   {
     "metadata": {
@@ -3575,7 +3676,8 @@
     },
     "id": "101",
     "tokenURI": "ipfs://QmcJZTEj1byZ1Fx36yg52MMPQ7AUyXboNCVXBjcdp1Q44Y",
-    "address": "0xb6fB3031d2B2813b4bD47F7440970f6e61da61dD"
+    "address": "0xb6fB3031d2B2813b4bD47F7440970f6e61da61dD",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -3612,7 +3714,8 @@
     },
     "id": "102",
     "tokenURI": "ipfs://Qmd6k8ys6ggtKreLw39fvESiPTgTpFjzgmEJYyKuxBF7xn",
-    "address": "0xf7205ceA5CE021FbA93e9D1ea65870Eb76F0dcA5"
+    "address": "0xf7205ceA5CE021FbA93e9D1ea65870Eb76F0dcA5",
+    "building_color": "#f9bc09 & f9e701"
   },
   {
     "metadata": {
@@ -3649,7 +3752,8 @@
     },
     "id": "103",
     "tokenURI": "ipfs://QmQaTX4VfRbhemYU8cofmPBs9kChEjAZi1fT1b1WSAJHy9",
-    "address": "0x91ad62ce4D336156e773ebAeB452905DdF6E48f2"
+    "address": "0x91ad62ce4D336156e773ebAeB452905DdF6E48f2",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -3686,7 +3790,8 @@
     },
     "id": "104",
     "tokenURI": "ipfs://Qma53h4h9LAVpAVQYn1xLckJYghVShYp4VkuXRkMGRJvw3",
-    "address": "0xB3191C1B1F056D2f94Bf7c63CEB952F3c3c13e51"
+    "address": "0xB3191C1B1F056D2f94Bf7c63CEB952F3c3c13e51",
+    "building_color": "#89be3c"
   },
   {
     "metadata": {
@@ -3723,7 +3828,8 @@
     },
     "id": "105",
     "tokenURI": "ipfs://Qmd7Pjx9NkhLoc6RfhVFKcgjwEQB2d7ki6R3eKWpAuuyed",
-    "address": "0xC54f63D8f5A7E9aEb7a7274C442ea3e54d5b77b5"
+    "address": "0xC54f63D8f5A7E9aEb7a7274C442ea3e54d5b77b5",
+    "building_color": "#ec7058"
   },
   {
     "metadata": {
@@ -3760,7 +3866,8 @@
     },
     "id": "106",
     "tokenURI": "ipfs://QmeWYQdm93TD9W8kgVDmXNPMsXrwUj2JeEbUw4pWug1MtA",
-    "address": "0xc935ae4E5aDDC05A154c490f3e4bc62566b2CEd2"
+    "address": "0xc935ae4E5aDDC05A154c490f3e4bc62566b2CEd2",
+    "building_color": "#e183b5"
   },
   {
     "metadata": {
@@ -3797,7 +3904,8 @@
     },
     "id": "107",
     "tokenURI": "ipfs://QmR8zxXR9zGpuFdYShzofzGky6SH9Frb7yNk8YdUcQnVxA",
-    "address": "0xEAf6f0D5f5C6ED53F6516eCe21C629FE37f9777b"
+    "address": "0xEAf6f0D5f5C6ED53F6516eCe21C629FE37f9777b",
+    "building_color": "#f5af40"
   },
   {
     "metadata": {
@@ -3834,7 +3942,8 @@
     },
     "id": "108",
     "tokenURI": "ipfs://QmPc3ZnmRYui2vCY6nMiQcMDB2rCc3mPKpxdvi3qNWwZrc",
-    "address": "0x351720753d0E8E3b61A6f9B28f863E8B95469Fb0"
+    "address": "0x351720753d0E8E3b61A6f9B28f863E8B95469Fb0",
+    "building_color": "#7ad0f1"
   },
   {
     "metadata": {
@@ -3871,7 +3980,8 @@
     },
     "id": "109",
     "tokenURI": "ipfs://QmdsMzBKvkH9pjwKF5vL1bVWAobBsEGRHzQ1beGFWxVUEF",
-    "address": "0xD03180341a1B6F55498a45433B5EfA71f3042242"
+    "address": "0xD03180341a1B6F55498a45433B5EfA71f3042242",
+    "building_color": "#dca7c3"
   },
   {
     "metadata": {
@@ -3908,7 +4018,8 @@
     },
     "id": "110",
     "tokenURI": "ipfs://QmSR1KZyCXb5JhicDg763NHJAaMa6brhA65BGrh1F6NkZX",
-    "address": "0x3109F4db9cD5aAdF98b3B5b789f99f63d14dF05F"
+    "address": "0x3109F4db9cD5aAdF98b3B5b789f99f63d14dF05F",
+    "building_color": "#0098af"
   },
   {
     "metadata": {
@@ -3945,7 +4056,8 @@
     },
     "id": "111",
     "tokenURI": "ipfs://QmSGD5u8a7h3DRE7CSDe1MRq2uqVvEBRD1bcjUWNABDxc6",
-    "address": "0x89b942A10ed186Eb06d1771dBF174Ecc9E2a9C6f"
+    "address": "0x89b942A10ed186Eb06d1771dBF174Ecc9E2a9C6f",
+    "building_color": "#3aae63"
   },
   {
     "metadata": {
@@ -3982,7 +4094,8 @@
     },
     "id": "112",
     "tokenURI": "ipfs://QmQenryueP26tUwmyNXUdm6jWFujZf5CsiH2NC9uGohcSc",
-    "address": "0x4923f1F50e51285b828Ed56B82794aa922e31Cf8"
+    "address": "0x4923f1F50e51285b828Ed56B82794aa922e31Cf8",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -4019,7 +4132,8 @@
     },
     "id": "113",
     "tokenURI": "ipfs://QmUf88CYDfuFaV3xtx5KYc5pnwfkt6KH9EoMMUHfApi4oM",
-    "address": "0xE8Fb1348528ab5D3C0d7ccB4F20315854Cda49dF"
+    "address": "0xE8Fb1348528ab5D3C0d7ccB4F20315854Cda49dF",
+    "building_color": "#81afd3"
   },
   {
     "metadata": {
@@ -4056,7 +4170,8 @@
     },
     "id": "114",
     "tokenURI": "ipfs://QmV3EccLW9ix5D6i8wK9vYxiGCmm5QAMkAPp31Ukj7Aha3",
-    "address": "0xEfD8156e810Cc55957b87E23F1324dcd91fF6023"
+    "address": "0xEfD8156e810Cc55957b87E23F1324dcd91fF6023",
+    "building_color": "#c84990"
   },
   {
     "metadata": {
@@ -4093,7 +4208,8 @@
     },
     "id": "115",
     "tokenURI": "ipfs://QmQFF9PJLYJ1RoVqqC8xxoa66EGkhqySixz1qk4Wov5ku4",
-    "address": "0x4f19Cf2F285ee38231e43c415035f81077a6e878"
+    "address": "0x4f19Cf2F285ee38231e43c415035f81077a6e878",
+    "building_color": "#ef5d60"
   },
   {
     "metadata": {
@@ -4130,7 +4246,8 @@
     },
     "id": "116",
     "tokenURI": "ipfs://QmVLeHRf3BZ22Gx8ApbHHdRm9wCvqHt6MtVrKRtgATRZqh",
-    "address": "0x3f86d1e3624208f97A8DB79D92Ddb628df0b7F6f"
+    "address": "0x3f86d1e3624208f97A8DB79D92Ddb628df0b7F6f",
+    "building_color": "#dee46a"
   },
   {
     "metadata": {
@@ -4167,7 +4284,8 @@
     },
     "id": "117",
     "tokenURI": "ipfs://QmWQM2hCZ9W2kakxQd3eTsriKU252gDqmte2Pc7vYpvCvd",
-    "address": "0xf690079B0cf321b68a9cC947d5527eB7f9b26487"
+    "address": "0xf690079B0cf321b68a9cC947d5527eB7f9b26487",
+    "building_color": "#679dcb"
   },
   {
     "metadata": {
@@ -4204,7 +4322,8 @@
     },
     "id": "118",
     "tokenURI": "ipfs://QmP3vkn2HHxFD4aui3FQFu14BkL5SdZYLnaQXRkiRta9WX",
-    "address": "0x5A02Ae973E4DdB215B6a7a0c13457b7009f77d4d"
+    "address": "0x5A02Ae973E4DdB215B6a7a0c13457b7009f77d4d",
+    "building_color": "#47bbc8"
   },
   {
     "metadata": {
@@ -4241,7 +4360,8 @@
     },
     "id": "119",
     "tokenURI": "ipfs://QmNswjD9B1PP35GwC7cK9NC8y4KRBTs8QjGPJEuSKesewE",
-    "address": "0x3fbCbC48290767f8ae0f672D3Ff200f350Dcbd39"
+    "address": "0x3fbCbC48290767f8ae0f672D3Ff200f350Dcbd39",
+    "building_color": "#f9c649"
   },
   {
     "metadata": {
@@ -4278,7 +4398,8 @@
     },
     "id": "120",
     "tokenURI": "ipfs://QmPPyPgE8ks8i139g7aVjxwfu6oCrmBkSn6tXv21ADfUAy",
-    "address": "0x7014872307802a64d89774ea27459ABcBe42FB66"
+    "address": "0x7014872307802a64d89774ea27459ABcBe42FB66",
+    "building_color": "#ef4aa9"
   },
   {
     "metadata": {
@@ -4315,7 +4436,8 @@
     },
     "id": "121",
     "tokenURI": "ipfs://QmacoEKrCSEHHpvdyyvLCn7McDm6Q3ydsZ2GgUbJGQmQJi",
-    "address": "0xB379eBdD2732415cC82e9Ccca0f6b6B4b4047fF1"
+    "address": "0xB379eBdD2732415cC82e9Ccca0f6b6B4b4047fF1",
+    "building_color": "#e8619b"
   },
   {
     "metadata": {
@@ -4352,7 +4474,8 @@
     },
     "id": "122",
     "tokenURI": "ipfs://QmVyqGdADL4qAmZqSSDt232CFDCsUVXT5uJFyafz3YhyC5",
-    "address": "0xcDA9078673c976a342641f51be5F436Eb5D238a9"
+    "address": "0xcDA9078673c976a342641f51be5F436Eb5D238a9",
+    "building_color": "#e35724"
   },
   {
     "metadata": {
@@ -4389,7 +4512,8 @@
     },
     "id": "123",
     "tokenURI": "ipfs://QmTRTNJNSMfsxH2A8pvH5LpuGi2Y2cEso537UyJshn18X1",
-    "address": "0x9565b62DB094E06BC0F73766444b9c8eF1c55b91"
+    "address": "0x9565b62DB094E06BC0F73766444b9c8eF1c55b91",
+    "building_color": "#c771ae"
   },
   {
     "metadata": {
@@ -4426,7 +4550,8 @@
     },
     "id": "124",
     "tokenURI": "ipfs://QmYrdptUQEJ2GKhmkyajXgwGfCQjBscGNnW5L9nVQygBW9",
-    "address": "0xFB99822341Fd38FC3CeA523bAc631AA3F3c33381"
+    "address": "0xFB99822341Fd38FC3CeA523bAc631AA3F3c33381",
+    "building_color": "#f4ec5d"
   },
   {
     "metadata": {
@@ -4463,7 +4588,8 @@
     },
     "id": "125",
     "tokenURI": "ipfs://QmcC257CbVtmXBcuPWZeNo6uX4o4wWYHYoGu8GtHHZFDBK",
-    "address": "0x8fE557A6E41592584F071B468Af75051D37cBF79"
+    "address": "0x8fE557A6E41592584F071B468Af75051D37cBF79",
+    "building_color": "#f9c357"
   },
   {
     "metadata": {
@@ -4500,7 +4626,8 @@
     },
     "id": "126",
     "tokenURI": "ipfs://QmP1eUVEwmynER3Z2SUnXyZco2R2ukkXkJy5cPMC3wTwVj",
-    "address": "0x654cba1880b16df725E885883F074a6007dFb66e"
+    "address": "0x654cba1880b16df725E885883F074a6007dFb66e",
+    "building_color": "#d3539e"
   },
   {
     "metadata": {
@@ -4539,7 +4666,8 @@
     "tokenURI": "ipfs://Qma486zTS45m8utdBBx9ZXWHkmXgKRMSXGMs33apksg53E",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0x16Eea0Fd105F99Dc945c69466b744EF1471e6Cd6"
+    "address": "0x16Eea0Fd105F99Dc945c69466b744EF1471e6Cd6",
+    "building_color": "#80ced2"
   },
   {
     "metadata": {
@@ -4576,7 +4704,8 @@
     },
     "id": "128",
     "tokenURI": "ipfs://QmVGGoJ7W3CvznjaDjDE3i7Bd898WY4Smv1x8StFGx5ZzN",
-    "address": "0x84AD1d26f302bF075D54f6711591D8A824D8dCED"
+    "address": "0x84AD1d26f302bF075D54f6711591D8A824D8dCED",
+    "building_color": "#7b91c2"
   },
   {
     "metadata": {
@@ -4613,7 +4742,8 @@
     },
     "id": "129",
     "tokenURI": "ipfs://QmQGrT3zqYCYNe32jEapThGFtSbAFYz9JLbbCz7KMxzbFh",
-    "address": "0xcE64bDe4fd1003A9D7341081709191211ecBb52f"
+    "address": "0xcE64bDe4fd1003A9D7341081709191211ecBb52f",
+    "building_color": "#f175b1"
   },
   {
     "metadata": {
@@ -4650,7 +4780,8 @@
     },
     "id": "130",
     "tokenURI": "ipfs://Qmf2Tw959AJHSn88za4Ppj8UuX1dnQQkWhybboMMWTGuyt",
-    "address": "0x46F96f75B0C83B1A28D55F861B055f77DB79ba8D"
+    "address": "0x46F96f75B0C83B1A28D55F861B055f77DB79ba8D",
+    "building_color": "#9bd5c9"
   },
   {
     "metadata": {
@@ -4687,7 +4818,8 @@
     },
     "id": "131",
     "tokenURI": "ipfs://QmbiJpk9GizTzvUWqHDjh1kT3APRXhFnqXizGr5cKBGCue",
-    "address": "0xD67b3fFeaF8111FD87603033d7A4e6bf6388FF28"
+    "address": "0xD67b3fFeaF8111FD87603033d7A4e6bf6388FF28",
+    "building_color": "#f2cd24"
   },
   {
     "metadata": {
@@ -4720,7 +4852,8 @@
     },
     "id": "132",
     "tokenURI": "ipfs://QmQyJYvhHcLiuFUsVGyxrNy4eb8yWoDxpR6VwKvkQu4inR",
-    "address": "0x4d9fb6872543834646bDb67d52FD3aE28E14E940"
+    "address": "0x4d9fb6872543834646bDb67d52FD3aE28E14E940",
+    "building_color": "#afc932"
   },
   {
     "metadata": {
@@ -4753,7 +4886,8 @@
     },
     "id": "133",
     "tokenURI": "ipfs://QmNPw4V7ga9c3xrsjsaF5sRS7QbG8vyE1fDpVKnSArV9Zq",
-    "address": "0xd2807854B86D5f8D8ef49FDCD50d9Cb3962622F2"
+    "address": "0xd2807854B86D5f8D8ef49FDCD50d9Cb3962622F2",
+    "building_color": "#f29919"
   },
   {
     "metadata": {
@@ -4786,7 +4920,8 @@
     },
     "id": "134",
     "tokenURI": "ipfs://QmSoojVrnyGvBgD993H4dkffaoF4vjg9NBs2mZtGcQgWkU",
-    "address": "0x89a1A178c1f8AbbF6eE3c61ECCFbeC5B16f8a110"
+    "address": "0x89a1A178c1f8AbbF6eE3c61ECCFbeC5B16f8a110",
+    "building_color": "#00a6e0"
   },
   {
     "metadata": {
@@ -4819,7 +4954,8 @@
     },
     "id": "135",
     "tokenURI": "ipfs://Qmad5gZ9JD48mbNbW6nF7SPAjQ5eubc77HPu8wFe9xgLRG",
-    "address": "0xEfd9E5d71f8f5D6FBF6cDeE970f6b7A92A555Af8"
+    "address": "0xEfd9E5d71f8f5D6FBF6cDeE970f6b7A92A555Af8",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -4852,7 +4988,8 @@
     },
     "id": "136",
     "tokenURI": "ipfs://QmVFX5RfF6JY3fHw26BQenCgn6KTMjFY5j7pY3nJSYvWnL",
-    "address": "0x8ECF71E217C228a29a5A5713A84DfdE9Abdd844c"
+    "address": "0x8ECF71E217C228a29a5A5713A84DfdE9Abdd844c",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -4885,7 +5022,8 @@
     },
     "id": "137",
     "tokenURI": "ipfs://QmUz5pcYiYUN5kC3m8YyhDSYrUisDnpszSUdHLgq1umtzi",
-    "address": "0xa93d838c2EeB4985666eA2dA827b7e8C54a08Fa4"
+    "address": "0xa93d838c2EeB4985666eA2dA827b7e8C54a08Fa4",
+    "building_color": "#ee3138"
   },
   {
     "metadata": {
@@ -4918,7 +5056,8 @@
     },
     "id": "138",
     "tokenURI": "ipfs://Qme3Cea1iz3AYYQv5f7dcjgLaWggVp9bR6Wpw9vDTGZRvx",
-    "address": "0x8D7A1aee88935345dF360Bc9A491E9794Dc4274A"
+    "address": "0x8D7A1aee88935345dF360Bc9A491E9794Dc4274A",
+    "building_color": "#32bfb9"
   },
   {
     "metadata": {
@@ -4951,7 +5090,8 @@
     },
     "id": "139",
     "tokenURI": "ipfs://QmdVvVqMnwKFrZk92EgHJAtSubmHD86PcuZx5unD9Fhk19",
-    "address": "0xD0e100b3Eb14bb7AddB9D7A7039f49937F6D9921"
+    "address": "0xD0e100b3Eb14bb7AddB9D7A7039f49937F6D9921",
+    "building_color": "#13769d & e50081"
   },
   {
     "metadata": {
@@ -4984,7 +5124,8 @@
     },
     "id": "140",
     "tokenURI": "ipfs://QmSWeWi4SvwMgAryzwqBwLi6wRwGdPrufHXwXqmrSEkonr",
-    "address": "0x67b4D4F870c584569b69E4A33B4EB72d3c2dDeD7"
+    "address": "0x67b4D4F870c584569b69E4A33B4EB72d3c2dDeD7",
+    "building_color": "#3c579e & 5dc0c6"
   },
   {
     "metadata": {
@@ -5017,7 +5158,8 @@
     },
     "id": "141",
     "tokenURI": "ipfs://QmNVxLxnDSRPGoect2hkJvtatGwHSGMEW1Pf3wfR4FYQBy",
-    "address": "0xd78aA7579bca885214BE38f0650392C0D15d1B6E"
+    "address": "0xd78aA7579bca885214BE38f0650392C0D15d1B6E",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -5050,7 +5192,8 @@
     },
     "id": "142",
     "tokenURI": "ipfs://QmTGPn86a7BiqUW4CY7vHwxxuQ5fd4SQN3ZaMekPuqnKQU",
-    "address": "0x1Affb08921B30FE4d199Dba6a8C8c7C3a4D6284F"
+    "address": "0x1Affb08921B30FE4d199Dba6a8C8c7C3a4D6284F",
+    "building_color": "#fdce38"
   },
   {
     "metadata": {
@@ -5083,7 +5226,8 @@
     },
     "id": "143",
     "tokenURI": "ipfs://Qme2z4NkobjM9QUW5NWAeZjMaY5PgJnQPC8imb5EXF3hRT",
-    "address": "0xaE25D4A791Cae1b778F348BeA5A32528609AB4Da"
+    "address": "0xaE25D4A791Cae1b778F348BeA5A32528609AB4Da",
+    "building_color": "#e95620"
   },
   {
     "metadata": {
@@ -5116,7 +5260,8 @@
     },
     "id": "144",
     "tokenURI": "ipfs://QmcpVLrESGh9jw3jMTjKhYsbCrMfpnjpuosp5SJymG8K6z",
-    "address": "0xAd326b56d0556bc0291136bA97E4B715F5540bbf"
+    "address": "0xAd326b56d0556bc0291136bA97E4B715F5540bbf",
+    "building_color": "#ef5d60"
   },
   {
     "metadata": {
@@ -5148,7 +5293,8 @@
       ]
     },
     "id": "145",
-    "tokenURI": "ipfs://QmZpXs6WpgonZKApJPifoxbzm6wNaByK5zXXjNCXvcMKXH"
+    "tokenURI": "ipfs://QmZpXs6WpgonZKApJPifoxbzm6wNaByK5zXXjNCXvcMKXH",
+    "building_color": "#ede175"
   },
   {
     "metadata": {
@@ -5181,7 +5327,8 @@
     },
     "id": "146",
     "tokenURI": "ipfs://QmWVLYHHHM6TZo9E1jiURERYJstdxCW4jxrUYuYQ7yYBEZ",
-    "address": "0x34F7AC1fBD543F5A5DfFe9a3441CF413D7123e1A"
+    "address": "0x34F7AC1fBD543F5A5DfFe9a3441CF413D7123e1A",
+    "building_color": "#8297c4"
   },
   {
     "metadata": {
@@ -5214,7 +5361,8 @@
     },
     "id": "147",
     "tokenURI": "ipfs://QmQatcMtRy3V7TW14rM8oiWw3YngGkfXFV4JZ7bid6q2G1",
-    "address": "0xe9442AB5b32434aD388f256f473ad48afe9a73da"
+    "address": "0xe9442AB5b32434aD388f256f473ad48afe9a73da",
+    "building_color": "#a5d388"
   },
   {
     "metadata": {
@@ -5247,7 +5395,8 @@
     },
     "id": "148",
     "tokenURI": "ipfs://QmYpin9NupXgVFSiQfyaqyEjMSg4U2etTp7Qu88JhZZNLu",
-    "address": "0x6FbC255CdCBa19329Dc2236CE8C4eD9e826222e5"
+    "address": "0x6FbC255CdCBa19329Dc2236CE8C4eD9e826222e5",
+    "building_color": "#e72b75 & a54791"
   },
   {
     "metadata": {
@@ -5280,7 +5429,8 @@
     },
     "id": "149",
     "tokenURI": "ipfs://QmcSiMr2DiZ9rWkVoFT1m2BgVxzQdZzKGPPTdowvh16r1x",
-    "address": "0x1310Ddc6cd9642f965436C40A0294E5B1197f41C"
+    "address": "0x1310Ddc6cd9642f965436C40A0294E5B1197f41C",
+    "building_color": "#gradient 2ba8e0 // 06a69c "
   },
   {
     "metadata": {
@@ -5313,7 +5463,8 @@
     },
     "id": "150",
     "tokenURI": "ipfs://QmcWwSJ397XDv38sHFKdnDZcRPN7PsRznCayrYJtTafYzg",
-    "address": "0xa8B197F0b1F428a6e36eda3a0be8cb9C431ab7D0"
+    "address": "0xa8B197F0b1F428a6e36eda3a0be8cb9C431ab7D0",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -5346,7 +5497,8 @@
     },
     "id": "151",
     "tokenURI": "ipfs://Qmbku9ZQWcytS78BF7MrDG3ri19B3DntFuQfA7b9hANtBE",
-    "address": "0xF4537c416e53EA9831E986051102E4FAF7Ff89E1"
+    "address": "0xF4537c416e53EA9831E986051102E4FAF7Ff89E1",
+    "building_color": "#f9bc09 & e95620"
   },
   {
     "metadata": {
@@ -5379,7 +5531,8 @@
     },
     "id": "152",
     "tokenURI": "ipfs://Qmbw9E4oPWos7WKebnkWeWH6JRkRfxvDr1fuWhk4DDQFoJ",
-    "address": "0x953bcd37983Ca29078705Efbb89b7aC6eB273494"
+    "address": "0x953bcd37983Ca29078705Efbb89b7aC6eB273494",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -5412,7 +5565,8 @@
     },
     "id": "153",
     "tokenURI": "ipfs://Qmdu42193pK9uffpeF4iTgguzPGVmfEcee25X4cYQFWARh",
-    "address": "0xE98Ff72B084609C453304883BF9664bd666fd80B"
+    "address": "0xE98Ff72B084609C453304883BF9664bd666fd80B",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -5445,7 +5599,8 @@
     },
     "id": "154",
     "tokenURI": "ipfs://QmaWddsibB8xs4TfpUTLnYAD2uTTgs41KxgxJ8KeydxzEt",
-    "address": "0xa6535381c0dDEf73e7b8649b56C7800ca0EA1903"
+    "address": "0xa6535381c0dDEf73e7b8649b56C7800ca0EA1903",
+    "building_color": "#00b3ca"
   },
   {
     "metadata": {
@@ -5478,7 +5633,8 @@
     },
     "id": "155",
     "tokenURI": "ipfs://QmdhiU6UgfZgnpF7EqVkLqv53wpDpvhMveUvaTuKddvD8F",
-    "address": "0xE66f95AfADb8AA9CD1e8c927e3f216c9Ef234884"
+    "address": "0xE66f95AfADb8AA9CD1e8c927e3f216c9Ef234884",
+    "building_color": "#f07e98 & ef4081"
   },
   {
     "metadata": {
@@ -5513,7 +5669,8 @@
     "tokenURI": "ipfs://QmTzZJH541NvoiGJvUvQ2vBaVTUWLsbtPxg9atZH27PYC9",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xB9e2Ee4cD751ffC61ee135335F33440B8aEF7bcf"
+    "address": "0xB9e2Ee4cD751ffC61ee135335F33440B8aEF7bcf",
+    "building_color": "#5bbf69 & 7796cc"
   },
   {
     "metadata": {
@@ -5546,7 +5703,8 @@
     },
     "id": "157",
     "tokenURI": "ipfs://QmRAuahod5myHWM9kAFSZ2GBwFm8GV17WPdRc98BuP7RDA",
-    "address": "0x6BEe89aFC04B9045227d2A53FC15D93869c4f0e9"
+    "address": "0x6BEe89aFC04B9045227d2A53FC15D93869c4f0e9",
+    "building_color": "#a15ea1"
   },
   {
     "metadata": {
@@ -5579,7 +5737,8 @@
     },
     "id": "158",
     "tokenURI": "ipfs://QmcdYAyoEB2SoLpYgUCqfTbfmoiT76Q9yhF3T8n1W6W1k7",
-    "address": "0x960C92ffCb25e52927cBC1b26021630e30Cb248b"
+    "address": "0x960C92ffCb25e52927cBC1b26021630e30Cb248b",
+    "building_color": "#23b3b4"
   },
   {
     "metadata": {
@@ -5612,7 +5771,8 @@
     },
     "id": "159",
     "tokenURI": "ipfs://QmcGojysLVq7xhJFr4FbFVWsgFdTX3CvVoEG5Fk6rYEuCX",
-    "address": "0xb6040a4F30e9aB7bEB39B12196792aBBAd304d87"
+    "address": "0xb6040a4F30e9aB7bEB39B12196792aBBAd304d87",
+    "building_color": "#f39069 & ef387b"
   },
   {
     "metadata": {
@@ -5645,7 +5805,8 @@
     },
     "id": "160",
     "tokenURI": "ipfs://QmNQigK5cmVbhAdRbU38SUr5Jb6myaXv3GAWg7XhXT9GTa",
-    "address": "0xa160f966fef921Af7e5D128E2DaEc3e1569441f4"
+    "address": "0xa160f966fef921Af7e5D128E2DaEc3e1569441f4",
+    "building_color": "#e2e560"
   },
   {
     "metadata": {
@@ -5678,7 +5839,8 @@
     },
     "id": "161",
     "tokenURI": "ipfs://QmTNp4B3eiS9cKq66pcEvFh9WVFtKCiVwMtTE9ZgLUHKwv",
-    "address": "0x3f4526D96BF440d1Ce1889B0E1eda018A4d62B79"
+    "address": "0x3f4526D96BF440d1Ce1889B0E1eda018A4d62B79",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -5711,7 +5873,8 @@
     },
     "id": "162",
     "tokenURI": "ipfs://Qma8Sr65kd9bxQtDK85B6k55ppEEgcS1i7FKNv3CBdcUFN",
-    "address": "0x10f75735ad442deD37eC8FB1d8F765c586E07Bf4"
+    "address": "0x10f75735ad442deD37eC8FB1d8F765c586E07Bf4",
+    "building_color": "#3fb4ab"
   },
   {
     "metadata": {
@@ -5744,7 +5907,8 @@
     },
     "id": "163",
     "tokenURI": "ipfs://QmcHiWM6fBearWNf2fMPYBfTHYCqAdKVVkhZ8faHoUBvTB",
-    "address": "0xE55FdeF760C052AbC4eF9c2f6eC2d73fA321110b"
+    "address": "0xE55FdeF760C052AbC4eF9c2f6eC2d73fA321110b",
+    "building_color": "#28ad6c"
   },
   {
     "metadata": {
@@ -5777,7 +5941,8 @@
     },
     "id": "164",
     "tokenURI": "ipfs://QmfMQ5oD5A1oJqvqkr5PGXSWCBuHi2oEV39HfWoiDZXhhH",
-    "address": "0x64585264Ad821e2D787bceF77afE231F8FC3b2A0"
+    "address": "0x64585264Ad821e2D787bceF77afE231F8FC3b2A0",
+    "building_color": "#ef5b5b"
   },
   {
     "metadata": {
@@ -5810,7 +5975,8 @@
     },
     "id": "165",
     "tokenURI": "ipfs://QmSESWtK9FZcZkFUenEMqVNYr8jY8hJVJn7GPUNAJh24yb",
-    "address": "0xBecC888Ec0cD9Cb3D1C029D0B650d54055F637c1"
+    "address": "0xBecC888Ec0cD9Cb3D1C029D0B650d54055F637c1",
+    "building_color": "#e94081"
   },
   {
     "metadata": {
@@ -5843,7 +6009,8 @@
     },
     "id": "166",
     "tokenURI": "ipfs://QmdoZQvEUPkGK3xRUQHe2hKQbhVQ58kAX4TS6S5PocGxTw",
-    "address": "0xed8A16D1bfd081eFF0dF7ec4F065b58318d87586"
+    "address": "0xed8A16D1bfd081eFF0dF7ec4F065b58318d87586",
+    "building_color": "#4d93c7"
   },
   {
     "metadata": {
@@ -5876,7 +6043,8 @@
     },
     "id": "167",
     "tokenURI": "ipfs://QmReS7qRmtv6P9roSJt1JRpRrKQL84v6L41QfhyXa8DQ2J",
-    "address": "0x7140a49444d856f0B087d6A949924128653b7331"
+    "address": "0x7140a49444d856f0B087d6A949924128653b7331",
+    "building_color": "#f08c1c"
   },
   {
     "metadata": {
@@ -5909,7 +6077,8 @@
     },
     "id": "168",
     "tokenURI": "ipfs://QmZjnMzLPWTuwtBN6kxvorzHmgqpoBC3Dz3vFhYjKrffj9",
-    "address": "0xF3A7d8c1E628C52790b72240c7D2e9Ac1a81DF93"
+    "address": "0xF3A7d8c1E628C52790b72240c7D2e9Ac1a81DF93",
+    "building_color": "#86cbe8"
   },
   {
     "metadata": {
@@ -5942,7 +6111,8 @@
     },
     "id": "169",
     "tokenURI": "ipfs://QmQj8wCFXucoc5ckQEaAMLAHp8XvMVtGnKFGX6rUzJyZ4K",
-    "address": "0x620b5855c03F8d43272347CFb515e14E269faA19"
+    "address": "0x620b5855c03F8d43272347CFb515e14E269faA19",
+    "building_color": "#ef5357"
   },
   {
     "metadata": {
@@ -5979,7 +6149,8 @@
     },
     "id": "170",
     "tokenURI": "ipfs://QmV8SZH6cofojVR6xsfLVMFYSmrCyFimW6T89K5nc8Vnee",
-    "address": "0xdDE3e9e2B45e7c7f4073880fCb50e6BC42A7E970"
+    "address": "0xdDE3e9e2B45e7c7f4073880fCb50e6BC42A7E970",
+    "building_color": "#f2794c"
   },
   {
     "metadata": {
@@ -6016,7 +6187,8 @@
     },
     "id": "171",
     "tokenURI": "ipfs://QmeJJtFxaSL58nL1u2nFqPaGUXtvR2eeUvsBUEfRrFLgHL",
-    "address": "0x6F14E5CdB5e2744E8e88Bea01af1e2541C4B12ce"
+    "address": "0x6F14E5CdB5e2744E8e88Bea01af1e2541C4B12ce",
+    "building_color": "#e3327a"
   },
   {
     "metadata": {
@@ -6053,7 +6225,8 @@
     },
     "id": "172",
     "tokenURI": "ipfs://QmTuqBhEETF1yGtDxtekUhhb6RbCSMHifQeLJsSNZXqJc1",
-    "address": "0xe82De0424Aa3AC2b791Aab1e5f33D02c6F21111A"
+    "address": "0xe82De0424Aa3AC2b791Aab1e5f33D02c6F21111A",
+    "building_color": "#f5d329"
   },
   {
     "metadata": {
@@ -6090,7 +6263,8 @@
     },
     "id": "173",
     "tokenURI": "ipfs://QmYhSMSmkMfA1d6ggmPP29HUtwaaoHZTbLdfziFcXGu2yL",
-    "address": "0x4890b63C269526125d1dC70EEeCC36F58D1f30E5"
+    "address": "0x4890b63C269526125d1dC70EEeCC36F58D1f30E5",
+    "building_color": "#e0cf4d"
   },
   {
     "metadata": {
@@ -6127,7 +6301,8 @@
     },
     "id": "174",
     "tokenURI": "ipfs://QmSNTsJrjdCSB5XNvfTNcxuB7TP5B5FoHd6qpj2jeu1Dkj",
-    "address": "0xBc95A83Ee8Fac4f79a2D13d3a223FeB49e3CA76C"
+    "address": "0xBc95A83Ee8Fac4f79a2D13d3a223FeB49e3CA76C",
+    "building_color": "#019f91 & 4bbfb6"
   },
   {
     "metadata": {
@@ -6164,7 +6339,8 @@
     },
     "id": "175",
     "tokenURI": "ipfs://QmX3pbQ9SmuxwieSUnpXon7CDLMvX1LPDK29cvzRVrSjg8",
-    "address": "0x2D37593344324382b96F9c0ee8DA87581F52522F"
+    "address": "0x2D37593344324382b96F9c0ee8DA87581F52522F",
+    "building_color": "#4ca0cc"
   },
   {
     "metadata": {
@@ -6197,7 +6373,8 @@
     },
     "id": "176",
     "tokenURI": "ipfs://QmeYCJNFvtCS2jGkJWdqLiRzbU2zNS7aiCEFiYUbL9dc7o",
-    "address": "0xc6f73BfB66FD9E818d994FAfB0558c4DF8b32611"
+    "address": "0xc6f73BfB66FD9E818d994FAfB0558c4DF8b32611",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -6230,7 +6407,8 @@
     },
     "id": "177",
     "tokenURI": "ipfs://QmTPp3DWFwVyApimVoT7dgZje4P8jJkDicNGFFGDDK7zg3",
-    "address": "0xC37aCBA9379AbeDCcCA06BcB56866930eaE53E57"
+    "address": "0xC37aCBA9379AbeDCcCA06BcB56866930eaE53E57",
+    "building_color": "#4ca0cc"
   },
   {
     "metadata": {
@@ -6263,7 +6441,8 @@
     },
     "id": "178",
     "tokenURI": "ipfs://QmZLiWc6SQJzjkPJK9f4Kbi3hQuT6ZUB5tTa53EsNBKSuP",
-    "address": "0x0b053B4385BeBE4bAfa1f7B11e8ABe4c9363A319"
+    "address": "0x0b053B4385BeBE4bAfa1f7B11e8ABe4c9363A319",
+    "building_color": "#f8ea49"
   },
   {
     "metadata": {
@@ -6296,7 +6475,8 @@
     },
     "id": "179",
     "tokenURI": "ipfs://Qmd1KVgzemzB3RMFY2vyUq22ZKMQPFBMYcHmZWztDtBvjr",
-    "address": "0xd7Fe634ac87F3dEB15c0c431C7C73410599c59B3"
+    "address": "0xd7Fe634ac87F3dEB15c0c431C7C73410599c59B3",
+    "building_color": "#ef319f"
   },
   {
     "metadata": {
@@ -6329,7 +6509,8 @@
     },
     "id": "180",
     "tokenURI": "ipfs://QmaDSTHLJFeVJYyAfxSuz1NpE7hnc4Qf9czUjV8ZQXcYmv",
-    "address": "0x99F0dAbf6fe3B0bFf67792A7Ad270932aC3ECfC7"
+    "address": "0x99F0dAbf6fe3B0bFf67792A7Ad270932aC3ECfC7",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -6362,7 +6543,8 @@
     },
     "id": "181",
     "tokenURI": "ipfs://Qmbnn6i7CLkZsWc1xxeuZpBMvFxVtsXmFhJiFR8CV2c6Wq",
-    "address": "0xA44eB541917F8468A3F78326E9441dd76F3B12bE"
+    "address": "0xA44eB541917F8468A3F78326E9441dd76F3B12bE",
+    "building_color": "#3c998e"
   },
   {
     "metadata": {
@@ -6395,7 +6577,8 @@
     },
     "id": "182",
     "tokenURI": "ipfs://QmaUw51D2FiMVfK9S8W1vbMedTV5RjwKZEXLP3a2fDAvqm",
-    "address": "0xF13c8EFCC9059bDBfa1AE63691e7d8D2925c795a"
+    "address": "0xF13c8EFCC9059bDBfa1AE63691e7d8D2925c795a",
+    "building_color": "#4ac7f5"
   },
   {
     "metadata": {
@@ -6428,7 +6611,8 @@
     },
     "id": "183",
     "tokenURI": "ipfs://QmSGW73Eba3zToZHwvJgZNhaK9gAq7qfyH53rqZ8fXKf7a",
-    "address": "0x74eA4BF3e88B80eedA0a73bEe4f87E0E6C006123"
+    "address": "0x74eA4BF3e88B80eedA0a73bEe4f87E0E6C006123",
+    "building_color": "#ee299c"
   },
   {
     "metadata": {
@@ -6461,7 +6645,8 @@
     },
     "id": "184",
     "tokenURI": "ipfs://QmQmQ1cabfGatf4AbvmUCVh6trGokczZG8eF55KYtEHY9P",
-    "address": "0x1ee498B2b9711202aA55Ec4ce5185912c542556c"
+    "address": "0x1ee498B2b9711202aA55Ec4ce5185912c542556c",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -6494,7 +6679,8 @@
     },
     "id": "185",
     "tokenURI": "ipfs://QmRvLcv5zmXeDP953z5CyYwQrravyNcdRPxLNRYt2RMc5H",
-    "address": "0x322757df326eB897EbB1BD2e67cA7050df7a782E"
+    "address": "0x322757df326eB897EbB1BD2e67cA7050df7a782E",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -6527,7 +6713,8 @@
     },
     "id": "186",
     "tokenURI": "ipfs://QmVtXQkaDnUja1ZTWSCXmVwzmT3tnhgXfjoX5Ph6dBvuhu",
-    "address": "0x1D01D065eA16C79Fd8D8Cbf438193592d2e985d3"
+    "address": "0x1D01D065eA16C79Fd8D8Cbf438193592d2e985d3",
+    "building_color": "#ca548e & 0bb5c4"
   },
   {
     "metadata": {
@@ -6560,7 +6747,8 @@
     },
     "id": "187",
     "tokenURI": "ipfs://QmRKRQ25LS92xt8aPz1VCRMiQXcCTZ72rvKK7deZmLGURi",
-    "address": "0xE98D893E49e8565580EB666EE9b8C90B81a90851"
+    "address": "0xE98D893E49e8565580EB666EE9b8C90B81a90851",
+    "building_color": "#2b95cf"
   },
   {
     "metadata": {
@@ -6593,7 +6781,8 @@
     },
     "id": "188",
     "tokenURI": "ipfs://QmTGdPzMzfmAkSPhyZj7biwbFmu4sJ2WAEqHwj3VCLLaUv",
-    "address": "0xD8C1CA6A46eC972A66406EEc44b8F909369bD25b"
+    "address": "0xD8C1CA6A46eC972A66406EEc44b8F909369bD25b",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -6626,7 +6815,8 @@
     },
     "id": "189",
     "tokenURI": "ipfs://QmeNyrvTG42MKZug7jJAGFQgYV5TBYFUYLndqcbAAeBvje",
-    "address": "0x75Eee28080AFdb57b7eB401d98aa27aE9F292390"
+    "address": "0x75Eee28080AFdb57b7eB401d98aa27aE9F292390",
+    "building_color": "#f29919"
   },
   {
     "metadata": {
@@ -6661,7 +6851,8 @@
     "tokenURI": "ipfs://QmYCtmQju2c9fpZdQ3f8Zoq3LkkLhpAfhtnhANZtvEeBPy",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xE49d6cB4f3BD7Fc9c78B152E90DC778D29c308dB"
+    "address": "0xE49d6cB4f3BD7Fc9c78B152E90DC778D29c308dB",
+    "building_color": "#f3e32e"
   },
   {
     "metadata": {
@@ -6694,7 +6885,8 @@
     },
     "id": "191",
     "tokenURI": "ipfs://QmRv3LSHcVT8uAYTdWNRtaHYxfuAzam9Yfccw2K1Nd5wj5",
-    "address": "0x946d8c31638014d81d37CA1Be587769d9AB42eA9"
+    "address": "0x946d8c31638014d81d37CA1Be587769d9AB42eA9",
+    "building_color": "#b065aa"
   },
   {
     "metadata": {
@@ -6729,7 +6921,8 @@
     "tokenURI": "ipfs://QmVYCfZG9dcs7QKcMB57uYQpbMwrLstFR9Aq6qV3UvyLS6",
     "type": "ERC1155",
     "supply": "1",
-    "address": "0xD5eb8Ed2C15860547EC417Ca176D4bbe51E440f5"
+    "address": "0xD5eb8Ed2C15860547EC417Ca176D4bbe51E440f5",
+    "building_color": "#70c9e7"
   },
   {
     "metadata": {
@@ -6762,7 +6955,8 @@
     },
     "id": "193",
     "tokenURI": "ipfs://QmWERFzUbk4Z1WcwKjVoTdTawowyZREuCbXW4Km67dHPXU",
-    "address": "0x1Bd30c9C9Dedd9ffA0f01a527d5BcBF8852Aab48"
+    "address": "0x1Bd30c9C9Dedd9ffA0f01a527d5BcBF8852Aab48",
+    "building_color": "#f4a73b"
   },
   {
     "metadata": {
@@ -6795,7 +6989,8 @@
     },
     "id": "194",
     "tokenURI": "ipfs://QmfAkqJk2A1UBk6VPeQmfyHJepz1dHaVzHQudNXmjqKRYf",
-    "address": "0x390afC08F5E8d442994e51838c43684bDDdD0904"
+    "address": "0x390afC08F5E8d442994e51838c43684bDDdD0904",
+    "building_color": "#e9369a"
   },
   {
     "metadata": {
@@ -6828,7 +7023,8 @@
     },
     "id": "195",
     "tokenURI": "ipfs://QmT8VxApM7WTzJPjzqrAwZWq3jb3EzsXTbKQKvh4LLh52i",
-    "address": "0xc1d277868Eb25F1d0A7C15F2790683Fdfb129790"
+    "address": "0xc1d277868Eb25F1d0A7C15F2790683Fdfb129790",
+    "building_color": "#64c5be"
   },
   {
     "metadata": {
@@ -6861,7 +7057,8 @@
     },
     "id": "196",
     "tokenURI": "ipfs://QmTBrjNRYu1r7zfhKbE98GHorRERy3gMitoVBGojyWzzHu",
-    "address": "0xdEF76D1561F449fD769B0bA245605fBaBAb81464"
+    "address": "0xdEF76D1561F449fD769B0bA245605fBaBAb81464",
+    "building_color": "#f9c402"
   },
   {
     "metadata": {
@@ -6894,7 +7091,8 @@
     },
     "id": "197",
     "tokenURI": "ipfs://QmVpgodG6TqJKzmor1y8TxXoVK9xrc1rzRGKih3iaomi3K",
-    "address": "0x24dcC467e7d67b75AFd21D3772DcE01fb313C216"
+    "address": "0x24dcC467e7d67b75AFd21D3772DcE01fb313C216",
+    "building_color": "#c03173"
   },
   {
     "metadata": {
@@ -6927,7 +7125,8 @@
     },
     "id": "198",
     "tokenURI": "ipfs://QmQr6wYatuHSx3zgQ2NYyzV74gARHtWcgqj4sj1HQhGKaB",
-    "address": "0x4405EAB7D0dE547108c5687Aea5D049d592F256b"
+    "address": "0x4405EAB7D0dE547108c5687Aea5D049d592F256b",
+    "building_color": "#3fb4ab"
   },
   {
     "metadata": {
@@ -6960,7 +7159,8 @@
     },
     "id": "199",
     "tokenURI": "ipfs://QmViRTHUWohQukQMMQSo7t7h85NyJR4vQjFrPqJExw9AFy",
-    "address": "0x5BD7e4A33b3D0cdaf16F120A1f11257C0318Aa06"
+    "address": "0x5BD7e4A33b3D0cdaf16F120A1f11257C0318Aa06",
+    "building_color": "#46c4d0"
   },
   {
     "metadata": {
@@ -6993,7 +7193,8 @@
     },
     "id": "200",
     "tokenURI": "ipfs://QmXCniRkMqfPQZEPMQMV4LxAw1Xn8HaMrw2oQtD8buPZxD",
-    "address": "0xc5856A151df2c718Bd60587aa4d96A0E12e6850b"
+    "address": "0xc5856A151df2c718Bd60587aa4d96A0E12e6850b",
+    "building_color": "#eb5255"
   },
   {
     "metadata": {
@@ -7026,7 +7227,8 @@
     },
     "id": "201",
     "tokenURI": "ipfs://QmePwwMrMhyaQpKFpZEN16C76seYqnC5kdZDQRtZrGPsG5",
-    "address": "0x29F37130cB20a86b5872dBD83DfD7524125f70d5"
+    "address": "0x29F37130cB20a86b5872dBD83DfD7524125f70d5",
+    "building_color": "#c4d129"
   },
   {
     "metadata": {
@@ -7059,7 +7261,8 @@
     },
     "id": "202",
     "tokenURI": "ipfs://QmReztZMrP4Mh92ECsQex1xwG3MK96SLru4gYENQ1MHuz7",
-    "address": "0xF2B97Ec5b3b3056e0B6b4bB114706968D085AF3c"
+    "address": "0xF2B97Ec5b3b3056e0B6b4bB114706968D085AF3c",
+    "building_color": "#29b473"
   },
   {
     "metadata": {
@@ -7092,7 +7295,8 @@
     },
     "id": "203",
     "tokenURI": "ipfs://QmZqzxddiuacDS5hZGdRostgVaHf5z1uEKZksjN956z7CD",
-    "address": "0xD40E2a3C31dE8730E8dB02A781cf8bAFF63CDD20"
+    "address": "0xD40E2a3C31dE8730E8dB02A781cf8bAFF63CDD20",
+    "building_color": "#70c9e7"
   },
   {
     "metadata": {
@@ -7125,7 +7329,8 @@
     },
     "id": "204",
     "tokenURI": "ipfs://Qmapxy5126S3x3khHf5U1dGd6FYSMncEy6NoXdcsZCsAwq",
-    "address": "0x16D2954702190aEb68D697Cf3f4a5d91e73345f0"
+    "address": "0x16D2954702190aEb68D697Cf3f4a5d91e73345f0",
+    "building_color": "#ec62af"
   },
   {
     "metadata": {
@@ -7158,7 +7363,8 @@
     },
     "id": "205",
     "tokenURI": "ipfs://QmPDeyjmopUSPdY5WesESoGSBoy5Ev95WFdqWmPM71NAim",
-    "address": "0xc036Bc5cf70f60DFd94813d08c39a7c8B90A8c71"
+    "address": "0xc036Bc5cf70f60DFd94813d08c39a7c8B90A8c71",
+    "building_color": "#f08c1c"
   },
   {
     "metadata": {
@@ -7191,7 +7397,8 @@
     },
     "id": "206",
     "tokenURI": "ipfs://QmdQxT48nvAxyZtNGT1cgSbwNsDQccKie6EA2Xf4rAnvGf",
-    "address": "0x623306699340F22dCa04e42596498a8F60397146"
+    "address": "0x623306699340F22dCa04e42596498a8F60397146",
+    "building_color": "#f37e75"
   },
   {
     "metadata": {
@@ -7224,7 +7431,8 @@
     },
     "id": "207",
     "tokenURI": "ipfs://QmUTrznWMLryxHMqvXAVNxYVXjf72gB8BYn2tWX4cXGY9B",
-    "address": "0x00f52f3879EB86CBf26dAB65a75007ECCb75AE1C"
+    "address": "0x00f52f3879EB86CBf26dAB65a75007ECCb75AE1C",
+    "building_color": "#3172b2"
   },
   {
     "metadata": {
@@ -7257,7 +7465,8 @@
     },
     "id": "208",
     "tokenURI": "ipfs://QmWmLGiuCwSDZPmnwFn8ZxQXuyrfCu3RTnfMpaR3X35Sr2",
-    "address": "0xaa92A8d01B76e7Ec58C813A59792a3b10076304F"
+    "address": "0xaa92A8d01B76e7Ec58C813A59792a3b10076304F",
+    "building_color": "#ea4484"
   },
   {
     "metadata": {
@@ -7290,7 +7499,8 @@
     },
     "id": "209",
     "tokenURI": "ipfs://QmPPVQ2i22Kd17yNPKfQdSbvsViVr9sLvTZmN4qwmGjgub",
-    "address": "0xa6AD9eA351ac4fAd0CEeFEc615B49994879F8956"
+    "address": "0xa6AD9eA351ac4fAd0CEeFEc615B49994879F8956",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -7323,7 +7533,8 @@
     },
     "id": "210",
     "tokenURI": "ipfs://QmeVo7Xpak7Y3obc1BbErHBaeuRwrLacAFQC4xq4EQNcUn",
-    "address": "0x09Ba629746730F4Cbb9369c9480a54123253Ff56"
+    "address": "0x09Ba629746730F4Cbb9369c9480a54123253Ff56",
+    "building_color": "#86cbe8"
   },
   {
     "metadata": {
@@ -7356,7 +7567,8 @@
     },
     "id": "211",
     "tokenURI": "ipfs://Qmct8ovfG8tKtRkxDqzWeUyCyExeUdpZvcVq91PHmRM6zR",
-    "address": "0x35deB9406A43e5a1319D4a9d852C02C21Ec2A2ba"
+    "address": "0x35deB9406A43e5a1319D4a9d852C02C21Ec2A2ba",
+    "building_color": "#4ba6d5"
   },
   {
     "metadata": {
@@ -7389,7 +7601,8 @@
     },
     "id": "212",
     "tokenURI": "ipfs://QmUoMkXsUMJNuWuoJKNT5tnUuud6dDh1a8tHFfpeU3w5KT",
-    "address": "0xE3650F6cEFccfa444c77b06fC30dB745b59950F7"
+    "address": "0xE3650F6cEFccfa444c77b06fC30dB745b59950F7",
+    "building_color": "#a74791 & f9bc09"
   },
   {
     "metadata": {
@@ -7422,7 +7635,8 @@
     },
     "id": "213",
     "tokenURI": "ipfs://QmQ6BeaoZKyWTaKdx7vWq4JTF9XtMcsBgPm5nHefrbYzsn",
-    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300"
+    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300",
+    "building_color": "#eee025"
   },
   {
     "metadata": {
@@ -7455,7 +7669,8 @@
     },
     "id": "214",
     "tokenURI": "ipfs://QmUcRCfBuj6brhg9PJaYt5Mr5ssEtTodrpGH1N1YKMqFwt",
-    "address": "0xC024617a99dE9B79C4BE2Fc1084d4373eAEA6454"
+    "address": "0xC024617a99dE9B79C4BE2Fc1084d4373eAEA6454",
+    "building_color": "#e52125"
   },
   {
     "metadata": {
@@ -7488,7 +7703,8 @@
     },
     "id": "215",
     "tokenURI": "ipfs://QmYDAuJcwddrKqhaqCgP3kK1pyjWoD6Lv24Q5xXjADA8DF",
-    "address": "0x98d45f5b16eb8E8c6DE93e0A01d8B425b6e75c87"
+    "address": "0x98d45f5b16eb8E8c6DE93e0A01d8B425b6e75c87",
+    "building_color": "#82c2dd"
   },
   {
     "metadata": {
@@ -7521,7 +7737,8 @@
     },
     "id": "216",
     "tokenURI": "ipfs://QmZcDWet2CKqTQKammZiUsXEJKVtkjBB8JGcKBPRWmJsXg",
-    "address": "0xdb6c295c2483D5aD3c52BA8FD46Fa13B27219720"
+    "address": "0xdb6c295c2483D5aD3c52BA8FD46Fa13B27219720",
+    "building_color": "#33b9ba"
   },
   {
     "metadata": {
@@ -7554,7 +7771,8 @@
     },
     "id": "217",
     "tokenURI": "ipfs://Qmdpw1F37SKkHnQr76QR75k3ZgdtKeZNvyeiYEvWGuBL9P",
-    "address": "0x69125BCb0AB68a86FcC587cd3c6AECcF4d433d47"
+    "address": "0x69125BCb0AB68a86FcC587cd3c6AECcF4d433d47",
+    "building_color": "#53a7d5"
   },
   {
     "metadata": {
@@ -7587,7 +7805,8 @@
     },
     "id": "218",
     "tokenURI": "ipfs://QmeHPcFazDY2kzCRsQM9YVgfk3FA2VLzQCQqjNBt51MAXG",
-    "address": "0x47Ae59459CcAC27CC9E027EAbEEa85eAC7B539d6"
+    "address": "0x47Ae59459CcAC27CC9E027EAbEEa85eAC7B539d6",
+    "building_color": "#efe13a"
   },
   {
     "metadata": {
@@ -7620,7 +7839,8 @@
     },
     "id": "219",
     "tokenURI": "ipfs://QmPWWVXo8npRvpwP1Lu4V7JQdQNpwEZYpb1Ur13u65ZfRT",
-    "address": "0x1aD855bB63B146EfCbe1a7fF8bB390a2BFBeDCa2"
+    "address": "0x1aD855bB63B146EfCbe1a7fF8bB390a2BFBeDCa2",
+    "building_color": "#c572a6 & c65e9b"
   },
   {
     "metadata": {
@@ -7653,7 +7873,8 @@
     },
     "id": "220",
     "tokenURI": "ipfs://Qme6ANXd5hEFDBk5G2MPBgGREiginUpFm26AE34A4vV8EM",
-    "address": "0x7927858171417B92675221DF9BC8d1f784189d9C"
+    "address": "0x7927858171417B92675221DF9BC8d1f784189d9C",
+    "building_color": "#ea582f"
   },
   {
     "metadata": {
@@ -7686,7 +7907,8 @@
     },
     "id": "221",
     "tokenURI": "ipfs://QmRJeVCoYLyuRYSwLi5t4n5rwwZo1ZZWRBzBKRXyzRsK3r",
-    "address": "0xD722337bB22e32eA7B25e6A1953FEf49f85400e3"
+    "address": "0xD722337bB22e32eA7B25e6A1953FEf49f85400e3",
+    "building_color": "#aac834"
   },
   {
     "metadata": {
@@ -7719,7 +7941,8 @@
     },
     "id": "222",
     "tokenURI": "ipfs://QmQNXLk32UpKe32A5XhWqQUNQCp3KL8ayjxjLPCSRyThQq",
-    "address": "0xd584e5F7b2055Dc4ac5e0670274fDc68C99a0A88"
+    "address": "0xd584e5F7b2055Dc4ac5e0670274fDc68C99a0A88",
+    "building_color": "#c27db4"
   },
   {
     "metadata": {
@@ -7752,7 +7975,8 @@
     },
     "id": "223",
     "tokenURI": "ipfs://QmY68i1rqnZ8M6P4wGdcAy7GUXNMBa1jDsiLma89JwasS2",
-    "address": "0xbDA1e50Bf79032db9163a3E2832764C4Bd9DE80A"
+    "address": "0xbDA1e50Bf79032db9163a3E2832764C4Bd9DE80A",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -7785,7 +8009,8 @@
     },
     "id": "224",
     "tokenURI": "ipfs://QmQFc21riL4ujcz21fXmY32wKUYqr1ED2XEWbPyaW9GDS4",
-    "address": "0x1260413F3928E606E61264CaAa07ac2e2F001334"
+    "address": "0x1260413F3928E606E61264CaAa07ac2e2F001334",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -7818,7 +8043,8 @@
     },
     "id": "225",
     "tokenURI": "ipfs://QmUBBGah5Aahcx8od6fxQatGbC8R5UyS3hLA35E71BGcNT",
-    "address": "0x2c23e4Af316c2dc1739817de2F30a13CACB97253"
+    "address": "0x2c23e4Af316c2dc1739817de2F30a13CACB97253",
+    "building_color": "#00a3a2 & fdc980"
   },
   {
     "metadata": {
@@ -7851,7 +8077,8 @@
     },
     "id": "226",
     "tokenURI": "ipfs://Qmf6G71vc96mBn3KEDrVS8RWdQLT7bqn82YBy8TvE5GtPo",
-    "address": "0x1F9CaA82865e1f178b243D4b02fca6D41Cf00637"
+    "address": "0x1F9CaA82865e1f178b243D4b02fca6D41Cf00637",
+    "building_color": "#f9b047"
   },
   {
     "metadata": {
@@ -7884,7 +8111,8 @@
     },
     "id": "227",
     "tokenURI": "ipfs://QmQ6FWzhFE9JYDUAuVq2UBANH8F8K5JRK8AzG5Ytbb5RvS",
-    "address": "0x4Ae100f223fAF58e4bC45d53EDF34D7e89Eb95Af"
+    "address": "0x4Ae100f223fAF58e4bC45d53EDF34D7e89Eb95Af",
+    "building_color": "#4cc3ee"
   },
   {
     "metadata": {
@@ -7917,7 +8145,8 @@
     },
     "id": "228",
     "tokenURI": "ipfs://QmertKCSHop8ZGLznTqxpXgUamVE14kNf46hah37rw1QG8",
-    "address": "0xbd771b8DD79C2859dd100630be5C416E26f9412e"
+    "address": "0xbd771b8DD79C2859dd100630be5C416E26f9412e",
+    "building_color": "#ee484c"
   },
   {
     "metadata": {
@@ -7950,7 +8179,8 @@
     },
     "id": "229",
     "tokenURI": "ipfs://QmbBjBrpNmqinGtseD1xPv4xiicoF1NZPz1gWMyemHDGhy",
-    "address": "0xC426D27189B6F3F8FBc604dAB306eDd0e728228c"
+    "address": "0xC426D27189B6F3F8FBc604dAB306eDd0e728228c",
+    "building_color": "#ec1165"
   },
   {
     "metadata": {
@@ -7983,7 +8213,8 @@
     },
     "id": "230",
     "tokenURI": "ipfs://QmWN16pzoTTLWM9u13yQ7ENHC7zFfMcwgmqCxg6J91QdSg",
-    "address": "0x83A80b3841f81671dfbeCaFc9fBc97E764F541A9"
+    "address": "0x83A80b3841f81671dfbeCaFc9fBc97E764F541A9",
+    "building_color": "#329ad1"
   },
   {
     "metadata": {
@@ -8016,7 +8247,8 @@
     },
     "id": "231",
     "tokenURI": "ipfs://QmXy6o3KgxAZKTeFc9HZnCpJznpz5QAAVYtDeG6Thauc9B",
-    "address": "0xf40cE53385CA88891c6ade3EC4A1121edb4b2513"
+    "address": "0xf40cE53385CA88891c6ade3EC4A1121edb4b2513",
+    "building_color": "#c0d95a"
   },
   {
     "metadata": {
@@ -8049,7 +8281,8 @@
     },
     "id": "232",
     "tokenURI": "ipfs://Qmb2AwgffVE5vJJeCYMP2VNvfNsdmriyjU3uWsoyY4XTZn",
-    "address": "0xcE9eD5881760E48338233cc266e9fBA554d9883A"
+    "address": "0xcE9eD5881760E48338233cc266e9fBA554d9883A",
+    "building_color": "#gradient 28b0c8 // 28b0ae"
   },
   {
     "metadata": {
@@ -8082,7 +8315,8 @@
     },
     "id": "233",
     "tokenURI": "ipfs://QmepYX5nYVRB85a1LD3qVnBeRbPjKmojmwEw3t8gbMASTf",
-    "address": "0x10cAEc7E2bbe0902CD125BB333e66176eE629bdf"
+    "address": "0x10cAEc7E2bbe0902CD125BB333e66176eE629bdf",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -8115,7 +8349,8 @@
     },
     "id": "234",
     "tokenURI": "ipfs://QmRKaiqw8bXszgGf2NvzNo7u8hVdbre5QqAArVLT6p9wQ7",
-    "address": "0x591C2c4AAaa93ecaAbf5Cb433331A8efF842dfAA"
+    "address": "0x591C2c4AAaa93ecaAbf5Cb433331A8efF842dfAA",
+    "building_color": "#f29919"
   },
   {
     "metadata": {
@@ -8148,7 +8383,8 @@
     },
     "id": "235",
     "tokenURI": "ipfs://Qmb9EdorwQDZvRzRhCA13WfqkbjKdUseMZhuXWc3FQtC2K",
-    "address": "0x8f74065f5ae1E015BE6EA09E776aC431035B702d"
+    "address": "0x8f74065f5ae1E015BE6EA09E776aC431035B702d",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -8181,7 +8417,8 @@
     },
     "id": "236",
     "tokenURI": "ipfs://QmS8oZ12GLSwZoDmBATq3ELY147a4bLzScXVGcne5kwDCE",
-    "address": "0x2c9d501445d3fe82C5908cC87d8FE8ae0C281D58"
+    "address": "0x2c9d501445d3fe82C5908cC87d8FE8ae0C281D58",
+    "building_color": "#f175b1"
   },
   {
     "metadata": {
@@ -8214,7 +8451,8 @@
     },
     "id": "237",
     "tokenURI": "ipfs://QmSdQ5oqwLCRsiZFraNhH9X8uRmREJuELc2cXTwx7XVg4C",
-    "address": "0x81cb6448BC9Aa6D7C1Efa9612FD8D9F703A0A810"
+    "address": "0x81cb6448BC9Aa6D7C1Efa9612FD8D9F703A0A810",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -8247,7 +8485,8 @@
     },
     "id": "238",
     "tokenURI": "ipfs://QmXVHAL7dqKW9ppRXfECF1ESqPok5pEnJHDYafGi2qRQcu",
-    "address": "0xc98d5c7BD0441D590DFa70E73571F47eC3A825A1"
+    "address": "0xc98d5c7BD0441D590DFa70E73571F47eC3A825A1",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -8280,7 +8519,8 @@
     },
     "id": "239",
     "tokenURI": "ipfs://QmUsMQd5pmRGaqBxMcvt7AR7RSuQxpFtXghyhEz97r7xh1",
-    "address": "0x8e5104523869ef4b55B3F5ba3E10724A83f58708"
+    "address": "0x8e5104523869ef4b55B3F5ba3E10724A83f58708",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -8313,7 +8553,8 @@
     },
     "id": "240",
     "tokenURI": "ipfs://Qmbzc2kwwM4sQ82HsnD5qmMTskQ9A4SCUtajpQkYjx1QeY",
-    "address": "0xDe7Eb9F370DDe42FDa8A3230e4A8D01040D34DF0"
+    "address": "0xDe7Eb9F370DDe42FDa8A3230e4A8D01040D34DF0",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -8346,7 +8587,8 @@
     },
     "id": "241",
     "tokenURI": "ipfs://QmY9HMJPaFepBd61UKcgve7AtB7Rz7R9CxBVBMai2nbL4B",
-    "address": "0xc41af8531C0731Ec47101731dc83D617Ca322B56"
+    "address": "0xc41af8531C0731Ec47101731dc83D617Ca322B56",
+    "building_color": "#00a9ac"
   },
   {
     "metadata": {
@@ -8379,7 +8621,8 @@
     },
     "id": "242",
     "tokenURI": "ipfs://Qmd27syCx5VCgmbjctYaH9Xw5zSU4fULC4ZbvjdRv9dpfE",
-    "address": "0xD054D57EB217fA5204b9EBB0874b37e643Caf317"
+    "address": "0xD054D57EB217fA5204b9EBB0874b37e643Caf317",
+    "building_color": "#9c59a0"
   },
   {
     "metadata": {
@@ -8412,7 +8655,8 @@
     },
     "id": "243",
     "tokenURI": "ipfs://QmaESuF8gdUjh5i91BvxRvuEz69G2kCc2PbKCfPYr4wWL4",
-    "address": "0xd3F0B20c1Fcecd05e3A9E166B3C18BB00c6bF6FC"
+    "address": "0xd3F0B20c1Fcecd05e3A9E166B3C18BB00c6bF6FC",
+    "building_color": "#f49775"
   },
   {
     "metadata": {
@@ -8445,7 +8689,8 @@
     },
     "id": "244",
     "tokenURI": "ipfs://QmTGb7YdxVoPUBjTEzq3HYwmHcE5srXcVJ819HiFS9VsTt",
-    "address": "0xEDBC4038141AD56899700E74dC13aC41B91f957E"
+    "address": "0xEDBC4038141AD56899700E74dC13aC41B91f957E",
+    "building_color": "#b86cac"
   },
   {
     "metadata": {
@@ -8478,7 +8723,8 @@
     },
     "id": "245",
     "tokenURI": "ipfs://QmS2oYALzAD1ZRcCCJmzszJDpEhDnuNTE1TvLbJGTX2mSU",
-    "address": "0x586dA47fCc4C3c8Cdc4a75F8D209Fbfa4244590C"
+    "address": "0x586dA47fCc4C3c8Cdc4a75F8D209Fbfa4244590C",
+    "building_color": "#3174b8 & 4567af"
   },
   {
     "metadata": {
@@ -8511,7 +8757,8 @@
     },
     "id": "246",
     "tokenURI": "ipfs://QmTcqdfGaNuGbiJU89bREpy2Av5eTZXifNtxgeW65Gze6M",
-    "address": "0x9AF874D6f97164F42CCeA8E0091DAe1b782FB1f8"
+    "address": "0x9AF874D6f97164F42CCeA8E0091DAe1b782FB1f8",
+    "building_color": "#6cb542"
   },
   {
     "metadata": {
@@ -8544,7 +8791,8 @@
     },
     "id": "247",
     "tokenURI": "ipfs://QmVaKHoi7k5uFyAfBnQdRqvahtkX9vLpUK27QMTzTRSsHu",
-    "address": "0x64c97c0713C2854d8D5DFa69514C52475291126D"
+    "address": "0x64c97c0713C2854d8D5DFa69514C52475291126D",
+    "building_color": "#fed350"
   },
   {
     "metadata": {
@@ -8577,7 +8825,8 @@
     },
     "id": "248",
     "tokenURI": "ipfs://QmP7KkF9dF71T7Jav5WsWBvqEvHaD4ub7sxVYUhZ9EzvUM",
-    "address": "0x9c21b3A3a9c5CFdDEd48198458f33874063B1c19"
+    "address": "0x9c21b3A3a9c5CFdDEd48198458f33874063B1c19",
+    "building_color": "#5cbe97"
   },
   {
     "metadata": {
@@ -8610,7 +8859,8 @@
     },
     "id": "249",
     "tokenURI": "ipfs://QmZv3vDYmZu5rzDPLw23722Xbgvfz8EXkQ9Kko9nJmwVWy",
-    "address": "0x92849e00fa36d15Ada4105f2F0c4ba8e78A5B1E3"
+    "address": "0x92849e00fa36d15Ada4105f2F0c4ba8e78A5B1E3",
+    "building_color": "#88bd3b"
   },
   {
     "metadata": {
@@ -8647,7 +8897,8 @@
     },
     "id": "250",
     "tokenURI": "ipfs://QmaZuV97iVnhVwbaooLZGjWEaTrha6vsF3cd6sQtpYzdix",
-    "address": "0xA0fb3C54061146e4E4599367Ed144826a6348FD4"
+    "address": "0xA0fb3C54061146e4E4599367Ed144826a6348FD4",
+    "building_color": "#00b4b5"
   },
   {
     "metadata": {
@@ -8684,7 +8935,8 @@
     },
     "id": "251",
     "tokenURI": "ipfs://QmdDaDWzBHQ6fZejUmiweMLxWyfTzL98W7Ddcn7PcJ5WKq",
-    "address": "0x5ed0fA0b5dCBDB00c9bfe7C9baE27C48aF6E30a9"
+    "address": "0x5ed0fA0b5dCBDB00c9bfe7C9baE27C48aF6E30a9",
+    "building_color": "#4ba6d5"
   },
   {
     "metadata": {
@@ -8721,7 +8973,8 @@
     },
     "id": "252",
     "tokenURI": "ipfs://Qmd8TATry2K6T3Va5uTXZKC1ZezEeJd7atVjSwYWKEmc7U",
-    "address": "0x7Bab1465FA3FfA3C1d63f0c88A2B45F6E5be19A4"
+    "address": "0x7Bab1465FA3FfA3C1d63f0c88A2B45F6E5be19A4",
+    "building_color": "#f9e701 & ee7a3d"
   },
   {
     "metadata": {
@@ -8758,7 +9011,8 @@
     },
     "id": "253",
     "tokenURI": "ipfs://QmNYANorTuQVduBeUaoVZ8Pd4sKjmhKF7S1v7w5RuEaRqg",
-    "address": "0x450f780b9e73A737B44A0FE371242A79CF44cCf4"
+    "address": "0x450f780b9e73A737B44A0FE371242A79CF44cCf4",
+    "building_color": "#e7105e & ee7f78"
   },
   {
     "metadata": {
@@ -8795,7 +9049,8 @@
     },
     "id": "254",
     "tokenURI": "ipfs://QmduVxDnwJy2WnUHNtcbdmNGfd8hR34HHAG9t8C6ani8vG",
-    "address": "0x143C0569B689e8eE29C6401109c1DDeF3CD30e6a"
+    "address": "0x143C0569B689e8eE29C6401109c1DDeF3CD30e6a",
+    "building_color": "#b57bad"
   },
   {
     "metadata": {
@@ -8832,7 +9087,8 @@
     },
     "id": "255",
     "tokenURI": "ipfs://Qmcw4QShZKLvddiJmwSojjzi56hztG6C4cfXZjRSATWBnA",
-    "address": "0x6fd6313B5498F61c424b22d6c22e46BAEccF24D7"
+    "address": "0x6fd6313B5498F61c424b22d6c22e46BAEccF24D7",
+    "building_color": "#feef16"
   },
   {
     "metadata": {
@@ -8869,7 +9125,8 @@
     },
     "id": "256",
     "tokenURI": "ipfs://QmY1BWRFuJeE9KMHcD2cV5wJ8rEc4jsSprb4VuS1iUVGCM",
-    "address": "0x0E31AB09d49Db6bdCd7f4f2579492DA1DA124731"
+    "address": "0x0E31AB09d49Db6bdCd7f4f2579492DA1DA124731",
+    "building_color": "#ee337a"
   },
   {
     "metadata": {
@@ -8902,7 +9159,8 @@
     },
     "id": "257",
     "tokenURI": "ipfs://QmawWEg4TNTyx9CZ4gVUJmjYCidaXXwFMsrCxvcKcNhphi",
-    "address": "0xBd0Ca5Fa3bFa8Bdd583565789D20df98F562CEca"
+    "address": "0xBd0Ca5Fa3bFa8Bdd583565789D20df98F562CEca",
+    "building_color": "#f8c351"
   },
   {
     "metadata": {
@@ -8935,7 +9193,8 @@
     },
     "id": "258",
     "tokenURI": "ipfs://QmXq1HiNsH2RG5HgffGwdKdDSRLXYDe5ZYJaDzjmCaCjTM",
-    "address": "0x897303E58d7B27824564a4878570f82365f0d790"
+    "address": "0x897303E58d7B27824564a4878570f82365f0d790",
+    "building_color": "#5baece"
   },
   {
     "metadata": {
@@ -8968,7 +9227,8 @@
     },
     "id": "259",
     "tokenURI": "ipfs://QmcYfghd83KUeBVmXkaUnfYiNdgQj4TwsZD2mLf89a4Mq1",
-    "address": "0x73Abd0FfEd63E8E08fCa2A1440F9b98599472E90"
+    "address": "0x73Abd0FfEd63E8E08fCa2A1440F9b98599472E90",
+    "building_color": "#e5df4d"
   },
   {
     "metadata": {
@@ -9001,7 +9261,8 @@
     },
     "id": "260",
     "tokenURI": "ipfs://QmQZ7j25aRPngzP1ymtAihBBtv6e8ALYwf4cebL2K1cD4a",
-    "address": "0x2330d2Db567333db4f4A9176A808f7D45B957898"
+    "address": "0x2330d2Db567333db4f4A9176A808f7D45B957898",
+    "building_color": "#e94b96"
   },
   {
     "metadata": {
@@ -9034,7 +9295,8 @@
     },
     "id": "261",
     "tokenURI": "ipfs://QmfLKxQH7HnitkvqyuqWpuGjypxk8nHXfuxU4CBsqUKEuB",
-    "address": "0x6fa7F2db810769295EB175987F807d7Fe7dC18b7"
+    "address": "0x6fa7F2db810769295EB175987F807d7Fe7dC18b7",
+    "building_color": "#fbe88a"
   },
   {
     "metadata": {
@@ -9067,7 +9329,8 @@
     },
     "id": "262",
     "tokenURI": "ipfs://QmRE8jJDJCJVdt5CsJqwUTcdEwP9SBsGzjFV9gM1MY9ac8",
-    "address": "0xf5eFEa0D9243675fd237Eb184E2499010700Bb76"
+    "address": "0xf5eFEa0D9243675fd237Eb184E2499010700Bb76",
+    "building_color": "#7f9ecd"
   },
   {
     "metadata": {
@@ -9100,7 +9363,8 @@
     },
     "id": "263",
     "tokenURI": "ipfs://QmYhdzftK6vLsbf7gUXXUZtLucWF1y9uoT3gcnR9EtUMpV",
-    "address": "0x602C718f8712cC3E27F6AA43f88F0f67ad79341e"
+    "address": "0x602C718f8712cC3E27F6AA43f88F0f67ad79341e",
+    "building_color": "#df81b5"
   },
   {
     "metadata": {
@@ -9137,7 +9401,8 @@
     },
     "id": "264",
     "tokenURI": "ipfs://QmaBJMxFHrmHPpxeL437FPuXYvK5UF4R15ZzB2EYJJfTGf",
-    "address": "0x4008eaA27E52b4874ee7c2499474AE57773cD9A4"
+    "address": "0x4008eaA27E52b4874ee7c2499474AE57773cD9A4",
+    "building_color": "#cf439a"
   },
   {
     "metadata": {
@@ -9174,7 +9439,8 @@
     },
     "id": "265",
     "tokenURI": "ipfs://QmQGBnkW7RPkd9eATPZNW3Pbons2eWfSWtNnjKv7NBzv69",
-    "address": "0x72f71C9A3f4c6899Fd231FA576BBdBC9d6D26E07"
+    "address": "0x72f71C9A3f4c6899Fd231FA576BBdBC9d6D26E07",
+    "building_color": "#6faeda"
   },
   {
     "metadata": {
@@ -9211,7 +9477,8 @@
     },
     "id": "266",
     "tokenURI": "ipfs://QmWjtCCjTWMw3Jf5X2uRQpbqWrpmWhzN6CmUJqMjre9Nny",
-    "address": "0x916957fDbEBAA0761498F4f0482d7fb252AB0ec8"
+    "address": "0x916957fDbEBAA0761498F4f0482d7fb252AB0ec8",
+    "building_color": "#dc4f93"
   },
   {
     "metadata": {
@@ -9248,7 +9515,8 @@
     },
     "id": "267",
     "tokenURI": "ipfs://QmZPoWbwLXUvZ5FXfdiztWPpcWzMMH6NVBai2Et3YsxYhi",
-    "address": "0xE685fEE2190D1B7dc029CcdB0e266450318e6fb6"
+    "address": "0xE685fEE2190D1B7dc029CcdB0e266450318e6fb6",
+    "building_color": "#faca4a"
   },
   {
     "metadata": {
@@ -9285,7 +9553,8 @@
     },
     "id": "268",
     "tokenURI": "ipfs://QmTyZRBcDWcLgyM8AFvaoC7w2oFEMrLX6qETxdVPRQVHEJ",
-    "address": "0x09E6C3792023dB534975ca294a1F5184B8D7B50a"
+    "address": "0x09E6C3792023dB534975ca294a1F5184B8D7B50a",
+    "building_color": "#00afc0 & 86bd55"
   },
   {
     "metadata": {
@@ -9322,7 +9591,8 @@
     },
     "id": "269",
     "tokenURI": "ipfs://QmNNHxQxrtku4xe6EVPZjRPsjcTjNiyGan8YMbbHKDDCWy",
-    "address": "0x9062576bAD2BC57AC6a92cC38f3E2e63535F5Eb5"
+    "address": "0x9062576bAD2BC57AC6a92cC38f3E2e63535F5Eb5",
+    "building_color": "#c9325f"
   },
   {
     "metadata": {
@@ -9359,7 +9629,8 @@
     },
     "id": "270",
     "tokenURI": "ipfs://QmacoEKrCSEHHpvdyyvLCn7McDm6Q3ydsZ2GgUbJGQmQJi",
-    "address": "0xB379eBdD2732415cC82e9Ccca0f6b6B4b4047fF1"
+    "address": "0xB379eBdD2732415cC82e9Ccca0f6b6B4b4047fF1",
+    "building_color": "#fad40f"
   },
   {
     "metadata": {
@@ -9396,7 +9667,8 @@
     },
     "id": "271",
     "tokenURI": "ipfs://QmVDuoa3AFyE5RU9zub6uETFBxrt4QiWnhbZ3J4ZyKxYbs",
-    "address": "0x7429A3D71F6dAe4376bb803cea293E82F77266d1"
+    "address": "0x7429A3D71F6dAe4376bb803cea293E82F77266d1",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -9433,7 +9705,8 @@
     },
     "id": "272",
     "tokenURI": "ipfs://QmaywzN6bN26L3tgNm7mJPimpNtdDqVKRDz3PR4PVeDycK",
-    "address": "0x8B90418F312768Dc75acCA2514409313c8423C41"
+    "address": "0x8B90418F312768Dc75acCA2514409313c8423C41",
+    "building_color": "#89be3c"
   },
   {
     "metadata": {
@@ -9470,7 +9743,8 @@
     },
     "id": "273",
     "tokenURI": "ipfs://QmRgTj9DryKHkhhLqveNVrpzL6CngjtGzzmVY5urxJUYpY",
-    "address": "0xB8c1B40da253a74160fE6FB4801eBba1B9E3c456"
+    "address": "0xB8c1B40da253a74160fE6FB4801eBba1B9E3c456",
+    "building_color": "#ee4238"
   },
   {
     "metadata": {
@@ -9507,7 +9781,8 @@
     },
     "id": "274",
     "tokenURI": "ipfs://QmXAdpaatqhW76H2BzwyfW5mWKKvZs4bdVLi89pBBdMdVM",
-    "address": "0xcccc206E4241A3dA038Fa82C6F32Bc900409e17B"
+    "address": "0xcccc206E4241A3dA038Fa82C6F32Bc900409e17B",
+    "building_color": "#2ba4d3"
   },
   {
     "metadata": {
@@ -9544,7 +9819,8 @@
     },
     "id": "275",
     "tokenURI": "ipfs://QmUrfRSjWQhhx4hu97Sa6xTyFckSu2XgqhwVMvBykgDfwY",
-    "address": "0x3f391D339D6704cF23dA1761B913E71978C920F6"
+    "address": "0x3f391D339D6704cF23dA1761B913E71978C920F6",
+    "building_color": "#e72b75"
   },
   {
     "metadata": {
@@ -9577,7 +9853,8 @@
     },
     "id": "276",
     "tokenURI": "ipfs://QmbsY5VViMixE8sYj8Mo3J7m4KK79vHs4XQCa9WGkugBHm",
-    "address": "0xD16c5e708B1571AC7714CB687081cFFE7bb134e7"
+    "address": "0xD16c5e708B1571AC7714CB687081cFFE7bb134e7",
+    "building_color": "#00a3a0"
   },
   {
     "metadata": {
@@ -9610,7 +9887,8 @@
     },
     "id": "277",
     "tokenURI": "ipfs://QmXz7H7vUauG8Hd3eRZJPcRhr46MYWNv4WbHJwQuGD6Bjn",
-    "address": "0x5c47112B00b3c9B7A7133df6853FBc4a6Ea4EB6e"
+    "address": "0x5c47112B00b3c9B7A7133df6853FBc4a6Ea4EB6e",
+    "building_color": "#a74791"
   },
   {
     "metadata": {
@@ -9643,7 +9921,8 @@
     },
     "id": "278",
     "tokenURI": "ipfs://QmeuiW1cjhALUQgx3kGD9uGobNvoAqxh3zDEwRMhF71hvu",
-    "address": "0x4204c6fa61F128CACb425cbd0213f88E2AD0422d"
+    "address": "0x4204c6fa61F128CACb425cbd0213f88E2AD0422d",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -9676,7 +9955,8 @@
     },
     "id": "279",
     "tokenURI": "ipfs://QmYiH82sk85jemKbDpTTLrSaGtgj37J6vef3dE5D34JbWK",
-    "address": "0xf93abCf142541090050134a39505d32fd25f1460"
+    "address": "0xf93abCf142541090050134a39505d32fd25f1460",
+    "building_color": "#007dbd"
   },
   {
     "metadata": {
@@ -9709,7 +9989,8 @@
     },
     "id": "280",
     "tokenURI": "ipfs://QmQB2YwWGKoPoUhQnTBbPwgnY2t6SxrcQuoQrWHaBi8eBH",
-    "address": "0xDC12284b8444f874DBDe1127C827100c68EAC2f8"
+    "address": "0xDC12284b8444f874DBDe1127C827100c68EAC2f8",
+    "building_color": "#e71c22"
   },
   {
     "metadata": {
@@ -9742,7 +10023,8 @@
     },
     "id": "281",
     "tokenURI": "ipfs://QmVwDAhrDKKMZydMejcxQ4zschkR4GZi5o8jY3ioPMTqxk",
-    "address": "0xF715583b3c5A2B5A1167D8F23648d4058DF04B8c"
+    "address": "0xF715583b3c5A2B5A1167D8F23648d4058DF04B8c",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -9775,7 +10057,8 @@
     },
     "id": "282",
     "tokenURI": "ipfs://QmXbSB89jQxncwDpbWcASpV2EZGhBqH9k85sGqSDpCnFJB",
-    "address": "0x80A56470de855a0b36a697BBfef23d862E1C2CB5"
+    "address": "0x80A56470de855a0b36a697BBfef23d862E1C2CB5",
+    "building_color": "#ea6c9c"
   },
   {
     "metadata": {
@@ -9808,7 +10091,8 @@
     },
     "id": "283",
     "tokenURI": "ipfs://Qmai8efVYfXqwmuA8HciwPy3xiCYf1kPYj6D1HQncaBcab",
-    "address": "0xA3694A0d577A847Ea8A1eE1474f60Dd234EB91Ec"
+    "address": "0xA3694A0d577A847Ea8A1eE1474f60Dd234EB91Ec",
+    "building_color": "#9ad6d4"
   },
   {
     "metadata": {
@@ -9841,7 +10125,8 @@
     },
     "id": "284",
     "tokenURI": "ipfs://QmXfd9T5f7U9eqxADdKcUPeEwYQ8SsEZvMxMEVHVNhGN6c",
-    "address": "0xA260Ee1841F855F369C56C5bFEb7BeA0Fe470283"
+    "address": "0xA260Ee1841F855F369C56C5bFEb7BeA0Fe470283",
+    "building_color": "#7fc6c0"
   },
   {
     "metadata": {
@@ -9874,7 +10159,8 @@
     },
     "id": "285",
     "tokenURI": "ipfs://QmWwrLWq4pmV4rkbiSc2XpBSGHJhRe3FypoJVPL2TgzE1w",
-    "address": "0xFEdE11ae7e87842a8C4ec541Eb0F375B0B27a520"
+    "address": "0xFEdE11ae7e87842a8C4ec541Eb0F375B0B27a520",
+    "building_color": "#fabd52"
   },
   {
     "metadata": {
@@ -9907,7 +10193,8 @@
     },
     "id": "286",
     "tokenURI": "ipfs://QmWj5tFe3GfsfV9bLzDMMeV3x6Ne91F5RbjnYz8LFpq7Ff",
-    "address": "0xCE6F7469f90A3B1693F7E3c5B3827E824A6cD61a"
+    "address": "0xCE6F7469f90A3B1693F7E3c5B3827E824A6cD61a",
+    "building_color": "#f27b65"
   },
   {
     "metadata": {
@@ -9940,7 +10227,8 @@
     },
     "id": "287",
     "tokenURI": "ipfs://QmU1V89gKJ9SuXEhoSwpPGCornciw1yaPq2jVY3Y4KwT8a",
-    "address": "0x91D710fC15fA37AFf6e258c6B53525F7385B8304"
+    "address": "0x91D710fC15fA37AFf6e258c6B53525F7385B8304",
+    "building_color": "#f6e130"
   },
   {
     "metadata": {
@@ -9973,7 +10261,8 @@
     },
     "id": "288",
     "tokenURI": "ipfs://QmXM1tLNyHJj5tVfnecXuzmYyLN9ps97pNiPX22ncBhSkx",
-    "address": "0x5FCE601213efd289dA86b2a874b5c7Eb9f4917B0"
+    "address": "0x5FCE601213efd289dA86b2a874b5c7Eb9f4917B0",
+    "building_color": "#899ac5"
   },
   {
     "metadata": {
@@ -10006,7 +10295,8 @@
     },
     "id": "289",
     "tokenURI": "ipfs://QmRRTACuc7zS8h2KizmgxKry4XmsQt4fW9ESEaetyTsFmR",
-    "address": "0x588145138622559f837F2325940aAC9C6Ec6A515"
+    "address": "0x588145138622559f837F2325940aAC9C6Ec6A515",
+    "building_color": "#a2cf70"
   },
   {
     "metadata": {
@@ -10039,7 +10329,8 @@
     },
     "id": "290",
     "tokenURI": "ipfs://QmWoeB87DVyVq3VQBHRpVhPpkGuwqUT1HVXnqMKbuNFoYd",
-    "address": "0x0DB7Bdb36807435a5957fed328108f8e6c61e94d"
+    "address": "0x0DB7Bdb36807435a5957fed328108f8e6c61e94d",
+    "building_color": "#4ea6d6"
   },
   {
     "metadata": {
@@ -10072,7 +10363,8 @@
     },
     "id": "291",
     "tokenURI": "ipfs://QmTmjVkAkWMoQxE66iZDeSjdSBtsBiiMvrpMQVbz2mF9vd",
-    "address": "0xCB09E3fb240b8c7bdFE4A59DA3805eFeB7e03dC2"
+    "address": "0xCB09E3fb240b8c7bdFE4A59DA3805eFeB7e03dC2",
+    "building_color": "#f2981d"
   },
   {
     "metadata": {
@@ -10105,7 +10397,8 @@
     },
     "id": "292",
     "tokenURI": "ipfs://QmYUnhx8tGfgSoXpY31zHZcKAQ3SDas5HU4a8v5eyfbjZP",
-    "address": "0x6dbb9DfDb351d6BBa3836044b7cDc3197e135953"
+    "address": "0x6dbb9DfDb351d6BBa3836044b7cDc3197e135953",
+    "building_color": "#f7e306"
   },
   {
     "metadata": {
@@ -10138,7 +10431,8 @@
     },
     "id": "293",
     "tokenURI": "ipfs://QmXhtpD5ezgFy8S7BRynWsMgnH6mMze9PaFZrNRX5kATqh",
-    "address": "0x84db2388407906BD455C816f56501E9b5885e3f5"
+    "address": "0x84db2388407906BD455C816f56501E9b5885e3f5",
+    "building_color": "#26a3d3"
   },
   {
     "metadata": {
@@ -10171,7 +10465,8 @@
     },
     "id": "294",
     "tokenURI": "ipfs://QmcxSBAvjADZPXvJe4Pj3z5EjcKVrxm7S5csjZs31NL1xk",
-    "address": "0xF8733a14Acade372a5dee0BA8c3cAc498180A580"
+    "address": "0xF8733a14Acade372a5dee0BA8c3cAc498180A580",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -10204,7 +10499,8 @@
     },
     "id": "295",
     "tokenURI": "ipfs://QmZyrbLXbZ9o4UeRrzk4Be6b7WZnGhgUUyKFe7GbwXkkLG",
-    "address": "0xa72E8E51fe240A2cf39cE35c3e072afB5935Cb4c"
+    "address": "0xa72E8E51fe240A2cf39cE35c3e072afB5935Cb4c",
+    "building_color": "#f3764a & f39f7d"
   },
   {
     "metadata": {
@@ -10237,7 +10533,8 @@
     },
     "id": "296",
     "tokenURI": "ipfs://QmSfcQVJKJ4DNxPjgUnLSghi8UENBenpga9VXsw7WDffzH",
-    "address": "0x82e99bE9080CCF81F1BB5C04B20de398EF08C1a8"
+    "address": "0x82e99bE9080CCF81F1BB5C04B20de398EF08C1a8",
+    "building_color": "#00a9ac"
   },
   {
     "metadata": {
@@ -10274,7 +10571,8 @@
     },
     "id": "297",
     "tokenURI": "ipfs://QmYQPnvFrpveBm5N9A7HGTQQAJ5XzcjGtTQoP6BzjTeNUY",
-    "address": "0xf1a8ad8A9EA7cACa6ED50A5BdaDDf09D688Af4aE"
+    "address": "0xf1a8ad8A9EA7cACa6ED50A5BdaDDf09D688Af4aE",
+    "building_color": "#6ec2c2"
   },
   {
     "metadata": {
@@ -10311,7 +10609,8 @@
     },
     "id": "298",
     "tokenURI": "ipfs://QmeUGtx4qf8J8MfaN7HeVhGWjrgBPsQnvMiN7R2SCaj3AX",
-    "address": "0xC92D56A2BAA7b7fD2B46dAAA547D898b5c3C64B6"
+    "address": "0xC92D56A2BAA7b7fD2B46dAAA547D898b5c3C64B6",
+    "building_color": "#f6dc01"
   },
   {
     "metadata": {
@@ -10348,7 +10647,8 @@
     },
     "id": "299",
     "tokenURI": "ipfs://QmZwuu3UtHXva4n8LVHicsptp7U8LMg12N6NQis5KEWKbq",
-    "address": "0x9fEB10680D4EAa5A8fBA37504CBFcD9B1934AEfd"
+    "address": "0x9fEB10680D4EAa5A8fBA37504CBFcD9B1934AEfd",
+    "building_color": "#d64684"
   },
   {
     "metadata": {
@@ -10385,7 +10685,8 @@
     },
     "id": "300",
     "tokenURI": "ipfs://QmSo3HCwsQdqYcibL5wTYUpdj2ktUAZTCSNVWfD5tbD77o",
-    "address": "0x20fbf498430fAcA09dF10b7852B60E3E54208aAc"
+    "address": "0x20fbf498430fAcA09dF10b7852B60E3E54208aAc",
+    "building_color": "#a876ab"
   },
   {
     "metadata": {
@@ -10422,7 +10723,8 @@
     },
     "id": "301",
     "tokenURI": "ipfs://QmXdU56KEehZQa2L1SqdHEAt6152yRmLDAcvDLWMBvGWrM",
-    "address": "0x1b3df8D0105d5D24C85697bDA5b704A05ED78B28"
+    "address": "0x1b3df8D0105d5D24C85697bDA5b704A05ED78B28",
+    "building_color": "#98c88e"
   },
   {
     "metadata": {
@@ -10459,7 +10761,8 @@
     },
     "id": "302",
     "tokenURI": "ipfs://QmatsT372uiCRxNDzdgHcpPfq1YKogjbYistsg4LH3xoWB",
-    "address": "0xA100B14891fe6563B8b24828C8eC8aFCFF6CD8a9"
+    "address": "0xA100B14891fe6563B8b24828C8eC8aFCFF6CD8a9",
+    "building_color": "#6780b9"
   },
   {
     "metadata": {
@@ -10496,7 +10799,8 @@
     },
     "id": "303",
     "tokenURI": "ipfs://QmVnVZttKMUzmNxqFKz7ATWC2AqhD65uQY9jAuDVGkDfBC",
-    "address": "0xb5a783F2B42e60262d9DD1f8D01A9662842e5D7A"
+    "address": "0xb5a783F2B42e60262d9DD1f8D01A9662842e5D7A",
+    "building_color": "#ea5046"
   },
   {
     "metadata": {
@@ -10533,7 +10837,8 @@
     },
     "id": "304",
     "tokenURI": "ipfs://QmUPAtCMz2ueqx6TkuQTm1TdLX5VdZiCQE6TkDQo4eb4jg",
-    "address": "0x934fB04Af911770d4B870535e267bc2318B9563b"
+    "address": "0x934fB04Af911770d4B870535e267bc2318B9563b",
+    "building_color": "#53b4d7"
   },
   {
     "metadata": {
@@ -10570,7 +10875,8 @@
     },
     "id": "305",
     "tokenURI": "ipfs://QmNYSRRSBoxCEbbMbdVS78r7v49LC73N5t5fBBcA3aSuH8",
-    "address": "0x8b983C5e343b755840A48aED8D7b2a8Bf0fA8beb"
+    "address": "0x8b983C5e343b755840A48aED8D7b2a8Bf0fA8beb",
+    "building_color": "#ea4e97"
   },
   {
     "metadata": {
@@ -10607,7 +10913,8 @@
     },
     "id": "306",
     "tokenURI": "ipfs://QmajNRWWpLcZ8m1fEUvbgCGsNdTsjB2itdjXz3PB92Zcy3",
-    "address": "0x6a4dDB2b6c9595965B1C3f1b88798A0D7539e5c6"
+    "address": "0x6a4dDB2b6c9595965B1C3f1b88798A0D7539e5c6",
+    "building_color": "#ec673c"
   },
   {
     "metadata": {
@@ -10644,7 +10951,8 @@
     },
     "id": "307",
     "tokenURI": "ipfs://Qme3VaXUpCFh8qUGGjMsgg7Y9JPtQX9uZhkffs7ei3Mwy6",
-    "address": "0x5202a446dA3dF6b657a5FBe6e9c872D6531dF462"
+    "address": "0x5202a446dA3dF6b657a5FBe6e9c872D6531dF462",
+    "building_color": "#1c71b1"
   },
   {
     "metadata": {
@@ -10681,7 +10989,8 @@
     },
     "id": "308",
     "tokenURI": "ipfs://QmX5G7Q6WtpAkENMXKWpvU8J9o5qgRX9JRkHAB2mnYN13A",
-    "address": "0xeF741D9b99Ac5657e1a318FB72cE5F5e3fE7954a"
+    "address": "0xeF741D9b99Ac5657e1a318FB72cE5F5e3fE7954a",
+    "building_color": "#307db5"
   },
   {
     "metadata": {
@@ -10718,7 +11027,8 @@
     },
     "id": "309",
     "tokenURI": "ipfs://QmUjR1XqBQLNWZA9S2nW2sSnXujDYmvuNDL1tFEwu7TNw2",
-    "address": "0x47109471a7C9A114F8A54CaEDb8Ce44E94611286"
+    "address": "0x47109471a7C9A114F8A54CaEDb8Ce44E94611286",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -10755,7 +11065,8 @@
     },
     "id": "310",
     "tokenURI": "ipfs://QmW35ueN9yejvjA7ZtECszjB4MrQ3j8FZzsKqd4hGVKQdy",
-    "address": "0x2E9FAe47DE511A1b63209acb3cf9Eb9631e94561"
+    "address": "0x2E9FAe47DE511A1b63209acb3cf9Eb9631e94561",
+    "building_color": "#019f91"
   },
   {
     "metadata": {
@@ -10792,7 +11103,8 @@
     },
     "id": "311",
     "tokenURI": "ipfs://QmPSFsWWn57C7FR9P2MVSioknqNqEN1Gsyi8wMHJFiEnfZ",
-    "address": "0x0160d94464B61C97f791C7d99EBa8dA8D4cDeee4"
+    "address": "0x0160d94464B61C97f791C7d99EBa8dA8D4cDeee4",
+    "building_color": "#f7b76d"
   },
   {
     "metadata": {
@@ -10829,7 +11141,8 @@
     },
     "id": "312",
     "tokenURI": "ipfs://QmaxqauHsVBE7srhNdY9xuNUjkYVrX8jc4Ts8uHpyEuqDV",
-    "address": "0x753A1442A8f80cd8eB1B6Ae10f20991c4F9878D5"
+    "address": "0x753A1442A8f80cd8eB1B6Ae10f20991c4F9878D5",
+    "building_color": "#88bd3b"
   },
   {
     "metadata": {
@@ -10862,7 +11175,8 @@
     },
     "id": "313",
     "tokenURI": "ipfs://QmXsetiCAhbcwtc1pwUSJW5CizGStQG2r33LAD3SEASfrh",
-    "address": "0xB5CC9fc3B63e6231013265c002CfE9994D503635"
+    "address": "0xB5CC9fc3B63e6231013265c002CfE9994D503635",
+    "building_color": "#e94081"
   },
   {
     "metadata": {
@@ -10895,7 +11209,8 @@
     },
     "id": "314",
     "tokenURI": "ipfs://QmVHjo3zVW4Wc6ArH18G6iCSAyiBDJuS65gojfbU5C9Jds",
-    "address": "0x31448e46D7F8495e2D37Ee95411EF72AD06B603E"
+    "address": "0x31448e46D7F8495e2D37Ee95411EF72AD06B603E",
+    "building_color": "#eeda01"
   },
   {
     "metadata": {
@@ -10928,7 +11243,8 @@
     },
     "id": "315",
     "tokenURI": "ipfs://QmRJvf519DyCjGY3k4Wj8inq8hAuvRigUeq6pEpRJ4GcWW",
-    "address": "0xeC80F30842435B0CB5754524d9aADed0810850E0"
+    "address": "0xeC80F30842435B0CB5754524d9aADed0810850E0",
+    "building_color": "#3ea9d5"
   },
   {
     "metadata": {
@@ -10961,7 +11277,8 @@
     },
     "id": "316",
     "tokenURI": "ipfs://QmZDbFMgu1YmMxiHne7jjWRL6vSQwinvmdDyJtDtBGxn1u",
-    "address": "0xf0db08Ba1adA2b6f77c6aF0BbE5aCbAefE5aF387"
+    "address": "0xf0db08Ba1adA2b6f77c6aF0BbE5aCbAefE5aF387",
+    "building_color": "#ed653b"
   },
   {
     "metadata": {
@@ -10994,7 +11311,8 @@
     },
     "id": "317",
     "tokenURI": "ipfs://QmdLnjYTVDppTzzBZbkSPuyMpobSajfoKmtXZ2XDFuDFHX",
-    "address": "0xdc4F9691e3e946577988c8274CA3675b84a63ABD"
+    "address": "0xdc4F9691e3e946577988c8274CA3675b84a63ABD",
+    "building_color": "#eea139"
   },
   {
     "metadata": {
@@ -11027,7 +11345,8 @@
     },
     "id": "318",
     "tokenURI": "ipfs://Qmbz3v2i5sVJj8dB1FAM9xYvD24NazekqismA8svfreWqH",
-    "address": "0x37bC8A77A729186CCD8eebf64645193C61DC3494"
+    "address": "0x37bC8A77A729186CCD8eebf64645193C61DC3494",
+    "building_color": "#9e5fa6"
   },
   {
     "metadata": {
@@ -11060,7 +11379,8 @@
     },
     "id": "319",
     "tokenURI": "ipfs://QmexEZidLaosYN1f16E7xax8HBHpubSuWor94iVBuXudHW",
-    "address": "0xf6b49CA2A2e1e433C34aB1E174a5B8afEa0b9ef1"
+    "address": "0xf6b49CA2A2e1e433C34aB1E174a5B8afEa0b9ef1",
+    "building_color": "#08a795"
   },
   {
     "metadata": {
@@ -11093,7 +11413,8 @@
     },
     "id": "320",
     "tokenURI": "ipfs://QmPgcCdfLCfcH7QQsH8BZj4EH8BGeZGdi1xpTvVPTTtruW",
-    "address": "0xa80ECca1fEb64e6231A07Ac13428f9C87df761b4"
+    "address": "0xa80ECca1fEb64e6231A07Ac13428f9C87df761b4",
+    "building_color": "#a5d067"
   },
   {
     "metadata": {
@@ -11130,7 +11451,8 @@
     },
     "id": "321",
     "tokenURI": "ipfs://QmeLyLeqC1BEfgvXRi1yKAHEtisZwgMc4ZLTrzaevUKShp",
-    "address": "0xf1D9b5892c37615c9fD6611aAac299e1ad1bB2D4"
+    "address": "0xf1D9b5892c37615c9fD6611aAac299e1ad1bB2D4",
+    "building_color": "#ec6221"
   },
   {
     "metadata": {
@@ -11167,7 +11489,8 @@
     },
     "id": "322",
     "tokenURI": "ipfs://QmYUzC2AbT8VizmhGagS8aj32g6nKaDuaJuw8VP13Ep9qE",
-    "address": "0xD59C700d705bcbFF1AAd0011d350e33E912A3c21"
+    "address": "0xD59C700d705bcbFF1AAd0011d350e33E912A3c21",
+    "building_color": "#3aadd9"
   },
   {
     "metadata": {
@@ -11204,7 +11527,8 @@
     },
     "id": "323",
     "tokenURI": "ipfs://QmTU8ySe6CmRFsfbQsTNZGWoMTXpJKhU5Pv1MrqBDVdoQj",
-    "address": "0x2Cb5E873E13070A24Db1392FF100F9b36A79d0d9"
+    "address": "0x2Cb5E873E13070A24Db1392FF100F9b36A79d0d9",
+    "building_color": "#b1185b"
   },
   {
     "metadata": {
@@ -11241,7 +11565,8 @@
     },
     "id": "324",
     "tokenURI": "ipfs://QmXqtN7s54JhgSXVC4bLDf7cgW2NiQiwHoKMv9HsyLDcmh",
-    "address": "0x94C18dAef758DF8E33CDE8BEF79936Bd24Da04D1"
+    "address": "0x94C18dAef758DF8E33CDE8BEF79936Bd24Da04D1",
+    "building_color": "#ea098b"
   },
   {
     "metadata": {
@@ -11278,7 +11603,8 @@
     },
     "id": "325",
     "tokenURI": "ipfs://QmbbD7PnraYN8HUDTTRZbwpzCDVzGVkT57Pbxu6LeRfxVg",
-    "address": "0x0DD74aAC8Ef8E921082f7bE413B82d2C5E62DAE9"
+    "address": "0x0DD74aAC8Ef8E921082f7bE413B82d2C5E62DAE9",
+    "building_color": "#1a75bb"
   },
   {
     "metadata": {
@@ -11315,7 +11641,8 @@
     },
     "id": "326",
     "tokenURI": "ipfs://QmfPv998wppauokLnsqW6cVP3hTcr2cnGNNUY1UcKBdMNY",
-    "address": "0x5287239ee1752eB5bf4AFB5feF207FbA7615EfB4"
+    "address": "0x5287239ee1752eB5bf4AFB5feF207FbA7615EfB4",
+    "building_color": "#f5a83e"
   },
   {
     "metadata": {
@@ -11352,7 +11679,8 @@
     },
     "id": "327",
     "tokenURI": "ipfs://QmbBnGHQV6VwYntcqf82NJvgPBTRmHEveoT3V1XjD9VTBm",
-    "address": "0x917F0Bb5EE09B0f19F8d3a46Da3190452b1b5501"
+    "address": "0x917F0Bb5EE09B0f19F8d3a46Da3190452b1b5501",
+    "building_color": "#00a650"
   },
   {
     "metadata": {
@@ -11389,7 +11717,8 @@
     },
     "id": "328",
     "tokenURI": "ipfs://QmRdWMWCj5TCoQM2vCUB6tPAwxQ55DKAjzhcRgtkbbHjaL",
-    "address": "0x6FFFbf2881156e79d781a952f074790da47e568e"
+    "address": "0x6FFFbf2881156e79d781a952f074790da47e568e",
+    "building_color": "#e7d101"
   },
   {
     "metadata": {
@@ -11426,7 +11755,8 @@
     },
     "id": "329",
     "tokenURI": "ipfs://QmTc2b2nDJu5N6QnCoHtTc4uewdpTbGgLdspoRFTSUgS5f",
-    "address": "0x94a063a0607f0A0F41944FcDe955943e3F043F93"
+    "address": "0x94a063a0607f0A0F41944FcDe955943e3F043F93",
+    "building_color": "#e40883"
   },
   {
     "metadata": {
@@ -11463,7 +11793,8 @@
     },
     "id": "330",
     "tokenURI": "ipfs://QmVNBhzzHBWiaf88SMkXJf8ahZREt5UdpL3cDrcTKnsSeg",
-    "address": "0x398B5695d896c84A03F599CDA9Cc129dd6a0108A"
+    "address": "0x398B5695d896c84A03F599CDA9Cc129dd6a0108A",
+    "building_color": "#f29919"
   },
   {
     "metadata": {
@@ -11500,7 +11831,8 @@
     },
     "id": "331",
     "tokenURI": "ipfs://QmZwN4uikWbzeZ2cfyfx1RfVMsX5LDMGAGqUQpJ6ugResz",
-    "address": "0x9685BfBbc0538293b330f287E6D9ec2BE0aD5fAf"
+    "address": "0x9685BfBbc0538293b330f287E6D9ec2BE0aD5fAf",
+    "building_color": "#d5e055"
   },
   {
     "metadata": {
@@ -11537,7 +11869,8 @@
     },
     "id": "332",
     "tokenURI": "ipfs://QmS8P4pmtG7LswbkFnUvfRDCfsHU3vddr2DUD1rEfpqgfT",
-    "address": "0x798E384CF4F6911047aCc8e1f14A893CF4136969"
+    "address": "0x798E384CF4F6911047aCc8e1f14A893CF4136969",
+    "building_color": "#f69f38"
   },
   {
     "metadata": {
@@ -11574,7 +11907,8 @@
     },
     "id": "333",
     "tokenURI": "ipfs://QmXQsXAFfzYpWoVoomMSuzNpCrqg6ubH4Qfk8R1hMTXbLm",
-    "address": "0xc8Cc04440bA238F1FdA5971DB7836caB52713605"
+    "address": "0xc8Cc04440bA238F1FdA5971DB7836caB52713605",
+    "building_color": "#fab927"
   },
   {
     "metadata": {
@@ -11611,7 +11945,8 @@
     },
     "id": "334",
     "tokenURI": "ipfs://QmYgxSb489xm6LTDUxHKVzhwmkoywPVhKyLo6Rqk2iXpHY",
-    "address": "0xAb6074F8AAF22d14621065B904AFD8574d3FE165"
+    "address": "0xAb6074F8AAF22d14621065B904AFD8574d3FE165",
+    "building_color": "#e9369a"
   },
   {
     "metadata": {
@@ -11648,7 +11983,8 @@
     },
     "id": "335",
     "tokenURI": "ipfs://QmefmYrsf8Bgz1qJcZdbKsQdTyu4XDQ6FMtXMHrY8S99Se",
-    "address": "0x5cd5FE401109ba62D97704a9B3005F528Ec798c7"
+    "address": "0x5cd5FE401109ba62D97704a9B3005F528Ec798c7",
+    "building_color": "#af5a9b"
   },
   {
     "metadata": {
@@ -11685,7 +12021,8 @@
     },
     "id": "336",
     "tokenURI": "ipfs://QmZdsibG2ENV53xcCdVTEWdkmR5c9ZXzPWMWjcLRuvyuCE",
-    "address": "0x105E4a0bd951E89B10E734F1b4e08073D8e4a868"
+    "address": "0x105E4a0bd951E89B10E734F1b4e08073D8e4a868",
+    "building_color": "#44b8b7"
   },
   {
     "metadata": {
@@ -11722,7 +12059,8 @@
     },
     "id": "337",
     "tokenURI": "ipfs://QmRzszZi86SPVyuJuCTontiqMpG6azpGFoYFgUxVdzo4Hu",
-    "address": "0x49873E7446F7a28593a49b9E42cc139AE9fbd6AD"
+    "address": "0x49873E7446F7a28593a49b9E42cc139AE9fbd6AD",
+    "building_color": "#13a3d5"
   },
   {
     "metadata": {
@@ -11759,7 +12097,8 @@
     },
     "id": "338",
     "tokenURI": "ipfs://QmVCa6s2BvGMHKftNkTpCUSbW19osAxnvEoEKnebDJim4N",
-    "address": "0xD76654D08Ee5Ed08C41c49B4795934b25b18C856"
+    "address": "0xD76654D08Ee5Ed08C41c49B4795934b25b18C856",
+    "building_color": "#e9689e & e30c83"
   },
   {
     "metadata": {
@@ -11796,7 +12135,8 @@
     },
     "id": "339",
     "tokenURI": "ipfs://QmaH6MmhNxeQTsbvuurjcgWsPhWZWnoX6rQbVEECNR7ndw",
-    "address": "0x624E50A509d10df8Ef884da7104A954e60289581"
+    "address": "0x624E50A509d10df8Ef884da7104A954e60289581",
+    "building_color": "#f39a1a"
   },
   {
     "metadata": {
@@ -11833,7 +12173,8 @@
     },
     "id": "340",
     "tokenURI": "ipfs://QmdWmmMf68YfZDcpcHgcker5ezjGqiFcHYodESaaY7Ba4S",
-    "address": "0x40AFB9A06AC1bCDd0C57768d830E3a35ea015a23"
+    "address": "0x40AFB9A06AC1bCDd0C57768d830E3a35ea015a23",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -11870,7 +12211,8 @@
     },
     "id": "341",
     "tokenURI": "ipfs://QmY8W9fsLiZKQgTcfqDJHaKe9CDpW38ioALS9fxd9WUiQN",
-    "address": "0xe13C97CA9Cf3d35547048f5320d686Cab8019d1d"
+    "address": "0xe13C97CA9Cf3d35547048f5320d686Cab8019d1d",
+    "building_color": "#c0d95a"
   },
   {
     "metadata": {
@@ -11907,7 +12249,8 @@
     },
     "id": "342",
     "tokenURI": "ipfs://QmRoaY18xcwNzoUAtbM93hXdV4XDURqGiSkgDkZ563ts4P",
-    "address": "0xCE735f06141c0E9a56a73C75Af0D5F50C8116FE3"
+    "address": "0xCE735f06141c0E9a56a73C75Af0D5F50C8116FE3",
+    "building_color": "#9c59a0 & ef4c4f & fed03d "
   },
   {
     "metadata": {
@@ -11944,7 +12287,8 @@
     },
     "id": "343",
     "tokenURI": "ipfs://QmVGZDu75SdvXjm1SN6fY1bvLzoZWajFoTaymi2tsPf7bZ",
-    "address": "0xd30AfD0DcC3E13dCAD6176405521845Fdf709f01"
+    "address": "0xd30AfD0DcC3E13dCAD6176405521845Fdf709f01",
+    "building_color": "#e72059"
   },
   {
     "metadata": {
@@ -11981,7 +12325,8 @@
     },
     "id": "344",
     "tokenURI": "ipfs://QmZZwT7o3oNVmxrDDKrGdrY4wCk84DxNddwDdpMNi5Xbbu",
-    "address": "0x4a193a3dC705EeED011779C512EFA3Be608D3dc5"
+    "address": "0x4a193a3dC705EeED011779C512EFA3Be608D3dc5",
+    "building_color": "#ee3e7f"
   },
   {
     "metadata": {
@@ -12018,7 +12363,8 @@
     },
     "id": "345",
     "tokenURI": "ipfs://Qmb8mo2nwBc7sgt5AEr8QtXBuDKLZ7EmZbByHJozXr1TAQ",
-    "address": "0x49018B8e7404f6c273ab1eF2f9733F5Ee5a2A9ae"
+    "address": "0x49018B8e7404f6c273ab1eF2f9733F5Ee5a2A9ae",
+    "building_color": "#01a4c8 & 95c5db"
   },
   {
     "metadata": {
@@ -12051,7 +12397,8 @@
     },
     "id": "346",
     "tokenURI": "ipfs://QmVkFzeiaxoRGs2sQLbLTrpJwvaNso66sJodg4ec3ET18D",
-    "address": "0xF3b9cb0B80D761D36D6Ea056987D7673A1ed8ECe"
+    "address": "0xF3b9cb0B80D761D36D6Ea056987D7673A1ed8ECe",
+    "building_color": "#4abee3"
   },
   {
     "metadata": {
@@ -12084,7 +12431,8 @@
     },
     "id": "347",
     "tokenURI": "ipfs://QmQcNmYCNHmvErtrdmWdLnMU7wctfwzBB8vmQzwPyKCq62",
-    "address": "0x3D778D73BD7252E583c2E57A20FaE762919d948f"
+    "address": "0x3D778D73BD7252E583c2E57A20FaE762919d948f",
+    "building_color": "#bf7bae"
   },
   {
     "metadata": {
@@ -12117,7 +12465,8 @@
     },
     "id": "348",
     "tokenURI": "ipfs://QmNN7pWiEGrkEHJu9esU55wZi49hgG6WVgpKEvoEznGe25",
-    "address": "0xc314c7eB292Ef68cB837F5659E143c247cE4b364"
+    "address": "0xc314c7eB292Ef68cB837F5659E143c247cE4b364",
+    "building_color": "#ee7f74"
   },
   {
     "metadata": {
@@ -12150,7 +12499,8 @@
     },
     "id": "349",
     "tokenURI": "ipfs://QmcyZRHZt339gvmE1mFSqJp22CTHFYTLZSTVhCSzvmLtv3",
-    "address": "0x8b0f26fa0b4548DEF389d73876eeBB1ab008460C"
+    "address": "0x8b0f26fa0b4548DEF389d73876eeBB1ab008460C",
+    "building_color": "#efe138"
   },
   {
     "metadata": {
@@ -12183,7 +12533,8 @@
     },
     "id": "350",
     "tokenURI": "ipfs://Qmd63shM31NH4KzGiZbLhnaA8CDMQT7BnTRJzqKQkakgwk",
-    "address": "0xB5a640B163ccFafbDB9e8101D66622D686f7b36F"
+    "address": "0xB5a640B163ccFafbDB9e8101D66622D686f7b36F",
+    "building_color": "#ee85a4"
   },
   {
     "metadata": {
@@ -12216,7 +12567,8 @@
     },
     "id": "351",
     "tokenURI": "ipfs://QmYgxDS6WkqfUMQo9EV5nedhJqPtbpHksCYWmtbGJGwk8e",
-    "address": "0x6C02155b2aa048829F59d1dcB7F9b4FE31606300"
+    "address": "0x6C02155b2aa048829F59d1dcB7F9b4FE31606300",
+    "building_color": "#754b9d & 612d91"
   },
   {
     "metadata": {
@@ -12249,7 +12601,8 @@
     },
     "id": "352",
     "tokenURI": "ipfs://QmW1qeQe83fCg9Q73tPfsJ6s58nJZG5Up8Dy1pCfJv1eu2",
-    "address": "0xC04344D8e8baBFBc3CE90843262CA8ae125a13fc"
+    "address": "0xC04344D8e8baBFBc3CE90843262CA8ae125a13fc",
+    "building_color": "#ffc50a"
   },
   {
     "metadata": {
@@ -12282,7 +12635,8 @@
     },
     "id": "353",
     "tokenURI": "ipfs://Qme8qdcJ6pfWeNkMMSRZYMhDRT3meCAdCXkv2X9iA4ysXR",
-    "address": "0xf0437d24129491b11d70F528fB4F4Ff122A7b8EC"
+    "address": "0xf0437d24129491b11d70F528fB4F4Ff122A7b8EC",
+    "building_color": "#00a9ac & 87ccad & 60c1ad"
   },
   {
     "metadata": {
@@ -12315,7 +12669,8 @@
     },
     "id": "354",
     "tokenURI": "ipfs://Qmce6uxvJrh9bCr5zYQqkjigH656AXEVgiP9eEGNHdiPN5",
-    "address": "0xc71f90E34072C9B0848b6909f0eaC30C19711271"
+    "address": "0xc71f90E34072C9B0848b6909f0eaC30C19711271",
+    "building_color": "#ec0972"
   },
   {
     "metadata": {
@@ -12348,7 +12703,8 @@
     },
     "id": "355",
     "tokenURI": "ipfs://QmTa5rMtiYn357zaSNLFpex3TnSoqoxHPkVygQkteS1KLZ",
-    "address": "0x7a367a64FA40290a3Fdf1FD63104d1a2Fb1f6146"
+    "address": "0x7a367a64FA40290a3Fdf1FD63104d1a2Fb1f6146",
+    "building_color": "#f15d5b"
   },
   {
     "metadata": {
@@ -12381,7 +12737,8 @@
     },
     "id": "356",
     "tokenURI": "ipfs://QmTE2JikrSfVKds66TzEoUhLUCfpXBpDYhvceCKHT4Eeo9",
-    "address": "0xe17C9CeaDECdDfBDc86a137c4B8FA0667bB7F8C1"
+    "address": "0xe17C9CeaDECdDfBDc86a137c4B8FA0667bB7F8C1",
+    "building_color": "#6ecce5"
   },
   {
     "metadata": {
@@ -12418,7 +12775,8 @@
     },
     "id": "357",
     "tokenURI": "ipfs://QmR9zhG5KKhTHVydwGx7ceEHngZ2Gop8z6ozGV99gQ4geV",
-    "address": "0x9223A9726f6e909867357995aDdebB67e18F08a4"
+    "address": "0x9223A9726f6e909867357995aDdebB67e18F08a4",
+    "building_color": "#e289b9 & ea663f + mix color d63930"
   },
   {
     "metadata": {
@@ -12455,7 +12813,8 @@
     },
     "id": "358",
     "tokenURI": "ipfs://QmfHjtAeaJUUcmWG2E5qaTGke24RAD1pArxwLogxftB7D4",
-    "address": "0x9aecaE4ec698e7D1c3be65800F0f61801F65D373"
+    "address": "0x9aecaE4ec698e7D1c3be65800F0f61801F65D373",
+    "building_color": "#a1dae5"
   },
   {
     "metadata": {
@@ -12492,7 +12851,8 @@
     },
     "id": "359",
     "tokenURI": "ipfs://QmT2qU6AhQHeXgtH8zQCAeZtvcDmdg1i9geR3hpsDh93b1",
-    "address": "0x94636c4162aEFd47d37471c1288b71098E1c371E"
+    "address": "0x94636c4162aEFd47d37471c1288b71098E1c371E",
+    "building_color": "#6a9dc8"
   },
   {
     "metadata": {
@@ -12529,7 +12889,8 @@
     },
     "id": "360",
     "tokenURI": "ipfs://QmQWDWjxhhdj4g2nxFoaKvVjyLCCyqpw1uJTUiFLUH2cyd",
-    "address": "0xb698b8f9C11B010D3312c75F919A98757fB37c08"
+    "address": "0xb698b8f9C11B010D3312c75F919A98757fB37c08",
+    "building_color": "#f06b42"
   },
   {
     "metadata": {
@@ -12566,7 +12927,8 @@
     },
     "id": "361",
     "tokenURI": "ipfs://QmXQPiEjJkYHBQMmnug2kxMAJ3pmTmCtraFTqRzcDKcGpb",
-    "address": "0x9a7Da68e2AB606a2D2b9012A651D569fD5AB5076"
+    "address": "0x9a7Da68e2AB606a2D2b9012A651D569fD5AB5076",
+    "building_color": "#dd8fbf"
   },
   {
     "metadata": {
@@ -12603,7 +12965,8 @@
     },
     "id": "362",
     "tokenURI": "ipfs://QmUejz6fLoVp534Xw67ez4xgfNwDLjAFPk8sD4CfKjS6Py",
-    "address": "0x9f27786adCDc6975EF94D2D75dAE87Ec4C0337a8"
+    "address": "0x9f27786adCDc6975EF94D2D75dAE87Ec4C0337a8",
+    "building_color": "#fac720"
   },
   {
     "metadata": {
@@ -12640,7 +13003,8 @@
     },
     "id": "363",
     "tokenURI": "ipfs://Qme73XUorHjpkYNuBxKmfmnfG6aS8Dty5zsyueyC7daBy2",
-    "address": "0x856E216dd1E6F68FddCc258893e2ee908F92C09A"
+    "address": "0x856E216dd1E6F68FddCc258893e2ee908F92C09A",
+    "building_color": "#f37950"
   },
   {
     "metadata": {
@@ -12677,7 +13041,8 @@
     },
     "id": "364",
     "tokenURI": "ipfs://QmQ6BeaoZKyWTaKdx7vWq4JTF9XtMcsBgPm5nHefrbYzsn",
-    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300"
+    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300",
+    "building_color": "#e93b80"
   },
   {
     "metadata": {
@@ -12714,7 +13079,8 @@
     },
     "id": "365",
     "tokenURI": "ipfs://QmbbenVJXGj1CEHbjDXJqkoRKFnzVjNNmSMgL5717cNmEo",
-    "address": "0x247D365Ac1dC31B5885dc97734A0803883de0bb1"
+    "address": "0x247D365Ac1dC31B5885dc97734A0803883de0bb1",
+    "building_color": "#f7a748"
   },
   {
     "metadata": {
@@ -12751,7 +13117,8 @@
     },
     "id": "366",
     "tokenURI": "ipfs://QmZ3ZgQ69AEm4tErLzopqVCwQpv6DJNJR7xZqHtqyuc5w7",
-    "address": "0x64a4075C92537cB59A905cA09F77016583AcAe3A"
+    "address": "0x64a4075C92537cB59A905cA09F77016583AcAe3A",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -12788,7 +13155,8 @@
     },
     "id": "367",
     "tokenURI": "ipfs://QmTFLr571LY9k7QXA1hrLjeU7zeSQ1HA7Ub4oAaX2jxA2o",
-    "address": "0xa867135842098075e6a19903542729eDBb15105B"
+    "address": "0xa867135842098075e6a19903542729eDBb15105B",
+    "building_color": "#e9464b"
   },
   {
     "metadata": {
@@ -12825,7 +13193,8 @@
     },
     "id": "368",
     "tokenURI": "ipfs://QmTxiRH1Nprz5o3sY2CuPGsgkXNpaWWbGThf8Y5PjUGibK",
-    "address": "0xB302f5E192540d03D65E1F8c43838e7CC5A95010"
+    "address": "0xB302f5E192540d03D65E1F8c43838e7CC5A95010",
+    "building_color": "#32b0a5"
   },
   {
     "metadata": {
@@ -12862,7 +13231,8 @@
     },
     "id": "369",
     "tokenURI": "ipfs://QmVm8jT24rNfQkei5j68qQ7duoKyntHgsqKm3jZW9GWGjU",
-    "address": "0x19CC06E71104EA38d2D63099c6586F5509edb1b8"
+    "address": "0x19CC06E71104EA38d2D63099c6586F5509edb1b8",
+    "building_color": "#4689bd"
   },
   {
     "metadata": {
@@ -12899,7 +13269,8 @@
     },
     "id": "370",
     "tokenURI": "ipfs://QmZvk7d9nDMvSWpaQDoHsFEorQrujvtMxggoa5CyPMKbip",
-    "address": "0xd058BA4b8Ab2741837aeeF215E1D2733177ce363"
+    "address": "0xd058BA4b8Ab2741837aeeF215E1D2733177ce363",
+    "building_color": "#26a9e1"
   },
   {
     "metadata": {
@@ -12936,7 +13307,8 @@
     },
     "id": "371",
     "tokenURI": "ipfs://QmP945QqbqacNmcCowvCxncHduwxcqw5myncMtFnVsP42w",
-    "address": "0x7a1a72F0EF452BfFA0565665799Cdd124F5ED627"
+    "address": "0x7a1a72F0EF452BfFA0565665799Cdd124F5ED627",
+    "building_color": "#e978a4"
   },
   {
     "metadata": {
@@ -12973,7 +13345,8 @@
     },
     "id": "372",
     "tokenURI": "ipfs://QmcCjVoRFKyGoME7HU6dpdTAxGddBt92naQQHg3Z5yoDF6",
-    "address": "0x7D33602BC1ED10a129d969f9Afe9Dcb24C49e817"
+    "address": "0x7D33602BC1ED10a129d969f9Afe9Dcb24C49e817",
+    "building_color": "#fcc73d"
   },
   {
     "metadata": {
@@ -13010,7 +13383,8 @@
     },
     "id": "373",
     "tokenURI": "ipfs://Qmb1Wzfb36cL3eTrgyy4SRPSrAZ4gFcV4RnWxn3gKoXtPg",
-    "address": "0xB0C6996dE40f58d6E8A4A59D73780b9d08a413e9"
+    "address": "0xB0C6996dE40f58d6E8A4A59D73780b9d08a413e9",
+    "building_color": "#09b2ab"
   },
   {
     "metadata": {
@@ -13047,7 +13421,8 @@
     },
     "id": "374",
     "tokenURI": "ipfs://QmU5sAC62kiG1rDcbd84RWKmfcJA5kvLH1yB5iEL3bMTuX",
-    "address": "0xDcc2A588463321bC969806E980615dae5263F6de"
+    "address": "0xDcc2A588463321bC969806E980615dae5263F6de",
+    "building_color": "#8f7bae"
   },
   {
     "metadata": {
@@ -13084,7 +13459,8 @@
     },
     "id": "375",
     "tokenURI": "ipfs://QmegyCEyoCZLYDRi2ZTpZsxNvBFDFh19RND5sihqAEUo6Y",
-    "address": "0xcfe16Ed247435310D97a7b4B568bC55357bfAeF9"
+    "address": "0xcfe16Ed247435310D97a7b4B568bC55357bfAeF9",
+    "building_color": "#ed6d2c"
   },
   {
     "metadata": {
@@ -13121,7 +13497,8 @@
     },
     "id": "376",
     "tokenURI": "ipfs://QmXUUR7VJGNNxCEEafHeGSTefALL4fWKJLRk8Pzvff1KKd",
-    "address": "0x87B2AEFC36A3000c9036f40709F249E7fa1f3311"
+    "address": "0x87B2AEFC36A3000c9036f40709F249E7fa1f3311",
+    "building_color": "#8fc266"
   },
   {
     "metadata": {
@@ -13158,7 +13535,8 @@
     },
     "id": "377",
     "tokenURI": "ipfs://QmPHF8YPtVuetCBhKUitChuCvVHBq2QaABKM8Mk4kFPQUE",
-    "address": "0x89b8387191FC72122aE58c8f8816dD764e4101FE"
+    "address": "0x89b8387191FC72122aE58c8f8816dD764e4101FE",
+    "building_color": "#f8b878"
   },
   {
     "metadata": {
@@ -13195,7 +13573,8 @@
     },
     "id": "378",
     "tokenURI": "ipfs://QmSWQiV9vZEzzaev9xfNaCHPnHaXzRyWJ7R2szMEuUryK4",
-    "address": "0x2B19F9897e0950a553F5BE0099db501ce46b4B6D"
+    "address": "0x2B19F9897e0950a553F5BE0099db501ce46b4B6D",
+    "building_color": "#93cce7"
   },
   {
     "metadata": {
@@ -13228,7 +13607,8 @@
     },
     "id": "379",
     "tokenURI": "ipfs://QmRPY34cuLz4hbiDDMZ9MJeKwbnFmF1vRcfbBtmZCMJEUV",
-    "address": "0x43B505948cCD1593f0118DBDc70FaAd1e5EbF79c"
+    "address": "0x43B505948cCD1593f0118DBDc70FaAd1e5EbF79c",
+    "building_color": "#64c4da"
   },
   {
     "metadata": {
@@ -13261,7 +13641,8 @@
     },
     "id": "380",
     "tokenURI": "ipfs://QmZ8K6NYxmWGMsmL8DrCPGdWtDns4JNp7wtqcC58DztJ98",
-    "address": "0x007ff138d7e7D4fFaB3dBEf65F702c31Ec8Dc98A"
+    "address": "0x007ff138d7e7D4fFaB3dBEf65F702c31Ec8Dc98A",
+    "building_color": "#8dbf3a & 35ac44"
   },
   {
     "metadata": {
@@ -13294,7 +13675,8 @@
     },
     "id": "381",
     "tokenURI": "ipfs://QmTMZFGVG6ffbX5ZnojefyQ3Yj9p2Qf8zhaTEtSsATUj9X",
-    "address": "0x3da45009cAF170Ae017B9886abBF53f0CCFeaA77"
+    "address": "0x3da45009cAF170Ae017B9886abBF53f0CCFeaA77",
+    "building_color": "#f9be08"
   },
   {
     "metadata": {
@@ -13327,7 +13709,8 @@
     },
     "id": "382",
     "tokenURI": "ipfs://QmQjQAyGFtPwH4EPpRLUD2phhHQ5ZFrKBBEf7NMnn1k3Ak",
-    "address": "0x307635F944E20A9739d87c26a764a48184B7f713"
+    "address": "0x307635F944E20A9739d87c26a764a48184B7f713",
+    "building_color": "#3ba3a6"
   },
   {
     "metadata": {
@@ -13360,7 +13743,8 @@
     },
     "id": "383",
     "tokenURI": "ipfs://QmUQw6kkvTitFKFDxbjjgP2VPT8jJcMnwigskyFVyHn4Vr",
-    "address": "0x3A20A44a27630BdC8ba741BD062C5Edc172736D3"
+    "address": "0x3A20A44a27630BdC8ba741BD062C5Edc172736D3",
+    "building_color": "#ea6459"
   },
   {
     "metadata": {
@@ -13393,7 +13777,8 @@
     },
     "id": "384",
     "tokenURI": "ipfs://QmSRZzQFyAvVaEVbkA2kq315n5purCvmKyscVZj3QgJyn5",
-    "address": "0x4acb112bD1CC5950471CF05C3f203e3d701e3b49"
+    "address": "0x4acb112bD1CC5950471CF05C3f203e3d701e3b49",
+    "building_color": "#e02b88 & ea74ae"
   },
   {
     "metadata": {
@@ -13426,7 +13811,8 @@
     },
     "id": "385",
     "tokenURI": "ipfs://QmSshVBsW6t6qrq2kpmqX8qptDAMegayafsXNdc3zaunHg",
-    "address": "0xECe28A118AE2207e3EECba9Ac0e2821F28b60BFA"
+    "address": "0xECe28A118AE2207e3EECba9Ac0e2821F28b60BFA",
+    "building_color": "#5667ac"
   },
   {
     "metadata": {
@@ -13459,7 +13845,8 @@
     },
     "id": "386",
     "tokenURI": "ipfs://QmT5jgWuGch3bxU3zQtMwmv3cSq2s4EiFyLeD699FVpr4p",
-    "address": "0xEd76b2BC20CF8864BBeC3160735dBe62D5740Ab5"
+    "address": "0xEd76b2BC20CF8864BBeC3160735dBe62D5740Ab5",
+    "building_color": "#e50081"
   },
   {
     "metadata": {
@@ -13492,7 +13879,8 @@
     },
     "id": "387",
     "tokenURI": "ipfs://QmSESWtK9FZcZkFUenEMqVNYr8jY8hJVJn7GPUNAJh24yb",
-    "address": "0xBecC888Ec0cD9Cb3D1C029D0B650d54055F637c1"
+    "address": "0xBecC888Ec0cD9Cb3D1C029D0B650d54055F637c1",
+    "building_color": "#e0256c"
   },
   {
     "metadata": {
@@ -13525,7 +13913,8 @@
     },
     "id": "388",
     "tokenURI": "ipfs://QmPsGcyuSaNHomjLLztwhtJnhBXakk4hPHy4cexrdCN4M8",
-    "address": "0x9635A559b19fE6d0a40A6985eaa253e67C4B46Ce"
+    "address": "0x9635A559b19fE6d0a40A6985eaa253e67C4B46Ce",
+    "building_color": "#f7b264"
   },
   {
     "metadata": {
@@ -13558,7 +13947,8 @@
     },
     "id": "389",
     "tokenURI": "ipfs://QmRtneX4DkgaRvDYX2t2Rxcb9Fd3mLQwXVWTSxB3MQ49mP",
-    "address": "0xB0669298a94BBEBDCE33e60637a173b64b8D4f89"
+    "address": "0xB0669298a94BBEBDCE33e60637a173b64b8D4f89",
+    "building_color": "#09a8a3"
   },
   {
     "metadata": {
@@ -13591,7 +13981,8 @@
     },
     "id": "390",
     "tokenURI": "ipfs://QmcDPdwuHLbZPHZ8bKUB12gqEWutdS2TBqDHM1sE6AvhVt",
-    "address": "0x3Eb8e4e361726cF23f642712D6368a5028cEd155"
+    "address": "0x3Eb8e4e361726cF23f642712D6368a5028cEd155",
+    "building_color": "#ebe048"
   },
   {
     "metadata": {
@@ -13624,7 +14015,8 @@
     },
     "id": "391",
     "tokenURI": "ipfs://QmcbYybhtkFyaaudoaMgEf8XM4QDm5LSff7pqH5DsaFbqZ",
-    "address": "0x88C9C43C3a2b02fA3cE40362211144d8462e21BB"
+    "address": "0x88C9C43C3a2b02fA3cE40362211144d8462e21BB",
+    "building_color": "#56bddc"
   },
   {
     "metadata": {
@@ -13657,7 +14049,8 @@
     },
     "id": "392",
     "tokenURI": "ipfs://QmTfpRuqJhUb9wyW8kbyXJrqtPskebCbzs8QTzRgru5rmh",
-    "address": "0x587D1Ce0BdB0529c56bBA72a638D71216E7F0942"
+    "address": "0x587D1Ce0BdB0529c56bBA72a638D71216E7F0942",
+    "building_color": "#9d5096"
   },
   {
     "metadata": {
@@ -13690,7 +14083,8 @@
     },
     "id": "393",
     "tokenURI": "ipfs://Qmdzar6rVeu64EmoaXUBuWdb3rDeiZorDS2KnfrjbgvZn4",
-    "address": "0xc76cC527609085b498153384ecEfa84cCfdBFf42"
+    "address": "0xc76cC527609085b498153384ecEfa84cCfdBFf42",
+    "building_color": "#82bb50"
   },
   {
     "metadata": {
@@ -13723,7 +14117,8 @@
     },
     "id": "394",
     "tokenURI": "ipfs://QmdDpBF8XHx47SyNF2KZXL9V2HwDrxLK1hkKDMPTkJJynb",
-    "address": "0x535d2ea182C950D6D13476C48aD7b4e3cD4d0613"
+    "address": "0x535d2ea182C950D6D13476C48aD7b4e3cD4d0613",
+    "building_color": "#ffc22b"
   },
   {
     "metadata": {
@@ -13756,7 +14151,8 @@
     },
     "id": "395",
     "tokenURI": "ipfs://QmYP1vvkHC7vKUPb4SVMamiH9BfsW9MGPacH9bDvycMUuP",
-    "address": "0x0D9f3952Fd9E4296eE6CF7076867584FA51E967D"
+    "address": "0x0D9f3952Fd9E4296eE6CF7076867584FA51E967D",
+    "building_color": "#70c282"
   },
   {
     "metadata": {
@@ -13789,7 +14185,8 @@
     },
     "id": "396",
     "tokenURI": "ipfs://QmQyHWFea7tfrh2P6X3p7zLn1ijjznSXvwaDiNp3Eyhk9d",
-    "address": "0x10711ADb081290f97BEd4AC2B5AB8C8C14dffCD4"
+    "address": "0x10711ADb081290f97BEd4AC2B5AB8C8C14dffCD4",
+    "building_color": "#f2db57"
   },
   {
     "metadata": {
@@ -13822,7 +14219,8 @@
     },
     "id": "397",
     "tokenURI": "ipfs://QmR2NWAryp8i8bSmHRnb6zdyVM7kcrD3ZFJ3Cdorkf5yfp",
-    "address": "0xBB73c5c19EecEE55eC4C25F455c0A8Cd1b07Ee38"
+    "address": "0xBB73c5c19EecEE55eC4C25F455c0A8Cd1b07Ee38",
+    "building_color": "#d35e93"
   },
   {
     "metadata": {
@@ -13855,7 +14253,8 @@
     },
     "id": "398",
     "tokenURI": "ipfs://QmWdK41Ar4CKkmmoQqVcZR5tggiZK6ug9efTm2Uz73zqwH",
-    "address": "0x4574cb49421CAEEB281157C3aB111164A54f84c0"
+    "address": "0x4574cb49421CAEEB281157C3aB111164A54f84c0",
+    "building_color": "#f27a61"
   },
   {
     "metadata": {
@@ -13888,7 +14287,8 @@
     },
     "id": "399",
     "tokenURI": "ipfs://QmPT5cGWwfwHsC8FqpqiL3iNq5d9P8yVpjn1jbMK2NKWe9",
-    "address": "0xF9b00D96f34DE9f2A9C71BFf56299E8f9A8e3069"
+    "address": "0xF9b00D96f34DE9f2A9C71BFf56299E8f9A8e3069",
+    "building_color": "#c5609c"
   },
   {
     "metadata": {
@@ -13921,7 +14321,8 @@
     },
     "id": "400",
     "tokenURI": "ipfs://QmYk1QBPSL6ukcBK2kqmPKXN9nFWxVXrR6vd7M1KAstuPe",
-    "address": "0x0b8e96108e630fc0246d25512C3C9A91f5411ea7"
+    "address": "0x0b8e96108e630fc0246d25512C3C9A91f5411ea7",
+    "building_color": "#f0644b"
   },
   {
     "metadata": {
@@ -13954,7 +14355,8 @@
     },
     "id": "401",
     "tokenURI": "ipfs://QmWQM2hCZ9W2kakxQd3eTsriKU252gDqmte2Pc7vYpvCvd",
-    "address": "0xf690079B0cf321b68a9cC947d5527eB7f9b26487"
+    "address": "0xf690079B0cf321b68a9cC947d5527eB7f9b26487",
+    "building_color": "#90d4e7"
   },
   {
     "metadata": {
@@ -13987,7 +14389,8 @@
     },
     "id": "402",
     "tokenURI": "ipfs://QmbohgEa3zMRCFbpYyEnhPwkVVvECyqWqmpZmQUFGHTpSs",
-    "address": "0x6e61D14439b3c1156ffB8f938463D7Ca873AFB86"
+    "address": "0x6e61D14439b3c1156ffB8f938463D7Ca873AFB86",
+    "building_color": "#8a76b3"
   },
   {
     "metadata": {
@@ -14020,7 +14423,8 @@
     },
     "id": "403",
     "tokenURI": "ipfs://QmUUBKM6MaXHx1iQBAAMfBCwmFsrwazNu9Mqo3tAyEvepr",
-    "address": "0xb6f2bd914E794B8D8281F2B2d937620f92d45F9E"
+    "address": "0xb6f2bd914E794B8D8281F2B2d937620f92d45F9E",
+    "building_color": "#6a98ca"
   },
   {
     "metadata": {
@@ -14053,7 +14457,8 @@
     },
     "id": "404",
     "tokenURI": "ipfs://QmQ7Ntp7SYs8HFB2gBoawP5z4vFTKNKgmPgwFRgkRU9fSr",
-    "address": "0xbdE4ad16FDFce188283aDc94ef12Ed5aD2bbe999"
+    "address": "0xbdE4ad16FDFce188283aDc94ef12Ed5aD2bbe999",
+    "building_color": "#f8ba4d"
   },
   {
     "metadata": {
@@ -14090,7 +14495,8 @@
     },
     "id": "405",
     "tokenURI": "ipfs://QmV2FK6yNHtLYnQyraiKzYXxjR2cjzmz6P9a9tbchQgh7z",
-    "address": "0x8fDC63E8a6E543aE8d4174E909EBe1eF9E47cE6E"
+    "address": "0x8fDC63E8a6E543aE8d4174E909EBe1eF9E47cE6E",
+    "building_color": "#2ba1d3"
   },
   {
     "metadata": {
@@ -14127,7 +14533,8 @@
     },
     "id": "406",
     "tokenURI": "ipfs://QmQm2pbAAEb4fnph7Yeg4UZ8xUrZQL136ddktSBhD1iDK2",
-    "address": "0x1c88EA0fFa653985121143588F8AbeC64c35F3De"
+    "address": "0x1c88EA0fFa653985121143588F8AbeC64c35F3De",
+    "building_color": "#75ccbb"
   },
   {
     "metadata": {
@@ -14164,7 +14571,8 @@
     },
     "id": "407",
     "tokenURI": "ipfs://Qmbc6kRFTkaAHuvSui3NyvucxNh2XdKnqmMxNy1NDbFck1",
-    "address": "0x204c3A70DE49917FB1302aa029808837343bF04e"
+    "address": "0x204c3A70DE49917FB1302aa029808837343bF04e",
+    "building_color": "#63c7c7"
   },
   {
     "metadata": {
@@ -14200,7 +14608,8 @@
       ]
     },
     "id": "408",
-    "tokenURI": "ipfs://QmdeELfda8s69BwM5wG3c5SiMtmZeAY4D9cfWYccVHCeep"
+    "tokenURI": "ipfs://QmdeELfda8s69BwM5wG3c5SiMtmZeAY4D9cfWYccVHCeep",
+    "building_color": "#ee4681"
   },
   {
     "metadata": {
@@ -14236,7 +14645,8 @@
       ]
     },
     "id": "409",
-    "tokenURI": "ipfs://QmTneXoCJRroFHxSbj2Z69ES9xwgLHG29a6BMNuTHkda1x"
+    "tokenURI": "ipfs://QmTneXoCJRroFHxSbj2Z69ES9xwgLHG29a6BMNuTHkda1x",
+    "building_color": "#d19fc5"
   },
   {
     "metadata": {
@@ -14272,7 +14682,8 @@
       ]
     },
     "id": "410",
-    "tokenURI": "ipfs://QmaFjshPJDXftmxMCVTQe6KT3SWn5D6wXfNUS1eTq5j7dd"
+    "tokenURI": "ipfs://QmaFjshPJDXftmxMCVTQe6KT3SWn5D6wXfNUS1eTq5j7dd",
+    "building_color": "#c27db4"
   },
   {
     "metadata": {
@@ -14308,7 +14719,8 @@
       ]
     },
     "id": "411",
-    "tokenURI": "ipfs://QmfAx1dG7jrxMvGBzHM3YkbH7GjmuruqvZXEsvxLKRngbR"
+    "tokenURI": "ipfs://QmfAx1dG7jrxMvGBzHM3YkbH7GjmuruqvZXEsvxLKRngbR",
+    "building_color": "#f9bc09"
   },
   {
     "metadata": {
@@ -14340,7 +14752,8 @@
       ]
     },
     "id": "412",
-    "tokenURI": "ipfs://Qmau9rMbFTGHJTyeEscx7Uy6bfFA8vghs7sjoDRSkWhPgC"
+    "tokenURI": "ipfs://Qmau9rMbFTGHJTyeEscx7Uy6bfFA8vghs7sjoDRSkWhPgC",
+    "building_color": "#ea5626"
   },
   {
     "metadata": {
@@ -14372,7 +14785,8 @@
       ]
     },
     "id": "413",
-    "tokenURI": "ipfs://QmaTqYy2sTdNAA4rZo2ZBzCgrw1CgVQo6QUihQzNvdYvUP"
+    "tokenURI": "ipfs://QmaTqYy2sTdNAA4rZo2ZBzCgrw1CgVQo6QUihQzNvdYvUP",
+    "building_color": "#86c8e0"
   },
   {
     "metadata": {
@@ -14404,7 +14818,8 @@
       ]
     },
     "id": "414",
-    "tokenURI": "ipfs://QmUHs6sqBPp9JiGzSwvP2oxQhuNkv9H73P1EzTk6FZwxpC"
+    "tokenURI": "ipfs://QmUHs6sqBPp9JiGzSwvP2oxQhuNkv9H73P1EzTk6FZwxpC",
+    "building_color": "#f69f38"
   },
   {
     "metadata": {
@@ -14436,7 +14851,8 @@
       ]
     },
     "id": "415",
-    "tokenURI": "ipfs://QmSD6gX3PisHAwpZvMVDejQkao5hMbUncRC2BpEyV733V8"
+    "tokenURI": "ipfs://QmSD6gX3PisHAwpZvMVDejQkao5hMbUncRC2BpEyV733V8",
+    "building_color": "#13a59a"
   },
   {
     "metadata": {
@@ -14468,7 +14884,8 @@
       ]
     },
     "id": "416",
-    "tokenURI": "ipfs://QmbxtTb3Zq3jtbnk3eWqzobQrGn4hVDki5snMYYyjU64cZ"
+    "tokenURI": "ipfs://QmbxtTb3Zq3jtbnk3eWqzobQrGn4hVDki5snMYYyjU64cZ",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -14500,7 +14917,8 @@
       ]
     },
     "id": "417",
-    "tokenURI": "ipfs://QmdntnvQuMX51WukoAXW2oNLQQjzF83w2YGhvRoBYtciMi"
+    "tokenURI": "ipfs://QmdntnvQuMX51WukoAXW2oNLQQjzF83w2YGhvRoBYtciMi",
+    "building_color": "#e62774"
   },
   {
     "metadata": {
@@ -14532,7 +14950,8 @@
       ]
     },
     "id": "418",
-    "tokenURI": "ipfs://QmSdj4y3rbMPQ9SmHfEaamhz53mMx2DZykqEXCCA13FLin"
+    "tokenURI": "ipfs://QmSdj4y3rbMPQ9SmHfEaamhz53mMx2DZykqEXCCA13FLin",
+    "building_color": "#4d8fbf"
   },
   {
     "metadata": {
@@ -14564,7 +14983,8 @@
       ]
     },
     "id": "419",
-    "tokenURI": "ipfs://QmQdCSS65x4NWEHywRsJgPgaS7esWnJW7qcofrRye6pA4n"
+    "tokenURI": "ipfs://QmQdCSS65x4NWEHywRsJgPgaS7esWnJW7qcofrRye6pA4n",
+    "building_color": "#f3df4c"
   },
   {
     "metadata": {
@@ -14596,7 +15016,8 @@
       ]
     },
     "id": "420",
-    "tokenURI": "ipfs://QmcYSezPyDKR9d11PckjmayGeksTZz9vg654gxZXPHsDd6"
+    "tokenURI": "ipfs://QmcYSezPyDKR9d11PckjmayGeksTZz9vg654gxZXPHsDd6",
+    "building_color": "#7ec694 & 96d0a7"
   },
   {
     "metadata": {
@@ -14628,7 +15049,8 @@
       ]
     },
     "id": "421",
-    "tokenURI": "ipfs://QmXq7N8m4i3NbKPtUuc6P1mhVUsWWtVNMxJRAyfDkmK8FR"
+    "tokenURI": "ipfs://QmXq7N8m4i3NbKPtUuc6P1mhVUsWWtVNMxJRAyfDkmK8FR",
+    "building_color": "#4bbfe4"
   },
   {
     "metadata": {
@@ -14660,7 +15082,8 @@
       ]
     },
     "id": "422",
-    "tokenURI": "ipfs://QmXyiDn4UCHHJCJw3TnU6EYDmHTyCJ9UNJ1aJ5q1wxzazS"
+    "tokenURI": "ipfs://QmXyiDn4UCHHJCJw3TnU6EYDmHTyCJ9UNJ1aJ5q1wxzazS",
+    "building_color": "#ec62af"
   },
   {
     "metadata": {
@@ -14692,7 +15115,8 @@
       ]
     },
     "id": "423",
-    "tokenURI": "ipfs://QmanQyMXNsxMW39PkGLj34BV794zLM1bK3JTCoSpBn1EVB"
+    "tokenURI": "ipfs://QmanQyMXNsxMW39PkGLj34BV794zLM1bK3JTCoSpBn1EVB",
+    "building_color": "#ed80b9"
   },
   {
     "metadata": {
@@ -14724,7 +15148,8 @@
       ]
     },
     "id": "424",
-    "tokenURI": "ipfs://QmcdyvDXqeGoctpMU6g13yHP4jC2z3LkmGJ5Af3VH3EiGV"
+    "tokenURI": "ipfs://QmcdyvDXqeGoctpMU6g13yHP4jC2z3LkmGJ5Af3VH3EiGV",
+    "building_color": "#b8e3ec & 85cada"
   },
   {
     "metadata": {
@@ -14756,7 +15181,8 @@
       ]
     },
     "id": "425",
-    "tokenURI": "ipfs://QmPfPgYGytWqchEepE5zqb6NnrSJ5uv6NtGqgQCVfZrNf1"
+    "tokenURI": "ipfs://QmPfPgYGytWqchEepE5zqb6NnrSJ5uv6NtGqgQCVfZrNf1",
+    "building_color": "#f7b15c & f7c485"
   },
   {
     "metadata": {
@@ -14788,7 +15214,8 @@
       ]
     },
     "id": "426",
-    "tokenURI": "ipfs://QmYnYLHrih2fhf4qSjztkopKLhs2aXHBcVdcag3ehZ6fh3"
+    "tokenURI": "ipfs://QmYnYLHrih2fhf4qSjztkopKLhs2aXHBcVdcag3ehZ6fh3",
+    "building_color": "#63c7bf"
   },
   {
     "metadata": {
@@ -14820,7 +15247,8 @@
       ]
     },
     "id": "427",
-    "tokenURI": "ipfs://QmRVDqaX3JC5q5MGoJap6nLBuTq9toNn845s2cMrzZ24MX"
+    "tokenURI": "ipfs://QmRVDqaX3JC5q5MGoJap6nLBuTq9toNn845s2cMrzZ24MX",
+    "building_color": "#f86128"
   },
   {
     "metadata": {
@@ -14852,7 +15280,8 @@
       ]
     },
     "id": "428",
-    "tokenURI": "ipfs://QmYVXLvpJiv2G8jJ9CkzbQ5JAb62bkVuPb1Hv5gBmeNGHw"
+    "tokenURI": "ipfs://QmYVXLvpJiv2G8jJ9CkzbQ5JAb62bkVuPb1Hv5gBmeNGHw",
+    "building_color": "#ea4c40"
   },
   {
     "metadata": {
@@ -14884,7 +15313,8 @@
       ]
     },
     "id": "429",
-    "tokenURI": "ipfs://QmYjZLDeX3j7GTwnT7QCK2Gx9PpTXr9qsrP7xJhFGMt5j3"
+    "tokenURI": "ipfs://QmYjZLDeX3j7GTwnT7QCK2Gx9PpTXr9qsrP7xJhFGMt5j3",
+    "building_color": "#6375b3"
   },
   {
     "metadata": {
@@ -14916,7 +15346,8 @@
       ]
     },
     "id": "430",
-    "tokenURI": "ipfs://QmXRh8HsvuaT1bSYAGKV8JGz6a7ui7ApBidxMyejwkXmK4"
+    "tokenURI": "ipfs://QmXRh8HsvuaT1bSYAGKV8JGz6a7ui7ApBidxMyejwkXmK4",
+    "building_color": "#019f91"
   },
   {
     "metadata": {
@@ -14948,7 +15379,8 @@
       ]
     },
     "id": "431",
-    "tokenURI": "ipfs://QmQgdXnwHcYBbtrHvBkdjEnRHFMJ4vrZDBZJpXyTFCdXGi"
+    "tokenURI": "ipfs://QmQgdXnwHcYBbtrHvBkdjEnRHFMJ4vrZDBZJpXyTFCdXGi",
+    "building_color": "#fbb756"
   },
   {
     "metadata": {
@@ -14980,7 +15412,8 @@
       ]
     },
     "id": "432",
-    "tokenURI": "ipfs://QmXyvpuXMuKxm45U1yb1ZnjXq3Hav2NmDYpPsjejmsmHrh"
+    "tokenURI": "ipfs://QmXyvpuXMuKxm45U1yb1ZnjXq3Hav2NmDYpPsjejmsmHrh",
+    "building_color": "#ddde5f"
   },
   {
     "metadata": {
@@ -15012,7 +15445,8 @@
       ]
     },
     "id": "433",
-    "tokenURI": "ipfs://QmPgNUnZm9gmCbW4Bxg3mnLKHSV3FkpaPxXS4tD97TAdc1"
+    "tokenURI": "ipfs://QmPgNUnZm9gmCbW4Bxg3mnLKHSV3FkpaPxXS4tD97TAdc1",
+    "building_color": "#61aed8"
   },
   {
     "metadata": {
@@ -15044,7 +15478,8 @@
       ]
     },
     "id": "434",
-    "tokenURI": "ipfs://QmREABSArWQG7Swtp9fhK1v8weKAh6W1NsghcuKmVzCMPs"
+    "tokenURI": "ipfs://QmREABSArWQG7Swtp9fhK1v8weKAh6W1NsghcuKmVzCMPs",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -15076,7 +15511,8 @@
       ]
     },
     "id": "435",
-    "tokenURI": "ipfs://QmceqjPSzEYDGBS9QeF9NGNhiTaFHedhQGz2pQra8hSNxF"
+    "tokenURI": "ipfs://QmceqjPSzEYDGBS9QeF9NGNhiTaFHedhQGz2pQra8hSNxF",
+    "building_color": "#e7387b"
   },
   {
     "metadata": {
@@ -15108,7 +15544,8 @@
       ]
     },
     "id": "436",
-    "tokenURI": "ipfs://Qmcb9veeWH7fv7TghZaNUtUYBv7NnGNdLavttBDMU24yzs"
+    "tokenURI": "ipfs://Qmcb9veeWH7fv7TghZaNUtUYBv7NnGNdLavttBDMU24yzs",
+    "building_color": "#f4a73b"
   },
   {
     "metadata": {
@@ -15141,7 +15578,8 @@
     },
     "id": "437",
     "tokenURI": "ipfs://QmbXaAGQrTa2gyjDULFrncVHTDFx7k7TYi1FC24jPFkVSK",
-    "address": "0xaeC13Da55293CE54cE6d1156B1cbDff799608218"
+    "address": "0xaeC13Da55293CE54cE6d1156B1cbDff799608218",
+    "building_color": "#00a6e0"
   },
   {
     "metadata": {
@@ -15174,7 +15612,8 @@
     },
     "id": "438",
     "tokenURI": "ipfs://QmZtpB39VtbnYN57gyNGiZQ3wrD1Wcxq9CP1U4iTJkXfuG",
-    "address": "0x25faF7e875e23aA43f0346d3822659c068d7b4Fa"
+    "address": "0x25faF7e875e23aA43f0346d3822659c068d7b4Fa",
+    "building_color": "#d1d421"
   },
   {
     "metadata": {
@@ -15207,7 +15646,8 @@
     },
     "id": "439",
     "tokenURI": "ipfs://QmTpFNRZ4qHJ2FMVuQwccvYVn5F6Ta9AsJ7guixCEAPD3u",
-    "address": "0x33EEaC324E398C9D13a535f2774d12bb48EE7288"
+    "address": "0x33EEaC324E398C9D13a535f2774d12bb48EE7288",
+    "building_color": "#f37950"
   },
   {
     "metadata": {
@@ -15240,7 +15680,8 @@
     },
     "id": "440",
     "tokenURI": "ipfs://QmdCfC15Kat83TBsWdhdRWmtRnqDVMV485Rzd2xGEFsswy",
-    "address": "0x93Ec500252eE00c72b161d6c02694E5C336DA09f"
+    "address": "0x93Ec500252eE00c72b161d6c02694E5C336DA09f",
+    "building_color": "#f9d414"
   },
   {
     "metadata": {
@@ -15273,7 +15714,8 @@
     },
     "id": "441",
     "tokenURI": "ipfs://QmSA1zvBxxt4dTSbvtut61pyJzgqceJwaaWf21dUhZAPZo",
-    "address": "0xBa9408397A83877BDa9c91105178063Df9160c0a"
+    "address": "0xBa9408397A83877BDa9c91105178063Df9160c0a",
+    "building_color": "#e30c83"
   },
   {
     "metadata": {
@@ -15306,7 +15748,8 @@
     },
     "id": "442",
     "tokenURI": "ipfs://QmQ6BeaoZKyWTaKdx7vWq4JTF9XtMcsBgPm5nHefrbYzsn",
-    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300"
+    "address": "0xe8836762Daa728e4FE98BFdc6c606A7b47AA4300",
+    "building_color": "#8d2586"
   },
   {
     "metadata": {
@@ -15339,7 +15782,8 @@
     },
     "id": "443",
     "tokenURI": "ipfs://Qmas8MtmBMK3MJXqdPFJcrCdFQhZkqB6K2QxC4zq9PWW74",
-    "address": "0x49D52054900aa5589864872340479A8Dd2DB2286"
+    "address": "0x49D52054900aa5589864872340479A8Dd2DB2286",
+    "building_color": "#2ba4d3"
   },
   {
     "metadata": {
@@ -15372,7 +15816,8 @@
     },
     "id": "444",
     "tokenURI": "ipfs://QmZfeEuHym84ixNUs7K98apvTkidFBLajtbvP7Lo6cjF3s",
-    "address": "0xE508Ad21a1f13E7E41272F28a1fc5D1D3B8b1EDe"
+    "address": "0xE508Ad21a1f13E7E41272F28a1fc5D1D3B8b1EDe",
+    "building_color": "#00a3a2"
   },
   {
     "metadata": {
@@ -15405,7 +15850,8 @@
     },
     "id": "445",
     "tokenURI": "ipfs://QmUFhnPnNVbFgjPe28Yv92NwYHT7bAT4313yPDNYmesHYT",
-    "address": "0xE22ce01531BBE7d01B76b0A55F4cf38038Ec3539"
+    "address": "0xE22ce01531BBE7d01B76b0A55F4cf38038Ec3539",
+    "building_color": "#f9e701"
   },
   {
     "metadata": {
@@ -15438,7 +15884,8 @@
     },
     "id": "446",
     "tokenURI": "ipfs://QmXjSUkQuLqGPmv6JDJU6rfpyfUsKopfCPpRGV1emziHTa",
-    "address": "0x2e972c2629DD9A8D558fdC78100cFfDc43c7c24b"
+    "address": "0x2e972c2629DD9A8D558fdC78100cFfDc43c7c24b",
+    "building_color": "#e7105e"
   },
   {
     "metadata": {
@@ -15471,7 +15918,8 @@
     },
     "id": "447",
     "tokenURI": "ipfs://QmSPkpj67xBCvqJYgtPMjCnPRrtbG6P8i6Z1uCx8gZpq1W",
-    "address": "0xf53946FA55D6D87354E47637A23487174A3B8A38"
+    "address": "0xf53946FA55D6D87354E47637A23487174A3B8A38",
+    "building_color": "#f29919"
   },
   {
     "metadata": {
@@ -15508,7 +15956,8 @@
     },
     "id": "448",
     "tokenURI": "ipfs://QmSdvohg1smmK4S377mL6hW4jCNcBMMvArcgPSDVSRc8tw",
-    "address": "0x01547Eb7593cD5e7Ed3Bc24d982917d5442DCe14"
+    "address": "0x01547Eb7593cD5e7Ed3Bc24d982917d5442DCe14",
+    "building_color": "#ec6a2e"
   },
   {
     "metadata": {
@@ -15545,7 +15994,8 @@
     },
     "id": "449",
     "tokenURI": "ipfs://QmYoV8HkCj6w95Z5DqexE985wyEMmhxPituvqUszqG1iNM",
-    "address": "0xdA112159Ba58Bd2E694f1949fB3fcB4c2BA9e8fE"
+    "address": "0xdA112159Ba58Bd2E694f1949fB3fcB4c2BA9e8fE",
+    "building_color": "#f05189"
   },
   {
     "metadata": {
@@ -15582,7 +16032,8 @@
     },
     "id": "450",
     "tokenURI": "ipfs://QmNbbtmCJhskyfhD4YPHeoKAWDpjqKhcyq1uohvXS7icbD",
-    "address": "0xB3317D18EB9f768bc3795d5a68306848D7BEd31B"
+    "address": "0xB3317D18EB9f768bc3795d5a68306848D7BEd31B",
+    "building_color": "#de4b91"
   },
   {
     "metadata": {
@@ -15619,7 +16070,8 @@
     },
     "id": "451",
     "tokenURI": "ipfs://QmcJ17zin4cbiwsqJ8cPXEWxMRuRCoP9Lruaz5xJoF1Pvm",
-    "address": "0x6B24b2Fd0A5854a01bBA14cb6bf50428f7325d1a"
+    "address": "0x6B24b2Fd0A5854a01bBA14cb6bf50428f7325d1a",
+    "building_color": "#e7df3c"
   },
   {
     "metadata": {
@@ -15656,6 +16108,7 @@
     },
     "id": "452",
     "tokenURI": "ipfs://QmNdsG2KeenoxnuFJWPTkSnrzV9SxfqsbYep5XZ6wuUqu7",
-    "address": "0x89682E3cD362b05DeAcec71d10DED865Ba3a4440"
+    "address": "0x89682E3cD362b05DeAcec71d10DED865Ba3a4440",
+    "building_color": "#3bbce3"
   }
 ]
