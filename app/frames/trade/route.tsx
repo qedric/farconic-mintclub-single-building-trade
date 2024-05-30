@@ -134,7 +134,8 @@ const handleRequest = frames(async (ctx) => {
             }
         }
 
-        const estimation = await estimate(building.address, qty, isSell)
+        //const estimation = await estimate(building.address, qty, isSell)
+        const estimation = BigInt(1)
 
         return {
             image: (
