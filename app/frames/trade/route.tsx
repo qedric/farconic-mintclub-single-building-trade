@@ -85,9 +85,9 @@ const handleRequest = frames(async (ctx) => {
             if (balance < qty) {
                 return {
                     image: (
-                        <div tw="flex flex-col w-3/4 mx-auto text-left">
-                            <p>{`You don't have enough ${building.metadata.name} cards!`}</p>
-                            <p>Your balance:<span tw="ml-5">{ balance }</span></p>
+                        <div tw="flex flex-col w-3/4 mx-auto items-center justify-center text-center">
+                            <h1 tw="text-5xl">{`You don't have enough ${building.metadata.name} cards!`}</h1>
+                            <h2 tw="text-4xl">Your balance:<span tw="ml-5">{ balance.toString() }</span></h2>
                         </div>
                     ),
                     imageOptions: {
@@ -126,7 +126,7 @@ const handleRequest = frames(async (ctx) => {
                         <Button action="tx" target={{ query: { contractAddress: building.address, approve:true, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusApprove">
                             Approve Contract
                         </Button>,
-                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/" }}>
                             Back
                         </Button>
                     ]
@@ -134,8 +134,7 @@ const handleRequest = frames(async (ctx) => {
             }
         }
 
-        //const estimation = await estimate(building.address, qty, isSell)
-        const estimation = BigInt(1)
+        const estimation = await estimate(building.address, qty, isSell)
 
         return {
             image: (
