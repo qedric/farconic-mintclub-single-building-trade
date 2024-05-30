@@ -179,7 +179,11 @@ export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigi
         throw new Error("No message")
     }
 
-    const url = (ctx as any).request.url
+    // Clone the request object to avoid mutating it
+    const clonedRequest = (ctx as any).request.clone()
+
+    // Ensure the cloned request's URL is accessible
+    const url = clonedRequest.url
 
     if (url) {
 
