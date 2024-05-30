@@ -1,31 +1,29 @@
 /* eslint-disable react/jsx-key, @next/next/no-img-element, jsx-a11y/alt-text */
 import { Button } from "frames.js/next"
 import { frames } from "../frames"
-import { NFT, getNFTBalance, getTransactionReceipt } from '@/app/utils'
+import { NFT, getNFTBalance } from '@/app/utils'
 import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 import { getAddressesForFid } from "frames.js"
 import { ErrorFrame } from "@/app/components/Error"
 import { baseSepolia } from "viem/chains"
 
-const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
-    const [estimation, royalty] = isSell
-    ? await mintclub
-        .network('basesepolia')
-        .token(tokenAddress)
-        .getSellEstimation(amount)
-    : await mintclub
-        .network('basesepolia')
-        .token(tokenAddress)
-        .getBuyEstimation(amount)
-    console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
-    console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
-    return estimation
-}
-
 const handleRequest = frames(async (ctx) => {
 
-    console.log('handleRequest called')
+    const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
+        const [estimation, royalty] = isSell
+        ? await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getSellEstimation(amount)
+        : await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getBuyEstimation(amount)
+        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
+        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+        return estimation
+    }
 
     const fid = ctx.message?.requesterFid
     if (!fid) {
