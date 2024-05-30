@@ -1,6 +1,8 @@
 import { mintclub } from 'mint.club-v2-sdk'
 import mc_building_abi from './data/mc_building_abi.json'
 import buildings from '@/app/data/buildings.json'
+import { ethers } from 'ethers'
+import { FramesMiddleware } from "frames.js/types"
 
 const favBuildingNames: string[] = [
     "Eiffel Tower",
@@ -37,6 +39,7 @@ export interface NFT {
     metadata: Metadata;
     id: string;
     tokenURI: string;
+    building_color: string;
     address: string;
 }
 
@@ -167,3 +170,57 @@ export const getRandomBuildingAmongFavourites = (excludeName?: string): NFT => {
 }
 
 export const getFavouriteBuildings = () => buildings.filter((b) => favBuildingNames.includes(b.metadata.name)) as NFT[]
+
+export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigint}> = async (
+    ctx,
+    next
+) => {
+    if (!(ctx as any).message) {
+        throw new Error("No message")
+    }
+
+    const url = (ctx as any).request.url
+
+    if (url) {
+
+        // Create a URL object to work with searchParams
+        const requestUrl = new URL(url)
+        const searchParams = requestUrl.searchParams
+        const buildingParam = searchParams.get('building')
+        const qtyParam = searchParams.get('qty')
+        const isSellParam = searchParams.get('isSell')
+
+        let tokenAddress:`0x${string}`
+
+        if (buildingParam && qtyParam && isSellParam) {
+            try {
+                const buildingObj = JSON.parse(buildingParam)
+                tokenAddress = buildingObj.address
+            } catch (e) {
+                throw e
+            }
+        } else {
+            throw new Error('missing parameters in URL searchParams')
+        }
+
+        const amount = BigInt(qtyParam) || 1n
+        const isSell = isSellParam === 'true'
+
+        const [estimation, royalty] = isSell
+        ? await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getSellEstimation(amount)
+        : await mintclub
+            .network('basesepolia')
+            .token(tokenAddress)
+            .getBuyEstimation(amount)
+        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
+        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+
+        return next({ priceEstimate: estimation })
+
+    } else {
+        throw new Error('Request URL is not defined')
+    }
+}

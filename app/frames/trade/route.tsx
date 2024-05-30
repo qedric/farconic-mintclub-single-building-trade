@@ -7,23 +7,9 @@ import { ethers } from 'ethers'
 import { getAddressesForFid } from "frames.js"
 import { ErrorFrame } from "@/app/components/Error"
 import { baseSepolia } from "viem/chains"
+import { estimatePriceMiddleware } from '@/app/utils'
 
 const handleRequest = frames(async (ctx) => {
-
-    const estimate = async (tokenAddress:string, amount:bigint, isSell:boolean) => {
-        const [estimation, royalty] = isSell
-        ? await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getSellEstimation(amount)
-        : await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getBuyEstimation(amount)
-        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
-        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
-        return estimation
-    }
 
     const fid = ctx.message?.requesterFid
     if (!fid) {
@@ -39,6 +25,11 @@ const handleRequest = frames(async (ctx) => {
     }
     
     if (ctx.searchParams?.building) {
+
+        const estimation = BigInt(ctx.priceEstimate)
+        if (!estimation) {
+            return ErrorFrame("Error: can't find price estimate")
+        }
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
@@ -134,8 +125,6 @@ const handleRequest = frames(async (ctx) => {
             }
         }
 
-        const estimation = await estimate(building.address, qty, isSell)
-
         return {
             image: (
                 <div tw="flex flex-col justify-center items-center w-full h-full">
@@ -168,6 +157,9 @@ const handleRequest = frames(async (ctx) => {
     } else {
         return ErrorFrame("Error: can't find building")
     }
+},
+{
+  middleware: [estimatePriceMiddleware]
 })
 
 export const GET = handleRequest
