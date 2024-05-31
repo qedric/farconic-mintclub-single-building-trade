@@ -5,7 +5,7 @@ import { FramesHandlerFunctionReturnType } from "frames.js/types"
 export const ErrorFrame = async (message: string, post_button_label:string | null=null, post_button_query: string | null=null):Promise<FramesHandlerFunctionReturnType<any>> =>({
     image:  (
         <div tw="px-5 mx-auto flex flex-col items-center justify-center">
-            <p tw="text-center">{ message }</p>
+            <p tw="text-center text-5xl">{ message }</p>
         </div>
     ),
     imageOptions: {

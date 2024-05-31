@@ -33,47 +33,15 @@ const handleRequest = frames(async (ctx) => {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
-        const details = await mintclub.network('basesepolia').token(building.address).getDetail()
-
-        console.log('details', details)
-
-        // If ctx.message?.inputText cannot be converted to a bigint, or if it is greater than max supply minus current supply, then check ctx.searchParams.qty. 
-        // If that is also not a valid bigint or is larget than details.currentSupply, then default to 1
-        let qty: bigint = BigInt(1)
-        if (ctx.message?.inputText) {
-            try {
-                const inputQty = BigInt(ctx.message.inputText)
-                if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
-                    qty = inputQty
-                } else {
-                    qty = details.info.maxSupply - details.info.currentSupply
-                }
-            } catch (error) {
-                // qty stays as 1, carry on
-            }
-        } else if (ctx.searchParams.qty) {
-            try {
-                const inputQty = BigInt(ctx.searchParams.qty)
-                if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
-                    qty = inputQty
-                } else {
-                    qty = details.info.maxSupply - details.info.currentSupply
-                }
-            } catch (error) {
-                // qty stays as 1, carry on
-            }
-        }
-        const isSell:boolean = ctx.searchParams.isSell == 'true'
-
-        console.log('building', building)
-        console.log(`${isSell ? 'Selling' : 'Buying'} ${qty} of ${building.metadata.name}`)
+        //console.log('building', building)
+        console.log(`${ctx.isSell ? 'Selling' : 'Buying'} ${ctx.qty} ${building.metadata.name}`)
        
-        if (isSell) {
+        if (ctx.isSell) {
 
             // check that the connected address has balance to sell
             const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), addresses[0].address) as bigint)
             console.log(`Balance: ${balance}`)
-            if (balance < qty) {
+            if (balance < ctx.qty) {
                 return {
                     image: (
                         <div tw="flex flex-col w-3/4 mx-auto items-center justify-center text-center">
@@ -128,7 +96,7 @@ const handleRequest = frames(async (ctx) => {
         return {
             image: (
                 <div tw="flex flex-col justify-center items-center w-full h-full">
-                    <h1 tw="text-5xl">{ (isSell ? 'Sell' : 'Buy')}{` ${qty}`}</h1>
+                    <h1 tw="text-5xl">{ (ctx.isSell ? 'Sell' : 'Buy')}{` ${ctx.qty}`}</h1>
                     <div tw="flex shadow-xl">
                         <img width="900" src={building.metadata.image.replace("ipfs://", `${process.env.NEXT_PUBLIC_GATEWAY_URL}`) as string} />
                     </div>
@@ -145,10 +113,10 @@ const handleRequest = frames(async (ctx) => {
                 <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/card" }}>
                     Back
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: isSell }, pathname: "/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: ctx.qty.toString(), isSell: ctx.isSell }, pathname: "/trade" }}>
                     Refresh Price
                 </Button>,
-                <Button action="tx" target={{ query: { contractAddress: building.address, qty: qty.toString(), estimation:estimation.toString(), isSell:isSell, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
+                <Button action="tx" target={{ query: { contractAddress: building.address, qty: ctx.qty.toString(), estimation:estimation.toString(), isSell:ctx.isSell, userAddress:addresses[0].address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
                     Confirm
                 </Button>
             ],

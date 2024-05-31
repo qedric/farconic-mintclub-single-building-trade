@@ -171,60 +171,60 @@ export const getRandomBuildingAmongFavourites = (excludeName?: string): NFT => {
 
 export const getFavouriteBuildings = () => buildings.filter((b) => favBuildingNames.includes(b.metadata.name)) as NFT[]
 
-export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigint}> = async (
-    ctx,
+export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigint, qty: bigint, isSell: boolean, details: object}> = async (
+    ctx:any,
     next
 ) => {
-    if (!(ctx as any).message) {
+    if (!ctx.message) {
         throw new Error("No message")
     }
 
-    // Clone the request object to avoid mutating it
-    const clonedRequest = (ctx as any).request.clone()
-
-    // Ensure the cloned request's URL is accessible
-    const url = clonedRequest.url
-
-    if (url) {
-
-        // Create a URL object to work with searchParams
-        const requestUrl = new URL(url)
-        const searchParams = requestUrl.searchParams
-        const buildingParam = searchParams.get('building')
-        const qtyParam = searchParams.get('qty')
-        const isSellParam = searchParams.get('isSell')
-
-        let tokenAddress:`0x${string}`
-
-        if (buildingParam) {
-            try {
-                const buildingObj = JSON.parse(buildingParam)
-                tokenAddress = buildingObj.address
-            } catch (e) {
-                throw e
-            }
-        } else {
-            throw new Error('missing building in URL searchParams')
-        }
-
-        const amount = qtyParam ? BigInt(qtyParam) : 1n
-        const isSell = isSellParam === 'true'
-
-        const [estimation, royalty] = isSell
-        ? await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getSellEstimation(amount)
-        : await mintclub
-            .network('basesepolia')
-            .token(tokenAddress)
-            .getBuyEstimation(amount)
-        console.log(`Estimate for ${amount}: ${ethers.formatUnits(estimation, 18)} ETH`)
-        console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
-
-        return next({ priceEstimate: estimation })
-
-    } else {
-        throw new Error('Request URL is not defined')
+    if (!ctx.searchParams.building) {
+        throw new Error("No building in searchParams")
     }
+
+    const building:NFT = JSON.parse(ctx.searchParams.building)
+    const details = await mintclub.network('basesepolia').token(building.address).getDetail()
+
+    let qty: bigint = BigInt(1)
+    if (ctx.message.inputText) {
+        try {
+            const inputQty = BigInt(ctx.message.inputText)
+            if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
+                qty = inputQty
+            } else {
+                qty = details.info.maxSupply - details.info.currentSupply
+            }
+        } catch (error) {
+            // qty stays as 1, carry on
+        }
+    } else if (ctx.searchParams.qty) {
+        try {
+            const inputQty = BigInt(ctx.searchParams.qty)
+            if (inputQty <= details.info.maxSupply - details.info.currentSupply) {
+                qty = inputQty
+            } else {
+                qty = details.info.maxSupply - details.info.currentSupply
+            }
+        } catch (error) {
+            // qty stays as 1, carry on
+        }
+    }
+
+    const isSell:boolean = ctx.searchParams.isSell === 'true'
+
+    const [estimation, royalty] = isSell
+    ? await mintclub
+        .network('basesepolia')
+        .token(building.address)
+        .getSellEstimation(qty)
+    : await mintclub
+        .network('basesepolia')
+        .token(building.address)
+        .getBuyEstimation(qty)
+    console.log(`Estimate for ${qty} ${building.metadata.name}: ${ethers.formatUnits(estimation, 18)} ETH`)
+    console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+
+    return next({ priceEstimate: estimation, qty, isSell, details })
+
 }
