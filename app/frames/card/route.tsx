@@ -12,7 +12,7 @@ const handleRequest = frames(async (ctx) => {
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
         return {
-            image: await CardImage( building, undefined, undefined ),
+            image: await CardImage( building, undefined, undefined, undefined ),
             imageOptions: {
                 aspectRatio: "1:1",
             },

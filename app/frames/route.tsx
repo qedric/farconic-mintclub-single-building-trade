@@ -13,7 +13,7 @@ const handleRequest = frames(async (ctx) => {
     const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
     return {
-        image: await CardImage( building, userData?.profileImage, userData?.username ),
+        image: await CardImage( building, userData?.profileImage, userData?.username, undefined ),
         imageOptions: {
             aspectRatio: "1:1"
         },

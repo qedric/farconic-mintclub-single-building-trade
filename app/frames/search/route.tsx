@@ -26,7 +26,7 @@ const handleRequest = frames(async (ctx: any) => {
         }
 
         return {
-            image: await CardImage( searchResults[page-1], undefined, undefined),
+            image: await CardImage( searchResults[page-1], undefined, undefined, undefined),
             imageOptions: {
                 aspectRatio: "1:1",
             },
