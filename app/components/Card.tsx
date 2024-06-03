@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text */
-import { NFT, getOpenseaData, getDetail } from '@/app/utils'
 import { ethers } from 'ethers'
+import { getOpenseaData, getDetail, NFT } from '@/app/utils'
 
-export const CardImage = async ( building:NFT, userImg:string | undefined, userName:string | undefined, scale:string | undefined ) => {
+export const CardImage = async ( 
+    building:NFT,
+    userImg:string | undefined,
+    userName:string | undefined,
+    scale:string | undefined,
+) => {
 
     const [openseaData, detail] = await Promise.all([
         getOpenseaData((building as NFT).address),
@@ -32,7 +37,7 @@ export const CardImage = async ( building:NFT, userImg:string | undefined, userN
         <div tw="flex w-full h-full items-center justify-center" style={{ transform: scaleTransform, backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
             <div tw="flex flex-wrap relative w-[53vw] text-white p-0 m-0">
                 <div tw={ `flex flex-col w-full ${ containerStyle } h-[64.5vw]` }>
-                    <div tw="flex flex-1 text-[24px] w-[48vw] items-center justify-between">
+                    <div tw="flex flex-1 text-[24px] w-[48vw] mb-2 items-end justify-between">
                         <div>{ building.metadata.attributes.find(attr => attr.trait_type == 'Country')?.value }</div>
                         <div>{ building.metadata.attributes.find(attr => attr.trait_type == 'City')?.value }</div>
                     </div>
@@ -53,8 +58,12 @@ export const CardImage = async ( building:NFT, userImg:string | undefined, userN
                 </div>
             </div>
             { userImg && 
-                <div tw="absolute top-2 w-full flex flex-col justify-center items-center z-1">
-                    <img src={userImg} tw="w-[9.75vw] [9.75vw] rounded-full" />
+                <div tw="absolute top-[37px] w-full flex flex-col justify-center items-center">
+                    {/* <img src={userImg} tw="w-[8.75vw] [8.75vw] rounded-full" /> */}
+                    <div tw="flex flex-col w-[8.75vw] h-[8.75vw] rounded-full">
+                        <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
+                        <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
+                    </div>
                     <div tw="flex lowercase mt-1 text-[24px] text-white">@{ userName }</div>
                 </div>
             }
