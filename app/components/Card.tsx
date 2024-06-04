@@ -59,11 +59,11 @@ export const CardImage = async (
             </div>
             { userImg && 
                 <div tw="absolute top-[37px] w-full flex flex-col justify-center items-center">
-                    {/* <img src={userImg} tw="w-[8.75vw] [8.75vw] rounded-full" /> */}
-                    <div tw="flex flex-col w-[8.75vw] h-[8.75vw] rounded-full">
+                    <img src={userImg} tw="w-[8.75vw] [8.75vw] rounded-full" />
+                    {/* <div tw="flex flex-col w-[8.75vw] h-[8.75vw] rounded-full">
                         <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
                         <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
-                    </div>
+                    </div> */}
                     <div tw="flex lowercase mt-1 text-[24px] text-white">@{ userName }</div>
                 </div>
             }

@@ -3,10 +3,13 @@ import { Button } from "frames.js/next"
 import { FramesHandlerFunctionReturnType } from "frames.js/types"
 
 export const ErrorFrame = async (message: string, post_button_label:string | null=null, post_button_query: string | null=null):Promise<FramesHandlerFunctionReturnType<any>> =>({
-    image:  (
-        <div tw="px-5 mx-auto flex flex-col items-center justify-center">
-            <p tw="text-center text-5xl">{ message }</p>
-        </div>
+    image: (
+        <div tw="flex w-full h-full" style={{ backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmY2ayTRPEwBMZkWa5uvfgHn1nnSFAQgCUvANa8Z3PENZW)`}}>
+            <div tw="flex flex-col relative bottom-20 w-full h-full items-center justify-center">
+                <h1 tw="relative top-[16%] text-7xl">Error</h1>
+                <h2 tw="relative px-20 text-center bottom-[20%] flex text-4xl">{ message }</h2>
+            </div>
+        </div> 
     ),
     imageOptions: {
         aspectRatio: "1:1",

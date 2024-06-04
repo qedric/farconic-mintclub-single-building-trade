@@ -30,7 +30,7 @@ export const GET = imagesRoute(async (jsx) => {
 
 function Scaffold({ children }: { children: React.ReactNode }) {
   return (
-    <div tw="flex items-stretch relative w-full h-screen overflow-hidden" style={{ backgroundColor: '#EBE7DE'}}>
+    <div tw="flex relative w-full h-screen overflow-hidden">
       {children}
     </div>
   )
