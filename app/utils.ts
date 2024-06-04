@@ -171,6 +171,22 @@ export const getRandomBuildingAmongFavourites = (excludeName?: string): NFT => {
 
 export const getFavouriteBuildings = () => buildings.filter((b) => favBuildingNames.includes(b.metadata.name)) as NFT[]
 
+export const estimatePrice = async (buildingAddress: `0x${string}`, qty: bigint, isSell: boolean) => {
+    const [priceEstimate, royalty] = isSell
+    ? await mintclub
+        .network('basesepolia')
+        .token(buildingAddress)
+        .getSellEstimation(qty)
+    : await mintclub
+        .network('basesepolia')
+        .token(buildingAddress)
+        .getBuyEstimation(qty)
+    console.log(`Estimate for ${qty} of ${buildingAddress}: ${ethers.formatUnits(priceEstimate, 18)} ETH`)
+    console.log('Royalties paid:', ethers.formatUnits(royalty.toString(), 18).toString())
+
+    return { priceEstimate }
+}
+
 export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigint, qty: bigint, isSell: boolean, details: object}> = async (
     ctx:any,
     next

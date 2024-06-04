@@ -13,13 +13,13 @@ const handleRequest = frames(async (ctx) => {
     const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
     return {
-        image: await CardImage( building, userData?.profileImage, userData?.username, undefined ),
+        image: await CardImage( building, userData?.profileImage, userData?.username, undefined),
         imageOptions: {
             aspectRatio: "1:1"
         },
         textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
-            <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
+            <Button action="tx" target={{ query: { contractAddress: building.address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
                 Buy
             </Button>,
             <Button action="post" target="/search">
