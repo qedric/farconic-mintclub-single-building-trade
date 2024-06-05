@@ -22,9 +22,10 @@ const handleRequest = frames(async (ctx) => {
         } catch (e) {
             console.log('error getting receipt:', e)
             return ErrorFrame(
-                "Error getting transaction receipt",
+                "Transaction Receipt Not Found",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" }),
+                "Refresh and see if that helps. If not, let us know!"
             )
         }
 
@@ -47,9 +48,10 @@ const handleRequest = frames(async (ctx) => {
 
         if (!approveEventLog) {
             return ErrorFrame(
-                "Error: can't find approve event",
+                "Approve Event Not Found",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" }),
+                "A refresh might do the trick.  If not, try again from the start. If the issue persists, let us know!"
             )
         }
 
@@ -61,16 +63,19 @@ const handleRequest = frames(async (ctx) => {
 
             if (!building) {
                 return ErrorFrame(
-                    "Error: can't find building",
+                    "Building Not Found",
                     'Refresh',
-                    JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" })
+                    JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" }),
+                    "A refresh might do the trick.  If not, try again from the start. If the issue persists, let us know!"
                 )
             }
 
             return {
                 image: (
-                    <div tw="flex items-center justify-center mx-auto">
-                        <h1>Transaction Submitted</h1>
+                    <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
+                        <div tw="flex flex-col absolute px-20 justify-center items-center">
+                            <h1 tw="text-[50px] mb-5 leading-6">Transaction Submitted</h1>                                
+                        </div>
                     </div>
                 ),
                 imageOptions: {
@@ -107,7 +112,7 @@ const handleRequest = frames(async (ctx) => {
             }
         }
     } else {
-        return ErrorFrame("Error: can't find transaction")
+        return ErrorFrame("Transaction Not Found", null, null, "A fresh start might do the trick. If the problem persists, let us know!")
     }
 })
 

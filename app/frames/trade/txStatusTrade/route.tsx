@@ -27,9 +27,10 @@ const handleRequest = frames(async (ctx) => {
         } catch (e) {
             console.log(e)
             return ErrorFrame(
-                "Error getting transaction receipt",
+                "Transaction Receipt Not Found",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" }),
+                "Refresh and see if that helps. If not, let us know!"
             )
         }
 
@@ -51,9 +52,10 @@ const handleRequest = frames(async (ctx) => {
 
         if (!mintOrBurnEvent) {
             return ErrorFrame(
-                "Error: can't find the transaction details",
+                "Transaction Details Not Found",
                 'Refresh',
-                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" })
+                JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" }),
+                "Refresh and see if that helps. If not, let us know!"
             )
         }
 
@@ -66,19 +68,20 @@ const handleRequest = frames(async (ctx) => {
 
             if (!building) {
                 return ErrorFrame(
-                    "Error: can't find building",
+                    "Building Not Found",
                     'Refresh',
-                    JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" })
+                    JSON.stringify({ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" }),
+                    "A refresh might do the trick.  If not, try again from the start. If the issue persists, let us know!"
                 )
             }
 
             const addThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName : `the ${bulidingName}`
             const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(0, 3) : bulidingName
-            const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`}`
+            const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards!` : `${addThe(building.metadata.name)} card!`}`
 
             return {
                 image: (
-                    <div tw="flex w-full h-full" style={{ backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmRJx4BNegoXtzsZ64zqFwxqoXUFRZAmAQmG6ToLxU2SdV)`}}>
+                    <div tw="flex w-full h-full" style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmRJx4BNegoXtzsZ64zqFwxqoXUFRZAmAQmG6ToLxU2SdV)`}}>
                         <div tw="flex flex-col relative bottom-[40px] w-full h-full items-center justify-center">
                             <h1 tw="relative top-[18%] text-[60px]">{ isSell ? 'SOLD!' : 'CONGRATULATIONS!' }</h1>
                             { await CardImage(building as NFT, undefined, undefined, '0.50') }
@@ -130,7 +133,7 @@ const handleRequest = frames(async (ctx) => {
             }
         }
     } else {
-        return ErrorFrame("Error: can't find transaction")
+        return ErrorFrame("Transaction Not Found", null, null, "A fresh start might do the trick. If the problem persists, let us know!")
     }
 })
 

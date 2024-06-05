@@ -2,14 +2,15 @@
 import { Button } from "frames.js/next"
 import { FramesHandlerFunctionReturnType } from "frames.js/types"
 
-export const ErrorFrame = async (message: string, post_button_label:string | null=null, post_button_query: string | null=null):Promise<FramesHandlerFunctionReturnType<any>> =>({
+export const ErrorFrame = async (message: string, post_button_label:string | null=null, post_button_query: string | null=null, suggestion: string | undefined=undefined):Promise<FramesHandlerFunctionReturnType<any>> =>({
     image: (
-        <div tw="flex w-full h-full" style={{ backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmY2ayTRPEwBMZkWa5uvfgHn1nnSFAQgCUvANa8Z3PENZW)`}}>
-            <div tw="flex flex-col relative bottom-20 w-full h-full items-center justify-center">
-                <h1 tw="relative top-[16%] text-7xl">Error</h1>
-                <h2 tw="relative px-20 text-center bottom-[20%] flex text-4xl">{ message }</h2>
+        <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
+            <div tw="flex flex-col absolute px-20 justify-center items-center">
+                <h1 tw="text-[50px]">Error:</h1>
+                <h1 tw="text-[50px] mb-5 leading-6">{ message }</h1>
+                { suggestion && <p tw="text-[30px] leading-6">{ suggestion }</p>}                          
             </div>
-        </div> 
+        </div>
     ),
     imageOptions: {
         aspectRatio: "1:1",
