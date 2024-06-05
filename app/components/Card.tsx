@@ -4,9 +4,9 @@ import { getOpenseaData, getDetail, NFT } from '@/app/utils'
 
 export const CardImage = async ( 
     building:NFT,
-    userImg:string | undefined,
-    userName:string | undefined,
-    scale:string | undefined,
+    userImg:string | undefined = undefined,
+    userName:string | undefined = undefined,
+    scale:string | undefined = undefined,
 ) => {
 
     const [openseaData, detail] = await Promise.all([
