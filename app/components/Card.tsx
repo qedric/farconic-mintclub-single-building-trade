@@ -49,11 +49,11 @@ export const CardImage = async (
                     </div>
                 </div>
                 <div tw="mt-4 w-full flex justify-between">
-                    <InfoDisplay label="Current Price:" value={ `${Math.round(parseFloat(ethers.formatEther(detail.info.priceForNextMint))*1e4) / 1e4} ETH` } />
+                    <InfoDisplay label="Current Price:" value={ `${Math.round(parseFloat(ethers.formatEther(detail.info.priceForNextMint))*1e6) / 1e6} ETH` } />
                     <InfoDisplay label="Supply:" value={ detail.info.currentSupply.toString() } />
                 </div>
                 <div tw="mt-2 w-full flex justify-between">
-                    <InfoDisplay label="Liquidity:" value={ `${Math.round(parseFloat(ethers.formatEther(detail.info.reserveBalance))*1e4) / 1e4} ETH` } />
+                    <InfoDisplay label="Liquidity:" value={ `${Math.round(parseFloat(ethers.formatEther(detail.info.reserveBalance))*1e6) / 1e6} ETH` } />
                     <InfoDisplay label="Holders:" value={ openseaData.owners.length } />
                 </div>
             </div>
