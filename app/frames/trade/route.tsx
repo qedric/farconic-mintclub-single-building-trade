@@ -174,6 +174,9 @@ const handleRequest = frames(async (ctx) => {
                 </Button>
             ],
             textInput: 'Set Quantity & Refresh Price',
+            headers: {  
+                "Cache-Control": "max-age=0", 
+            },
         }
     } else {
         return ErrorFrame(

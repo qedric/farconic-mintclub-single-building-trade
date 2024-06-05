@@ -88,7 +88,10 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
                         My Cards / Learn more
                     </Button>
-                ]
+                ],
+                headers: {  
+                    "Cache-Control": "max-age=0", 
+                },
             }
         } else {
             return {
@@ -113,7 +116,10 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="post" target={{ query: { transactionId: txId }, pathname: "/trade/txStatusApprove" }}>
                         Refresh
                     </Button>
-                ]
+                ],
+                headers: {  
+                    "Cache-Control": "max-age=0", 
+                },
             }
         }
     } else {

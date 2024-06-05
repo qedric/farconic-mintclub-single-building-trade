@@ -31,7 +31,10 @@ const handleRequest = frames(async (ctx) => {
             <Button action="link" target="https://farconic.xyz">
                 Farconic App
             </Button>
-        ]
+        ],
+        headers: {  
+            "Cache-Control": "max-age=0", 
+        }
     }
 })
 

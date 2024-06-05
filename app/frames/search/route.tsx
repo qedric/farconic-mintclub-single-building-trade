@@ -106,7 +106,10 @@ const handleRequest = frames(async (ctx: any) => {
                             <Button action="post" target="/search">
                                 Search
                             </Button>
-                        ]
+                        ],
+                        headers: {  
+                            "Cache-Control": "max-age=0", 
+                        },
         }
     }
 
@@ -138,7 +141,10 @@ const handleRequest = frames(async (ctx: any) => {
             <Button action="link" target="https://farconic.xyz">
                 Farconic App
             </Button>
-        ]
+        ],
+        headers: {  
+            "Cache-Control": "max-age=0", 
+        },
     }
 })
 

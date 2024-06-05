@@ -109,7 +109,10 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="link" target={url}>
                         View tx
                     </Button>,
-                ]
+                ],
+                headers: {  
+                    "Cache-Control": "max-age=0", 
+                },
             }
         } else {
             return {
@@ -134,7 +137,10 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="post" target={{ query: { transactionId: txId }, pathname: "/trade/txStatusTrade" }}>
                         Refresh
                     </Button>
-                ]
+                ],
+                headers: {  
+                    "Cache-Control": "max-age=0", 
+                },
             }
         }
     } else {
