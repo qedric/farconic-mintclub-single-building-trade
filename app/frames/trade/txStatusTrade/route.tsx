@@ -114,7 +114,12 @@ const handleRequest = frames(async (ctx) => {
         } else {
             return {
                 image: (
-                    <div>{`transaction status: ${receipt.status}`}</div>
+                    <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
+                        <div tw="flex flex-col absolute px-20 justify-center items-center">
+                            <h1 tw="text-[50px] mb-5 leading-6">Transaction Status:</h1>
+                            <p tw="text-[30px] leading-6">{receipt.status}</p>                            
+                        </div>
+                    </div>
                 ),
                 imageOptions: {
                     aspectRatio: "1:1",
