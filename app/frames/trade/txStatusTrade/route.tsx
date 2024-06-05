@@ -3,13 +3,13 @@ import { Button } from "frames.js/next"
 import { frames } from "../../frames"
 import { getUserDataForFid } from 'frames.js'
 import { getTransactionReceipt, NFT } from '@/app/utils'
-import buildings from '@/app/data/buildings.json'
 import { decodeEventLog } from 'viem'
 import { baseSepolia } from "viem/chains"
-import abi from '@/app/data/mcv2bond_abi.json'
 import { getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ErrorFrame } from "@/app/components/Error"
 import { CardImage } from '@/app/components/Card'
+import abi from '@/app/data/mcv2bond_abi.json'
+import buildings from '@/app/data/buildings.json'
 
 const handleRequest = frames(async (ctx) => {
 
@@ -17,7 +17,7 @@ const handleRequest = frames(async (ctx) => {
 
     if (txId) {
 
-        console.log('transactionId', txId)
+        //console.log('transactionId', txId)
        
         const url = `${process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL}/${txId}`
         const bond_contract_address = getMintClubContractAddress('BOND', baseSepolia.id)
@@ -47,7 +47,7 @@ const handleRequest = frames(async (ctx) => {
 
         const isSell = mintOrBurnEvent?.eventName === 'Burn'
 
-        console.log('mintOrBurnEvent', mintOrBurnEvent)
+        //console.log('mintOrBurnEvent', mintOrBurnEvent)
 
         if (!mintOrBurnEvent) {
             return ErrorFrame(
@@ -72,47 +72,27 @@ const handleRequest = frames(async (ctx) => {
                 )
             }
 
-            const buildingName = building.metadata.name.toLowerCase().startsWith('the')
-                ? amount > BigInt(1)
-                    ? building.metadata.name.substring(0, 3).toUpperCase()
-                    : building.metadata.name.toUpperCase()
-                : isSell && amount == BigInt(1)
-                    ? `the ${building.metadata.name.toUpperCase()}`
-                    : building.metadata.name.toUpperCase()
-
-            const singleBuyString = `You've acquired ${buildingName} Card`
-            const multipleBuyString = `You've acquired ${amount} of ${buildingName} Cards`
-            const singleSellString = `You sold ${buildingName} Card`
-            const multipleSellString = `You sold ${amount} ${buildingName} Cards`
-
-            const successString = !isSell && amount == BigInt(1)
-                ? singleBuyString
-                : !isSell && amount > BigInt(1)
-                    ? multipleBuyString
-                    : isSell && amount == BigInt(1)
-                        ? singleSellString
-                        : isSell && amount > BigInt(1)
-                            ? multipleSellString
-                            : singleBuyString
-            
+            const addThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName : `the ${bulidingName}`
+            const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(0, 3) : bulidingName
+            const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`}`
 
             return {
                 image: (
                     <div tw="flex w-full h-full" style={{ backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmRJx4BNegoXtzsZ64zqFwxqoXUFRZAmAQmG6ToLxU2SdV)`}}>
-                        <div tw="flex flex-col relative bottom-20 w-full h-full items-center justify-center">
-                            <h1 tw="relative top-[16%] text-7xl">SUCCESS!</h1>
-                            { await CardImage(building as NFT, undefined, undefined, '0.6') }
+                        <div tw="flex flex-col relative bottom-[40px] w-full h-full items-center justify-center">
+                            <h1 tw="relative top-[18%] text-[60px]">{ isSell ? 'SOLD!' : 'CONGRATULATIONS!' }</h1>
+                            { await CardImage(building as NFT, undefined, undefined, '0.50') }
                             { userData && 
-                                <div tw="absolute top-[262px] w-full flex flex-col justify-center items-center">
-                                    <img src={userData.profileImage} tw="w-[5.25vw] [5.25vw] rounded-full" />
+                                <div tw="absolute top-[310px] w-full flex flex-col justify-center items-center">
+                                    <img src={userData.profileImage} tw="w-[4.55vw] [4.55vw] rounded-full" />
                                     {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
                                         <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
                                         <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
                                     </div> */}
-                                    <div tw="flex lowercase mt-1 text-[24px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
+                                    <div tw="flex lowercase text-[14px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
                                 </div>
                             }
-                            <h1 tw="relative px-20 text-center bottom-[20%] flex text-4xl">{ successString }</h1>
+                            <h1 tw="relative px-20 text-center bottom-[280px] flex text-[32px]">{ successString }</h1>
                         </div>
                     </div> 
                 ),
@@ -120,8 +100,8 @@ const handleRequest = frames(async (ctx) => {
                     aspectRatio: "1:1",
                 },
                 buttons: [
-                    <Button action="post" target="/">
-                        Reset
+                    <Button action="link" target={`https://warpcast.com/~/compose?text=I just ${isSell ? 'sold' : 'bought'} ${addThe(building.metadata.name)}!%0Ahttps://farconic-mintclub-building-trade.vercel.app/`}>
+                        {`🔄 Share`}
                     </Button>,
                     <Button action="link" target={url}>
                         View tx
