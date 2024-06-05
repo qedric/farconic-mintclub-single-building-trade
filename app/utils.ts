@@ -228,6 +228,11 @@ export const estimatePriceMiddleware: FramesMiddleware<any, {priceEstimate: bigi
     }
 
     const isSell:boolean = ctx.searchParams.isSell === 'true'
+    if (isSell && qty > details.info.currentSupply) {
+        qty = details.info.currentSupply
+    }
+
+    //console.log('estimating price for', qty, building.metadata.name, building.address)
 
     const [estimation, royalty] = isSell
     ? await mintclub
