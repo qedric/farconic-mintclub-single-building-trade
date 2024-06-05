@@ -3,9 +3,7 @@ import { Button } from "frames.js/next"
 import { frames } from "../frames"
 import { searchJsonArray, getFavouriteBuildings, getNFTBalance } from '@/app/utils'
 import { CardImage } from '@/app/components/Card'
-import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
-import { baseSepolia } from "viem/chains"
-import { ErrorFrame } from "@/app/components/Error"
+import { getUserDataForFid } from 'frames.js'
 import { error } from "frames.js/core"
 
 const handleRequest = frames(async (ctx: any) => {
