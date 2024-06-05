@@ -37,15 +37,17 @@ const handleRequest = frames(async (ctx: any) => {
             }
         }
 
+        const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
+
         const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), userAddress as `0x${string}` ) as bigint)
         console.log(`balance:`, balance)
 
         return {
-            image: await CardImage( searchResults[page-1], undefined, undefined, undefined),
+            image: await CardImage( searchResults[page-1], userData?.profileImage, userData?.username, undefined),
             imageOptions: {
                 aspectRatio: "1:1",
             },
-            textInput: "search, or enter quantity",
+            textInput: "Search, or Enter Quantity",
             buttons: searchResults.length == 1 // just one result
             ?   [
                     <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
@@ -54,17 +56,17 @@ const handleRequest = frames(async (ctx: any) => {
                     <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade/" } : "/" }>
                         { balance > 0 ? 'Sell' : 'Home' }
                     </Button>,
-                    <Button action="post" target="/search">
-                        Search
-                    </Button>,
                     <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
                         Random
+                    </Button>,
+                    <Button action="post" target="/search">
+                        Search
                     </Button>
                 ]
             :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                 ?   [
                         <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
-                            Trade
+                            { balance > 0 ? 'Trade' : 'Buy' }
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
                             Prev
@@ -72,8 +74,8 @@ const handleRequest = frames(async (ctx: any) => {
                         <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/search" }}>
                             Next
                         </Button>,
-                        <Button action="post" target={ ctx.searchParams?.backTarget || '/' }>
-                            Back
+                        <Button action="post" target="/search">
+                            Search
                         </Button>
                     ]
                 :   page > 1 && searchResults.length == page // multiple results and we are at the end
@@ -114,11 +116,9 @@ const handleRequest = frames(async (ctx: any) => {
     return { 
         image: (
             <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
-                <div tw="flex flex-col relative bottom-[80px] w-full h-fit items-center justify-center">
-                    <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
-                        <h1 tw="text-[50px] mb-5 leading-6">Search for a building</h1>
-                        <p tw="text-[30px] leading-6">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</p>
-                    </div>
+                <div tw="flex flex-col px-20 justify-center items-center">
+                    <h1 tw="text-[50px] mb-5 leading-6">Search for a building</h1>
+                    <p tw="text-[30px] text-center">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</p>
                 </div>
             </div>
         ),
@@ -127,9 +127,6 @@ const handleRequest = frames(async (ctx: any) => {
         },
         textInput: "search",
         buttons: [
-            <Button action="post" target="/search">
-                Search
-            </Button>,
             <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
                 Random
             </Button>,
@@ -137,7 +134,10 @@ const handleRequest = frames(async (ctx: any) => {
                 Home
             </Button>,
             <Button action="link" target="https://farconic.xyz">
-                Farconic App
+                App
+            </Button>,
+            <Button action="post" target="/search">
+                Search
             </Button>
         ],
         headers: {  
