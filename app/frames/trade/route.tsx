@@ -89,10 +89,10 @@ const handleRequest = frames(async (ctx) => {
                     <div tw="flex flex-col relative bottom-[80px] w-full h-fit items-center justify-center">
                         <h1 tw="absolute top-[180px] text-[36px]">{ `${ctx.isSell ? 'Sell' : 'Buy'} Preview` }</h1>
                         
-                        <div tw="flex relative -top-[40px] w-[600px] h-[600px] items-center justify-center" style={{ zIndex: '999', backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
+                        <div tw="flex relative -top-[40px] w-[600px] h-[600px] items-center justify-center" style={{ backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
                             <div tw="flex flex-wrap relative w-[26.5vw] text-white p-0 m-0">
                                 <div tw={ `flex flex-col relative w-full ${ containerStyle } h-[32.25vw]` }>
-                                    <div tw="flex flex-1 text-[24px] w-[24vw] mb-1 items-end justify-between">
+                                    <div tw="flex flex-1 text-[24px] w-[24vw] mb-1.5 items-end justify-between">
                                         <div tw="text-[8px]">{ building.metadata.attributes.find(attr => attr.trait_type == 'Country')?.value }</div>
                                         <div tw="text-[8px]">{ building.metadata.attributes.find(attr => attr.trait_type == 'City')?.value }</div>
                                     </div>
