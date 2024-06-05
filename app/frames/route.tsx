@@ -29,7 +29,7 @@ const handleRequest = frames(async (ctx) => {
                 Random
             </Button>,
             <Button action="link" target="https://farconic.xyz">
-                Farconic App
+                App
             </Button>
         ],
         headers: {  
