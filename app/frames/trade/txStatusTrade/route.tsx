@@ -18,7 +18,6 @@ const handleRequest = frames(async (ctx) => {
     if (txId) {
 
         //console.log('transactionId', txId)
-       
         const url = `${process.env.NEXT_PUBLIC_BLOCK_EXPLORER_URL}/${txId}`
         const bond_contract_address = getMintClubContractAddress('BOND', baseSepolia.id)
         let receipt
@@ -79,6 +78,12 @@ const handleRequest = frames(async (ctx) => {
             const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(0, 3) : bulidingName
             const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards!` : `${addThe(building.metadata.name)} card!`}`
 
+            const shareText = isSell 
+                ? `Just sold ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 💰`
+                : `Just bought ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 👀`
+
+            const targetUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(shareText)}%0Ahttps://farconic-mintclub-building-trade.vercel.app/`
+
             return {
                 image: (
                     <div tw="flex w-full h-full" style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmRJx4BNegoXtzsZ64zqFwxqoXUFRZAmAQmG6ToLxU2SdV)`}}>
@@ -103,10 +108,10 @@ const handleRequest = frames(async (ctx) => {
                     aspectRatio: "1:1",
                 },
                 buttons: [
-                    <Button action="link" target={`https://warpcast.com/~/compose?text=I just ${isSell ? 'sold' : 'bought'} ${addThe(building.metadata.name)}!%0Ahttps://farconic-mintclub-building-trade.vercel.app/`}>
+                    <Button action="link" target={ targetUrl }>
                         {`🔄 Share`}
                     </Button>,
-                    <Button action="link" target={url}>
+                    <Button action="link" target={ url }>
                         View tx
                     </Button>,
                 ],
