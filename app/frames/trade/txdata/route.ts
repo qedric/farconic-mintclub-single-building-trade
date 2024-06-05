@@ -50,7 +50,7 @@ export const POST = frames(async (ctx) => {
 
     let qty = ctx.searchParams?.qty
         ? BigInt(ctx.searchParams.qty)
-        : ctx.message?.inputText
+        : ctx.message?.inputText && /^\d+$/.test(ctx.message.inputText)
             ? BigInt(ctx.message.inputText)
             : BigInt(1)
 
@@ -70,9 +70,13 @@ export const POST = frames(async (ctx) => {
         }
     }
 
-    const estimation:bigint = ctx.searchParams.estimation
-        ? BigInt(ctx.searchParams.estimation)
-        : (await estimatePrice(building_address as `0x${string}`, qty, isSell)).priceEstimate
+    // if there's already a price estimation, use it, otherwise get a new one, and verify the qty
+    let estimation:any = ctx.searchParams.estimation
+    if (!estimation) {
+        const newEstimation = await estimatePrice(building_address as `0x${string}`, qty, isSell)
+        estimation = newEstimation.priceEstimate
+        qty = newEstimation.qty
+    }
     
     const slippageOutcome:bigint = isSell
         ? estimation - (estimation * BigInt(SLIPPAGE_PERCENT * 100)) / BigInt(10_000)
