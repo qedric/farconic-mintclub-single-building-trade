@@ -112,9 +112,13 @@ const handleRequest = frames(async (ctx: any) => {
 
     return { 
         image: (
-            <div tw="px-8 mx-auto flex flex-col items-center justify-center">
-                <h1>Search for a building</h1>
-                <h2 tw="text-center">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</h2>
+            <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
+                <div tw="flex flex-col relative bottom-[80px] w-full h-fit items-center justify-center">
+                    <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
+                        <h1 tw="text-[50px] mb-5 leading-6">Search for a building</h1>
+                        <p tw="text-[30px] leading-6">or enter a keyword like &apos;bridge&apos;, &apos;Shanghai&apos;, or perhaps &apos;magnificent Flemish Renaissance style building&apos;</p>
+                    </div>
+                </div>
             </div>
         ),
         imageOptions: {
