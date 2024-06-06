@@ -61,7 +61,7 @@ export const POST = frames(async (ctx) => {
     if (isSell) {
         // check that the connected address has balance to sell
         const balance:bigint = (await getNFTBalance((building_address as `0x${string}`), userAddress as `0x${string}` ) as bigint)
-        //console.log(`Balance: ${balance}`)
+        console.log(`Balance: ${balance}`)
         if (balance < qty) {
             qty = balance
         }
@@ -74,7 +74,7 @@ export const POST = frames(async (ctx) => {
     // if there's already a price estimation, use it, otherwise get a new one, and verify the qty
     let estimation:bigint = BigInt(0)
     if (ctx.searchParams.estimation) {
-        BigInt(ctx.searchParams.estimation)
+        estimation = BigInt(ctx.searchParams.estimation)
     } else {
         const newEstimation = await estimatePrice(building_address as `0x${string}`, qty, isSell)
         estimation = newEstimation.priceEstimate
@@ -90,7 +90,7 @@ export const POST = frames(async (ctx) => {
 
     if (isSell) {
         // insert slippageOutcome at index 2 of args:
-        args.splice(2, 0, '0')
+        args.splice(2, 0, slippageOutcome)
     }
 
     const calldata = encodeFunctionData({
