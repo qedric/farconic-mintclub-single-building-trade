@@ -38,21 +38,34 @@ const handleRequest = frames(async (ctx) => {
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
         let isApproved = false
+        const approvedAddresses: string[] = []
         let balance = BigInt(0)
         if (ctx.searchParams.balance) {
             balance = BigInt(ctx.searchParams.balance)
         }
         if (balance > 0) {
-            // check that the seller has approved the contract to spend the NFT
-            isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
-                owner: (addresses[0].address as `0x${string}`),
-                spender: getMintClubContractAddress('ZAP', baseSepolia.id)
-            })
+            if (ctx.searchParams.approvedAddress) {
+                console.log(`Address ${ctx.searchParams.approvedAddress} approved`)
+                approvedAddresses.push(ctx.searchParams.approvedAddress)
+                isApproved = true
+            } else {
+                // check that the seller has approved the contract to spend the NFT
+                for (const address of addresses) {
+                    const isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
+                        owner: (address.address as `0x${string}`),
+                        spender: getMintClubContractAddress('ZAP', baseSepolia.id)
+                    })
+                    if (isApproved) {
+                        approvedAddresses.push(address.address);
+                    }
+                }
+                isApproved = approvedAddresses.length > 0
+                isApproved && console.log("Approved Addresses:", approvedAddresses)
+            }
 
-            if (ctx.isSell && BigInt(balance) < qty) {
+            if (ctx.isSell && isApproved && BigInt(balance) < qty) {
                 qty = BigInt(balance)
             }
-            console.log(`Is Approved for ${addresses[0].address}:`, isApproved)
         }
 
         const [openseaData, detail] = await Promise.all([
@@ -122,9 +135,9 @@ const handleRequest = frames(async (ctx) => {
                         }
                         
                         <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
-                            <h1 tw="text-[20px] mb-5 leading-6">{ `Is Approved for ${addresses[0].address}: ${isApproved }`}</h1>  
                             <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} ${ ctx.isSell ? ` | Your balance: ${balance}` : '' }` }</h1>
                             <h1 tw="text-[50px] mb-5 leading-6">{ `${ctx.isSell ? 'Total Value:' : 'Price:'} ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
+                            <p tw="text-[30px] leading-6">{ `Is Approved for ${ approvedAddresses }`}</p> 
                             <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
                         </div>
                         

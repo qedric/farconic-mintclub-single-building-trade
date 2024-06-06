@@ -29,7 +29,7 @@ const handleRequest = frames(async (ctx) => {
             )
         }
 
-        console.log('receipt', receipt)
+        //console.log('receipt', receipt)
 
         // Find the 'Mint' event log with the bond contract address
         // Find the 'ApprovalForAll' event log with the bond contract address
@@ -60,6 +60,10 @@ const handleRequest = frames(async (ctx) => {
             // get the building object from the buildings json based on the address
             const building_address = (approveEventLog as any).address
             const building = buildings.find((building) => building.address?.toLowerCase() === building_address.toLowerCase())
+            console.log('approveEventLog', approveEventLog)
+            const approvedAddress = (approveEventLog as any).decoded.args.account
+
+            console.log('approvedAddress', approvedAddress)
 
             if (!building) {
                 return ErrorFrame(
@@ -84,7 +88,7 @@ const handleRequest = frames(async (ctx) => {
                     <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
                         <div tw="flex flex-col absolute px-20 justify-center items-center">
                             <h1 tw="text-[50px] mb-5 leading-6">Transaction Submitted</h1>
-                            <h1 tw="text-[50px] mb-5 leading-6">{ `Your Balance: ${ balance }` }</h1>                        
+                            <h1 tw="text-[50px] mb-5 leading-6">{ `Your Balance: ${ balance }` }</h1>                      
                         </div>
                     </div>
                 ),
@@ -92,7 +96,7 @@ const handleRequest = frames(async (ctx) => {
                     aspectRatio: "1:1"
                 },
                 buttons: [
-                    <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true, balance:balance.toString() }, pathname: "/trade" }}>
+                    <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true, balance:balance.toString(), approvedAddress }, pathname: "/trade" }}>
                         {`Sell ${building?.metadata.name.length > 12 ? building?.metadata.name.substring(0, 12) + '...' : building?.metadata.name}`}
                     </Button>,
                     <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
