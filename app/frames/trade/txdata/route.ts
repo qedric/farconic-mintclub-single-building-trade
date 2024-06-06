@@ -71,9 +71,10 @@ export const POST = frames(async (ctx) => {
     }
 
     // if there's already a price estimation, use it, otherwise get a new one, and verify the qty
-    let estimation:bigint = BigInt(ctx.searchParams.estimation)
-    
-    if (!estimation) {
+    let estimation:bigint = BigInt(0)
+    if (ctx.searchParams.estimation) {
+        BigInt(ctx.searchParams.estimation)
+    } else {
         const newEstimation = await estimatePrice(building_address as `0x${string}`, qty, isSell)
         estimation = newEstimation.priceEstimate
         qty = newEstimation.qty
