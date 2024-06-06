@@ -82,7 +82,7 @@ const handleRequest = frames(async (ctx) => {
                 ? `Just sold ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 💰`
                 : `Just bought ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 👀`
 
-            const targetUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(shareText)}%0Ahttps://farconic-mintclub-building-trade.vercel.app/`
+            const targetUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(shareText)}%0Ahttps://farconic-mintclub-building-trade.vercel.app?buildingName=${building.metadata.name}`
 
             return {
                 image: (
