@@ -66,7 +66,7 @@ const handleRequest = frames(async (ctx: any) => {
             :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                 ?   [
                         <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
-                            { balance > 0 ? 'Trade' : 'Buy' }
+                            { balance > 0 ? 'Buy/Sell' : 'Buy' }
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
                             Prev
