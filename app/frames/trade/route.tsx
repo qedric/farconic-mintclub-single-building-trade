@@ -154,9 +154,11 @@ const handleRequest = frames(async (ctx) => {
                             : 'post'
                     }
                     target={
-                        balance > 0 && ctx.isSell
-                            ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                            : { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }
+                        balance > 0
+                            ? ctx.isSell 
+                                ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
+                                : { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }
+                            : '/'
 
                     }
                     post_url={
