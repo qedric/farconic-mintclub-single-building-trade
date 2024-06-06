@@ -55,7 +55,7 @@ export const POST = frames(async (ctx) => {
             : BigInt(1)
 
     const isSell:boolean = ctx.searchParams.isSell === 'true'
-    console.log('isSell:', isSell ? 'true' : 'false')
+    //console.log('isSell:', isSell ? 'true' : 'false')
 
     if (!ctx.searchParams?.isApproved && isSell) {
         throw new Error("Missing isApproved param")
@@ -64,14 +64,15 @@ export const POST = frames(async (ctx) => {
     if (isSell) {
         // check that the connected address has balance to sell
         const balance:bigint = (await getNFTBalance((building_address as `0x${string}`), userAddress as `0x${string}` ) as bigint)
-        console.log(`Balance: ${balance}`)
+        //console.log(`Balance: ${balance}`)
         if (balance < qty) {
             qty = balance
         }
     }
 
     // if there's already a price estimation, use it, otherwise get a new one, and verify the qty
-    let estimation:any = ctx.searchParams.estimation
+    let estimation:bigint = BigInt(ctx.searchParams.estimation)
+    
     if (!estimation) {
         const newEstimation = await estimatePrice(building_address as `0x${string}`, qty, isSell)
         estimation = newEstimation.priceEstimate
@@ -120,7 +121,7 @@ export const POST = frames(async (ctx) => {
         }
     ] */
 
-    console.log('zap_contract_address', zap_contract_address)
+    //console.log('zap_contract_address', zap_contract_address)
 
     const params = isSell ? {
         abi: zap_abi,
