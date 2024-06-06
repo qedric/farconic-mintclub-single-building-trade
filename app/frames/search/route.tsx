@@ -29,14 +29,14 @@ const handleRequest = frames(async (ctx: any) => {
 
         const building = searchResults[page-1]
 
-        let userAddress = ctx.message?.connectedAddress
-        if (!userAddress) {
-            error("Please connect your wallet to see balance")
-        }
-
+        let balance:bigint = BigInt(0)
+        // find how many of this building the user has among their verified addresses
+        ctx.message?.requesterVerifiedAddresses?.forEach(async (address: string) => {
+            balance += await getNFTBalance((building.address as `0x${string}`), address as `0x${string}` ) as bigint
+        })
+        
         const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
-        const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), userAddress as `0x${string}` ) as bigint)
         console.log(`balance:`, balance)
 
         return {

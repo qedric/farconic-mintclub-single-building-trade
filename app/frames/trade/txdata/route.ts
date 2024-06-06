@@ -65,6 +65,10 @@ export const POST = frames(async (ctx) => {
         if (balance < qty) {
             qty = balance
         }
+
+        if (qty == BigInt(0)) {
+            throw new Error("No balance to sell; check that you're connected with the wallet that holds this NFT.")
+        }
     }
 
     // if there's already a price estimation, use it, otherwise get a new one, and verify the qty
