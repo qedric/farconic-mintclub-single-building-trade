@@ -23,7 +23,7 @@ const handleRequest = frames(async (ctx: any) => {
         if (searchResults.length == 0) {
             console.log('no results')
             // add getFavouriteBuildings() to the search results
-            searchResults.push(...getFavouriteBuildings())
+            searchResults.push(...getFavouriteBuildings().sort(() => Math.random() - 0.5))
         }
 
         const building = searchResults[page-1]
