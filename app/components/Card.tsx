@@ -7,6 +7,7 @@ export const CardImage = async (
     userImg:string | undefined = undefined,
     userName:string | undefined = undefined,
     scale:string | undefined = undefined,
+    logString: string | undefined = undefined
 ) => {
 
     const [openseaData, detail] = await Promise.all([
@@ -67,6 +68,7 @@ export const CardImage = async (
                     <div tw="flex lowercase mt-1 text-[24px] text-white">@{ userName }</div>
                 </div>
             }
+            { logString && <div tw="absolute top-0 left-0 right-0 bg-opacity-50 text-black text-3xl p-12">{ logString }</div>}
         </div>
     )
 }
