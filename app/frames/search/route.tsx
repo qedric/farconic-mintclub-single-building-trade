@@ -29,27 +29,20 @@ const handleRequest = frames(async (ctx: any) => {
         const building = searchResults[page-1]
 
         let balance:bigint = BigInt(0)
-        let logString = ''
-
         // find how many of this building the user has among their verified addresses
         const addresses = ctx.message?.requesterVerifiedAddresses || []
 
         for (const address of addresses) {
-            console.log(address)
             const addressBalance = await getNFTBalance(building.address as `0x${string}`, address as `0x${string}`) as bigint
             balance += addressBalance
-            logString += `Address: ${address} Balance: ${balance}\n`
         }
 
-        console.log(`logString:`, logString)
-
-        
         const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
         //console.log(`balance:`, balance)
 
         return {
-            image: await CardImage( searchResults[page-1], userData?.profileImage, userData?.username, undefined, logString),
+            image: await CardImage( searchResults[page-1], userData?.profileImage, userData?.username, undefined),
             imageOptions: {
                 aspectRatio: "1:1",
             },

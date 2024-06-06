@@ -2,7 +2,7 @@
 import { Button } from "frames.js/next"
 import { frames } from "../frames"
 import { getUserDataForFid } from 'frames.js'
-import { NFT, getNFTBalance, estimatePriceMiddleware } from '@/app/utils'
+import { NFT, estimatePriceMiddleware } from '@/app/utils'
 import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 import { getAddressesForFid } from "frames.js"
@@ -135,7 +135,7 @@ const handleRequest = frames(async (ctx) => {
                     action={ ctx.isSell ? "post" : "tx" }
                     target={
                         ctx.isSell
-                            ? { query: { building: JSON.stringify(building), qty: qty.toString() }, pathname: "/trade" }
+                            ? { query: { building: JSON.stringify(building), qty: qty.toString(), balance:balance.toString() }, pathname: "/trade" }
                             : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
                         }
                         post_url="/trade/txStatusTrade">
@@ -151,7 +151,7 @@ const handleRequest = frames(async (ctx) => {
                         balance > 0
                             ? ctx.isSell 
                                 ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                                : { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }
+                                : { query: { building: JSON.stringify(building), isSell:true, balance:balance.toString() }, pathname: "/trade" }
                             : '/'
 
                     }
@@ -162,7 +162,7 @@ const handleRequest = frames(async (ctx) => {
                     }
                 >{ balance > 0 ? isApproved ? (ctx.isSell ? 'Sell' : 'Sell Preview') : 'Approve Selling' : 'Home' }
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell }, pathname: "/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:balance.toString() }, pathname: "/trade" }}>
                     Refresh Price
                 </Button>
             ],

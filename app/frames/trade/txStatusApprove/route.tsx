@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key, @next/next/no-img-element, jsx-a11y/alt-text */
 import { Button } from "frames.js/next"
 import { frames } from "../../frames"
-import { getTransactionReceipt } from '@/app/utils'
+import { getTransactionReceipt, getNFTBalance } from '@/app/utils'
 import buildings from '@/app/data/buildings.json'
 import { ErrorFrame } from "@/app/components/Error"
 import { decodeEventLog } from 'viem'
@@ -70,6 +70,15 @@ const handleRequest = frames(async (ctx) => {
                 )
             }
 
+            let balance:bigint = BigInt(0)
+            // find how many of this building the user has among their verified addresses
+            const addresses = ctx.message?.requesterVerifiedAddresses || []
+
+            for (const address of addresses) {
+                const addressBalance = await getNFTBalance(building.address as `0x${string}`, address as `0x${string}`) as bigint
+                balance += addressBalance
+            }
+
             return {
                 image: (
                     <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
@@ -82,7 +91,7 @@ const handleRequest = frames(async (ctx) => {
                     aspectRatio: "1:1"
                 },
                 buttons: [
-                    <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true }, pathname: "/trade" }}>
+                    <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true, balance:balance.toString() }, pathname: "/trade" }}>
                         {`Sell ${building?.metadata.name}`}
                     </Button>,
                     <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
