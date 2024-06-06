@@ -141,7 +141,7 @@ const handleRequest = frames(async (ctx) => {
                             : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
                         }
                         post_url="/trade/txStatusTrade">
-                    { ctx.isSell ? 'Buy Preview' : 'Buy' }
+                    { ctx.isSell ? 'Buy Preview' : 'Buy 🛒' }
                 </Button>,
                 <Button 
                     action={
@@ -162,7 +162,7 @@ const handleRequest = frames(async (ctx) => {
                             ? "/trade/txStatusTrade"
                             : "/trade/txStatusApprove"
                     }
-                >{ balance > 0 ? isApproved ? (ctx.isSell ? 'Sell' : 'Sell Preview') : 'Approve Selling' : 'Home' }
+                >{ balance > 0 ? isApproved ? (ctx.isSell ? 'Sell 💰' : 'Sell Preview') : 'Approve Selling' : 'Home' }
                 </Button>,
                 <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:balance.toString() }, pathname: "/trade" }}>
                     Refresh Price
