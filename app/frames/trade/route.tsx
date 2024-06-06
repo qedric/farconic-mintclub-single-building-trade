@@ -37,24 +37,18 @@ const handleRequest = frames(async (ctx) => {
 
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
-        //console.log('building', building)
-        //console.log(`${ctx.isSell ? 'Selling' : 'Buying'} ${qty} ${building.metadata.name}`)
-
-        // check that the connected address has balance to sell
-        const balance:bigint = (await getNFTBalance((building.address as `0x${string}`), addresses[0].address) as bigint)
-        console.log(`Balance: ${balance}`)
-
         let isApproved = false
-        if (balance > 0) {
+        let balance = BigInt(0)
+        if (ctx.searchParams.balance && BigInt(ctx.searchParams.balance) > 0) {
+            balance = BigInt(ctx.searchParams.balance)
             // check that the seller has approved the contract to spend the NFT
             isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
                 owner: (addresses[0].address as `0x${string}`),
                 spender: getMintClubContractAddress('ZAP', baseSepolia.id)
             })
 
-            console.log(`Balance: ${balance}`)
-            if (ctx.isSell && balance < qty) {
-                qty = balance
+            if (ctx.isSell && BigInt(balance) < qty) {
+                qty = BigInt(balance)
             }
             console.log(`Is Approved for ${addresses[0].address}:`, isApproved)
         }
@@ -86,7 +80,7 @@ const handleRequest = frames(async (ctx) => {
         return {
             image: (
                 <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
-                    <div tw="flex flex-col relative bottom-[80px] w-full h-fit items-center justify-center">
+                    <div tw="flex flex-col relative bottom-[80px] w-full items-center justify-center">
                         <h1 tw="absolute top-[180px] text-[36px]">{ `${ctx.isSell ? 'Sell' : 'Buy'} Preview` }</h1>
                         
                         <div tw="flex relative -top-[40px] w-[600px] h-[600px] items-center justify-center" style={{ backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
@@ -116,7 +110,7 @@ const handleRequest = frames(async (ctx) => {
 
                         { userData && 
                             <div tw="absolute top-[270px] w-full flex flex-col justify-center items-center">
-                                <img src={userData.profileImage} tw="w-[4.55vw] [4.55vw] rounded-full" />
+                                <img src={userData.profileImage} tw="w-[4.55vw] h-[4.55vw] rounded-full" />
                                 {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
                                     <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
                                     <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>

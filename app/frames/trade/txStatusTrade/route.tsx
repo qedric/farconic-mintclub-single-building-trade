@@ -92,7 +92,7 @@ const handleRequest = frames(async (ctx) => {
                             { await CardImage(building as NFT, undefined, undefined, '0.50') }
                             { userData && 
                                 <div tw="absolute top-[310px] w-full flex flex-col justify-center items-center">
-                                    <img src={userData.profileImage} tw="w-[4.55vw] [4.55vw] rounded-full" />
+                                    <img src={userData.profileImage} tw="w-[4.55vw] h-[4.55vw] rounded-full" />
                                     {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
                                         <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
                                         <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>

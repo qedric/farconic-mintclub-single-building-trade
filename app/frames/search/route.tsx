@@ -4,7 +4,6 @@ import { frames } from "../frames"
 import { searchJsonArray, getFavouriteBuildings, getNFTBalance } from '@/app/utils'
 import { CardImage } from '@/app/components/Card'
 import { getUserDataForFid } from 'frames.js'
-import { error } from "frames.js/core"
 
 const handleRequest = frames(async (ctx: any) => {
 
@@ -50,19 +49,19 @@ const handleRequest = frames(async (ctx: any) => {
                     <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
                         Buy
                     </Button>,
-                    <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade/" } : "/" }>
+                    <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:balance.toString() }, pathname: "/trade/" } : "/" }>
                         { balance > 0 ? 'Sell' : 'Home' }
                     </Button>,
                     <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
-                        Random
+                        Random 🎲
                     </Button>,
                     <Button action="post" target="/search">
-                        Search
+                        Search 🔎
                     </Button>
                 ]
             :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                 ?   [
-                        <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
+                        <Button action="post" target={{ query: { building: JSON.stringify(building), balance:balance.toString() }, pathname: "/trade/" }}>
                             { balance > 0 ? 'Buy/Sell' : 'Buy' }
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
@@ -72,7 +71,7 @@ const handleRequest = frames(async (ctx: any) => {
                             Next
                         </Button>,
                         <Button action="post" target="/search">
-                            Search
+                            Search 🔎
                         </Button>
                     ]
                 :   page > 1 && searchResults.length == page // multiple results and we are at the end
@@ -80,28 +79,28 @@ const handleRequest = frames(async (ctx: any) => {
                             <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
                                 Buy
                             </Button>,
-                            <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade/" } : "/" }>
+                            <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:balance.toString() }, pathname: "/trade/" } : "/" }>
                                 { balance > 0 ? 'Sell' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
                                 Prev
                             </Button>,
                             <Button action="post" target="/search">
-                                Search
+                                Search 🔎
                             </Button>
                         ]
                     :   [ // multiple results and we are at the start
                             <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
                                 Buy
                             </Button>,
-                            <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade/" } : "/" }>
+                            <Button action="post" target={ balance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:balance.toString() }, pathname: "/trade/" } : "/" }>
                                 { balance > 0 ? 'Sell' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/search" }}>
                                 Next
                             </Button>,
                             <Button action="post" target="/search">
-                                Search
+                                Search 🔎
                             </Button>
                         ],
                         headers: {  
@@ -125,16 +124,16 @@ const handleRequest = frames(async (ctx: any) => {
         textInput: "search",
         buttons: [
             <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
-                Random
+                Random 🎲
             </Button>,
             <Button action="post" target="/">
                 Home
             </Button>,
             <Button action="link" target="https://farconic.xyz">
-                App
+                App 🌐
             </Button>,
             <Button action="post" target="/search">
-                Search
+                Search 🔎
             </Button>
         ],
         headers: {  

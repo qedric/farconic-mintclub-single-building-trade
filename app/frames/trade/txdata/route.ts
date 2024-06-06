@@ -67,7 +67,7 @@ export const POST = frames(async (ctx) => {
         }
 
         if (qty == BigInt(0)) {
-            throw new Error("No balance to sell; check that you're connected with the wallet that holds this NFT.")
+            return NextResponse.json({ error: "No balance to sell; check that you're connected with the wallet that holds this NFT."}, { status: 500 })
         }
     }
 
