@@ -31,10 +31,7 @@ const handleRequest = frames(async (ctx: any) => {
 
         let userAddress = ctx.message?.connectedAddress
         if (!userAddress) {
-            userAddress = ctx.message?.requesterVerifiedAddresses?.[0]
-            if (!userAddress) {
-                error("Please connect your wallet to see balance")
-            }
+            error("Please connect your wallet to see balance")
         }
 
         const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })

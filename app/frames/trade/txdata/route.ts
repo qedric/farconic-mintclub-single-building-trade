@@ -13,10 +13,7 @@ export const POST = frames(async (ctx) => {
 
     let userAddress = ctx.message?.connectedAddress
     if (!userAddress) {
-        userAddress = ctx.message?.requesterVerifiedAddresses?.[0]
-        if (!userAddress) {
-            throw new Error("No User Address")
-        }
+        throw new Error("No User Address")
     }
 
     if (!ctx.searchParams?.contractAddress) {
