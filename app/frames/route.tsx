@@ -24,17 +24,17 @@ const handleRequest = frames(async (ctx) => {
         },
         textInput: "search e.g. \"bridge\" or \"Rome\"",
         buttons: [
-            <Button action="tx" target={{ query: { contractAddress: building.address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
-                Buy
+            <Button action="link" target="https://farconic.xyz">
+                App 🌐
             </Button>,
-            <Button action="post" target="/search">
-                Search
+            <Button action="tx" target={{ query: { contractAddress: building.address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
+                Buy 🛒
             </Button>,
             <Button action="post" target={{ query: { building: JSON.stringify(getRandomBuildingAmongFavourites(building.metadata.name)) }, pathname: "/" }}>
-                Random
+                Random 🎲
             </Button>,
-            <Button action="link" target="https://farconic.xyz">
-                App
+            <Button action="post" target="/search">
+                Search 🔎
             </Button>
         ],
         headers: {  
