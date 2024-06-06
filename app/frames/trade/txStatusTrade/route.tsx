@@ -114,6 +114,9 @@ const handleRequest = frames(async (ctx) => {
                     <Button action="link" target={ url }>
                         View tx
                     </Button>,
+                    <Button action="post" target="/">
+                        Home
+                    </Button>
                 ],
                 headers: {  
                     "Cache-Control": "max-age=0", 
