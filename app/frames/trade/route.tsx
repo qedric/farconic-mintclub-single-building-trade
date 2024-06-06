@@ -120,7 +120,9 @@ const handleRequest = frames(async (ctx) => {
                                 <div tw="flex lowercase text-[14px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
                             </div>
                         }
+                        
                         <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
+                            <h1 tw="text-[20px] mb-5 leading-6">{ `Is Approved for ${addresses[0].address}: ${isApproved }`}</h1>  
                             <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} ${ ctx.isSell ? ` | Your balance: ${balance}` : '' }` }</h1>
                             <h1 tw="text-[50px] mb-5 leading-6">{ `${ctx.isSell ? 'Total Value:' : 'Price:'} ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
                             <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>

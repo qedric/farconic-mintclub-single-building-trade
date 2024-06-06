@@ -83,7 +83,8 @@ const handleRequest = frames(async (ctx) => {
                 image: (
                     <div tw="flex w-full h-full justify-center items-center" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
                         <div tw="flex flex-col absolute px-20 justify-center items-center">
-                            <h1 tw="text-[50px] mb-5 leading-6">Transaction Submitted</h1>                                
+                            <h1 tw="text-[50px] mb-5 leading-6">Transaction Submitted</h1>
+                            <h1 tw="text-[50px] mb-5 leading-6">{ `Your Balance: ${ balance }` }</h1>                        
                         </div>
                     </div>
                 ),
@@ -92,7 +93,7 @@ const handleRequest = frames(async (ctx) => {
                 },
                 buttons: [
                     <Button action="post" target={{ query: { building: JSON.stringify(building), isSell: true, balance:balance.toString() }, pathname: "/trade" }}>
-                        {`Sell ${building?.metadata.name}`}
+                        {`Sell ${building?.metadata.name.length > 12 ? building?.metadata.name.substring(0, 12) + '...' : building?.metadata.name}`}
                     </Button>,
                     <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
                         My Cards / Learn more
