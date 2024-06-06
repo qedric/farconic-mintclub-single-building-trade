@@ -50,7 +50,7 @@ export const POST = frames(async (ctx) => {
 
     let qty = ctx.searchParams?.qty
         ? BigInt(ctx.searchParams.qty)
-        : ctx.message?.inputText && /^\d+$/.test(ctx.message.inputText)
+        : ctx.message?.inputText && /^\d+$/.test(ctx.message.inputText) && Number(ctx.message.inputText) > 0
             ? BigInt(ctx.message.inputText)
             : BigInt(1)
 
