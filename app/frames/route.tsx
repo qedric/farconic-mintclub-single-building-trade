@@ -3,13 +3,18 @@ import { Button } from "frames.js/next"
 import { frames } from "./frames"
 import { getUserDataForFid } from 'frames.js'
 import { CardImage } from '@/app/components/Card'
-import { getRandomBuildingAmongFavourites } from '@/app/utils'
+import { getRandomBuildingAmongFavourites, getBuildingByName, NFT } from '@/app/utils'
 
 export const maxDuration = 20
 
 const handleRequest = frames(async (ctx) => {
 
-    const building = ctx.searchParams?.building ? JSON.parse(ctx.searchParams?.building) : getRandomBuildingAmongFavourites()
+    let building: NFT = ctx.searchParams?.buildingName
+        ? getBuildingByName(ctx.searchParams.buildingName) || getRandomBuildingAmongFavourites()
+        : ctx.searchParams?.building
+            ? JSON.parse(ctx.searchParams.building)
+            : getRandomBuildingAmongFavourites()
+    
     const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
 
     return {
