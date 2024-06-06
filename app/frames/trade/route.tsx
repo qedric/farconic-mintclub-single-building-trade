@@ -39,8 +39,10 @@ const handleRequest = frames(async (ctx) => {
 
         let isApproved = false
         let balance = BigInt(0)
-        if (ctx.searchParams.balance && BigInt(ctx.searchParams.balance) > 0) {
+        if (ctx.searchParams.balance) {
             balance = BigInt(ctx.searchParams.balance)
+        }
+        if (balance > 0) {
             // check that the seller has approved the contract to spend the NFT
             isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
                 owner: (addresses[0].address as `0x${string}`),
