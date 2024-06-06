@@ -145,29 +145,26 @@ const handleRequest = frames(async (ctx) => {
                             : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
                         }
                         post_url="/trade/txStatusTrade">
-                    Buy
+                    { ctx.isSell ? 'Buy Preview' : 'Buy' }
                 </Button>,
                 <Button 
                     action={
-                        balance > 0
-                            ? !isApproved || (ctx.isSell && isApproved)
-                                ? 'tx'
-                                : 'post'
+                        balance > 0 && ctx.isSell // tx will be either sell or approve
+                            ? 'tx'
                             : 'post'
                     }
                     target={
-                        balance > 0 
-                            ? !isApproved || (ctx.isSell && isApproved)
-                                ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                                : { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }
-                            : '/'
+                        balance > 0 && ctx.isSell
+                            ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
+                            : { query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }
+
                     }
                     post_url={
                         isApproved
                             ? "/trade/txStatusTrade"
                             : "/trade/txStatusApprove"
                     }
-                >{ balance > 0 ? isApproved ? 'Sell' : 'Approve Selling' : 'Home' }
+                >{ balance > 0 ? isApproved ? (ctx.isSell ? 'Sell' : 'Sell Preview') : 'Approve Selling' : 'Home' }
                 </Button>,
                 <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell }, pathname: "/trade" }}>
                     Refresh Price
