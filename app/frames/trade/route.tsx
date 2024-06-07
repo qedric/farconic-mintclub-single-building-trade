@@ -5,26 +5,12 @@ import { getUserDataForFid } from 'frames.js'
 import { NFT, estimatePriceMiddleware } from '@/app/utils'
 import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
-import { getAddressesForFid } from "frames.js"
 import { ErrorFrame } from "@/app/components/Error"
 import { baseSepolia } from "viem/chains"
 import { error } from "frames.js/core"
 import { getOpenseaData, getDetail } from '@/app/utils'
 
 const handleRequest = frames(async (ctx) => {
-
-    const fid = ctx.message?.requesterFid
-    if (!fid) {
-        return ErrorFrame("Requester FID Not Found", null, null, "A fresh start might do the trick. If the problem persists, let us know!")
-    }
-
-    const addresses = await getAddressesForFid({
-        fid: fid,
-    })
-
-    if (addresses.length == 0) {
-        error("Error: can't find connected address")
-    }
     
     if (ctx.searchParams?.building) {
 
@@ -38,33 +24,37 @@ const handleRequest = frames(async (ctx) => {
         const building:NFT = JSON.parse(ctx.searchParams.building)
 
         let isApproved = false
-        const approvedAddresses: string[] = []
-        let balance = BigInt(0)
+        let approvedAddresses: { address: string, balance: bigint }[] = []
+        let balances: { address: string, balance: bigint }[] = []
         if (ctx.searchParams.balance) {
-            balance = BigInt(ctx.searchParams.balance)
+            balances = JSON.parse(ctx.searchParams.balance)
         }
-        if (balance > 0) {
+        if (balances.length > 0) {
             if (ctx.searchParams.approvedAddress) {
-                console.log(`Address ${ctx.searchParams.approvedAddress} approved`)
-                approvedAddresses.push(ctx.searchParams.approvedAddress)
+                console.log(`Address ${JSON.parse(ctx.searchParams.approvedAddress)} approved`)
+                approvedAddresses.push(JSON.parse(ctx.searchParams.approvedAddress))
                 isApproved = true
             } else {
                 // check that the seller has approved the contract to spend the NFT
-                for (const address of addresses) {
+                await Promise.all(balances.map(async (balance) => {
                     const isApproved = await mintclub.network(baseSepolia.id).nft(building.address).getIsApprovedForAll({
-                        owner: (address.address as `0x${string}`),
+                        owner: (balance.address as `0x${string}`),
                         spender: getMintClubContractAddress('ZAP', baseSepolia.id)
                     })
                     if (isApproved) {
-                        approvedAddresses.push(address.address);
+                        approvedAddresses.push({address: balance.address, balance: balance.balance});
                     }
-                }
+                }))
                 isApproved = approvedAddresses.length > 0
                 isApproved && console.log("Approved Addresses:", approvedAddresses)
             }
 
-            if (ctx.isSell && isApproved && BigInt(balance) < qty) {
-                qty = BigInt(balance)
+            // sort by the largest balance
+            balances = balances.sort((a, b) => Number(b.balance) - Number(a.balance))
+            approvedAddresses = approvedAddresses.sort((a, b) => Number(b.balance) - Number(a.balance))
+
+            if (ctx.isSell && isApproved && BigInt(balances[0].balance) < qty) {
+                qty = BigInt(balances[0].balance)
             }
         }
 
@@ -133,14 +123,31 @@ const handleRequest = frames(async (ctx) => {
                                 <div tw="flex lowercase text-[14px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
                             </div>
                         }
-                        
-                        <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
-                            <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} ${ ctx.isSell ? ` | Your balance: ${balance}` : '' }` }</h1>
-                            <h1 tw="text-[50px] mb-5 leading-6">{ `${ctx.isSell ? 'Total Value:' : 'Price:'} ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
-                            <p tw="text-[30px] leading-6">{ `Is Approved for ${ approvedAddresses }`}</p> 
-                            <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
-                        </div>
-                        
+                        { ctx.isSell && isApproved && (
+                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
+                                <p tw="text-[28px] leading-6 w-[660px] text-center">
+                                    {`${approvedAddresses.map(a => `address ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | approved balance: ${a.balance}`).join(', ')}\n`}
+                                </p>
+                                <h1 tw="text-[50px] mb-6 leading-6">{ `Quantity: ${qty} | Total Value: ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
+                                <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
+                            </div>
+                        )}
+                        { ctx.isSell && !isApproved && (
+                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
+                                <h1 tw="text-[40px] mb-4 leading-8 text-center">{ `Your approval is required to sell your building cards` }</h1>
+                                <p tw="text-[28px] leading-6 w-[660px] text-center">
+                                    {`${balances.map(a => `address ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | unapproved balance: ${a.balance}`).join(', ')}\n`}
+                                </p>
+                                <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
+                            </div>
+                        )}
+                        { !ctx.isSell && (
+                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
+                                <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} ${ ctx.isSell ? ` | Your balance: ${balances}` : '' }` }</h1>
+                                <h1 tw="text-[50px] mb-5 leading-6">{ `${ctx.isSell ? 'Total Value:' : 'Price:'} ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
+                                <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
+                            </div>
+                        )} 
                     </div>
                 </div>
             ),
@@ -152,7 +159,7 @@ const handleRequest = frames(async (ctx) => {
                     action={ ctx.isSell ? "post" : "tx" }
                     target={
                         ctx.isSell
-                            ? { query: { building: JSON.stringify(building), qty: qty.toString(), balance:balance.toString() }, pathname: "/trade" }
+                            ? { query: { building: JSON.stringify(building), qty: qty.toString(), balance:JSON.stringify(balances) }, pathname: "/trade" }
                             : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
                         }
                         post_url="/trade/txStatusTrade">
@@ -160,15 +167,15 @@ const handleRequest = frames(async (ctx) => {
                 </Button>,
                 <Button 
                     action={
-                        balance > 0 && ctx.isSell // tx will be either sell or approve
+                        balances.length > 0 && ctx.isSell // tx will be either sell or approve
                             ? 'tx'
                             : 'post'
                     }
                     target={
-                        balance > 0
+                        balances.length > 0
                             ? ctx.isSell 
                                 ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                                : { query: { building: JSON.stringify(building), isSell:true, balance:balance.toString() }, pathname: "/trade" }
+                                : { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balances) }, pathname: "/trade" }
                             : '/'
 
                     }
@@ -177,9 +184,16 @@ const handleRequest = frames(async (ctx) => {
                             ? "/trade/txStatusTrade"
                             : "/trade/txStatusApprove"
                     }
-                >{ balance > 0 ? isApproved ? (ctx.isSell ? 'Sell 💰' : 'Sell Preview') : 'Approve Selling' : 'Home' }
+                >{
+                    balances.length > 0 
+                      ? ctx.isSell 
+                          ? (isApproved ? 'Sell 💰' : 'Approve Selling') 
+                          : 'Sell Preview'
+                      : 'Home' 
+                  }
+                  
                 </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:balance.toString() }, pathname: "/trade" }}>
+                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:JSON.stringify(balances) }, pathname: "/trade" }}>
                     Refresh Price
                 </Button>
             ],
