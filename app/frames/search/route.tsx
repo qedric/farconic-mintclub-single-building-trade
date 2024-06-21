@@ -33,10 +33,15 @@ const handleRequest = frames(async (ctx: any) => {
         // find how many of this building the user has among their verified addresses
         const addresses = ctx.message?.requesterVerifiedAddresses || []
         for (const address of addresses) {
-            const addressBalance = await getNFTBalance(building.address as `0x${string}`, address as `0x${string}`) as bigint
-            if (addressBalance > BigInt(0)) {
-                totalBalance += Number(addressBalance)
-                balance.push({ address, balance: addressBalance.toString() })
+            let addressBalance = BigInt(0)
+            try {
+                addressBalance = await getNFTBalance(building.address as `0x${string}`, address as `0x${string}`) as bigint
+                if (addressBalance > BigInt(0)) {
+                    totalBalance += Number(addressBalance)
+                    balance.push({ address, balance: addressBalance.toString() })
+                }
+            } catch (e) {
+                // do nothing
             }
         }
 
@@ -49,14 +54,14 @@ const handleRequest = frames(async (ctx: any) => {
             imageOptions: {
                 aspectRatio: "1:1",
             },
-            textInput: "Search, or Enter Quantity",
+            textInput: "Search, or Set Buy/Sell Quantity",
             buttons: searchResults.length == 1 // just one result
             ?   [
                     <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
-                        Buy
+                        Buy 🛒
                     </Button>,
                     <Button action="post" target={ totalBalance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balance) }, pathname: "/trade/" } : "/" }>
-                        { totalBalance > 0 ? 'Sell' : 'Home' }
+                        { totalBalance > 0 ? 'Sell 💰' : 'Home' }
                     </Button>,
                     <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
                         Random 🎲
@@ -71,10 +76,10 @@ const handleRequest = frames(async (ctx: any) => {
                             { totalBalance > 0 ? 'Buy/Sell' : 'Buy' }
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
-                            Prev
+                            ◀ Prev
                         </Button>,
                         <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/search" }}>
-                            Next
+                            Next ▶
                         </Button>,
                         <Button action="post" target="/search">
                             Search 🔎
@@ -89,7 +94,7 @@ const handleRequest = frames(async (ctx: any) => {
                                 { totalBalance > 0 ? 'Sell' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
-                                Prev
+                                ◀ Prev
                             </Button>,
                             <Button action="post" target="/search">
                                 Search 🔎
@@ -103,7 +108,7 @@ const handleRequest = frames(async (ctx: any) => {
                                 { totalBalance > 0 ? 'Sell' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/search" }}>
-                                Next
+                                Next ▶
                             </Button>,
                             <Button action="post" target="/search">
                                 Search 🔎
@@ -127,16 +132,13 @@ const handleRequest = frames(async (ctx: any) => {
         imageOptions: {
             aspectRatio: "1:1",
         },
-        textInput: "search",
+        textInput: "e.g. 'Bridge', 'Rome', 'Eiffel'",
         buttons: [
-            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
-                Random 🎲
-            </Button>,
             <Button action="post" target="/">
                 Home
             </Button>,
-            <Button action="link" target="https://farconic.xyz">
-                App 🌐
+            <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
+                Random 🎲
             </Button>,
             <Button action="post" target="/search">
                 Search 🔎

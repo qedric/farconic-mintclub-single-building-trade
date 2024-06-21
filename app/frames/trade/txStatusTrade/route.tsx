@@ -79,8 +79,8 @@ const handleRequest = frames(async (ctx) => {
             const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards!` : `${addThe(building.metadata.name)} card!`}`
 
             const shareText = isSell 
-                ? `Just sold ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 💰`
-                : `Just bought ${amount > 1 ? `${amount} ${building.metadata.name} cards` : `the ${building.metadata.name} card`} in /farconic! 👀`
+                ? `Just sold ${amount > 1 ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`} in /farconic! 💰`
+                : `Just bought ${amount > 1 ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`} in /farconic! 👀`
 
             const nameWithHyphens = building.metadata.name.replace(/\s/g, '-').toLowerCase()
 
@@ -110,14 +110,14 @@ const handleRequest = frames(async (ctx) => {
                     aspectRatio: "1:1",
                 },
                 buttons: [
+                    <Button action="post" target="/">
+                        Home
+                    </Button>,
                     <Button action="link" target={ targetUrl }>
-                        {`🔄 Share`}
+                        Share 🔁
                     </Button>,
                     <Button action="link" target={ url }>
                         View tx
-                    </Button>,
-                    <Button action="post" target="/">
-                        Home
                     </Button>
                 ],
                 headers: {  

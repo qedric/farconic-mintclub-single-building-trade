@@ -86,7 +86,7 @@ const handleRequest = frames(async (ctx) => {
             image: (
                 <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
                     <div tw="flex flex-col relative bottom-[80px] w-full items-center justify-center">
-                        <h1 tw="absolute top-[180px] text-[36px]">{ `${ctx.isSell ? 'Sell' : 'Buy'} Preview` }</h1>
+                        <h1 tw="absolute top-[180px] text-[36px]">{ `${ctx.isSell ? isApproved ? 'Sell Preview' : 'Approve Selling' : 'Buy Preview'}` }</h1>
                         
                         <div tw="flex relative -top-[40px] w-[600px] h-[600px] items-center justify-center" style={{ backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
                             <div tw="flex flex-wrap relative w-[26.5vw] text-white p-0 m-0">
@@ -114,7 +114,7 @@ const handleRequest = frames(async (ctx) => {
                         </div>
 
                         { userData && 
-                            <div tw="absolute top-[270px] w-full flex flex-col justify-center items-center">
+                            <div tw="absolute top-[275px] w-full flex flex-col justify-center items-center">
                                 <img src={userData.profileImage} tw="w-[4.55vw] h-[4.55vw] rounded-full" />
                                 {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
                                     <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
@@ -125,20 +125,19 @@ const handleRequest = frames(async (ctx) => {
                         }
                         { ctx.isSell && isApproved && (
                             <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
-                                <p tw="text-[28px] leading-6 w-[660px] text-center">
-                                    {`${approvedAddresses.map(a => `address ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | approved balance: ${a.balance}`).join(', ')}\n`}
-                                </p>
                                 <h1 tw="text-[50px] mb-6 leading-6">{ `Quantity: ${qty} | Total Value: ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
+                                <p tw="text-[30px] leading-6 w-[660px] text-center">
+                                    {`${approvedAddresses.map(a => `Address: ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | Balance: ${a.balance}`).join(', ')}\n`}
+                                </p>
                                 <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
                             </div>
                         )}
                         { ctx.isSell && !isApproved && (
                             <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
-                                <h1 tw="text-[40px] mb-4 leading-8 text-center">{ `Your approval is required to sell your building cards` }</h1>
-                                <p tw="text-[28px] leading-6 w-[660px] text-center">
-                                    {`${balances.map(a => `address ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | unapproved balance: ${a.balance}`).join(', ')}\n`}
+                                <h1 tw="text-[40px] mb-4 leading-8 text-center">{ `Your approval is required to sell your cards` }</h1>
+                                <p tw="text-[30px] leading-6 w-[660px] text-center">
+                                    {`${balances.map(a => `Address: ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | Balance: ${a.balance}`).join(', ')}\n`}
                                 </p>
-                                <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
                             </div>
                         )}
                         { !ctx.isSell && (
@@ -155,6 +154,9 @@ const handleRequest = frames(async (ctx) => {
                 aspectRatio: "1:1",
             },
             buttons: [
+                <Button action="link" target="/">
+                    Home
+                </Button>,
                 <Button 
                     action={ ctx.isSell ? "post" : "tx" }
                     target={
@@ -187,7 +189,7 @@ const handleRequest = frames(async (ctx) => {
                 >{
                     balances.length > 0 
                       ? ctx.isSell 
-                          ? (isApproved ? 'Sell 💰' : 'Approve Selling') 
+                          ? (isApproved ? 'Sell 💰' : 'Sell Preview') 
                           : 'Sell Preview'
                       : 'Home' 
                   }

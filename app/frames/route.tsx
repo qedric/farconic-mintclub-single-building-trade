@@ -22,7 +22,7 @@ const handleRequest = frames(async (ctx) => {
         imageOptions: {
             aspectRatio: "1:1"
         },
-        textInput: "search e.g. \"bridge\" or \"Rome\"",
+        textInput: "e.g. 'Bridge', 'Rome', 'Eiffel'",
         buttons: [
             <Button action="link" target="https://farconic.xyz">
                 App 🌐
