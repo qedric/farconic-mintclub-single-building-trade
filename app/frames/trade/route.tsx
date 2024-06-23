@@ -7,7 +7,6 @@ import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 import { ErrorFrame } from "@/app/components/Error"
 import { baseSepolia } from "viem/chains"
-import { error } from "frames.js/core"
 import { getOpenseaData, getDetail } from '@/app/utils'
 
 const handleRequest = frames(async (ctx) => {

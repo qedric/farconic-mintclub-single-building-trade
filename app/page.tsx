@@ -1,4 +1,4 @@
-import { fetchMetadata } from "frames.js/next";
+import { fetchMetadata } from "frames.js/next"
  
 export async function generateMetadata() {
   return {
@@ -12,9 +12,9 @@ export async function generateMetadata() {
           : "http://localhost:3000"
       )
     ),
-  };
+  }
 }
  
 export default function Page() {
-  return <span>A Farconic Frame</span>;
+  return <span>A Farconic Frame</span>
 }
