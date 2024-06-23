@@ -74,7 +74,7 @@ const handleRequest = frames(async (ctx) => {
         const InfoDisplay: React.FC<{ label: string, value: string }> = ({ label, value }) => {
             return (
                 <div tw="flex flex-col w-[12vw]">
-                    <div tw="text-[12px] font-bold mb-0">{ label }</div>
+                    <div tw="text-[12px] font-bold mb-1">{ label }</div>
                     <div tw={ `px-2 h-[2.625vw] text-[18px] ${containerStyle}` }>
                         { value }
                     </div>

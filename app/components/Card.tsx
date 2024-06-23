@@ -25,7 +25,7 @@ export const CardImage = async (
     const InfoDisplay: React.FC<{ label: string, value: string }> = ({ label, value }) => {
         return (
             <div tw="flex flex-col w-[24vw]">
-                <div tw="text-[24px] font-bold mb-0.5">{ label }</div>
+                <div tw="text-[24px] font-bold mb-1">{ label }</div>
                 <div tw={ `px-4 h-[5.25vw] text-[36px] ${containerStyle}` }>
                     { value }
                 </div>
@@ -59,7 +59,7 @@ export const CardImage = async (
             </div>
             { userImg && 
                 <div tw="absolute top-[37px] w-full flex flex-col justify-center items-center">
-                    <img src={userImg} tw="w-[8.75vw] [8.75vw] rounded-full" />
+                    <img src={userImg} tw="w-[8.75vw] h-[8.75vw] rounded-full" />
                     {/* <div tw="flex flex-col w-[8.75vw] h-[8.75vw] rounded-full">
                         <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
                         <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
