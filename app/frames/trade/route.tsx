@@ -82,13 +82,61 @@ const handleRequest = frames(async (ctx) => {
             )
         }
 
+        const buttons:any = [
+            <Button action="post" target="/">
+                Home
+            </Button>,
+            <Button 
+                action={ ctx.isSell ? "post" : "tx" }
+                target={
+                    ctx.isSell
+                        ? { query: { building: JSON.stringify(building), qty: qty.toString(), balance:JSON.stringify(balances) }, pathname: "/trade" }
+                        : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
+                    }
+                    post_url="/trade/txStatusTrade">
+                { ctx.isSell ? 'Buy Preview' : 'Buy 🛒' }
+            </Button>
+        ]
+
+        if (balances.length > 0) {
+            buttons.push(
+                <Button 
+                    action={
+                        ctx.isSell // tx will be either sell or approve
+                            ? 'tx'
+                            : 'post'
+                    }
+                    target={
+                        ctx.isSell 
+                            ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
+                            : { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balances) }, pathname: "/trade" }
+                    }
+                    post_url={
+                        isApproved
+                            ? "/trade/txStatusTrade"
+                            : "/trade/txStatusApprove"
+                    }
+                >{
+                    ctx.isSell 
+                    ? (isApproved ? 'Sell 💰' : 'Sell Preview') 
+                    : 'Sell Preview'
+                  }
+                </Button>
+            )
+        }
+
+        buttons.push(
+            <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:JSON.stringify(balances) }, pathname: "/trade" }}>
+                Refresh Price
+            </Button>
+        )
+
         return {
             image: (
-                <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(https://ipfs.filebase.io/ipfs/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
-                    <div tw="flex flex-col relative bottom-[80px] w-full items-center justify-center">
-                        <h1 tw="absolute top-[180px] text-[36px]">{ `${ctx.isSell ? isApproved ? 'Sell Preview' : 'Approve Selling' : 'Buy Preview'}` }</h1>
-                        
-                        <div tw="flex relative -top-[40px] w-[600px] h-[600px] items-center justify-center" style={{ backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
+                <div tw="flex w-full h-full" style={{ translate: '200%', backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmT4qQyVaCaYj5NPSK3RnLTcDp1J7cZpSj4RkVGG1fjAos)`}}>
+                    <div tw="flex flex-col mt-[100px] mb-[240px] w-full items-center justify-center">
+                        <h1 tw="text-[36px]">{ `${ctx.isSell ? isApproved ? 'Sell Preview' : 'Approve Selling' : 'Buy Preview'}` }</h1>
+                        <div tw="relative flex w-[600px] h-[600px] items-center justify-center" style={{ backgroundSize: '100% 100%', backgroundImage: `url(${process.env.NEXT_PUBLIC_GATEWAY_URL}/QmYHgaiorK3VJaab1qnHytF4csJ9ELPcmLZ6zK5wWfSeE5)`}}>
                             <div tw="flex flex-wrap relative w-[26.5vw] text-white p-0 m-0">
                                 <div tw={ `flex flex-col relative w-full ${ containerStyle } h-[32.25vw]` }>
                                     <div tw="flex flex-1 text-[24px] w-[24vw] mb-1.5 items-end justify-between">
@@ -111,39 +159,37 @@ const handleRequest = frames(async (ctx) => {
                                     <InfoDisplay label="Holders:" value={ openseaData.owners.length } />
                                 </div>
                             </div>
+                            { userData && 
+                                <div tw="absolute top-[15px] w-full flex flex-col justify-center items-center">
+                                    <img src={userData.profileImage} tw="w-[4.55vw] h-[4.55vw] rounded-full" />
+                                    {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
+                                        <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
+                                        <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
+                                    </div> */}
+                                    <div tw="flex lowercase text-[14px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
+                                </div>
+                            }
                         </div>
-
-                        { userData && 
-                            <div tw="absolute top-[275px] w-full flex flex-col justify-center items-center">
-                                <img src={userData.profileImage} tw="w-[4.55vw] h-[4.55vw] rounded-full" />
-                                {/* <div tw="flex flex-col w-[5.25vw] h-[5.25vw] rounded-full">
-                                    <div tw="flex justify-center items-center bg-green-200 w-full h-1/2 rounded-t-full text-center"><div>T</div></div>
-                                    <div tw="flex justify-center items-center bg-red-200 w-full h-1/2 rounded-b-full text-center"><div>B</div></div>
-                                </div> */}
-                                <div tw="flex lowercase text-[14px] text-white" style={{ transform: 'scale(0.6)' }}>@{ userData.username }</div>
-                            </div>
-                        }
                         { ctx.isSell && isApproved && (
-                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
+                            <div tw="flex flex-col px-20 justify-center items-center flex-grow">
                                 <h1 tw="text-[50px] mb-6 leading-6">{ `Quantity: ${qty} | Total Value: ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
-                                <p tw="text-[30px] leading-6 w-[660px] text-center">
+                                <p tw="text-[30px] leading-6 text-center">
                                     {`${approvedAddresses.map(a => `Address: ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | Balance: ${a.balance}`).join(', ')}\n`}
                                 </p>
                                 <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
                             </div>
                         )}
                         { ctx.isSell && !isApproved && (
-                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[130px]">
+                            <div tw="flex flex-col px-20 justify-center items-center flex-grow">
                                 <h1 tw="text-[40px] mb-4 leading-8 text-center">{ `Your approval is required to sell your cards` }</h1>
-                                <p tw="text-[30px] leading-6 w-[660px] text-center">
+                                <p tw="text-[30px] leading-6 text-center">
                                     {`${balances.map(a => `Address: ${a.address.substring(0, 5)}...${a.address.substring(a.address.length - 4)} | Balance: ${a.balance}`).join(', ')}\n`}
                                 </p>
                             </div>
                         )}
                         { !ctx.isSell && (
-                            <div tw="flex flex-col absolute px-20 justify-center items-center bottom-[150px]">
-                                <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} ${ ctx.isSell ? ` | Your balance: ${balances}` : '' }` }</h1>
-                                <h1 tw="text-[50px] mb-5 leading-6">{ `${ctx.isSell ? 'Total Value:' : 'Price:'} ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>
+                            <div tw="flex flex-col px-20 justify-center items-center flex-grow">
+                                <h1 tw="text-[50px] mb-5 leading-6">{ `Quantity: ${qty} | Price: ${ (parseFloat(ethers.formatUnits(estimation, 18)).toFixed(4)) } ETH` }</h1>                                
                                 <p tw="text-[30px] leading-6">Slippage will be applied when you approve the transaction.</p>
                             </div>
                         )} 
@@ -153,52 +199,7 @@ const handleRequest = frames(async (ctx) => {
             imageOptions: {
                 aspectRatio: "1:1",
             },
-            buttons: [
-                <Button action="link" target="/">
-                    Home
-                </Button>,
-                <Button 
-                    action={ ctx.isSell ? "post" : "tx" }
-                    target={
-                        ctx.isSell
-                            ? { query: { building: JSON.stringify(building), qty: qty.toString(), balance:JSON.stringify(balances) }, pathname: "/trade" }
-                            : { query: { contractAddress: building.address, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                        }
-                        post_url="/trade/txStatusTrade">
-                    { ctx.isSell ? 'Buy Preview' : 'Buy 🛒' }
-                </Button>,
-                <Button 
-                    action={
-                        balances.length > 0 && ctx.isSell // tx will be either sell or approve
-                            ? 'tx'
-                            : 'post'
-                    }
-                    target={
-                        balances.length > 0
-                            ? ctx.isSell 
-                                ? { query: { contractAddress: building.address, isSell:true, isApproved, qty: qty.toString(), estimation: estimation.toString() }, pathname: "/trade/txdata" }
-                                : { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balances) }, pathname: "/trade" }
-                            : '/'
-
-                    }
-                    post_url={
-                        isApproved
-                            ? "/trade/txStatusTrade"
-                            : "/trade/txStatusApprove"
-                    }
-                >{
-                    balances.length > 0 
-                      ? ctx.isSell 
-                          ? (isApproved ? 'Sell 💰' : 'Sell Preview') 
-                          : 'Sell Preview'
-                      : 'Home' 
-                  }
-                  
-                </Button>,
-                <Button action="post" target={{ query: { building: JSON.stringify(building), qty: qty.toString(), isSell: ctx.isSell, balance:JSON.stringify(balances) }, pathname: "/trade" }}>
-                    Refresh Price
-                </Button>
-            ],
+            buttons: buttons,
             textInput: 'Set Quantity & Refresh Price',
             headers: {  
                 "Cache-Control": "max-age=0", 

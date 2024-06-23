@@ -57,11 +57,11 @@ const handleRequest = frames(async (ctx: any) => {
             textInput: "Search, or Set Buy/Sell Quantity",
             buttons: searchResults.length == 1 // just one result
             ?   [
+                    <Button action={ totalBalance > 0 ? 'post' : 'link' } target={ totalBalance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balance) }, pathname: "/trade/" } : "https://farconic.xyz" }>
+                        { totalBalance > 0 ? 'Sell 💰' : 'App 🌐' }
+                    </Button>,
                     <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
                         Buy 🛒
-                    </Button>,
-                    <Button action="post" target={ totalBalance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balance) }, pathname: "/trade/" } : "/" }>
-                        { totalBalance > 0 ? 'Sell 💰' : 'Home' }
                     </Button>,
                     <Button action="post" target={{ query: { searchTerm: 'random' }, pathname: "/search" }}>
                         Random 🎲
@@ -73,7 +73,7 @@ const handleRequest = frames(async (ctx: any) => {
             :   page > 1 && searchResults.length > page // multiple results and we are somewhere in the middle
                 ?   [
                         <Button action="post" target={{ query: { building: JSON.stringify(building), balance:JSON.stringify(balance) }, pathname: "/trade/" }}>
-                            { totalBalance > 0 ? 'Buy/Sell' : 'Buy' }
+                            { totalBalance > 0 ? 'Buy/Sell' : 'Buy 🛒' }
                         </Button>,
                         <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
                             ◀ Prev
@@ -88,10 +88,10 @@ const handleRequest = frames(async (ctx: any) => {
                 :   page > 1 && searchResults.length == page // multiple results and we are at the end
                     ?   [
                             <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
-                                Buy
+                                Buy 🛒
                             </Button>,
                             <Button action="post" target={ totalBalance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balance) }, pathname: "/trade/" } : "/" }>
-                                { totalBalance > 0 ? 'Sell' : 'Home' }
+                                { totalBalance > 0 ? 'Sell 💰' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page-1, searchTerm: searchTerm }, pathname: "/search" }}>
                                 ◀ Prev
@@ -102,10 +102,10 @@ const handleRequest = frames(async (ctx: any) => {
                         ]
                     :   [ // multiple results and we are at the start
                             <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade/" }}>
-                                Buy
+                                Buy 🛒
                             </Button>,
                             <Button action="post" target={ totalBalance > 0 ? { query: { building: JSON.stringify(building), isSell:true, balance:JSON.stringify(balance) }, pathname: "/trade/" } : "/" }>
-                                { totalBalance > 0 ? 'Sell' : 'Home' }
+                                { totalBalance > 0 ? 'Sell 💰' : 'Home' }
                             </Button>,
                             <Button action="post" target={{ query: { page: page+1, searchTerm: searchTerm }, pathname: "/search" }}>
                                 Next ▶

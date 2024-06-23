@@ -75,7 +75,9 @@ const handleRequest = frames(async (ctx) => {
             }
 
             const addThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName : `the ${bulidingName}`
-            const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(0, 3) : bulidingName
+            const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(3) : bulidingName
+            console.log('remove string:', removeThe(building.metadata.name))
+            console.log('add string:', addThe(building.metadata.name))
             const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards!` : `${addThe(building.metadata.name)} card!`}`
 
             const shareText = isSell 
