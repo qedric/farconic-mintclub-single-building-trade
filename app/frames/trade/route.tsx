@@ -7,7 +7,7 @@ import { mintclub, getMintClubContractAddress } from 'mint.club-v2-sdk'
 import { ethers } from 'ethers'
 import { ErrorFrame } from "@/app/components/Error"
 import { baseSepolia } from "viem/chains"
-import { getOpenseaData, getDetail } from '@/app/utils'
+import { getOpenseaData, getDetail, getNFTBalance } from '@/app/utils'
 
 const handleRequest = frames(async (ctx) => {
     
@@ -24,10 +24,28 @@ const handleRequest = frames(async (ctx) => {
 
         let isApproved = false
         let approvedAddresses: { address: string, balance: bigint }[] = []
-        let balances: { address: string, balance: bigint }[] = []
-        if (ctx.searchParams.balance) {
-            balances = JSON.parse(ctx.searchParams.balance)
+        let balances: { address: string, balance: string }[] = []
+
+        if (ctx.searchParams.balances) {
+            balances = JSON.parse(ctx.searchParams.balances)
         }
+
+        let totalBalance:number = 0
+        // find how many of this building the user has among their verified addresses
+        const addresses = ctx.message?.requesterVerifiedAddresses || []
+        for (const address of addresses) {
+            let addressBalance = BigInt(0)
+            try {
+                addressBalance = await getNFTBalance(building.address as `0x${string}`, address as `0x${string}`) as bigint
+                if (addressBalance > BigInt(0)) {
+                    totalBalance += Number(addressBalance)
+                    balances.push({ address: address, balance: addressBalance.toString() })
+                }
+            } catch (e) {
+                // do nothing
+            }
+        }
+
         if (balances.length > 0) {
             if (ctx.searchParams.approvedAddress) {
                 console.log(`Address ${JSON.parse(ctx.searchParams.approvedAddress)} approved`)
@@ -41,7 +59,7 @@ const handleRequest = frames(async (ctx) => {
                         spender: getMintClubContractAddress('ZAP', baseSepolia.id)
                     })
                     if (isApproved) {
-                        approvedAddresses.push({address: balance.address, balance: balance.balance});
+                        approvedAddresses.push({address: balance.address, balance: BigInt(balance.balance)});
                     }
                 }))
                 isApproved = approvedAddresses.length > 0
@@ -82,7 +100,10 @@ const handleRequest = frames(async (ctx) => {
         }
 
         const buttons:any = [
-            <Button action="post" target="/">
+            <Button
+                action="post"
+                target={{ query: { building: JSON.stringify(building) }, pathname: "/" }}
+            >
                 Home
             </Button>,
             <Button 

@@ -9,33 +9,38 @@ export const maxDuration = 20
 
 const handleRequest = frames(async (ctx) => {
 
-    let building: NFT = ctx.searchParams?.buildingName
-        ? getBuildingByName(ctx.searchParams.buildingName.replace('-', ' ')) || getRandomBuildingAmongFavourites()
-        : ctx.searchParams?.building
-            ? JSON.parse(ctx.searchParams.building)
+    let building: NFT = ctx.searchParams.building
+        ? JSON.parse(ctx.searchParams.building)
+        : ctx.searchParams.buildingName
+            ? getBuildingByName(ctx.searchParams?.buildingName?.replaceAll('-', ' ')) || getRandomBuildingAmongFavourites()
             : getRandomBuildingAmongFavourites()
     
     const userData = await getUserDataForFid({ fid: (ctx.message?.requesterFid as number) })
+
+    const addThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName : `the ${bulidingName}`
+    const shareText = `Check out ${addThe(building.metadata.name)} card in /farconic! 👀`
+    const nameWithHyphens = building.metadata.name.replaceAll(/\s/g, '-').toLowerCase()
+    const targetUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(shareText)}%0Ahttps://farconic-mintclub-building-trade.vercel.app?buildingName=${encodeURIComponent(nameWithHyphens)}`
 
     return {
         image: await CardImage( building, userData?.profileImage, userData?.username, undefined),
         imageOptions: {
             aspectRatio: "1:1"
         },
-        textInput: "e.g. 'Bridge', 'Rome', 'Eiffel'",
+        textInput: 'Set Quantity',
         buttons: [
-            <Button action="link" target="https://farconic.xyz">
+            <Button action="link" target={process.env.NEXT_PUBLIC_APP_LINK as string}>
                 App 🌐
             </Button>,
-            <Button action="tx" target={{ query: { contractAddress: building.address }, pathname: "/trade/txdata" }} post_url="/trade/txStatusTrade">
+            <Button action="post" target={{ query: { building: JSON.stringify(building) }, pathname: "/trade" }}>
                 Buy 🛒
             </Button>,
-            <Button action="post" target={{ query: { building: JSON.stringify(getRandomBuildingAmongFavourites(building.metadata.name)) }, pathname: "/" }}>
-                Random 🎲
+            <Button action="post" target={{ query: { building: JSON.stringify(building), isSell:true }, pathname: "/trade" }}>
+                Sell 💰
             </Button>,
-            <Button action="post" target="/search">
-                Search 🔎
-            </Button>
+            <Button action="link" target={ targetUrl }>
+                Share 🔁
+            </Button>,
         ],
         headers: {  
             "Cache-Control": "max-age=0", 

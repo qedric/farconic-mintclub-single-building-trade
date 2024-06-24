@@ -75,7 +75,7 @@ const handleRequest = frames(async (ctx) => {
             }
 
             const addThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName : `the ${bulidingName}`
-            const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(3) : bulidingName
+            const removeThe = (bulidingName:string) => bulidingName.toLowerCase().startsWith('the') ? bulidingName.substring(4) : bulidingName
             console.log('remove string:', removeThe(building.metadata.name))
             console.log('add string:', addThe(building.metadata.name))
             const successString = `${isSell ? "You've parted with" : "You've acquired"} ${ amount > BigInt(1) ? `${amount} ${removeThe(building.metadata.name)} cards!` : `${addThe(building.metadata.name)} card!`}`
@@ -84,7 +84,7 @@ const handleRequest = frames(async (ctx) => {
                 ? `Just sold ${amount > 1 ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`} in /farconic! 💰`
                 : `Just bought ${amount > 1 ? `${amount} ${removeThe(building.metadata.name)} cards` : `${addThe(building.metadata.name)} card`} in /farconic! 👀`
 
-            const nameWithHyphens = building.metadata.name.replace(/\s/g, '-').toLowerCase()
+            const nameWithHyphens = building.metadata.name.replaceAll(/\s/g, '-').toLowerCase()
 
             const targetUrl = `https://warpcast.com/~/compose?text=${encodeURIComponent(shareText)}%0Ahttps://farconic-mintclub-building-trade.vercel.app?buildingName=${encodeURIComponent(nameWithHyphens)}`
 

@@ -23,7 +23,7 @@ export const ErrorFrame = async (message: string, post_button_label:string | nul
             <Button action="post" target="/">
                 Reset
             </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
+            <Button action="link" target={process.env.NEXT_PUBLIC_APP_LINK as string}>
                 Farconic App
             </Button>
         ]
@@ -31,7 +31,7 @@ export const ErrorFrame = async (message: string, post_button_label:string | nul
             <Button action="post" target="/">
                 Reset
             </Button>,
-            <Button action="link" target={process.env.NEXT_PUBLIC_MORE_INFO_LINK as string}>
+            <Button action="link" target={process.env.NEXT_PUBLIC_APP_LINK as string}>
                 Farconic App
             </Button>
         ]
