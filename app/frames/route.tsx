@@ -10,7 +10,7 @@ export const maxDuration = 20
 const handleRequest = frames(async (ctx) => {
 
     let building: NFT = ctx.searchParams?.buildingName
-        ? getBuildingByName(ctx.searchParams.buildingName) || getRandomBuildingAmongFavourites()
+        ? getBuildingByName(ctx.searchParams.buildingName.replace('-', ' ')) || getRandomBuildingAmongFavourites()
         : ctx.searchParams?.building
             ? JSON.parse(ctx.searchParams.building)
             : getRandomBuildingAmongFavourites()
